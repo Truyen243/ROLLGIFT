@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowFrom.Data;
 
@@ -18,16 +12,25 @@ namespace WindowFrom
             InitializeComponent();
         }
 
+        private List<User> listUser;
+        UserDAO _userDAO;
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
             
         }
-        UserDAO _user;
+
+        //UserDAO _user;
 
         private void f_Login_Load(object sender, EventArgs e)
         {
-            _user = new UserDAO();
+            _userDAO = new UserDAO();
+            _userDAO.GetUser(Cls_Main.pathfile);
+            Cls_Main._listUser = _userDAO.listUser;
+
+
+            listUser = Cls_Main._listUser;
         }
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -40,10 +43,6 @@ namespace WindowFrom
                     if(Kiemtradangnhap(txbUserName.Text, txbPassWord.Text))
                     {
 
-                        //Nhớ nhật khẩu
-                        _user.user.Remember = chbRemember.Checked;
-
-                        Cls_Main._staticUser = _user.user;
                         f_Main main = new f_Main();
                         //this.Hide();
                         main.ShowDialog(); 
@@ -58,11 +57,18 @@ namespace WindowFrom
 
         private bool Kiemtradangnhap(string userName, string passWord)
         {
-            if (_user.user.UserName.Equals(userName)&& _user.user.PassWord.Equals(passWord))
+            foreach (User item in listUser)
             {
-                return true;
+                if (item.UserName.Equals(userName) && item.PassWord.Equals(passWord))
+                {
+                    item.Remember = chbRemember.Checked;
+                    Cls_Main._staticUser = item;
+                    return true;
+                }
+
             }
             return false;
+
         }
 
         private void f_Login_FormClosing(object sender, FormClosingEventArgs e)
@@ -76,11 +82,14 @@ namespace WindowFrom
         //hàm nhớ mật khẩu
         private void txbUserName_Leave(object sender, EventArgs e)
         {
-            if (_user.user.Remember)
+            foreach (User item in listUser)
             {
-                chbRemember.Checked = true;
-                txbPassWord.Text = _user.user.PassWord;
-                btnLogin.Focus();
+                if (item.UserName==txbUserName.Text && item.Remember)
+                {
+                    chbRemember.Checked = true;
+                    txbPassWord.Text = item.PassWord;
+                    btnLogin.Focus();
+                }
             }
         }
     }

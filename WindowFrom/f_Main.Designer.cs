@@ -35,8 +35,11 @@ namespace WindowFrom
             this.mnInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.mnSignupAccount = new System.Windows.Forms.ToolStripMenuItem();
             this.mnExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnChangedPassWord = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsslblInFo = new System.Windows.Forms.ToolStripStatusLabel();
+            this.mnSaveList = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +57,8 @@ namespace WindowFrom
             // 
             this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.thôngTinCáNhânToolStripMenuItem});
+            this.thôngTinCáNhânToolStripMenuItem,
+            this.fileToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(1129, 28);
@@ -68,8 +72,8 @@ namespace WindowFrom
             this.mnSignupAccount,
             this.mnExit});
             this.thôngTinCáNhânToolStripMenuItem.Name = "thôngTinCáNhânToolStripMenuItem";
-            this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(141, 24);
-            this.thôngTinCáNhânToolStripMenuItem.Text = "Thông tin cá nhân";
+            this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+            this.thôngTinCáNhânToolStripMenuItem.Text = "Home";
             // 
             // mnInfo
             // 
@@ -91,6 +95,22 @@ namespace WindowFrom
             this.mnExit.Text = "Đăng xuất";
             this.mnExit.Click += new System.EventHandler(this.mnExit_Click);
             // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnChangedPassWord,
+            this.mnSaveList});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // mnChangedPassWord
+            // 
+            this.mnChangedPassWord.Name = "mnChangedPassWord";
+            this.mnChangedPassWord.Size = new System.Drawing.Size(224, 26);
+            this.mnChangedPassWord.Text = "Changed PassWord";
+            this.mnChangedPassWord.Click += new System.EventHandler(this.mnChangedPassWord_Click);
+            // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -107,6 +127,13 @@ namespace WindowFrom
             this.tsslblInFo.Name = "tsslblInFo";
             this.tsslblInFo.Size = new System.Drawing.Size(18, 20);
             this.tsslblInFo.Text = "...";
+            // 
+            // mnSaveList
+            // 
+            this.mnSaveList.Name = "mnSaveList";
+            this.mnSaveList.Size = new System.Drawing.Size(224, 26);
+            this.mnSaveList.Text = "Save List";
+            this.mnSaveList.Click += new System.EventHandler(this.mnSaveList_Click);
             // 
             // f_Main
             // 
@@ -142,5 +169,8 @@ namespace WindowFrom
         private System.Windows.Forms.ToolStripMenuItem mnExit;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel tsslblInFo;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnChangedPassWord;
+        private System.Windows.Forms.ToolStripMenuItem mnSaveList;
     }
 }

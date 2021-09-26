@@ -34,6 +34,8 @@ namespace WindowFrom
             this.txbUserName = new System.Windows.Forms.TextBox();
             this.txbPassWord = new System.Windows.Forms.TextBox();
             this.btnSignup = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txbFullName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -51,7 +53,7 @@ namespace WindowFrom
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 111);
+            this.label2.Location = new System.Drawing.Point(30, 114);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 24);
             this.label2.TabIndex = 1;
@@ -62,32 +64,52 @@ namespace WindowFrom
             this.txbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbUserName.Location = new System.Drawing.Point(34, 61);
             this.txbUserName.Name = "txbUserName";
-            this.txbUserName.Size = new System.Drawing.Size(259, 27);
+            this.txbUserName.Size = new System.Drawing.Size(309, 27);
             this.txbUserName.TabIndex = 2;
             // 
             // txbPassWord
             // 
             this.txbPassWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPassWord.Location = new System.Drawing.Point(34, 138);
+            this.txbPassWord.Location = new System.Drawing.Point(34, 146);
             this.txbPassWord.Name = "txbPassWord";
-            this.txbPassWord.Size = new System.Drawing.Size(259, 27);
+            this.txbPassWord.Size = new System.Drawing.Size(309, 27);
             this.txbPassWord.TabIndex = 3;
             // 
             // btnSignup
             // 
-            this.btnSignup.Location = new System.Drawing.Point(34, 215);
+            this.btnSignup.Location = new System.Drawing.Point(34, 279);
             this.btnSignup.Name = "btnSignup";
-            this.btnSignup.Size = new System.Drawing.Size(103, 37);
+            this.btnSignup.Size = new System.Drawing.Size(108, 38);
             this.btnSignup.TabIndex = 4;
             this.btnSignup.Text = "Đăng ký";
             this.btnSignup.UseVisualStyleBackColor = true;
             this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(30, 202);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(122, 24);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Tên hiển thị";
+            // 
+            // txbFullName
+            // 
+            this.txbFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbFullName.Location = new System.Drawing.Point(34, 229);
+            this.txbFullName.Name = "txbFullName";
+            this.txbFullName.Size = new System.Drawing.Size(309, 27);
+            this.txbFullName.TabIndex = 6;
+            // 
             // f_Signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(347, 342);
+            this.ClientSize = new System.Drawing.Size(400, 369);
+            this.Controls.Add(this.txbFullName);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.txbPassWord);
             this.Controls.Add(this.txbUserName);
@@ -108,5 +130,7 @@ namespace WindowFrom
         private System.Windows.Forms.TextBox txbUserName;
         private System.Windows.Forms.TextBox txbPassWord;
         private System.Windows.Forms.Button btnSignup;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txbFullName;
     }
 }
