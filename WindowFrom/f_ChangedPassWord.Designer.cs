@@ -60,9 +60,9 @@ namespace WindowFrom
             this.label1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(21, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 19);
+            this.label1.Size = new System.Drawing.Size(91, 19);
             this.label1.TabIndex = 1;
-            this.label1.Text = "User:";
+            this.label1.Text = "Tài khoản:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // grbAdmin
@@ -76,7 +76,7 @@ namespace WindowFrom
             this.grbAdmin.Size = new System.Drawing.Size(432, 132);
             this.grbAdmin.TabIndex = 2;
             this.grbAdmin.TabStop = false;
-            this.grbAdmin.Text = "Admin-Reset Password";
+            this.grbAdmin.Text = "Đặt lại mật khẩu";
             this.grbAdmin.Enter += new System.EventHandler(this.grbAdmin_Enter);
             // 
             // label4
@@ -84,17 +84,17 @@ namespace WindowFrom
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(7, 39);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 19);
+            this.label4.Size = new System.Drawing.Size(128, 19);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Choise User";
+            this.label4.Text = "Chọn tài khoản";
             // 
             // btnRestPassword
             // 
-            this.btnRestPassword.Location = new System.Drawing.Point(235, 69);
+            this.btnRestPassword.Location = new System.Drawing.Point(281, 69);
             this.btnRestPassword.Name = "btnRestPassword";
-            this.btnRestPassword.Size = new System.Drawing.Size(171, 42);
+            this.btnRestPassword.Size = new System.Drawing.Size(115, 42);
             this.btnRestPassword.TabIndex = 1;
-            this.btnRestPassword.Text = "Reset Password";
+            this.btnRestPassword.Text = "Cập nhập";
             this.btnRestPassword.UseVisualStyleBackColor = true;
             this.btnRestPassword.Click += new System.EventHandler(this.btnRestPassword_Click);
             // 
@@ -111,15 +111,15 @@ namespace WindowFrom
             this.grpUser.Size = new System.Drawing.Size(432, 160);
             this.grpUser.TabIndex = 3;
             this.grpUser.TabStop = false;
-            this.grpUser.Text = "User-Changed Password";
+            this.grpUser.Text = "Thay đổi mật khẩu";
             // 
             // btnChangedPassword
             // 
-            this.btnChangedPassword.Location = new System.Drawing.Point(235, 105);
+            this.btnChangedPassword.Location = new System.Drawing.Point(281, 105);
             this.btnChangedPassword.Name = "btnChangedPassword";
-            this.btnChangedPassword.Size = new System.Drawing.Size(171, 42);
+            this.btnChangedPassword.Size = new System.Drawing.Size(115, 42);
             this.btnChangedPassword.TabIndex = 4;
-            this.btnChangedPassword.Text = "Changed Password";
+            this.btnChangedPassword.Text = "Lưu";
             this.btnChangedPassword.UseVisualStyleBackColor = true;
             this.btnChangedPassword.Click += new System.EventHandler(this.btnChangedPassword_Click);
             // 
@@ -128,18 +128,18 @@ namespace WindowFrom
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(7, 77);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(155, 19);
+            this.label3.Size = new System.Drawing.Size(159, 19);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Password new pre";
+            this.label3.Text = "Xác nhận mật khẩu";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(7, 35);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 19);
+            this.label2.Size = new System.Drawing.Size(115, 19);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Password new";
+            this.label2.Text = "Mật khẩu mới";
             // 
             // txbPasswordNewTow
             // 
@@ -158,10 +158,10 @@ namespace WindowFrom
             // lblUserName
             // 
             this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserName.Location = new System.Drawing.Point(79, 15);
+            this.lblUserName.Location = new System.Drawing.Point(118, 15);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblUserName.Size = new System.Drawing.Size(341, 26);
+            this.lblUserName.Size = new System.Drawing.Size(302, 26);
             this.lblUserName.TabIndex = 4;
             this.lblUserName.Text = "N/A";
             this.lblUserName.Click += new System.EventHandler(this.lblUserName_Click);

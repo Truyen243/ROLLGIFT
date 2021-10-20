@@ -36,13 +36,14 @@ namespace WindowFrom
             this.chbRemember = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 33);
+            this.label1.Location = new System.Drawing.Point(28, 110);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 24);
             this.label1.TabIndex = 0;
@@ -51,7 +52,7 @@ namespace WindowFrom
             // txbUserName
             // 
             this.txbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbUserName.Location = new System.Drawing.Point(197, 35);
+            this.txbUserName.Location = new System.Drawing.Point(197, 107);
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.Size = new System.Drawing.Size(242, 27);
             this.txbUserName.TabIndex = 1;
@@ -60,7 +61,7 @@ namespace WindowFrom
             // txbPassWord
             // 
             this.txbPassWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPassWord.Location = new System.Drawing.Point(197, 76);
+            this.txbPassWord.Location = new System.Drawing.Point(197, 163);
             this.txbPassWord.Name = "txbPassWord";
             this.txbPassWord.Size = new System.Drawing.Size(242, 27);
             this.txbPassWord.TabIndex = 2;
@@ -68,7 +69,7 @@ namespace WindowFrom
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(209, 144);
+            this.btnLogin.Location = new System.Drawing.Point(197, 232);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(100, 45);
             this.btnLogin.TabIndex = 4;
@@ -79,7 +80,7 @@ namespace WindowFrom
             // chbRemember
             // 
             this.chbRemember.AutoSize = true;
-            this.chbRemember.Location = new System.Drawing.Point(197, 117);
+            this.chbRemember.Location = new System.Drawing.Point(197, 205);
             this.chbRemember.Name = "chbRemember";
             this.chbRemember.Size = new System.Drawing.Size(118, 21);
             this.chbRemember.TabIndex = 3;
@@ -90,7 +91,7 @@ namespace WindowFrom
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(28, 76);
+            this.label2.Location = new System.Drawing.Point(28, 166);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 24);
             this.label2.TabIndex = 0;
@@ -99,7 +100,7 @@ namespace WindowFrom
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(315, 144);
+            this.btnExit.Location = new System.Drawing.Point(341, 232);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(98, 45);
             this.btnExit.TabIndex = 5;
@@ -107,13 +108,29 @@ namespace WindowFrom
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label3.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(3);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(0, 20, 0, 20);
+            this.label3.Size = new System.Drawing.Size(529, 81);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Đăng nhập";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // f_Login
             // 
             this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(524, 252);
+            this.ClientSize = new System.Drawing.Size(529, 304);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.chbRemember);
@@ -121,12 +138,12 @@ namespace WindowFrom
             this.Controls.Add(this.txbPassWord);
             this.Controls.Add(this.txbUserName);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "f_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập tài khoản";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.f_Login_FormClosing);
             this.Load += new System.EventHandler(this.f_Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -142,6 +159,7 @@ namespace WindowFrom
         private System.Windows.Forms.CheckBox chbRemember;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label label3;
     }
 }
 

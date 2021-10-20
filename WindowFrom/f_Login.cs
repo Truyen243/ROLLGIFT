@@ -42,10 +42,11 @@ namespace WindowFrom
                     
                     if(Kiemtradangnhap(txbUserName.Text, txbPassWord.Text))
                     {
-
+                        
                         f_Main main = new f_Main();
                         //this.Hide();
-                        main.ShowDialog(); 
+                        main.ShowDialog();
+                        //this.Close();
                     }
                     else
                     {
@@ -71,13 +72,13 @@ namespace WindowFrom
 
         }
 
-        private void f_Login_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Bạn có thật sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != DialogResult.OK)
-            {
-                e.Cancel = true;
-            }
-        }
+        //private void f_Login_FormClosing(object sender, FormClosingEventArgs e)
+        //{
+        //    if (MessageBox.Show("Bạn có thật sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != DialogResult.OK)
+        //    {
+        //        e.Cancel = true;
+        //    }
+        //}
 
         //hàm nhớ mật khẩu
         private void txbUserName_Leave(object sender, EventArgs e)
@@ -91,6 +92,11 @@ namespace WindowFrom
                     btnLogin.Focus();
                 }
             }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

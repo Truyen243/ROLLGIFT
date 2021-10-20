@@ -20,28 +20,27 @@ namespace WindowFrom
         UserDAO _userDAO;
         private void mnSignupAccount_Click(object sender, EventArgs e)
         {
-            f_Signup signup = new f_Signup();
-            signup.ShowDialog();
+            f_User_Modifile f_UserModifile = new f_User_Modifile();
+            f_UserModifile.isAdd = true;
+            f_UserModifile.ShowDialog();
         }
         private void f_Main_Load(object sender, EventArgs e)
         {
             _userDAO = new UserDAO();
-            //_userDAO.GetUser(Cls_Main.pathfile);
-            //_userDAO.GetUser("D://listUser.ini");
-            //Cls_Main._listUser = _userDAO.listUser;
 
-
-            tsslblInFo.Text = string.Format("Login by {0} - {1}", Cls_Main._staticUser.ID, Cls_Main._staticUser.UserName);
+            tsslblInFo.Text = string.Format("Login by {0} - {1}", Cls_Main._staticUser.ID, Cls_Main._staticUser.FullName);
         }
 
         
 
         private void mnExit_Click(object sender, EventArgs e)
         {
-        
+
             // Xóa thông tin User trong lần đăng nhập trước
             Cls_Main._staticUser = null;
+            //Application.Exit();
             Close();
+
         }
 
         private void mnChangedPassWord_Click(object sender, EventArgs e)
@@ -52,7 +51,32 @@ namespace WindowFrom
 
         private void mnSaveList_Click(object sender, EventArgs e)
         {
-            _userDAO.WriteUser(Cls_Main.pathfile);
+            //_userDAO.WriteUser(Cls_Main.pathfile);
+        }
+
+        private void mnUserList_Click(object sender, EventArgs e)
+        {
+            f_User_Main f_UserMain = new f_User_Main();
+            f_UserMain.ShowDialog();
+        }
+
+        private void f_Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có thật sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != DialogResult.OK)
+            {
+                e.Cancel = true;
+                
+            }
+        }
+
+        private void mnSignupAccount_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
