@@ -43,3 +43,5 @@ C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\obj\Debug\RollG
 C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\obj\Debug\WindowFrom.exe
 C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\obj\Debug\WindowFrom.pdb
 C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\obj\Debug\WindowFrom.f_quaysomayman.resources
+C:\Users\ASUS\Desktop\RollGifft\WindownFrom\WindowFrom\WindowFrom\obj\Debug\WindowFrom.Form1.resources
+C:\Users\ASUS\Desktop\RollGifft\WindownFrom\WindowFrom\WindowFrom\obj\Debug\WindowFrom.f_quaysomayman.resources
