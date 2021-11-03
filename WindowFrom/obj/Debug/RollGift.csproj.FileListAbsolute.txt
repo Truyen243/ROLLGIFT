@@ -26,3 +26,22 @@ C:\Users\ASUS\Desktop\RollGifft\WindownFrom\WindowFrom\WindowFrom\obj\Debug\Roll
 C:\Users\ASUS\Desktop\RollGifft\WindownFrom\WindowFrom\WindowFrom\obj\Debug\RollGift.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Desktop\RollGifft\WindownFrom\WindowFrom\WindowFrom\obj\Debug\WindowFrom.exe
 C:\Users\ASUS\Desktop\RollGifft\WindownFrom\WindowFrom\WindowFrom\obj\Debug\WindowFrom.pdb
+C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\bin\Debug\WindowFrom.exe.config
+C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\bin\Debug\WindowFrom.exe
+C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\bin\Debug\WindowFrom.pdb
+C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\obj\Debug\RollGift.csproj.AssemblyReference.cache
+C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\obj\Debug\RollGift.csproj.SuggestedBindingRedirects.cache
+C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\obj\Debug\WindowFrom.f_ChangedPassWord.resources
+C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\obj\Debug\WindowFrom.Form1.resources
+C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\obj\Debug\WindowFrom.f_Login.resources
+C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\obj\Debug\WindowFrom.f_Main.resources
+C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\obj\Debug\WindowFrom.f_User_Modifile.resources
+C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\obj\Debug\WindowFrom.f_User_Main.resources
+C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\obj\Debug\WindowFrom.Properties.Resources.resources
+C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\obj\Debug\RollGift.csproj.GenerateResource.cache
+C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\obj\Debug\RollGift.csproj.CoreCompileInputs.cache
+C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\obj\Debug\WindowFrom.exe
+C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\obj\Debug\WindowFrom.pdb
+C:\Users\chinh\OneDrive\Tài liệu\GitHub\ROLLGIFT\WindowFrom\obj\Debug\WindowFrom.f_quaysomayman.resources
+C:\Users\ASUS\Desktop\RollGifft\WindownFrom\WindowFrom\WindowFrom\obj\Debug\WindowFrom.Form1.resources
+C:\Users\ASUS\Desktop\RollGifft\WindownFrom\WindowFrom\WindowFrom\obj\Debug\WindowFrom.f_quaysomayman.resources
