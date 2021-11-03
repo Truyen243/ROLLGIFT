@@ -30,28 +30,25 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_quaysomayman));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_quaysomayman));
             this.label1 = new System.Windows.Forms.Label();
             this.cbGiai = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dsQuay = new System.Windows.Forms.DataGridView();
-            this.colSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPhongban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lbl1 = new System.Windows.Forms.Label();
-            this.lbl2 = new System.Windows.Forms.Label();
-            this.lbl3 = new System.Windows.Forms.Label();
-            this.lbl5 = new System.Windows.Forms.Label();
             this.lbl4 = new System.Windows.Forms.Label();
+            this.lbl5 = new System.Windows.Forms.Label();
+            this.lbl3 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
             this.btQuay = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.lblErr = new System.Windows.Forms.ToolStripButton();
             this.dgtDanhsachtrunggiai = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dsNhanGiai = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,15 +56,18 @@
             this.colTenGiai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lblErr = new System.Windows.Forms.ToolStripButton();
             this.btLayDanhSach = new System.Windows.Forms.Button();
             this.btInDanhSach = new System.Windows.Forms.Button();
+            this.colSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPhongban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsQuay)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.dgtDanhsachtrunggiai.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsNhanGiai)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,6 +93,7 @@
             this.cbGiai.Name = "cbGiai";
             this.cbGiai.Size = new System.Drawing.Size(322, 34);
             this.cbGiai.TabIndex = 1;
+            this.cbGiai.SelectedIndexChanged += new System.EventHandler(this.CbGiai_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -124,7 +125,7 @@
             this.dsQuay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Tai Le", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -146,33 +147,6 @@
             this.dsQuay.TabIndex = 1;
             this.dsQuay.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dsQuay_CellContentClick);
             // 
-            // colSTT
-            // 
-            this.colSTT.HeaderText = "STT";
-            this.colSTT.Name = "colSTT";
-            this.colSTT.ReadOnly = true;
-            this.colSTT.Width = 50;
-            // 
-            // colID
-            // 
-            this.colID.HeaderText = "ID";
-            this.colID.Name = "colID";
-            this.colID.ReadOnly = true;
-            this.colID.Visible = false;
-            // 
-            // colTen
-            // 
-            this.colTen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colTen.HeaderText = "Ten";
-            this.colTen.Name = "colTen";
-            this.colTen.ReadOnly = true;
-            // 
-            // colPhongban
-            // 
-            this.colPhongban.HeaderText = "Phòng ban";
-            this.colPhongban.Name = "colPhongban";
-            this.colPhongban.ReadOnly = true;
-            // 
             // groupBox3
             // 
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -190,41 +164,17 @@
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             // 
-            // lbl1
+            // lbl4
             // 
-            this.lbl1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl1.AutoSize = true;
-            this.lbl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.lbl1.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.Location = new System.Drawing.Point(86, 60);
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(144, 171);
-            this.lbl1.TabIndex = 0;
-            this.lbl1.Text = "0";
-            // 
-            // lbl2
-            // 
-            this.lbl2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl2.AutoSize = true;
-            this.lbl2.BackColor = System.Drawing.Color.Red;
-            this.lbl2.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2.Location = new System.Drawing.Point(227, 60);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(144, 171);
-            this.lbl2.TabIndex = 1;
-            this.lbl2.Text = "0";
-            // 
-            // lbl3
-            // 
-            this.lbl3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl3.AutoSize = true;
-            this.lbl3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.lbl3.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3.Location = new System.Drawing.Point(368, 60);
-            this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(144, 171);
-            this.lbl3.TabIndex = 2;
-            this.lbl3.Text = "0";
+            this.lbl4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl4.AutoSize = true;
+            this.lbl4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lbl4.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4.Location = new System.Drawing.Point(509, 60);
+            this.lbl4.Name = "lbl4";
+            this.lbl4.Size = new System.Drawing.Size(144, 171);
+            this.lbl4.TabIndex = 7;
+            this.lbl4.Text = "0";
             // 
             // lbl5
             // 
@@ -238,17 +188,41 @@
             this.lbl5.TabIndex = 6;
             this.lbl5.Text = "0";
             // 
-            // lbl4
+            // lbl3
             // 
-            this.lbl4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl4.AutoSize = true;
-            this.lbl4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lbl4.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4.Location = new System.Drawing.Point(509, 60);
-            this.lbl4.Name = "lbl4";
-            this.lbl4.Size = new System.Drawing.Size(144, 171);
-            this.lbl4.TabIndex = 7;
-            this.lbl4.Text = "0";
+            this.lbl3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl3.AutoSize = true;
+            this.lbl3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lbl3.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3.Location = new System.Drawing.Point(368, 60);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(144, 171);
+            this.lbl3.TabIndex = 2;
+            this.lbl3.Text = "0";
+            // 
+            // lbl2
+            // 
+            this.lbl2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl2.AutoSize = true;
+            this.lbl2.BackColor = System.Drawing.Color.Red;
+            this.lbl2.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.Location = new System.Drawing.Point(227, 60);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(144, 171);
+            this.lbl2.TabIndex = 1;
+            this.lbl2.Text = "0";
+            // 
+            // lbl1
+            // 
+            this.lbl1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl1.AutoSize = true;
+            this.lbl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.lbl1.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.Location = new System.Drawing.Point(86, 60);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(144, 171);
+            this.lbl1.TabIndex = 0;
+            this.lbl1.Text = "0";
             // 
             // btQuay
             // 
@@ -272,9 +246,18 @@
             this.toolStrip1.TabIndex = 7;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // lblErr
+            // 
+            this.lblErr.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.lblErr.Image = ((System.Drawing.Image)(resources.GetObject("lblErr.Image")));
+            this.lblErr.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.lblErr.Name = "lblErr";
+            this.lblErr.Size = new System.Drawing.Size(23, 22);
+            this.lblErr.Text = "...";
+            // 
             // dgtDanhsachtrunggiai
             // 
-            this.dgtDanhsachtrunggiai.Controls.Add(this.dataGridView2);
+            this.dgtDanhsachtrunggiai.Controls.Add(this.dsNhanGiai);
             this.dgtDanhsachtrunggiai.Controls.Add(this.toolStrip2);
             this.dgtDanhsachtrunggiai.Controls.Add(this.dataGridView1);
             this.dgtDanhsachtrunggiai.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -285,13 +268,14 @@
             this.dgtDanhsachtrunggiai.TabIndex = 8;
             this.dgtDanhsachtrunggiai.TabStop = false;
             this.dgtDanhsachtrunggiai.Text = "Danh sách trúng giải";
+            this.dgtDanhsachtrunggiai.Enter += new System.EventHandler(this.dgtDanhsachtrunggiai_Enter);
             // 
-            // dataGridView2
+            // dsNhanGiai
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dsNhanGiai.AllowUserToAddRows = false;
+            this.dsNhanGiai.AllowUserToDeleteRows = false;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dsNhanGiai.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -299,22 +283,23 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dsNhanGiai.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dsNhanGiai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dsNhanGiai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.colTenGiai});
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 23);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(891, 177);
-            this.dataGridView2.TabIndex = 4;
+            this.dsNhanGiai.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dsNhanGiai.Location = new System.Drawing.Point(3, 23);
+            this.dsNhanGiai.Name = "dsNhanGiai";
+            this.dsNhanGiai.ReadOnly = true;
+            this.dsNhanGiai.RowHeadersVisible = false;
+            this.dsNhanGiai.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dsNhanGiai.Size = new System.Drawing.Size(891, 177);
+            this.dsNhanGiai.TabIndex = 4;
+            this.dsNhanGiai.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -367,15 +352,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(891, 177);
             this.dataGridView1.TabIndex = 0;
             // 
-            // lblErr
-            // 
-            this.lblErr.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.lblErr.Image = ((System.Drawing.Image)(resources.GetObject("lblErr.Image")));
-            this.lblErr.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.lblErr.Name = "lblErr";
-            this.lblErr.Size = new System.Drawing.Size(23, 22);
-            this.lblErr.Text = "...";
-            // 
             // btLayDanhSach
             // 
             this.btLayDanhSach.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -385,6 +361,7 @@
             this.btLayDanhSach.TabIndex = 9;
             this.btLayDanhSach.Text = "Danh Sách";
             this.btLayDanhSach.UseVisualStyleBackColor = true;
+            this.btLayDanhSach.Click += new System.EventHandler(this.btLayDanhSach_Click);
             // 
             // btInDanhSach
             // 
@@ -395,6 +372,38 @@
             this.btInDanhSach.TabIndex = 10;
             this.btInDanhSach.Text = "In";
             this.btInDanhSach.UseVisualStyleBackColor = true;
+            this.btInDanhSach.Click += new System.EventHandler(this.btInDanhSach_Click);
+            // 
+            // colSTT
+            // 
+            this.colSTT.DataPropertyName = "STT";
+            this.colSTT.HeaderText = "STT";
+            this.colSTT.Name = "colSTT";
+            this.colSTT.ReadOnly = true;
+            this.colSTT.Width = 50;
+            // 
+            // colID
+            // 
+            this.colID.DataPropertyName = "ID";
+            this.colID.HeaderText = "ID";
+            this.colID.Name = "colID";
+            this.colID.ReadOnly = true;
+            this.colID.Visible = false;
+            // 
+            // colTen
+            // 
+            this.colTen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colTen.DataPropertyName = "HoTen";
+            this.colTen.HeaderText = "Ten";
+            this.colTen.Name = "colTen";
+            this.colTen.ReadOnly = true;
+            // 
+            // colPhongban
+            // 
+            this.colPhongban.DataPropertyName = "PhongBan";
+            this.colPhongban.HeaderText = "Phòng ban";
+            this.colPhongban.Name = "colPhongban";
+            this.colPhongban.ReadOnly = true;
             // 
             // f_quaysomayman
             // 
@@ -425,7 +434,7 @@
             this.toolStrip1.PerformLayout();
             this.dgtDanhsachtrunggiai.ResumeLayout(false);
             this.dgtDanhsachtrunggiai.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dsNhanGiai)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -439,10 +448,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dsQuay;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colSTT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colPhongban;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Label lbl4;
@@ -453,7 +458,7 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton lblErr;
         private System.Windows.Forms.GroupBox dgtDanhsachtrunggiai;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dsNhanGiai;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -463,5 +468,9 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btLayDanhSach;
         private System.Windows.Forms.Button btInDanhSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSTT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colPhongban;
     }
 }

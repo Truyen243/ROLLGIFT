@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cls_Main.cs" />
+    <Compile Include="Data\Giaithuong.cs" />
+    <Compile Include="Data\GiaithuongDAO.cs" />
+    <Compile Include="Data\Nhanvien.cs" />
+    <Compile Include="Data\NhanVienDAO.cs" />
+    <Compile Include="Data\NhanVienNhanGiai.cs" />
+    <Compile Include="Data\NhanVienNhanGiaiDAO.cs" />
     <Compile Include="Data\User.cs" />
     <Compile Include="Data\UserDAO.cs" />
     <Compile Include="Data\UserType.cs" />
