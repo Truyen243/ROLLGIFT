@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cls_Main.cs" />
+    <Compile Include="Common\XuatFileExcel.cs" />
     <Compile Include="Data\Giaithuong.cs" />
     <Compile Include="Data\GiaithuongDAO.cs" />
     <Compile Include="Data\Nhanvien.cs" />
@@ -181,5 +182,6 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
