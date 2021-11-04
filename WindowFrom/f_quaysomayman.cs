@@ -27,13 +27,14 @@ namespace WindowFrom
         NhanVienNhanGiaiDAO nhanVienNhanGiaiDAO;
         private void f_quaysomayman_Load(object sender, EventArgs e)
         {
+            
             employees = new List<Employee>();
             employeeDao = new EmployeeDao(Cls_Main.typeDatabase,Cls_Main.pathGiaiThuong);
             nhanVienNhanGiais = new List<NhanVienNhanGiai>();
             nhanVienNhanGiaiDAO = new NhanVienNhanGiaiDAO();
             LoadComboGiaiThuong();
 
-            MessageBox.Show("Chua chon danh sach");
+            
         }
         private void LoadComboGiaiThuong()
         {
@@ -52,27 +53,8 @@ namespace WindowFrom
         }*/
         private void btQuay_Click(object sender, EventArgs e)
         {
-            if (Nhanviens.Count > 0)
-            {
-                if (isOpen)
-                {
-                    timer1.Enabled = true;
-                    btQuay.Text = "Dừng";
-                    isOpen = false;
-
-                }
-                else
-                {
-                    timer1.Enabled = false;
-                    btQuay.Text = "Quay";
-                    isOpen = true;
-                    ThemDSGiai(NhanvienID);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Chưa chọn danh sách");
-            }
+            MessageBox.Show("Chua chon danh sach");
+            
 
         }
         private void btLayDanhSach_Click(object sender, EventArgs e)
@@ -85,8 +67,8 @@ namespace WindowFrom
             {
                 string path = openFileDialog.FileName;
                 //Gọi hàm đọc file
-                NhanVienDAO.DocFileDanhSach(path);
-                nhanviens = NhanVienDAO.nhanviens;
+                employeeDao.ReadData(path);
+                employees = employeeDao.nhanviens;
                 HienThiDanhSachNhanVien();
             }
             //openFileDialog.ShowDialog();
@@ -94,7 +76,7 @@ namespace WindowFrom
 
         private void HienThiDanhSachNhanVien()
         {
-            dsQuay.DataSource = nhanviens;
+            dsQuay.DataSource = employees;
             BindingSource bindingSource = new BindingSource();
             bindingSource.DataSource = bindingSource;
         }
