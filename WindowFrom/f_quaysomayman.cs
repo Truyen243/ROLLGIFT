@@ -17,6 +17,7 @@ namespace WindowFrom
     {
         List<Nhanvien> nhanviens;
         NhanVienDAO NhanVienDAO;
+
         public f_quaysomayman()
         {
             InitializeComponent();

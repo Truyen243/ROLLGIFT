@@ -110,7 +110,7 @@ namespace WindowFrom
             // 
             // label3
             // 
-            this.label3.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.label3.BackColor = System.Drawing.Color.Aqua;
             this.label3.Dock = System.Windows.Forms.DockStyle.Top;
             this.label3.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(0, 0);
