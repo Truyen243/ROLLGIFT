@@ -1,4 +1,6 @@
 ﻿using f_quaysomayman;
+using LibraryClass.EF;
+using LibraryClass.Dao;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,8 +17,8 @@ namespace WindowFrom
 {
     public partial class f_quaysomayman : Form
     {
-        List<Nhanvien> nhanviens;
-        NhanVienDAO NhanVienDAO;
+        List<Employee> employees;
+        EmployeeDao employeeDao;
 
         public f_quaysomayman()
         {
@@ -25,46 +27,35 @@ namespace WindowFrom
 
         List<NhanVienNhanGiai> nhanVienNhanGiais;
         NhanVienNhanGiaiDAO nhanVienNhanGiaiDAO;
+        GiaithuongDAO giaiThuong;
         private void frmQuaySoMayMan_Load(object sender, EventArgs e)
         {
-            Nhanviens = new List<Nhanvien>();
-            NhanVienDAO = new NhanVienDAO();
+            employees = new List<Employee>();
+
+            employeeDao = new EmployeeDao(Cls_Main.typeDatabase, Cls_Main.pathNhanVien);
+
             nhanVienNhanGiais = new List<NhanVienNhanGiai>();
             nhanVienNhanGiaiDAO = new NhanVienNhanGiaiDAO();
-            cbGiai();
 
 
+            LoadComboGiaiThuong();
+        }
+        private void LoadComboGiaiThuong()
+        {
+            giaiThuong = new GiaithuongDAO();
+            giaiThuong.DocNoiDung(Cls_Main.pathGiaiThuong);
+
+            cboGiaiThuong.DataSource = giaiThuong.giaiThuongs;
+
+            cboGiaiThuong.DisplayMember = "TenGiai";
+            cboGiaiThuong.ValueMember = "ID";
         }
         private void f_quaysomayman_Load(object sender, EventArgs e)
         {
              nhanviens= new List<Nhanvien>();
             NhanVienDAO= new NhanVienDAO();
         }
-        private void btQuay_Click(object sender, EventArgs e)
-        {
-            if (Nhanviens.Count > 0)
-            {
-                if (isOpen)
-                {
-                    timer1.Enabled = true;
-                    btQuay.Text = "Dừng";
-                    isOpen = false;
 
-                }
-                else
-                {
-                    timer1.Enabled = false;
-                    btQuay.Text = "Quay";
-                    isOpen = true;
-                    ThemDSGiai(NhanvienID);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Chưa chọn danh sách");
-            }
-
-        }
         private void btLayDanhSach_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
