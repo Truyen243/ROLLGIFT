@@ -12,6 +12,7 @@ namespace WindowFrom.Data
         public GiaiThuongDAO()
         {
             giaiThuongs = new List<Giaithuong>();
+
         }
 
         public void DocFileDanhSachGiaiThuong(string path)

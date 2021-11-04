@@ -1,6 +1,4 @@
-﻿using f_quaysomayman;
-using LibraryClass.EF;
-using LibraryClass.Dao;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,15 +9,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowFrom.Data;
-using WindowsFormsQuaySo;
 
+using LibraryClass.Dao;
+using LibraryClass.EF;
 namespace WindowFrom
 {
     public partial class f_quaysomayman : Form
     {
         List<Employee> employees;
         EmployeeDao employeeDao;
-
         public f_quaysomayman()
         {
             InitializeComponent();
@@ -27,35 +25,56 @@ namespace WindowFrom
 
         List<NhanVienNhanGiai> nhanVienNhanGiais;
         NhanVienNhanGiaiDAO nhanVienNhanGiaiDAO;
-        GiaithuongDAO giaiThuong;
-        private void frmQuaySoMayMan_Load(object sender, EventArgs e)
+        private void f_quaysomayman_Load(object sender, EventArgs e)
         {
             employees = new List<Employee>();
-
-            employeeDao = new EmployeeDao(Cls_Main.typeDatabase, Cls_Main.pathNhanVien);
-
+            employeeDao = new EmployeeDao(Cls_Main.typeDatabase,Cls_Main.pathGiaiThuong);
             nhanVienNhanGiais = new List<NhanVienNhanGiai>();
             nhanVienNhanGiaiDAO = new NhanVienNhanGiaiDAO();
-
-
             LoadComboGiaiThuong();
+
+            MessageBox.Show("Chua chon danh sach");
         }
         private void LoadComboGiaiThuong()
         {
-            giaiThuong = new GiaithuongDAO();
-            giaiThuong.DocNoiDung(Cls_Main.pathGiaiThuong);
+            GiaiThuongDAO giaiThuong = new GiaiThuongDAO();
+            giaiThuong.DocFileDanhSachGiaiThuong(Cls_Main.pathGiaiThuong);
 
-            cboGiaiThuong.DataSource = giaiThuong.giaiThuongs;
+            cbGiai.DataSource = giaiThuong.giaiThuongs;
 
-            cboGiaiThuong.DisplayMember = "TenGiai";
-            cboGiaiThuong.ValueMember = "ID";
+            cbGiai.DisplayMember = "TenGiai";
+            cbGiai.ValueMember = "ID";
         }
-        private void f_quaysomayman_Load(object sender, EventArgs e)
+       /* private void f_quaysomayman_Load(object sender, EventArgs e)
         {
              nhanviens= new List<Nhanvien>();
             NhanVienDAO= new NhanVienDAO();
-        }
+        }*/
+        private void btQuay_Click(object sender, EventArgs e)
+        {
+            if (Nhanviens.Count > 0)
+            {
+                if (isOpen)
+                {
+                    timer1.Enabled = true;
+                    btQuay.Text = "Dừng";
+                    isOpen = false;
 
+                }
+                else
+                {
+                    timer1.Enabled = false;
+                    btQuay.Text = "Quay";
+                    isOpen = true;
+                    ThemDSGiai(NhanvienID);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Chưa chọn danh sách");
+            }
+
+        }
         private void btLayDanhSach_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();

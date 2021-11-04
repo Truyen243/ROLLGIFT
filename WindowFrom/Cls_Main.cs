@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using WindowFrom.Data;
-
+using LibraryClass.DatabaseType;
 namespace WindowFrom
 {
     public class Cls_Main
