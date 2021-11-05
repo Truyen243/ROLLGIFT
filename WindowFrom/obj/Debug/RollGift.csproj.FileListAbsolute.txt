@@ -57,3 +57,17 @@ C:\Users\ASUS\Documents\C#\rollgift\Truyen243\Rollgift\WindowFrom\obj\Debug\Roll
 C:\Users\ASUS\Documents\C#\rollgift\Truyen243\Rollgift\WindowFrom\obj\Debug\RollGift.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Documents\C#\rollgift\Truyen243\Rollgift\WindowFrom\obj\Debug\WindowFrom.exe
 C:\Users\ASUS\Documents\C#\rollgift\Truyen243\Rollgift\WindowFrom\obj\Debug\WindowFrom.pdb
+D:\code\AppCs\WindowFrom-master\doan\ROLLGIFT2\WindowFrom\obj\Debug\RollGift.csproj.AssemblyReference.cache
+D:\code\AppCs\WindowFrom-master\doan\ROLLGIFT2\WindowFrom\obj\Debug\RollGift.csproj.ResolveComReference.cache
+D:\code\AppCs\WindowFrom-master\doan\ROLLGIFT2\WindowFrom\obj\Debug\WindowFrom.f_ChangedPassWord.resources
+D:\code\AppCs\WindowFrom-master\doan\ROLLGIFT2\WindowFrom\obj\Debug\WindowFrom.Form1.resources
+D:\code\AppCs\WindowFrom-master\doan\ROLLGIFT2\WindowFrom\obj\Debug\WindowFrom.f_Login.resources
+D:\code\AppCs\WindowFrom-master\doan\ROLLGIFT2\WindowFrom\obj\Debug\WindowFrom.f_Main.resources
+D:\code\AppCs\WindowFrom-master\doan\ROLLGIFT2\WindowFrom\obj\Debug\WindowFrom.f_quaysomayman.resources
+D:\code\AppCs\WindowFrom-master\doan\ROLLGIFT2\WindowFrom\obj\Debug\WindowFrom.f_User_Modifile.resources
+D:\code\AppCs\WindowFrom-master\doan\ROLLGIFT2\WindowFrom\obj\Debug\WindowFrom.f_User_Main.resources
+D:\code\AppCs\WindowFrom-master\doan\ROLLGIFT2\WindowFrom\obj\Debug\WindowFrom.Properties.Resources.resources
+D:\code\AppCs\WindowFrom-master\doan\ROLLGIFT2\WindowFrom\obj\Debug\RollGift.csproj.GenerateResource.cache
+D:\code\AppCs\WindowFrom-master\doan\ROLLGIFT2\WindowFrom\obj\Debug\RollGift.csproj.CoreCompileInputs.cache
+D:\code\AppCs\WindowFrom-master\doan\ROLLGIFT2\WindowFrom\obj\Debug\WindowFrom.exe
+D:\code\AppCs\WindowFrom-master\doan\ROLLGIFT2\WindowFrom\obj\Debug\WindowFrom.pdb
