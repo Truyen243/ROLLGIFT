@@ -68,7 +68,7 @@ namespace WindowFrom
                 string path = openFileDialog.FileName;
                 //Gọi hàm đọc file
                 employeeDao.ReadData(path);
-                employees = employeeDao.nhanviens;
+                employees = employeeDao.employees;
                 HienThiDanhSachNhanVien();
             }
             //openFileDialog.ShowDialog();
@@ -85,12 +85,13 @@ namespace WindowFrom
         {
             {
                 GiaiThuongDAO giaiThuong = new GiaiThuongDAO();
-                giaiThuong.DocFileDanhSachGiaiThuong(Application.StartupPath + @"\GiaiThuong.ini");
+                giaiThuong.DocFileDanhSachGiaiThuong(Cls_Main.pathGiaiThuong);
 
                 cbGiai.DataSource = giaiThuong.giaiThuongs;
 
-                cbGiai.DisplayMember = "TenGiai";
-                cbGiai.ValueMember = "ID";
+                cbGiai.DisplayMember = "tenGiai";
+                cbGiai.ValueMember = "iD";
+                
             }
             bool isOpen = true;
         }
@@ -160,6 +161,11 @@ namespace WindowFrom
         {
         }
         private void dgtDanhsachtrunggiai_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbGiai_Click(object sender, EventArgs e)
         {
 
         }

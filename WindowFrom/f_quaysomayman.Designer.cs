@@ -87,15 +87,17 @@
             // 
             // cbGiai
             // 
-            this.cbGiai.Font = new System.Drawing.Font("Microsoft Tai Le", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbGiai.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbGiai.FormattingEnabled = true;
             this.cbGiai.Items.AddRange(new object[] {
             "Đây là item"});
             this.cbGiai.Location = new System.Drawing.Point(133, 47);
             this.cbGiai.Name = "cbGiai";
-            this.cbGiai.Size = new System.Drawing.Size(322, 42);
+            this.cbGiai.Size = new System.Drawing.Size(322, 41);
             this.cbGiai.TabIndex = 1;
+            this.cbGiai.Text = "Chọn Giải Thưởng";
             this.cbGiai.SelectedIndexChanged += new System.EventHandler(this.CbGiai_SelectedIndexChanged);
+            this.cbGiai.Click += new System.EventHandler(this.cbGiai_Click);
             // 
             // label2
             // 
@@ -103,9 +105,8 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(2, 44);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 45);
+            this.label2.Size = new System.Drawing.Size(0, 45);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Chọn giải";
             // 
             // groupBox1
             // 
@@ -114,7 +115,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(897, 44);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(452, 552);
+            this.groupBox1.Size = new System.Drawing.Size(452, 548);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách quay";
@@ -146,7 +147,7 @@
             this.dsQuay.RowHeadersVisible = false;
             this.dsQuay.RowHeadersWidth = 51;
             this.dsQuay.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dsQuay.Size = new System.Drawing.Size(446, 515);
+            this.dsQuay.Size = new System.Drawing.Size(446, 511);
             this.dsQuay.TabIndex = 1;
             this.dsQuay.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dsQuay_CellContentClick);
             // 
@@ -281,9 +282,9 @@
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblErr});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 596);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 592);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1349, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(1349, 31);
             this.toolStrip1.TabIndex = 7;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -293,7 +294,7 @@
             this.lblErr.Image = ((System.Drawing.Image)(resources.GetObject("lblErr.Image")));
             this.lblErr.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.lblErr.Name = "lblErr";
-            this.lblErr.Size = new System.Drawing.Size(29, 24);
+            this.lblErr.Size = new System.Drawing.Size(29, 28);
             this.lblErr.Text = "...";
             // 
             // dgtDanhsachtrunggiai
@@ -303,7 +304,7 @@
             this.dgtDanhsachtrunggiai.Controls.Add(this.dataGridView1);
             this.dgtDanhsachtrunggiai.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgtDanhsachtrunggiai.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgtDanhsachtrunggiai.Location = new System.Drawing.Point(0, 393);
+            this.dgtDanhsachtrunggiai.Location = new System.Drawing.Point(0, 389);
             this.dgtDanhsachtrunggiai.Name = "dgtDanhsachtrunggiai";
             this.dgtDanhsachtrunggiai.Size = new System.Drawing.Size(897, 203);
             this.dgtDanhsachtrunggiai.TabIndex = 8;

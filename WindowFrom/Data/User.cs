@@ -23,7 +23,7 @@ namespace WindowFrom.Data
             this.Remember = remember;
             this.IdUserType = idUserType;
         }
-
+        
         public int ID { get => iD; set => iD = value; }
         public string FullName { get => fullName; set => fullName = value; }
         public string UserName { get => userName; set => userName = value; }
@@ -37,7 +37,7 @@ namespace WindowFrom.Data
             return string.Format("{0},{1},{2},{3},{4},{5},{6}", ID, FullName, Sex
                 ,UserName, PassWord, Remember.ToString(), IdUserType);
         }
-
+        public override int GetHashCode() { return 0; }
         public override bool Equals(object obj)
         {
             if (obj is User)

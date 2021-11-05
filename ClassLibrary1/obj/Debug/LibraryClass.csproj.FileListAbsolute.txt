@@ -4,3 +4,9 @@ D:\code\AppCs\WindowFrom-master\doan\ROLLGIFT2\ClassLibrary1\obj\Debug\LibraryCl
 D:\code\AppCs\WindowFrom-master\doan\ROLLGIFT2\ClassLibrary1\obj\Debug\LibraryClass.csproj.CoreCompileInputs.cache
 D:\code\AppCs\WindowFrom-master\doan\ROLLGIFT2\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 D:\code\AppCs\WindowFrom-master\doan\ROLLGIFT2\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\ASUS\Desktop\Roll\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\ASUS\Desktop\Roll\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\ASUS\Desktop\Roll\ClassLibrary1\obj\Debug\LibraryClass.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\Roll\ClassLibrary1\obj\Debug\LibraryClass.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Roll\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\ASUS\Desktop\Roll\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
