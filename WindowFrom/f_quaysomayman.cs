@@ -22,7 +22,7 @@ namespace WindowFrom
         {
             InitializeComponent();
         }
-
+        bool isOpen = fasle;//Diều khiển button, dừng và quay
         List<NhanVienNhanGiai> nhanVienNhanGiais;
         NhanVienNhanGiaiDAO nhanVienNhanGiaiDAO;
         private void f_quaysomayman_Load(object sender, EventArgs e)
@@ -33,8 +33,15 @@ namespace WindowFrom
             nhanVienNhanGiais = new List<NhanVienNhanGiai>();
             nhanVienNhanGiaiDAO = new NhanVienNhanGiaiDAO();
             LoadComboGiaiThuong();
+            GiaiThuongDAO giaiThuong = new GiaiThuongDAO();
+            giaiThuong.DocFileDanhSachGiaiThuong(Cls_Main.pathGiaiThuong);
 
+            cbGiai.DataSource = giaiThuong.giaiThuongs;
+
+            cbGiai.DisplayMember = "tenGiai";
+            cbGiai.ValueMember = "iD";
             
+
         }
         private void LoadComboGiaiThuong()
         {
@@ -45,18 +52,56 @@ namespace WindowFrom
 
             cbGiai.DisplayMember = "TenGiai";
             cbGiai.ValueMember = "ID";
+            
         }
-       /* private void f_quaysomayman_Load(object sender, EventArgs e)
-        {
-             nhanviens= new List<Nhanvien>();
-            NhanVienDAO= new NhanVienDAO();
-        }*/
+        /* private void f_quaysomayman_Load(object sender, EventArgs e)
+         {
+              nhanviens= new List<Nhanvien>();
+             NhanVienDAO= new NhanVienDAO();
+         }*/
+        int EmployeeID = 0;
         private void btQuay_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Chua chon danh sach");
-            
+            if (employees.Count > 0)
+            {
+                if (isOpen)
+                {
+                    timer1.Enabled = true;
+                    btQuay.Text = "Dừng";
+                    isOpen = false;
 
+                }
+                else
+                {
+                    timer1.Enabled = false;
+                    btQuay.Text = "Quay";
+                    isOpen = true;
+                    ThemDanhSachGiai(EmployeeID);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Chua chon danh sach");
+            }
+            
         }
+        private void ThemDanhSachGiai(int ID)
+        {
+            //Lấy danh sách nhân viên sau khi quay được giải theo mã số
+            Employee employee = employeeDao.GetNhanNhanTheoID(ID);
+            //Tạo một đối tượng nhân viên giải
+            NhanVienNhanGiai nhanVienNhanGiai = new NhanVienNhanGiai()
+            {
+                ID = employee.ID,
+                HoTen = employee.HoTen,
+                PhongBan = employee.PhongBan,
+                Giai = cboGiaiThuong.Text
+            };
+            //Thêm vào danh sách
+            nhanVienNhanGiais.Add(nhanVienNhanGiai);
+            HienThiDanhsachNhanGiai();
+        }
+
         private void btLayDanhSach_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -76,22 +121,27 @@ namespace WindowFrom
 
         private void HienThiDanhSachNhanVien()
         {
-            dsQuay.DataSource = employees;
+            int i = 1;
+            foreach (Employee item in employees)
+            {
+                item.STT = i++;
+            }
             BindingSource bindingSource = new BindingSource();
-            bindingSource.DataSource = bindingSource;
+            bindingSource.DataSource = employees;
+            dsQuay.DataSource = bindingSource;
         }
 
         private void CbGiai_SelectedIndexChanged(object sender, EventArgs e)
         {
             {
-                GiaiThuongDAO giaiThuong = new GiaiThuongDAO();
+               /* GiaiThuongDAO giaiThuong = new GiaiThuongDAO();
                 giaiThuong.DocFileDanhSachGiaiThuong(Cls_Main.pathGiaiThuong);
 
                 cbGiai.DataSource = giaiThuong.giaiThuongs;
 
                 cbGiai.DisplayMember = "tenGiai";
                 cbGiai.ValueMember = "iD";
-                
+                */
             }
             bool isOpen = true;
         }
@@ -143,11 +193,6 @@ namespace WindowFrom
 
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void toolTip1_Popup(object sender, PopupEventArgs e)
         {
 
@@ -167,6 +212,74 @@ namespace WindowFrom
 
         private void cbGiai_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Random random = new Random();//đối tượng sinh số ngẫu nhiên.
+            int a = random.Next(1, employees.Count);
+            EmployeeID = employees[a].ID;
+            TachID(EmployeeID);
+        }
+        private void TachID(int iD)
+        {
+            int number = iD;//1234
+            if (number > 0)
+            {
+                lbl1.Text = (number % 10).ToString();
+                number = number / 10;
+            }
+            if (number > 0)
+            {
+                lbl2.Text = (number % 10).ToString();
+                number = number / 10;
+            }
+            if (number > 0)
+            {
+                lbl3.Text = (number % 10).ToString();
+                number = number / 10;
+            }
+            if (number > 0)
+            {
+                lbl4.Text = (number % 10).ToString();
+                number = number / 10;
+            }
+            if (number > 0)
+            {
+                lbl5.Text = (number % 10).ToString();
+                number = number / 10;
+            }
+
+        }
+        private void TachID(int iD)
+        {
+            int number = iD;//1234
+            if (number > 0)
+            {
+                lbl1.Text = (number % 10).ToString();
+                number = number / 10;
+            }
+            if (number > 0)
+            {
+                lbl2.Text = (number % 10).ToString();
+                number = number / 10;
+            }
+            if (number > 0)
+            {
+                lbl3.Text = (number % 10).ToString();
+                number = number / 10;
+            }
+            if (number > 0)
+            {
+                lbl4.Text = (number % 10).ToString();
+                number = number / 10;
+            }
+            if (number > 0)
+            {
+                lbl5.Text = (number % 10).ToString();
+                number = number / 10;
+            }
 
         }
     }
