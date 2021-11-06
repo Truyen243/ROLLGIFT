@@ -44,9 +44,9 @@ namespace WindowFrom
                     {
                         
                         f_Main main = new f_Main();
-                        //this.Hide();
+                        this.Hide();
                         main.ShowDialog();
-                        //this.Close();
+                        this.Close();
                     }
                     else
                     {

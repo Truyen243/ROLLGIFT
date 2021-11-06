@@ -120,10 +120,12 @@ namespace WindowFrom
             openFileDialog.Filter = "Text files (*.ini)|*.ini|All files (*.*)|*.*";
             openFileDialog.Title = "Chọn danh sách quay";
             openFileDialog.InitialDirectory = Application.StartupPath;
+            
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string path = openFileDialog.FileName;
                 //Gọi hàm đọc file
+                employeeDao = new EmployeeDao(Cls_Main.typeDatabase, path);
                 employeeDao.ReadData(path);
                 employees = employeeDao.employees;
                 HienThiDanhSachNhanVien();

@@ -103,5 +103,11 @@ namespace WindowFrom
         {
 
         }
+
+        private void rollGiftToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            f_quaysomayman frm = new f_quaysomayman();
+            frm.Show();
+        }
     }
 }

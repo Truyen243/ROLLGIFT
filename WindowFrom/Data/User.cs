@@ -11,17 +11,20 @@ namespace WindowFrom.Data
         private string passWord;
         private bool remember;
         private int idUserType;
-
+        private string phongBan;
         //Contructor - hàm tạo cho đối tượng User
         public User() { }
 
-        public User(int iD, string userName, string passWord, bool remember, int idUserType)
+        public User(int iD, string fullName, bool sex, string userName, string passWord, bool remember, int idUserType, string phongBan)
         {
             this.ID = iD;
+            this.FullName = fullName;
+            this.Sex = sex;
             this.UserName = userName;
             this.PassWord = passWord;
             this.Remember = remember;
             this.IdUserType = idUserType;
+            this.PhongBan = phongBan;
         }
         
         public int ID { get => iD; set => iD = value; }
@@ -31,11 +34,11 @@ namespace WindowFrom.Data
         public string PassWord { get => passWord; set => passWord = value; }
         public bool Remember { get => remember; set => remember = value; }
         public int IdUserType { get => idUserType; set => idUserType = value; }
-
+        public string PhongBan { get => phongBan; set => phongBan = value; }
         public string GetString()
         {
-            return string.Format("{0},{1},{2},{3},{4},{5},{6}", ID, FullName, Sex
-                ,UserName, PassWord, Remember.ToString(), IdUserType);
+            return string.Format("{0},{1},{2},{3},{4},{5},{6},{7}", ID, FullName, Sex
+                ,UserName, PassWord, Remember.ToString(), IdUserType, PhongBan);
         }
         public override int GetHashCode() { return 0; }
         public override bool Equals(object obj)

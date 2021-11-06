@@ -38,6 +38,7 @@ namespace WindowFrom
             this.mnUserList = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsslblInFo = new System.Windows.Forms.ToolStripStatusLabel();
+            this.rollGiftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -47,11 +48,12 @@ namespace WindowFrom
             this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.thôngTinCáNhânToolStripMenuItem,
-            this.mnFile});
+            this.mnFile,
+            this.rollGiftToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip2.Size = new System.Drawing.Size(1053, 24);
+            this.menuStrip2.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip2.Size = new System.Drawing.Size(1404, 28);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -60,13 +62,13 @@ namespace WindowFrom
             this.thôngTinCáNhânToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnExit});
             this.thôngTinCáNhânToolStripMenuItem.Name = "thôngTinCáNhânToolStripMenuItem";
-            this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
             this.thôngTinCáNhânToolStripMenuItem.Text = "Home";
             // 
             // mnExit
             // 
             this.mnExit.Name = "mnExit";
-            this.mnExit.Size = new System.Drawing.Size(128, 22);
+            this.mnExit.Size = new System.Drawing.Size(160, 26);
             this.mnExit.Text = "Đăng xuất";
             this.mnExit.Click += new System.EventHandler(this.mnExit_Click);
             // 
@@ -77,27 +79,27 @@ namespace WindowFrom
             this.mnSignupAccount,
             this.mnUserList});
             this.mnFile.Name = "mnFile";
-            this.mnFile.Size = new System.Drawing.Size(57, 20);
+            this.mnFile.Size = new System.Drawing.Size(70, 24);
             this.mnFile.Text = "System";
             // 
             // mnChangedPassWord
             // 
             this.mnChangedPassWord.Name = "mnChangedPassWord";
-            this.mnChangedPassWord.Size = new System.Drawing.Size(177, 22);
+            this.mnChangedPassWord.Size = new System.Drawing.Size(224, 26);
             this.mnChangedPassWord.Text = "Changed PassWord";
             this.mnChangedPassWord.Click += new System.EventHandler(this.mnChangedPassWord_Click);
             // 
             // mnSignupAccount
             // 
             this.mnSignupAccount.Name = "mnSignupAccount";
-            this.mnSignupAccount.Size = new System.Drawing.Size(177, 22);
+            this.mnSignupAccount.Size = new System.Drawing.Size(224, 26);
             this.mnSignupAccount.Text = "Resgist User";
             this.mnSignupAccount.Click += new System.EventHandler(this.mnSignupAccount_Click_1);
             // 
             // mnUserList
             // 
             this.mnUserList.Name = "mnUserList";
-            this.mnUserList.Size = new System.Drawing.Size(177, 22);
+            this.mnUserList.Size = new System.Drawing.Size(224, 26);
             this.mnUserList.Text = "List User";
             this.mnUserList.Click += new System.EventHandler(this.mnUserList_Click);
             // 
@@ -106,29 +108,36 @@ namespace WindowFrom
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsslblInFo});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 563);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 694);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1053, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 13, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1404, 26);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // tsslblInFo
             // 
             this.tsslblInFo.Name = "tsslblInFo";
-            this.tsslblInFo.Size = new System.Drawing.Size(16, 17);
+            this.tsslblInFo.Size = new System.Drawing.Size(18, 20);
             this.tsslblInFo.Text = "...";
+            // 
+            // rollGiftToolStripMenuItem
+            // 
+            this.rollGiftToolStripMenuItem.Name = "rollGiftToolStripMenuItem";
+            this.rollGiftToolStripMenuItem.Size = new System.Drawing.Size(77, 24);
+            this.rollGiftToolStripMenuItem.Text = "Roll Gift";
+            this.rollGiftToolStripMenuItem.Click += new System.EventHandler(this.rollGiftToolStripMenuItem_Click);
             // 
             // f_Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1053, 585);
+            this.ClientSize = new System.Drawing.Size(1404, 720);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip2);
             this.HelpButton = true;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "f_Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Roll Gift";
@@ -154,5 +163,6 @@ namespace WindowFrom
         private System.Windows.Forms.ToolStripMenuItem mnChangedPassWord;
         private System.Windows.Forms.ToolStripMenuItem mnUserList;
         private System.Windows.Forms.ToolStripMenuItem mnSignupAccount;
+        private System.Windows.Forms.ToolStripMenuItem rollGiftToolStripMenuItem;
     }
 }

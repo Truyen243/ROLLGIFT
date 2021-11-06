@@ -23,7 +23,7 @@ namespace WindowFrom.Data
                 {
                     foreach (User item in listUser)
                     {
-                        sw.WriteLine(string.Format("{0},{1},{2},{3},{4},{5},{6}", item.ID,item.FullName, item.Sex.ToString(), item.UserName, item.PassWord,item.Remember.ToString(), item.IdUserType));
+                        sw.WriteLine(string.Format("{0},{1},{2},{3},{4},{5},{6},{7}", item.ID,item.FullName, item.Sex.ToString(), item.UserName, item.PassWord,item.Remember.ToString(), item.IdUserType,item.PhongBan));
                     }
                 }
             }
@@ -54,7 +54,7 @@ namespace WindowFrom.Data
                             user.PassWord = userArray[4];
                             user.Remember = Convert.ToBoolean(userArray[5].ToString());
                             user.IdUserType = Convert.ToInt32(userArray[6]);
-
+                            user.PhongBan = userArray[7];
                             //Thêm User vào danh sách listUser
                             listUser.Add(user);
                         }

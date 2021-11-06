@@ -41,6 +41,7 @@ namespace WindowFrom.Data
                                 PhongBan = vs[2],
                                 Giai = vs[3]
                             };
+                            
                             nhanVienNhanGiais.Add(nhanVienNhanGiai);
                         }
                     }

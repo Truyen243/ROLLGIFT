@@ -37,7 +37,7 @@ namespace LibraryClass.Dao
                     {
                         ID = Convert.ToInt32(vs[0]),
                         HoTen = vs[1],
-                        PhongBan = vs[2]
+                        PhongBan = vs[7]
                     };
                     employees.Add(employee);
                 }
