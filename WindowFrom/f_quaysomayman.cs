@@ -22,7 +22,7 @@ namespace WindowFrom
         {
             InitializeComponent();
         }
-        bool isOpen = fasle;//Diều khiển button, dừng và quay
+        bool isOpen = true;//Diều khiển button, dừng và quay
         List<NhanVienNhanGiai> nhanVienNhanGiais;
         NhanVienNhanGiaiDAO nhanVienNhanGiaiDAO;
         private void f_quaysomayman_Load(object sender, EventArgs e)
@@ -95,13 +95,25 @@ namespace WindowFrom
                 ID = employee.ID,
                 HoTen = employee.HoTen,
                 PhongBan = employee.PhongBan,
-                Giai = cboGiaiThuong.Text
+                Giai = cbGiai.Text
             };
             //Thêm vào danh sách
             nhanVienNhanGiais.Add(nhanVienNhanGiai);
             HienThiDanhsachNhanGiai();
         }
-
+        private void HienThiDanhsachNhanGiai()
+        {
+            int i = 1;
+            nhanVienNhanGiais.Sort();//tang dần
+            nhanVienNhanGiais.Reverse();//giam dần
+            foreach (NhanVienNhanGiai item in nhanVienNhanGiais)
+            {
+                item.STT = i++;
+            }
+            BindingSource bindingSource = new BindingSource();
+            bindingSource.DataSource = nhanVienNhanGiais;
+            dsNhanGiai.DataSource = bindingSource;
+        }
         private void btLayDanhSach_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -116,6 +128,7 @@ namespace WindowFrom
                 employees = employeeDao.employees;
                 HienThiDanhSachNhanVien();
             }
+            bool isOpen = true;
             //openFileDialog.ShowDialog();
         }
 
@@ -252,36 +265,7 @@ namespace WindowFrom
             }
 
         }
-        private void TachID(int iD)
-        {
-            int number = iD;//1234
-            if (number > 0)
-            {
-                lbl1.Text = (number % 10).ToString();
-                number = number / 10;
-            }
-            if (number > 0)
-            {
-                lbl2.Text = (number % 10).ToString();
-                number = number / 10;
-            }
-            if (number > 0)
-            {
-                lbl3.Text = (number % 10).ToString();
-                number = number / 10;
-            }
-            if (number > 0)
-            {
-                lbl4.Text = (number % 10).ToString();
-                number = number / 10;
-            }
-            if (number > 0)
-            {
-                lbl5.Text = (number % 10).ToString();
-                number = number / 10;
-            }
-
-        }
+        
     }
 }
 
