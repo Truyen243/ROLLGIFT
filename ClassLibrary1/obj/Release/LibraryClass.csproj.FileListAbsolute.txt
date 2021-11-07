@@ -1,0 +1,6 @@
+C:\Users\ASUS\Desktop\Roll2\ClassLibrary1\bin\Release\ClassLibrary1.dll
+C:\Users\ASUS\Desktop\Roll2\ClassLibrary1\bin\Release\ClassLibrary1.pdb
+C:\Users\ASUS\Desktop\Roll2\ClassLibrary1\obj\Release\LibraryClass.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\Roll2\ClassLibrary1\obj\Release\LibraryClass.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Roll2\ClassLibrary1\obj\Release\ClassLibrary1.dll
+C:\Users\ASUS\Desktop\Roll2\ClassLibrary1\obj\Release\ClassLibrary1.pdb

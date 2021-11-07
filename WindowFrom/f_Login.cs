@@ -13,7 +13,7 @@ namespace WindowFrom
             InitializeComponent();
         }
 
-        private List<User> listUser;
+        public List<User> listUser;
         UserDAO _userDAO;
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -29,7 +29,8 @@ namespace WindowFrom
             _userDAO = new UserDAO();
             _userDAO.GetUser(Cls_Main.pathfile);
             Cls_Main._listUser = _userDAO.listUser;
-            listUser = Cls_Main._listUser;
+            
+            listUser = _userDAO.listUser;
 
             getRem();
         }
@@ -94,8 +95,8 @@ namespace WindowFrom
                     using (StreamReader sr = new StreamReader(fs))
                     {
                         string line = string.Empty;
-                        User user;
-                        listUser.Clear();
+
+                        //listUser.Clear();
                         while ((line = sr.ReadLine()) != null)
                         {
                             //Kiểm tra xem line có giá trị hay không
@@ -113,8 +114,9 @@ namespace WindowFrom
         }    
         private bool Kiemtradangnhap(string userName, string passWord)
         {
-            foreach (User item in listUser)
+            foreach (User item in Cls_Main._listUser)
             {
+                //Console.WriteLine(item.GetString());
                 if (item.UserName.Equals(userName) && item.PassWord.Equals(passWord))
                 {
                     item.Remember = chbRemember.Checked;
@@ -138,7 +140,7 @@ namespace WindowFrom
         //hàm nhớ mật khẩu
         private void txbUserName_Leave(object sender, EventArgs e)
         {
-            /* foreach (User item in listUser)
+             foreach (User item in listUser)
              {
                  if (item.UserName==txbUserName.Text && item.Remember)
                  {
@@ -147,7 +149,7 @@ namespace WindowFrom
                      btnLogin.Focus();
                  }
              }
-            */
+            
         }
 
         private void label3_Click(object sender, EventArgs e)

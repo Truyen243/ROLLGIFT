@@ -1,0 +1,12 @@
+C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Release\RollGift.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Release\RollGift.csproj.ResolveComReference.cache
+C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Release\WindowFrom.f_ChangedPassWord.resources
+C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Release\WindowFrom.Form1.resources
+C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Release\WindowFrom.f_Login.resources
+C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Release\WindowFrom.f_Main.resources
+C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Release\WindowFrom.f_quaysomayman.resources
+C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Release\WindowFrom.f_User_Modifile.resources
+C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Release\WindowFrom.f_User_Main.resources
+C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Release\WindowFrom.Properties.Resources.resources
+C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Release\RollGift.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Release\RollGift.csproj.CoreCompileInputs.cache

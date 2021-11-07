@@ -62,6 +62,7 @@ namespace WindowFrom
             this.txbPassWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbPassWord.Location = new System.Drawing.Point(197, 163);
             this.txbPassWord.Name = "txbPassWord";
+            this.txbPassWord.PasswordChar = '*';
             this.txbPassWord.Size = new System.Drawing.Size(242, 27);
             this.txbPassWord.TabIndex = 2;
             this.txbPassWord.UseSystemPasswordChar = true;
