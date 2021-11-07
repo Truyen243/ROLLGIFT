@@ -29,6 +29,7 @@ namespace WindowFrom
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_Main));
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.HomeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnExit = new System.Windows.Forms.ToolStripMenuItem();
@@ -69,8 +70,9 @@ namespace WindowFrom
             // 
             // mnExit
             // 
+            this.mnExit.Image = ((System.Drawing.Image)(resources.GetObject("mnExit.Image")));
             this.mnExit.Name = "mnExit";
-            this.mnExit.Size = new System.Drawing.Size(180, 22);
+            this.mnExit.Size = new System.Drawing.Size(184, 26);
             this.mnExit.Text = "Đăng xuất";
             this.mnExit.Click += new System.EventHandler(this.mnExit_Click);
             // 
@@ -86,22 +88,25 @@ namespace WindowFrom
             // 
             // mnChangedPassWord
             // 
+            this.mnChangedPassWord.Image = ((System.Drawing.Image)(resources.GetObject("mnChangedPassWord.Image")));
             this.mnChangedPassWord.Name = "mnChangedPassWord";
-            this.mnChangedPassWord.Size = new System.Drawing.Size(180, 22);
+            this.mnChangedPassWord.Size = new System.Drawing.Size(184, 26);
             this.mnChangedPassWord.Text = "Changed PassWord";
             this.mnChangedPassWord.Click += new System.EventHandler(this.mnChangedPassWord_Click);
             // 
             // mnSignupAccount
             // 
+            this.mnSignupAccount.Image = ((System.Drawing.Image)(resources.GetObject("mnSignupAccount.Image")));
             this.mnSignupAccount.Name = "mnSignupAccount";
-            this.mnSignupAccount.Size = new System.Drawing.Size(180, 22);
-            this.mnSignupAccount.Text = "Resgist User";
+            this.mnSignupAccount.Size = new System.Drawing.Size(184, 26);
+            this.mnSignupAccount.Text = "Register User";
             this.mnSignupAccount.Click += new System.EventHandler(this.mnSignupAccount_Click_1);
             // 
             // mnUserList
             // 
+            this.mnUserList.Image = ((System.Drawing.Image)(resources.GetObject("mnUserList.Image")));
             this.mnUserList.Name = "mnUserList";
-            this.mnUserList.Size = new System.Drawing.Size(180, 22);
+            this.mnUserList.Size = new System.Drawing.Size(184, 26);
             this.mnUserList.Text = "List User";
             this.mnUserList.Click += new System.EventHandler(this.mnUserList_Click);
             // 

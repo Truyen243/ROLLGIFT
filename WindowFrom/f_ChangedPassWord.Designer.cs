@@ -49,7 +49,7 @@ namespace WindowFrom
             // 
             this.cboUser.FormattingEnabled = true;
             this.cboUser.Location = new System.Drawing.Point(136, 29);
-            this.cboUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboUser.Margin = new System.Windows.Forms.Padding(2);
             this.cboUser.Name = "cboUser";
             this.cboUser.Size = new System.Drawing.Size(169, 24);
             this.cboUser.TabIndex = 0;
@@ -74,9 +74,9 @@ namespace WindowFrom
             this.grbAdmin.Controls.Add(this.cboUser);
             this.grbAdmin.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbAdmin.Location = new System.Drawing.Point(18, 49);
-            this.grbAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbAdmin.Margin = new System.Windows.Forms.Padding(2);
             this.grbAdmin.Name = "grbAdmin";
-            this.grbAdmin.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbAdmin.Padding = new System.Windows.Forms.Padding(2);
             this.grbAdmin.Size = new System.Drawing.Size(324, 107);
             this.grbAdmin.TabIndex = 2;
             this.grbAdmin.TabStop = false;
@@ -96,7 +96,7 @@ namespace WindowFrom
             // btnRestPassword
             // 
             this.btnRestPassword.Location = new System.Drawing.Point(211, 56);
-            this.btnRestPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRestPassword.Margin = new System.Windows.Forms.Padding(2);
             this.btnRestPassword.Name = "btnRestPassword";
             this.btnRestPassword.Size = new System.Drawing.Size(86, 34);
             this.btnRestPassword.TabIndex = 1;
@@ -113,9 +113,9 @@ namespace WindowFrom
             this.grpUser.Controls.Add(this.txbPasswordNewOne);
             this.grpUser.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpUser.Location = new System.Drawing.Point(18, 160);
-            this.grpUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpUser.Margin = new System.Windows.Forms.Padding(2);
             this.grpUser.Name = "grpUser";
-            this.grpUser.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpUser.Padding = new System.Windows.Forms.Padding(2);
             this.grpUser.Size = new System.Drawing.Size(324, 130);
             this.grpUser.TabIndex = 3;
             this.grpUser.TabStop = false;
@@ -124,7 +124,7 @@ namespace WindowFrom
             // btnChangedPassword
             // 
             this.btnChangedPassword.Location = new System.Drawing.Point(211, 85);
-            this.btnChangedPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnChangedPassword.Margin = new System.Windows.Forms.Padding(2);
             this.btnChangedPassword.Name = "btnChangedPassword";
             this.btnChangedPassword.Size = new System.Drawing.Size(86, 34);
             this.btnChangedPassword.TabIndex = 4;
@@ -155,7 +155,7 @@ namespace WindowFrom
             // txbPasswordNewTow
             // 
             this.txbPasswordNewTow.Location = new System.Drawing.Point(148, 58);
-            this.txbPasswordNewTow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbPasswordNewTow.Margin = new System.Windows.Forms.Padding(2);
             this.txbPasswordNewTow.Name = "txbPasswordNewTow";
             this.txbPasswordNewTow.Size = new System.Drawing.Size(157, 23);
             this.txbPasswordNewTow.TabIndex = 1;
@@ -163,7 +163,7 @@ namespace WindowFrom
             // txbPasswordNewOne
             // 
             this.txbPasswordNewOne.Location = new System.Drawing.Point(148, 26);
-            this.txbPasswordNewOne.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbPasswordNewOne.Margin = new System.Windows.Forms.Padding(2);
             this.txbPasswordNewOne.Name = "txbPasswordNewOne";
             this.txbPasswordNewOne.Size = new System.Drawing.Size(157, 23);
             this.txbPasswordNewOne.TabIndex = 0;
@@ -189,12 +189,12 @@ namespace WindowFrom
             this.Controls.Add(this.grpUser);
             this.Controls.Add(this.grbAdmin);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "f_ChangedPassWord";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "f_ChangedPassWord";
+            this.Text = "Changed PassWord";
             this.Load += new System.EventHandler(this.f_ChangedPassWord_Load);
             this.grbAdmin.ResumeLayout(false);
             this.grbAdmin.PerformLayout();
