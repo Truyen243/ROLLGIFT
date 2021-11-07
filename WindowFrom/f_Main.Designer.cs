@@ -54,7 +54,7 @@ namespace WindowFrom
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip2.Size = new System.Drawing.Size(806, 28);
+            this.menuStrip2.Size = new System.Drawing.Size(741, 30);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -69,8 +69,9 @@ namespace WindowFrom
             // 
             // mnExit
             // 
+            this.mnExit.Image = ((System.Drawing.Image)(resources.GetObject("mnExit.Image")));
             this.mnExit.Name = "mnExit";
-            this.mnExit.Size = new System.Drawing.Size(160, 26);
+            this.mnExit.Size = new System.Drawing.Size(224, 26);
             this.mnExit.Text = "Đăng xuất";
             this.mnExit.Click += new System.EventHandler(this.mnExit_Click);
             // 
@@ -122,17 +123,18 @@ namespace WindowFrom
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsslblInFo});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 465);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 397);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 13, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(806, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(741, 26);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // tsslblInFo
             // 
+            this.tsslblInFo.Image = ((System.Drawing.Image)(resources.GetObject("tsslblInFo.Image")));
             this.tsslblInFo.Name = "tsslblInFo";
-            this.tsslblInFo.Size = new System.Drawing.Size(18, 20);
+            this.tsslblInFo.Size = new System.Drawing.Size(38, 20);
             this.tsslblInFo.Text = "...";
             // 
             // f_Main
@@ -140,14 +142,16 @@ namespace WindowFrom
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(806, 491);
+            this.ClientSize = new System.Drawing.Size(741, 423);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip2);
             this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "f_Main";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Roll Gift";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "Manage Aplication";
+            this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.f_Main_FormClosing);
             this.Load += new System.EventHandler(this.f_Main_Load);
