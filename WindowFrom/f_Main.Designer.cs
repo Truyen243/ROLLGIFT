@@ -46,14 +46,20 @@ namespace WindowFrom
             // 
             // menuStrip2
             // 
+            this.menuStrip2.GripMargin = new System.Windows.Forms.Padding(2, 20, 0, 2);
+            this.menuStrip2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip2.ImeMode = System.Windows.Forms.ImeMode.Katakana;
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.thôngTinCáNhânToolStripMenuItem,
             this.mnFile,
             this.rollGiftToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip2.Margin = new System.Windows.Forms.Padding(20);
+            this.menuStrip2.MdiWindowListItem = this.mnFile;
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.menuStrip2.Size = new System.Drawing.Size(741, 28);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuStrip2";
@@ -71,7 +77,7 @@ namespace WindowFrom
             // 
             this.mnExit.Image = ((System.Drawing.Image)(resources.GetObject("mnExit.Image")));
             this.mnExit.Name = "mnExit";
-            this.mnExit.Size = new System.Drawing.Size(224, 26);
+            this.mnExit.Size = new System.Drawing.Size(160, 26);
             this.mnExit.Text = "Đăng xuất";
             this.mnExit.Click += new System.EventHandler(this.mnExit_Click);
             // 
@@ -90,7 +96,7 @@ namespace WindowFrom
             // 
             this.mnChangedPassWord.Image = ((System.Drawing.Image)(resources.GetObject("mnChangedPassWord.Image")));
             this.mnChangedPassWord.Name = "mnChangedPassWord";
-            this.mnChangedPassWord.Size = new System.Drawing.Size(224, 26);
+            this.mnChangedPassWord.Size = new System.Drawing.Size(218, 26);
             this.mnChangedPassWord.Text = "Changed PassWord";
             this.mnChangedPassWord.Click += new System.EventHandler(this.mnChangedPassWord_Click);
             // 
@@ -98,7 +104,7 @@ namespace WindowFrom
             // 
             this.mnSignupAccount.Image = ((System.Drawing.Image)(resources.GetObject("mnSignupAccount.Image")));
             this.mnSignupAccount.Name = "mnSignupAccount";
-            this.mnSignupAccount.Size = new System.Drawing.Size(224, 26);
+            this.mnSignupAccount.Size = new System.Drawing.Size(218, 26);
             this.mnSignupAccount.Text = "Resgist User";
             this.mnSignupAccount.Click += new System.EventHandler(this.mnSignupAccount_Click_1);
             // 
@@ -106,7 +112,7 @@ namespace WindowFrom
             // 
             this.mnUserList.Image = ((System.Drawing.Image)(resources.GetObject("mnUserList.Image")));
             this.mnUserList.Name = "mnUserList";
-            this.mnUserList.Size = new System.Drawing.Size(224, 26);
+            this.mnUserList.Size = new System.Drawing.Size(218, 26);
             this.mnUserList.Text = "Manage User";
             this.mnUserList.Click += new System.EventHandler(this.mnUserList_Click);
             // 
@@ -139,20 +145,26 @@ namespace WindowFrom
             // 
             // f_Main
             // 
+            this.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(741, 423);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.IsMdiContainer = true;
+            this.KeyPreview = true;
+            this.Location = new System.Drawing.Point(50, 50);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "f_Main";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Aplication";
             this.TopMost = true;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.f_Main_FormClosing);
             this.Load += new System.EventHandler(this.f_Main_Load);
             this.menuStrip2.ResumeLayout(false);

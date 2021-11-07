@@ -110,6 +110,9 @@
     <EmbeddedResource Include="f_Login.resx">
       <DependentUpon>f_Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="f_Main.aa-DJ.resx">
+      <DependentUpon>f_Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="f_Main.resx">
       <DependentUpon>f_Main.cs</DependentUpon>
     </EmbeddedResource>

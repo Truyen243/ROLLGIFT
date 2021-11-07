@@ -111,3 +111,6 @@ C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Debug\RollGift.csproj.CoreCompileInpu
 C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Debug\RollGift.csproj.CopyComplete
 C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Debug\WindowFrom.exe
 C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Debug\WindowFrom.pdb
+C:\Users\ASUS\Desktop\Roll2\WindowFrom\bin\Debug\aa-DJ\WindowFrom.resources.dll
+C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Debug\WindowFrom.f_Main.aa-DJ.resources
+C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Debug\aa-DJ\WindowFrom.resources.dll
