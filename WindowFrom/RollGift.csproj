@@ -101,6 +101,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RJControls\RJButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RJControls\RJButton.Designer.cs">
+      <DependentUpon>RJButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="RJControls\RJTextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
