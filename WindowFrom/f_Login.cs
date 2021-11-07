@@ -32,23 +32,6 @@ namespace WindowFrom
         }
         //Khởi tạo shadown
         private const int CS_DropShadow = 0 * 00020000;
-        protected override CreateParams CreateParams
-        {
-            get
-            {
-                CreateParams cp = base.CreateParams;
-                cp.ClassStyle |= CS_DropShadow;
-                return cp;
-            }
-        }
-
-        public Color BorderColor { get => borderColor; set => borderColor = value; }
-        public int BoderSize1 { get => BoderSize; set => BoderSize = value; }
-        public bool UnderlineStyle { get => underlineStyle; set => underlineStyle = value; }
-        public Color BorderColor1 { get => borderColor; set => borderColor = value; }
-        public int BoderSize2 { get => BoderSize; set => BoderSize = value; }
-        public bool UnderlineStyle1 { get => underlineStyle; set => underlineStyle = value; }
-
         public List<User> listUser;
         UserDAO _userDAO;
 
