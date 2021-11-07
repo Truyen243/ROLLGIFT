@@ -9,10 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowFrom.Data;
-
 using LibraryClass.Dao;
 using LibraryClass.EF;
 namespace WindowFrom
+
 {
     public partial class f_quaysomayman : Form
     {
@@ -21,6 +21,7 @@ namespace WindowFrom
         public f_quaysomayman()
         {
             InitializeComponent();
+            
         }
         bool isOpen = true;//Diều khiển button, dừng và quay
         List<NhanVienNhanGiai> nhanVienNhanGiais;
@@ -81,7 +82,7 @@ namespace WindowFrom
             }
             else
             {
-                MessageBox.Show("Chua chon danh sach");
+                MessageBox.Show("Chưa chọn danh sá'ch");
             }
             
         }
@@ -267,7 +268,6 @@ namespace WindowFrom
             }
 
         }
-        
     }
 }
 

@@ -74,7 +74,7 @@ namespace WindowFrom
             this.btnRefrecsh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefrecsh.Image")));
             this.btnRefrecsh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnRefrecsh.Name = "btnRefrecsh";
-            this.btnRefrecsh.Size = new System.Drawing.Size(91, 24);
+            this.btnRefrecsh.Size = new System.Drawing.Size(78, 24);
             this.btnRefrecsh.Text = "Làm mới";
             this.btnRefrecsh.Click += new System.EventHandler(this.btnRefrecsh_Click);
             // 
@@ -83,7 +83,7 @@ namespace WindowFrom
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(70, 24);
+            this.btnAdd.Size = new System.Drawing.Size(61, 24);
             this.btnAdd.Text = "Thêm";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -92,7 +92,7 @@ namespace WindowFrom
             this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
             this.btnUpdate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(58, 24);
+            this.btnUpdate.Size = new System.Drawing.Size(50, 24);
             this.btnUpdate.Text = "Sửa";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
@@ -101,7 +101,7 @@ namespace WindowFrom
             this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
             this.btnDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(59, 24);
+            this.btnDelete.Size = new System.Drawing.Size(51, 24);
             this.btnDelete.Text = "Xóa";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -110,7 +110,7 @@ namespace WindowFrom
             this.Exit.Image = ((System.Drawing.Image)(resources.GetObject("Exit.Image")));
             this.Exit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(71, 24);
+            this.Exit.Size = new System.Drawing.Size(61, 24);
             this.Exit.Text = "Thoát";
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
@@ -120,22 +120,22 @@ namespace WindowFrom
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.lblQuantity});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 546);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 550);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1069, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(1069, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(101, 20);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(82, 17);
             this.toolStripStatusLabel1.Text = "User Quantity:";
             // 
             // lblQuantity
             // 
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(17, 20);
+            this.lblQuantity.Size = new System.Drawing.Size(13, 17);
             this.lblQuantity.Text = "0";
             // 
             // dgvUserList
@@ -144,7 +144,7 @@ namespace WindowFrom
             this.dgvUserList.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvUserList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvUserList.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvUserList.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -169,7 +169,7 @@ namespace WindowFrom
             this.dgvUserList.RowHeadersWidth = 51;
             this.dgvUserList.RowTemplate.Height = 32;
             this.dgvUserList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUserList.Size = new System.Drawing.Size(1069, 519);
+            this.dgvUserList.Size = new System.Drawing.Size(1069, 523);
             this.dgvUserList.TabIndex = 2;
             this.dgvUserList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dgvUserList.Click += new System.EventHandler(this.dgvUserList_Click);
@@ -244,7 +244,7 @@ namespace WindowFrom
             // 
             // f_User_Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1069, 572);
             this.Controls.Add(this.dgvUserList);

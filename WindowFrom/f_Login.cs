@@ -3,15 +3,51 @@ using System.IO;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using WindowFrom.Data;
+using System.Drawing;
+using System.Runtime.InteropServices;
 
 namespace WindowFrom
 {
     public partial class f_Login : Form
     {
+ 
+        //Khai báo
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+        (
+            int nLeftRect,     // x-coordinate of upper-left corner
+            int nTopRect,      // y-coordinate of upper-left corner
+            int nRightRect,    // x-coordinate of lower-right corner
+            int nBottomRect,   // y-coordinate of lower-right corner
+            int nWidthEllipse, // height of ellipse
+            int nHeightEllipse // width of ellipse
+        );
+        //constructor
         public f_Login()
         {
             InitializeComponent();
+            //Tạo đường viền boder-radius 10 px
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 15, 15));
         }
+        //Khởi tạo shadown
+        private const int CS_DropShadow = 0 * 00020000;
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ClassStyle |= CS_DropShadow;
+                return cp;
+            }
+        }
+
+        public Color BorderColor { get => borderColor; set => borderColor = value; }
+        public int BoderSize1 { get => BoderSize; set => BoderSize = value; }
+        public bool UnderlineStyle { get => underlineStyle; set => underlineStyle = value; }
+        public Color BorderColor1 { get => borderColor; set => borderColor = value; }
+        public int BoderSize2 { get => BoderSize; set => BoderSize = value; }
+        public bool UnderlineStyle1 { get => underlineStyle; set => underlineStyle = value; }
 
         public List<User> listUser;
         UserDAO _userDAO;
@@ -150,11 +186,6 @@ namespace WindowFrom
                  }
              }
             
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

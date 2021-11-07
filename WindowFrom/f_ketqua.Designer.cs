@@ -47,6 +47,7 @@ namespace WindowFrom
             this.label1.Size = new System.Drawing.Size(312, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Danh sách đăng ký quay";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dataGridView1
             // 

@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\WindowFrom",
+    "\\WindowFrom\\Data"
   ],
-  "SelectedNode": "\\RollGift.sln",
+  "SelectedNode": "\\WindowFrom\\f_Main.Designer.cs",
   "PreviewInSolutionExplorer": false
 }

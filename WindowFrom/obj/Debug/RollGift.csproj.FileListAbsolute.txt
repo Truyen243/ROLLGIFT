@@ -111,3 +111,24 @@ C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Debug\RollGift.csproj.CoreCompileInpu
 C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Debug\RollGift.csproj.CopyComplete
 C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Debug\WindowFrom.exe
 C:\Users\ASUS\Desktop\Roll2\WindowFrom\obj\Debug\WindowFrom.pdb
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\bin\Debug\WindowFrom.exe.config
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\bin\Debug\WindowFrom.exe
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\bin\Debug\WindowFrom.pdb
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\bin\Debug\ClassLibrary1.dll
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\bin\Debug\ClassLibrary1.pdb
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\obj\Debug\RollGift.csproj.AssemblyReference.cache
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\obj\Debug\RollGift.csproj.ResolveComReference.cache
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\obj\Debug\WindowFrom.f_ChangedPassWord.resources
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\obj\Debug\WindowFrom.Form1.resources
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\obj\Debug\WindowFrom.f_Login.resources
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\obj\Debug\WindowFrom.f_Main.resources
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\obj\Debug\WindowFrom.f_quaysomayman.resources
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\obj\Debug\WindowFrom.f_User_Modifile.resources
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\obj\Debug\WindowFrom.f_User_Main.resources
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\obj\Debug\WindowFrom.Properties.Resources.resources
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\obj\Debug\RollGift.csproj.GenerateResource.cache
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\obj\Debug\RollGift.csproj.CoreCompileInputs.cache
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\obj\Debug\RollGift.csproj.CopyComplete
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\obj\Debug\WindowFrom.exe
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\obj\Debug\WindowFrom.pdb
+D:\Local Disk\2021-2022\Csharp\BaoCao\WindowFrom\obj\Debug\CustomControls.RJControls.RJTextBox.resources

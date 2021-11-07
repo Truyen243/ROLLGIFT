@@ -38,7 +38,8 @@ namespace WindowFrom
 
             // Xóa thông tin User trong lần đăng nhập trước
             Cls_Main._staticUser = null;
-            //Application.Exit();
+            Application.Exit();
+            
             Close();
 
         }
@@ -106,8 +107,13 @@ namespace WindowFrom
 
         private void rollGiftToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            f_quaysomayman frm = new f_quaysomayman();
-            frm.Show();
+            f_quaysomayman f_roll = new f_quaysomayman();
+            f_roll.ShowDialog();
+        }
+
+        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
