@@ -82,7 +82,7 @@ namespace WindowFrom
             }
             else
             {
-                MessageBox.Show("Chưa chọn danh sá'ch");
+                MessageBox.Show("chưa chọn danh sách");
             }
             
         }

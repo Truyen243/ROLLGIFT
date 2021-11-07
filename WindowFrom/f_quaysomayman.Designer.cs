@@ -90,9 +90,9 @@
             // cbGiai
             // 
             this.cbGiai.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbGiai.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.cbGiai.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cbGiai.FormattingEnabled = true;
-            this.cbGiai.Location = new System.Drawing.Point(12, 51);
+            this.cbGiai.Location = new System.Drawing.Point(22, 51);
             this.cbGiai.Name = "cbGiai";
             this.cbGiai.Size = new System.Drawing.Size(322, 31);
             this.cbGiai.TabIndex = 1;
@@ -114,7 +114,7 @@
             this.groupBox1.Controls.Add(this.dsQuay);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.groupBox1.Location = new System.Drawing.Point(897, 44);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(452, 554);
@@ -274,7 +274,7 @@
             // btQuay
             // 
             this.btQuay.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btQuay.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btQuay.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btQuay.Location = new System.Drawing.Point(489, 50);
             this.btQuay.Name = "btQuay";
             this.btQuay.Size = new System.Drawing.Size(123, 32);
@@ -310,7 +310,7 @@
             this.dgtDanhsachtrunggiai.Controls.Add(this.dataGridView1);
             this.dgtDanhsachtrunggiai.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgtDanhsachtrunggiai.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgtDanhsachtrunggiai.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.dgtDanhsachtrunggiai.ForeColor = System.Drawing.SystemColors.ControlText;
             this.dgtDanhsachtrunggiai.Location = new System.Drawing.Point(0, 395);
             this.dgtDanhsachtrunggiai.Name = "dgtDanhsachtrunggiai";
             this.dgtDanhsachtrunggiai.Size = new System.Drawing.Size(897, 203);
@@ -422,7 +422,7 @@
             // btLayDanhSach
             // 
             this.btLayDanhSach.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLayDanhSach.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btLayDanhSach.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btLayDanhSach.Location = new System.Drawing.Point(618, 49);
             this.btLayDanhSach.Name = "btLayDanhSach";
             this.btLayDanhSach.Size = new System.Drawing.Size(123, 32);
@@ -434,7 +434,7 @@
             // btInDanhSach
             // 
             this.btInDanhSach.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInDanhSach.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btInDanhSach.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btInDanhSach.Location = new System.Drawing.Point(747, 49);
             this.btInDanhSach.Name = "btInDanhSach";
             this.btInDanhSach.Size = new System.Drawing.Size(123, 32);
