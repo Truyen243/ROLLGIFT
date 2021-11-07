@@ -29,6 +29,7 @@ namespace WindowFrom
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_Main));
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.thôngTinCáNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnExit = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,9 +37,9 @@ namespace WindowFrom
             this.mnChangedPassWord = new System.Windows.Forms.ToolStripMenuItem();
             this.mnSignupAccount = new System.Windows.Forms.ToolStripMenuItem();
             this.mnUserList = new System.Windows.Forms.ToolStripMenuItem();
+            this.rollGiftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsslblInFo = new System.Windows.Forms.ToolStripStatusLabel();
-            this.rollGiftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +54,7 @@ namespace WindowFrom
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip2.Size = new System.Drawing.Size(1404, 28);
+            this.menuStrip2.Size = new System.Drawing.Size(806, 28);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -61,8 +62,9 @@ namespace WindowFrom
             // 
             this.thôngTinCáNhânToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnExit});
+            this.thôngTinCáNhânToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("thôngTinCáNhânToolStripMenuItem.Image")));
             this.thôngTinCáNhânToolStripMenuItem.Name = "thôngTinCáNhânToolStripMenuItem";
-            this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+            this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
             this.thôngTinCáNhânToolStripMenuItem.Text = "Home";
             // 
             // mnExit
@@ -78,12 +80,14 @@ namespace WindowFrom
             this.mnChangedPassWord,
             this.mnSignupAccount,
             this.mnUserList});
+            this.mnFile.Image = ((System.Drawing.Image)(resources.GetObject("mnFile.Image")));
             this.mnFile.Name = "mnFile";
-            this.mnFile.Size = new System.Drawing.Size(70, 24);
-            this.mnFile.Text = "System";
+            this.mnFile.Size = new System.Drawing.Size(97, 24);
+            this.mnFile.Text = "Manage";
             // 
             // mnChangedPassWord
             // 
+            this.mnChangedPassWord.Image = ((System.Drawing.Image)(resources.GetObject("mnChangedPassWord.Image")));
             this.mnChangedPassWord.Name = "mnChangedPassWord";
             this.mnChangedPassWord.Size = new System.Drawing.Size(224, 26);
             this.mnChangedPassWord.Text = "Changed PassWord";
@@ -91,6 +95,7 @@ namespace WindowFrom
             // 
             // mnSignupAccount
             // 
+            this.mnSignupAccount.Image = ((System.Drawing.Image)(resources.GetObject("mnSignupAccount.Image")));
             this.mnSignupAccount.Name = "mnSignupAccount";
             this.mnSignupAccount.Size = new System.Drawing.Size(224, 26);
             this.mnSignupAccount.Text = "Resgist User";
@@ -98,20 +103,29 @@ namespace WindowFrom
             // 
             // mnUserList
             // 
+            this.mnUserList.Image = ((System.Drawing.Image)(resources.GetObject("mnUserList.Image")));
             this.mnUserList.Name = "mnUserList";
             this.mnUserList.Size = new System.Drawing.Size(224, 26);
-            this.mnUserList.Text = "List User";
+            this.mnUserList.Text = "Manage User";
             this.mnUserList.Click += new System.EventHandler(this.mnUserList_Click);
+            // 
+            // rollGiftToolStripMenuItem
+            // 
+            this.rollGiftToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("rollGiftToolStripMenuItem.Image")));
+            this.rollGiftToolStripMenuItem.Name = "rollGiftToolStripMenuItem";
+            this.rollGiftToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
+            this.rollGiftToolStripMenuItem.Text = "Roll Gift";
+            this.rollGiftToolStripMenuItem.Click += new System.EventHandler(this.rollGiftToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsslblInFo});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 694);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 465);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 13, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1404, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(806, 26);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -121,19 +135,12 @@ namespace WindowFrom
             this.tsslblInFo.Size = new System.Drawing.Size(18, 20);
             this.tsslblInFo.Text = "...";
             // 
-            // rollGiftToolStripMenuItem
-            // 
-            this.rollGiftToolStripMenuItem.Name = "rollGiftToolStripMenuItem";
-            this.rollGiftToolStripMenuItem.Size = new System.Drawing.Size(77, 24);
-            this.rollGiftToolStripMenuItem.Text = "Roll Gift";
-            this.rollGiftToolStripMenuItem.Click += new System.EventHandler(this.rollGiftToolStripMenuItem_Click);
-            // 
             // f_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1404, 720);
+            this.ClientSize = new System.Drawing.Size(806, 491);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip2);
             this.HelpButton = true;

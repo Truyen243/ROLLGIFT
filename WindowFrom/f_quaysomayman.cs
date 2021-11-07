@@ -32,7 +32,7 @@ namespace WindowFrom
             employeeDao = new EmployeeDao(Cls_Main.typeDatabase,Cls_Main.pathGiaiThuong);
             nhanVienNhanGiais = new List<NhanVienNhanGiai>();
             nhanVienNhanGiaiDAO = new NhanVienNhanGiaiDAO();
-            LoadComboGiaiThuong();
+           /* LoadComboGiaiThuong();
             GiaiThuongDAO giaiThuong = new GiaiThuongDAO();
             giaiThuong.DocFileDanhSachGiaiThuong(Cls_Main.pathGiaiThuong);
 
@@ -40,13 +40,13 @@ namespace WindowFrom
 
             cbGiai.DisplayMember = "tenGiai";
             cbGiai.ValueMember = "iD";
-            
+            */
 
         }
-        private void LoadComboGiaiThuong()
+        private void LoadComboGiaiThuong(string pathGiaiThuong)
         {
             GiaiThuongDAO giaiThuong = new GiaiThuongDAO();
-            giaiThuong.DocFileDanhSachGiaiThuong(Cls_Main.pathGiaiThuong);
+            giaiThuong.DocFileDanhSachGiaiThuong(pathGiaiThuong);
 
             cbGiai.DataSource = giaiThuong.giaiThuongs;
 
@@ -267,7 +267,21 @@ namespace WindowFrom
             }
 
         }
-        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Text files (*.ini)|*.ini|All files (*.*)|*.*";
+            openFileDialog.Title = "Chọn file chứa các giải thưởng";
+            openFileDialog.InitialDirectory = Application.StartupPath;
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string path = openFileDialog.FileName;
+                //Gọi hàm đọc file
+                LoadComboGiaiThuong(path);
+            }
+        }
     }
 }
 
