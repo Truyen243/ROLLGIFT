@@ -10,3 +10,9 @@ C:\Users\ASUS\Desktop\Roll\ClassLibrary1\obj\Debug\LibraryClass.csproj.AssemblyR
 C:\Users\ASUS\Desktop\Roll\ClassLibrary1\obj\Debug\LibraryClass.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Desktop\Roll\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 C:\Users\ASUS\Desktop\Roll\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\ASUS\Desktop\Roll2\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\ASUS\Desktop\Roll2\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\ASUS\Desktop\Roll2\ClassLibrary1\obj\Debug\LibraryClass.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\Roll2\ClassLibrary1\obj\Debug\LibraryClass.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Roll2\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\ASUS\Desktop\Roll2\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

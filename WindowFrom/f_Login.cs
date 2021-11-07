@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using WindowFrom.Data;
@@ -28,9 +29,9 @@ namespace WindowFrom
             _userDAO = new UserDAO();
             _userDAO.GetUser(Cls_Main.pathfile);
             Cls_Main._listUser = _userDAO.listUser;
-
-
             listUser = Cls_Main._listUser;
+
+            getRem();
         }
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -42,6 +43,15 @@ namespace WindowFrom
                     
                     if(Kiemtradangnhap(txbUserName.Text, txbPassWord.Text))
                     {
+                        if(chbRemember.Checked)
+                        {
+                            SaveRem(Cls_Main.pathRem);
+                        }
+                        else if (File.Exists(Cls_Main.pathRem))
+                        {
+                            File.Delete(Cls_Main.pathRem);
+                        }
+                        
                         
                         f_Main main = new f_Main();
                         this.Hide();
@@ -55,7 +65,52 @@ namespace WindowFrom
                 }
             }
         }
+        // hàm để lưu mật khẩu
+        public void SaveRem(string path)
+        {
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+            }
+            using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.Write))
+            {
+                using (StreamWriter sw = new StreamWriter(fs))
+                {
 
+
+                        sw.WriteLine(string.Format("{0},{1}", txbUserName.Text, txbPassWord.Text));
+
+                }
+            }
+        }    
+        // hàm để lấy tài khoản mật khẩu đã lưu
+        public void getRem()
+        {
+            string path = Cls_Main.pathRem;
+            if (File.Exists(path))
+            {
+                using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Read, FileShare.Read))
+                {
+                    using (StreamReader sr = new StreamReader(fs))
+                    {
+                        string line = string.Empty;
+                        User user;
+                        listUser.Clear();
+                        while ((line = sr.ReadLine()) != null)
+                        {
+                            //Kiểm tra xem line có giá trị hay không
+                            if (!string.IsNullOrEmpty(line))
+                            {
+                                string[] userArray = line.Split(',');
+                                txbUserName.Text = userArray[0];
+                                txbPassWord.Text = userArray[1];
+                            }
+                        }
+
+                    }
+                }
+            }
+        }    
         private bool Kiemtradangnhap(string userName, string passWord)
         {
             foreach (User item in listUser)
@@ -83,15 +138,16 @@ namespace WindowFrom
         //hàm nhớ mật khẩu
         private void txbUserName_Leave(object sender, EventArgs e)
         {
-            foreach (User item in listUser)
-            {
-                if (item.UserName==txbUserName.Text && item.Remember)
-                {
-                    chbRemember.Checked = true;
-                    txbPassWord.Text = item.PassWord;
-                    btnLogin.Focus();
-                }
-            }
+            /* foreach (User item in listUser)
+             {
+                 if (item.UserName==txbUserName.Text && item.Remember)
+                 {
+                     chbRemember.Checked = true;
+                     txbPassWord.Text = item.PassWord;
+                     btnLogin.Focus();
+                 }
+             }
+            */
         }
 
         private void label3_Click(object sender, EventArgs e)

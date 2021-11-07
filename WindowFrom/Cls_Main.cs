@@ -13,6 +13,7 @@ namespace WindowFrom
         public static List<User> _listUser = new UserDAO().listUser;
         //Biến lưu đường dẫn file text
         public static string pathfile = string.Format(@"{0}\listUser.ini", Application.StartupPath);
+        public static string pathRem = string.Format(@"{0}\rem.ini", Application.StartupPath);
         public static string pathGiaiThuong = Application.StartupPath + @"\Giai.ini";
         public static string pathNhanVienNhanGiai = Application.StartupPath + @"\NhanVienNhanGiai.ini";
         public static string pathNhanVienNhanGiaiExcel = Application.StartupPath + @"\NhanVienNhanGiai.xls";

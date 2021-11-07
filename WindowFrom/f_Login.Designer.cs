@@ -56,7 +56,6 @@ namespace WindowFrom
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.Size = new System.Drawing.Size(242, 27);
             this.txbUserName.TabIndex = 1;
-            this.txbUserName.Leave += new System.EventHandler(this.txbUserName_Leave);
             // 
             // txbPassWord
             // 
