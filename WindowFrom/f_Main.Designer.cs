@@ -35,7 +35,6 @@ namespace WindowFrom
             this.mnExit = new System.Windows.Forms.ToolStripMenuItem();
             this.mnFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mnChangedPassWord = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnSignupAccount = new System.Windows.Forms.ToolStripMenuItem();
             this.mnUserList = new System.Windows.Forms.ToolStripMenuItem();
             this.rollGiftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -86,7 +85,6 @@ namespace WindowFrom
             this.mnFile.AutoToolTip = true;
             this.mnFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnChangedPassWord,
-            this.mnSignupAccount,
             this.mnUserList});
             this.mnFile.Image = ((System.Drawing.Image)(resources.GetObject("mnFile.Image")));
             this.mnFile.Name = "mnFile";
@@ -98,23 +96,15 @@ namespace WindowFrom
             // 
             this.mnChangedPassWord.Image = ((System.Drawing.Image)(resources.GetObject("mnChangedPassWord.Image")));
             this.mnChangedPassWord.Name = "mnChangedPassWord";
-            this.mnChangedPassWord.Size = new System.Drawing.Size(218, 26);
+            this.mnChangedPassWord.Size = new System.Drawing.Size(224, 26);
             this.mnChangedPassWord.Text = "Changed PassWord";
             this.mnChangedPassWord.Click += new System.EventHandler(this.mnChangedPassWord_Click);
-            // 
-            // mnSignupAccount
-            // 
-            this.mnSignupAccount.Image = ((System.Drawing.Image)(resources.GetObject("mnSignupAccount.Image")));
-            this.mnSignupAccount.Name = "mnSignupAccount";
-            this.mnSignupAccount.Size = new System.Drawing.Size(218, 26);
-            this.mnSignupAccount.Text = "Resgist User";
-            this.mnSignupAccount.Click += new System.EventHandler(this.mnSignupAccount_Click_1);
             // 
             // mnUserList
             // 
             this.mnUserList.Image = ((System.Drawing.Image)(resources.GetObject("mnUserList.Image")));
             this.mnUserList.Name = "mnUserList";
-            this.mnUserList.Size = new System.Drawing.Size(218, 26);
+            this.mnUserList.Size = new System.Drawing.Size(224, 26);
             this.mnUserList.Text = "Manage User";
             this.mnUserList.Click += new System.EventHandler(this.mnUserList_Click);
             // 
@@ -187,7 +177,6 @@ namespace WindowFrom
         private System.Windows.Forms.ToolStripMenuItem mnFile;
         private System.Windows.Forms.ToolStripMenuItem mnChangedPassWord;
         private System.Windows.Forms.ToolStripMenuItem mnUserList;
-        private System.Windows.Forms.ToolStripMenuItem mnSignupAccount;
         private System.Windows.Forms.ToolStripMenuItem rollGiftToolStripMenuItem;
     }
 }

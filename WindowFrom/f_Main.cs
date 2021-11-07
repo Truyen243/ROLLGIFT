@@ -29,6 +29,11 @@ namespace WindowFrom
             _userDAO = new UserDAO();
 
             tsslblInFo.Text = string.Format("Login by {0} - {1}", Cls_Main._staticUser.ID, Cls_Main._staticUser.FullName);
+            if(Cls_Main._staticUser.ID!= 1)
+            {
+                mnUserList.Enabled = false;
+                rollGiftToolStripMenuItem.Enabled = false;
+            }    
         }
 
         

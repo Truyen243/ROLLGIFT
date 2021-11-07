@@ -242,17 +242,7 @@ namespace WindowFrom
             int number = iD;//1234
             if (number > 0)
             {
-                lbl1.Text = (number % 10).ToString();
-                number = number / 10;
-            }
-            if (number > 0)
-            {
-                lbl2.Text = (number % 10).ToString();
-                number = number / 10;
-            }
-            if (number > 0)
-            {
-                lbl3.Text = (number % 10).ToString();
+                lbl5.Text = (number % 10).ToString();
                 number = number / 10;
             }
             if (number > 0)
@@ -262,7 +252,17 @@ namespace WindowFrom
             }
             if (number > 0)
             {
-                lbl5.Text = (number % 10).ToString();
+                lbl3.Text = (number % 10).ToString();
+                number = number / 10;
+            }
+            if (number > 0)
+            {
+                lbl2.Text = (number % 10).ToString();
+                number = number / 10;
+            }
+            if (number > 0)
+            {
+                lbl1.Text = (number % 10).ToString();
                 number = number / 10;
             }
 

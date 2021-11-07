@@ -92,7 +92,7 @@
             // 
             this.cbGiai.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbGiai.FormattingEnabled = true;
-            this.cbGiai.Location = new System.Drawing.Point(133, 47);
+            this.cbGiai.Location = new System.Drawing.Point(133, 71);
             this.cbGiai.Name = "cbGiai";
             this.cbGiai.Size = new System.Drawing.Size(322, 41);
             this.cbGiai.TabIndex = 1;
@@ -268,7 +268,7 @@
             // 
             // btQuay
             // 
-            this.btQuay.Font = new System.Drawing.Font("Microsoft Tai Le", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btQuay.Font = new System.Drawing.Font("Microsoft Tai Le", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btQuay.Location = new System.Drawing.Point(489, 50);
             this.btQuay.Name = "btQuay";
             this.btQuay.Size = new System.Drawing.Size(111, 77);
@@ -440,7 +440,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 11F);
-            this.button1.Location = new System.Drawing.Point(13, 50);
+            this.button1.Location = new System.Drawing.Point(8, 71);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(114, 31);
             this.button1.TabIndex = 11;
@@ -454,6 +454,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(25F, 58F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1349, 623);
+            this.Controls.Add(this.cbGiai);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btInDanhSach);
             this.Controls.Add(this.btLayDanhSach);
@@ -462,7 +463,6 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.cbGiai);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.toolStrip1);
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

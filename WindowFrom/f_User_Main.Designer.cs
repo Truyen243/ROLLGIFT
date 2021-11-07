@@ -65,7 +65,7 @@ namespace WindowFrom
             this.Exit});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1069, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(1069, 27);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -74,7 +74,7 @@ namespace WindowFrom
             this.btnRefrecsh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefrecsh.Image")));
             this.btnRefrecsh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnRefrecsh.Name = "btnRefrecsh";
-            this.btnRefrecsh.Size = new System.Drawing.Size(91, 28);
+            this.btnRefrecsh.Size = new System.Drawing.Size(91, 24);
             this.btnRefrecsh.Text = "Làm mới";
             this.btnRefrecsh.Click += new System.EventHandler(this.btnRefrecsh_Click);
             // 
@@ -83,7 +83,7 @@ namespace WindowFrom
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(70, 28);
+            this.btnAdd.Size = new System.Drawing.Size(70, 24);
             this.btnAdd.Text = "Thêm";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -92,7 +92,7 @@ namespace WindowFrom
             this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
             this.btnUpdate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(58, 28);
+            this.btnUpdate.Size = new System.Drawing.Size(58, 24);
             this.btnUpdate.Text = "Sửa";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
@@ -101,7 +101,7 @@ namespace WindowFrom
             this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
             this.btnDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(59, 28);
+            this.btnDelete.Size = new System.Drawing.Size(59, 24);
             this.btnDelete.Text = "Xóa";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -110,7 +110,7 @@ namespace WindowFrom
             this.Exit.Image = ((System.Drawing.Image)(resources.GetObject("Exit.Image")));
             this.Exit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(71, 28);
+            this.Exit.Size = new System.Drawing.Size(71, 24);
             this.Exit.Text = "Thoát";
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
@@ -163,13 +163,13 @@ namespace WindowFrom
             this.colRemember,
             this.colIdUserType});
             this.dgvUserList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvUserList.Location = new System.Drawing.Point(0, 31);
+            this.dgvUserList.Location = new System.Drawing.Point(0, 27);
             this.dgvUserList.Name = "dgvUserList";
             this.dgvUserList.ReadOnly = true;
             this.dgvUserList.RowHeadersWidth = 51;
             this.dgvUserList.RowTemplate.Height = 32;
             this.dgvUserList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUserList.Size = new System.Drawing.Size(1069, 515);
+            this.dgvUserList.Size = new System.Drawing.Size(1069, 519);
             this.dgvUserList.TabIndex = 2;
             this.dgvUserList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dgvUserList.Click += new System.EventHandler(this.dgvUserList_Click);
