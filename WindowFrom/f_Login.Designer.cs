@@ -54,7 +54,7 @@ namespace WindowFrom
             // 
             this.txbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbUserName.Location = new System.Drawing.Point(148, 87);
-            this.txbUserName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbUserName.Margin = new System.Windows.Forms.Padding(2);
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.Size = new System.Drawing.Size(182, 23);
             this.txbUserName.TabIndex = 1;
@@ -63,7 +63,7 @@ namespace WindowFrom
             // 
             this.txbPassWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbPassWord.Location = new System.Drawing.Point(148, 132);
-            this.txbPassWord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbPassWord.Margin = new System.Windows.Forms.Padding(2);
             this.txbPassWord.Name = "txbPassWord";
             this.txbPassWord.PasswordChar = '*';
             this.txbPassWord.Size = new System.Drawing.Size(182, 23);
@@ -72,10 +72,12 @@ namespace WindowFrom
             // 
             // btnLogin
             // 
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnLogin.Location = new System.Drawing.Point(148, 188);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 37);
+            this.btnLogin.Size = new System.Drawing.Size(85, 37);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -85,7 +87,7 @@ namespace WindowFrom
             // 
             this.chbRemember.AutoSize = true;
             this.chbRemember.Location = new System.Drawing.Point(148, 167);
-            this.chbRemember.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbRemember.Margin = new System.Windows.Forms.Padding(2);
             this.chbRemember.Name = "chbRemember";
             this.chbRemember.Size = new System.Drawing.Size(93, 17);
             this.chbRemember.TabIndex = 3;
@@ -96,7 +98,7 @@ namespace WindowFrom
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 135);
+            this.label2.Location = new System.Drawing.Point(21, 134);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 19);
@@ -106,10 +108,11 @@ namespace WindowFrom
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(256, 188);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnExit.Location = new System.Drawing.Point(245, 188);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(74, 37);
+            this.btnExit.Size = new System.Drawing.Size(85, 37);
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -122,7 +125,7 @@ namespace WindowFrom
             this.label3.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label3.Margin = new System.Windows.Forms.Padding(2);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(0, 16, 0, 16);
             this.label3.Size = new System.Drawing.Size(397, 66);
@@ -147,7 +150,7 @@ namespace WindowFrom
             this.Controls.Add(this.txbUserName);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "f_Login";

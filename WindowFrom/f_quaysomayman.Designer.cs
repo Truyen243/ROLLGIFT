@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.cbGiai = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -90,9 +90,9 @@
             // cbGiai
             // 
             this.cbGiai.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbGiai.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cbGiai.ForeColor = System.Drawing.SystemColors.Highlight;
             this.cbGiai.FormattingEnabled = true;
-            this.cbGiai.Location = new System.Drawing.Point(22, 51);
+            this.cbGiai.Location = new System.Drawing.Point(3, 50);
             this.cbGiai.Name = "cbGiai";
             this.cbGiai.Size = new System.Drawing.Size(322, 31);
             this.cbGiai.TabIndex = 1;
@@ -114,7 +114,7 @@
             this.groupBox1.Controls.Add(this.dsQuay);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox1.Location = new System.Drawing.Point(897, 44);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(452, 554);
@@ -126,18 +126,18 @@
             // 
             this.dsQuay.AllowUserToAddRows = false;
             this.dsQuay.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dsQuay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dsQuay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.dsQuay.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dsQuay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dsQuay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dsQuay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dsQuay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dsQuay.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colSTT,
@@ -167,8 +167,8 @@
             // colID
             // 
             this.colID.DataPropertyName = "ID";
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colID.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colID.DefaultCellStyle = dataGridViewCellStyle18;
             this.colID.HeaderText = "ID";
             this.colID.MinimumWidth = 6;
             this.colID.Name = "colID";
@@ -217,7 +217,7 @@
             this.lbl4.AutoSize = true;
             this.lbl4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.lbl4.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4.Location = new System.Drawing.Point(515, 71);
+            this.lbl4.Location = new System.Drawing.Point(537, 71);
             this.lbl4.Name = "lbl4";
             this.lbl4.Size = new System.Drawing.Size(144, 171);
             this.lbl4.TabIndex = 7;
@@ -229,7 +229,7 @@
             this.lbl5.AutoSize = true;
             this.lbl5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lbl5.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5.Location = new System.Drawing.Point(659, 71);
+            this.lbl5.Location = new System.Drawing.Point(702, 71);
             this.lbl5.Name = "lbl5";
             this.lbl5.Size = new System.Drawing.Size(144, 171);
             this.lbl5.TabIndex = 6;
@@ -241,7 +241,7 @@
             this.lbl3.AutoSize = true;
             this.lbl3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lbl3.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3.Location = new System.Drawing.Point(371, 71);
+            this.lbl3.Location = new System.Drawing.Point(372, 71);
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(144, 171);
             this.lbl3.TabIndex = 2;
@@ -251,9 +251,9 @@
             // 
             this.lbl2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl2.AutoSize = true;
-            this.lbl2.BackColor = System.Drawing.Color.Red;
+            this.lbl2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.lbl2.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2.Location = new System.Drawing.Point(227, 71);
+            this.lbl2.Location = new System.Drawing.Point(207, 71);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(144, 171);
             this.lbl2.TabIndex = 1;
@@ -265,7 +265,7 @@
             this.lbl1.AutoSize = true;
             this.lbl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.lbl1.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.Location = new System.Drawing.Point(83, 71);
+            this.lbl1.Location = new System.Drawing.Point(44, 71);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(144, 171);
             this.lbl1.TabIndex = 0;
@@ -274,8 +274,8 @@
             // btQuay
             // 
             this.btQuay.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btQuay.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btQuay.Location = new System.Drawing.Point(489, 50);
+            this.btQuay.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btQuay.Location = new System.Drawing.Point(488, 51);
             this.btQuay.Name = "btQuay";
             this.btQuay.Size = new System.Drawing.Size(123, 32);
             this.btQuay.TabIndex = 6;
@@ -310,7 +310,7 @@
             this.dgtDanhsachtrunggiai.Controls.Add(this.dataGridView1);
             this.dgtDanhsachtrunggiai.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgtDanhsachtrunggiai.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgtDanhsachtrunggiai.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.dgtDanhsachtrunggiai.ForeColor = System.Drawing.SystemColors.Highlight;
             this.dgtDanhsachtrunggiai.Location = new System.Drawing.Point(0, 395);
             this.dgtDanhsachtrunggiai.Name = "dgtDanhsachtrunggiai";
             this.dgtDanhsachtrunggiai.Size = new System.Drawing.Size(897, 203);
@@ -323,18 +323,18 @@
             // 
             this.dsNhanGiai.AllowUserToAddRows = false;
             this.dsNhanGiai.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dsNhanGiai.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dsNhanGiai.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
             this.dsNhanGiai.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dsNhanGiai.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dsNhanGiai.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dsNhanGiai.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.dsNhanGiai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dsNhanGiai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -422,8 +422,8 @@
             // btLayDanhSach
             // 
             this.btLayDanhSach.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLayDanhSach.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btLayDanhSach.Location = new System.Drawing.Point(618, 49);
+            this.btLayDanhSach.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btLayDanhSach.Location = new System.Drawing.Point(630, 51);
             this.btLayDanhSach.Name = "btLayDanhSach";
             this.btLayDanhSach.Size = new System.Drawing.Size(123, 32);
             this.btLayDanhSach.TabIndex = 9;
@@ -434,8 +434,8 @@
             // btInDanhSach
             // 
             this.btInDanhSach.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInDanhSach.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btInDanhSach.Location = new System.Drawing.Point(747, 49);
+            this.btInDanhSach.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btInDanhSach.Location = new System.Drawing.Point(771, 51);
             this.btInDanhSach.Name = "btInDanhSach";
             this.btInDanhSach.Size = new System.Drawing.Size(123, 32);
             this.btInDanhSach.TabIndex = 10;

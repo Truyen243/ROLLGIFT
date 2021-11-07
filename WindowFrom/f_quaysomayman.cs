@@ -11,11 +11,28 @@ using System.Windows.Forms;
 using WindowFrom.Data;
 using LibraryClass.Dao;
 using LibraryClass.EF;
+using System.Runtime.InteropServices;
 namespace WindowFrom
 
 {
     public partial class f_quaysomayman : Form
     {
+        //Khai báo
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+        (
+            int nLeftRect,     // x-coordinate of upper-left corner
+            int nTopRect,      // y-coordinate of upper-left corner
+            int nRightRect,    // x-coordinate of lower-right corner
+            int nBottomRect,   // y-coordinate of lower-right corner
+            int nWidthEllipse, // height of ellipse
+            int nHeightEllipse // width of ellipse
+        );
+        private void pictureBox1_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 15, 15));
+        }
         List<Employee> employees;
         EmployeeDao employeeDao;
         public f_quaysomayman()
@@ -267,7 +284,7 @@ namespace WindowFrom
                 number = number / 10;
             }
 
-        }
+        }       
     }
 }
 

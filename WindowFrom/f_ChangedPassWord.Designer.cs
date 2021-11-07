@@ -59,7 +59,7 @@ namespace WindowFrom
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 16);
+            this.label1.Location = new System.Drawing.Point(10, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 16);
@@ -73,7 +73,8 @@ namespace WindowFrom
             this.grbAdmin.Controls.Add(this.btnRestPassword);
             this.grbAdmin.Controls.Add(this.cboUser);
             this.grbAdmin.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbAdmin.Location = new System.Drawing.Point(18, 49);
+            this.grbAdmin.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.grbAdmin.Location = new System.Drawing.Point(13, 49);
             this.grbAdmin.Margin = new System.Windows.Forms.Padding(2);
             this.grbAdmin.Name = "grbAdmin";
             this.grbAdmin.Padding = new System.Windows.Forms.Padding(2);
@@ -86,6 +87,7 @@ namespace WindowFrom
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label4.Location = new System.Drawing.Point(5, 32);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
@@ -95,13 +97,16 @@ namespace WindowFrom
             // 
             // btnRestPassword
             // 
-            this.btnRestPassword.Location = new System.Drawing.Point(211, 56);
+            this.btnRestPassword.BackColor = System.Drawing.Color.White;
+            this.btnRestPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestPassword.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnRestPassword.Location = new System.Drawing.Point(211, 62);
             this.btnRestPassword.Margin = new System.Windows.Forms.Padding(2);
             this.btnRestPassword.Name = "btnRestPassword";
             this.btnRestPassword.Size = new System.Drawing.Size(86, 34);
             this.btnRestPassword.TabIndex = 1;
             this.btnRestPassword.Text = "Cập nhập";
-            this.btnRestPassword.UseVisualStyleBackColor = true;
+            this.btnRestPassword.UseVisualStyleBackColor = false;
             this.btnRestPassword.Click += new System.EventHandler(this.btnRestPassword_Click);
             // 
             // grpUser
@@ -112,7 +117,8 @@ namespace WindowFrom
             this.grpUser.Controls.Add(this.txbPasswordNewTow);
             this.grpUser.Controls.Add(this.txbPasswordNewOne);
             this.grpUser.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpUser.Location = new System.Drawing.Point(18, 160);
+            this.grpUser.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.grpUser.Location = new System.Drawing.Point(13, 166);
             this.grpUser.Margin = new System.Windows.Forms.Padding(2);
             this.grpUser.Name = "grpUser";
             this.grpUser.Padding = new System.Windows.Forms.Padding(2);
@@ -123,7 +129,8 @@ namespace WindowFrom
             // 
             // btnChangedPassword
             // 
-            this.btnChangedPassword.Location = new System.Drawing.Point(211, 85);
+            this.btnChangedPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangedPassword.Location = new System.Drawing.Point(211, 88);
             this.btnChangedPassword.Margin = new System.Windows.Forms.Padding(2);
             this.btnChangedPassword.Name = "btnChangedPassword";
             this.btnChangedPassword.Size = new System.Drawing.Size(86, 34);
@@ -135,6 +142,7 @@ namespace WindowFrom
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label3.Location = new System.Drawing.Point(5, 63);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
@@ -145,6 +153,7 @@ namespace WindowFrom
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label2.Location = new System.Drawing.Point(5, 28);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";

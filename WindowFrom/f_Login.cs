@@ -22,7 +22,7 @@ namespace WindowFrom
             int nWidthEllipse, // height of ellipse
             int nHeightEllipse // width of ellipse
         );
-        //constructor
+        
         public f_Login()
         {
             InitializeComponent();
@@ -30,8 +30,7 @@ namespace WindowFrom
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 15, 15));
         }
-        //Khởi tạo shadown
-        private const int CS_DropShadow = 0 * 00020000;
+      
         public List<User> listUser;
         UserDAO _userDAO;
 
