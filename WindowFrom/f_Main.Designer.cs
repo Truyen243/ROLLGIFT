@@ -83,6 +83,7 @@ namespace WindowFrom
             // 
             // mnFile
             // 
+            this.mnFile.AutoToolTip = true;
             this.mnFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnChangedPassWord,
             this.mnSignupAccount,
@@ -91,6 +92,7 @@ namespace WindowFrom
             this.mnFile.Name = "mnFile";
             this.mnFile.Size = new System.Drawing.Size(97, 24);
             this.mnFile.Text = "Manage";
+            this.mnFile.Click += new System.EventHandler(this.mnFile_Click);
             // 
             // mnChangedPassWord
             // 

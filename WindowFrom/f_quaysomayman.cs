@@ -119,7 +119,7 @@ namespace WindowFrom
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Text files (*.ini)|*.ini|All files (*.*)|*.*";
             openFileDialog.Title = "Chọn danh sách quay";
-            openFileDialog.InitialDirectory = Application.StartupPath;
+            openFileDialog.InitialDirectory = string.Format(@"{0}\dsQuay", Application.StartupPath); ;
             
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -273,7 +273,7 @@ namespace WindowFrom
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Text files (*.ini)|*.ini|All files (*.*)|*.*";
             openFileDialog.Title = "Chọn file chứa các giải thưởng";
-            openFileDialog.InitialDirectory = Application.StartupPath;
+            openFileDialog.InitialDirectory = string.Format(@"{0}\Giai", Application.StartupPath);
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {

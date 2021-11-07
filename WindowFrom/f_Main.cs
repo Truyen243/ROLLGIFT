@@ -46,7 +46,9 @@ namespace WindowFrom
         private void mnChangedPassWord_Click(object sender, EventArgs e)
         {
             f_ChangedPassWord changedPassWord = new f_ChangedPassWord();
-            changedPassWord.Show();
+            this.Hide();
+            changedPassWord.ShowDialog();
+            this.Show();
         }
 
         private void mnSaveList_Click(object sender, EventArgs e)
@@ -56,8 +58,10 @@ namespace WindowFrom
 
         private void mnUserList_Click(object sender, EventArgs e)
         {
+            this.Hide();
             f_User_Main f_UserMain = new f_User_Main();
             f_UserMain.ShowDialog();
+            this.Show();
         }
 
         private void f_Main_FormClosing(object sender, FormClosingEventArgs e)
@@ -105,6 +109,11 @@ namespace WindowFrom
             this.Hide();
             frm.ShowDialog();
             this.Show();
+        }
+
+        private void mnFile_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
