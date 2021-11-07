@@ -58,6 +58,7 @@ namespace WindowFrom
                         this.Hide();
                         main.ShowDialog();
                         this.Close();
+
                     }
                     else
                     {

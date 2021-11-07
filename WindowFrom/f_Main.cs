@@ -99,15 +99,12 @@ namespace WindowFrom
 
         }
 
-        private void label5_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void rollGiftToolStripMenuItem_Click(object sender, EventArgs e)
         {
             f_quaysomayman frm = new f_quaysomayman();
-            frm.Show();
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
         }
     }
 }

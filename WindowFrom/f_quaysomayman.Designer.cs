@@ -271,7 +271,7 @@
             this.btQuay.Font = new System.Drawing.Font("Microsoft Tai Le", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btQuay.Location = new System.Drawing.Point(489, 50);
             this.btQuay.Name = "btQuay";
-            this.btQuay.Size = new System.Drawing.Size(123, 32);
+            this.btQuay.Size = new System.Drawing.Size(111, 77);
             this.btQuay.TabIndex = 6;
             this.btQuay.Text = "Quay";
             this.btQuay.UseVisualStyleBackColor = true;
@@ -397,7 +397,7 @@
             this.toolStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip2.Location = new System.Drawing.Point(9, 203);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(112, 25);
+            this.toolStrip2.Size = new System.Drawing.Size(137, 31);
             this.toolStrip2.TabIndex = 3;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -414,7 +414,7 @@
             // btLayDanhSach
             // 
             this.btLayDanhSach.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLayDanhSach.Location = new System.Drawing.Point(618, 49);
+            this.btLayDanhSach.Location = new System.Drawing.Point(618, 71);
             this.btLayDanhSach.Name = "btLayDanhSach";
             this.btLayDanhSach.Size = new System.Drawing.Size(123, 32);
             this.btLayDanhSach.TabIndex = 9;
@@ -425,7 +425,7 @@
             // btInDanhSach
             // 
             this.btInDanhSach.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInDanhSach.Location = new System.Drawing.Point(747, 49);
+            this.btInDanhSach.Location = new System.Drawing.Point(747, 71);
             this.btInDanhSach.Name = "btInDanhSach";
             this.btInDanhSach.Size = new System.Drawing.Size(123, 32);
             this.btInDanhSach.TabIndex = 10;
