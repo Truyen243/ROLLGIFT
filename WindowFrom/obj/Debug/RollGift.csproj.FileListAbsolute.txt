@@ -153,3 +153,18 @@ D:\New folder\WindowFrom\bin\Debug\WindowFrom.pdb
 D:\New folder\WindowFrom\bin\Debug\ClassLibrary1.dll
 D:\New folder\WindowFrom\bin\Debug\ClassLibrary1.pdb
 D:\New folder\WindowFrom\obj\Debug\RollGift.csproj.CopyComplete
+D:\New folder (2)\WindowFrom\obj\Debug\RollGift.csproj.AssemblyReference.cache
+D:\New folder (2)\WindowFrom\obj\Debug\RollGift.csproj.ResolveComReference.cache
+D:\New folder (2)\WindowFrom\obj\Debug\WindowFrom.f_ChangedPassWord.resources
+D:\New folder (2)\WindowFrom\obj\Debug\WindowFrom.Form1.resources
+D:\New folder (2)\WindowFrom\obj\Debug\WindowFrom.f_Login.resources
+D:\New folder (2)\WindowFrom\obj\Debug\WindowFrom.f_Main.resources
+D:\New folder (2)\WindowFrom\obj\Debug\WindowFrom.f_quaysomayman.resources
+D:\New folder (2)\WindowFrom\obj\Debug\WindowFrom.f_User_Modifile.resources
+D:\New folder (2)\WindowFrom\obj\Debug\WindowFrom.f_User_Main.resources
+D:\New folder (2)\WindowFrom\obj\Debug\WindowFrom.Properties.Resources.resources
+D:\New folder (2)\WindowFrom\obj\Debug\CustomControls.RJControls.RJTextBox.resources
+D:\New folder (2)\WindowFrom\obj\Debug\RollGift.csproj.GenerateResource.cache
+D:\New folder (2)\WindowFrom\obj\Debug\RollGift.csproj.CoreCompileInputs.cache
+D:\New folder (2)\WindowFrom\obj\Debug\WindowFrom.exe
+D:\New folder (2)\WindowFrom\obj\Debug\WindowFrom.pdb
