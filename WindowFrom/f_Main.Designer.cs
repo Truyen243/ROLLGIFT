@@ -48,28 +48,20 @@ namespace WindowFrom
             this.menuStrip2.GripMargin = new System.Windows.Forms.Padding(2, 20, 0, 2);
             this.menuStrip2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip2.ImeMode = System.Windows.Forms.ImeMode.Katakana;
+            resources.ApplyResources(this.menuStrip2, "menuStrip2");
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.thôngTinCáNhânToolStripMenuItem,
             this.mnFile,
             this.rollGiftToolStripMenuItem,
             this.logOutToolStripMenuItem});
-            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip2.Margin = new System.Windows.Forms.Padding(20);
             this.menuStrip2.MdiWindowListItem = this.mnFile;
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
             this.menuStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip2.Size = new System.Drawing.Size(741, 28);
-            this.menuStrip2.TabIndex = 1;
-            this.menuStrip2.Text = "menuStrip2";
             // 
             // thôngTinCáNhânToolStripMenuItem
             // 
-            this.thôngTinCáNhânToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("thôngTinCáNhânToolStripMenuItem.Image")));
+            resources.ApplyResources(this.thôngTinCáNhânToolStripMenuItem, "thôngTinCáNhânToolStripMenuItem");
             this.thôngTinCáNhânToolStripMenuItem.Name = "thôngTinCáNhânToolStripMenuItem";
-            this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
-            this.thôngTinCáNhânToolStripMenuItem.Text = "Home";
             // 
             // mnFile
             // 
@@ -77,34 +69,26 @@ namespace WindowFrom
             this.mnFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnChangedPassWord,
             this.mnUserList});
-            this.mnFile.Image = ((System.Drawing.Image)(resources.GetObject("mnFile.Image")));
+            resources.ApplyResources(this.mnFile, "mnFile");
             this.mnFile.Name = "mnFile";
-            this.mnFile.Size = new System.Drawing.Size(97, 24);
-            this.mnFile.Text = "Manage";
             this.mnFile.Click += new System.EventHandler(this.mnFile_Click);
             // 
             // mnChangedPassWord
             // 
-            this.mnChangedPassWord.Image = ((System.Drawing.Image)(resources.GetObject("mnChangedPassWord.Image")));
+            resources.ApplyResources(this.mnChangedPassWord, "mnChangedPassWord");
             this.mnChangedPassWord.Name = "mnChangedPassWord";
-            this.mnChangedPassWord.Size = new System.Drawing.Size(224, 26);
-            this.mnChangedPassWord.Text = "Changed PassWord";
             this.mnChangedPassWord.Click += new System.EventHandler(this.mnChangedPassWord_Click);
             // 
             // mnUserList
             // 
-            this.mnUserList.Image = ((System.Drawing.Image)(resources.GetObject("mnUserList.Image")));
+            resources.ApplyResources(this.mnUserList, "mnUserList");
             this.mnUserList.Name = "mnUserList";
-            this.mnUserList.Size = new System.Drawing.Size(224, 26);
-            this.mnUserList.Text = "Manage User";
             this.mnUserList.Click += new System.EventHandler(this.mnUserList_Click);
             // 
             // rollGiftToolStripMenuItem
             // 
-            this.rollGiftToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("rollGiftToolStripMenuItem.Image")));
+            resources.ApplyResources(this.rollGiftToolStripMenuItem, "rollGiftToolStripMenuItem");
             this.rollGiftToolStripMenuItem.Name = "rollGiftToolStripMenuItem";
-            this.rollGiftToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
-            this.rollGiftToolStripMenuItem.Text = "Roll Gift";
             this.rollGiftToolStripMenuItem.Click += new System.EventHandler(this.rollGiftToolStripMenuItem_Click);
             // 
             // statusStrip1
@@ -112,51 +96,36 @@ namespace WindowFrom
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsslblInFo});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 397);
+            resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 13, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(741, 26);
-            this.statusStrip1.TabIndex = 2;
-            this.statusStrip1.Text = "statusStrip1";
             // 
             // tsslblInFo
             // 
-            this.tsslblInFo.Image = ((System.Drawing.Image)(resources.GetObject("tsslblInFo.Image")));
+            resources.ApplyResources(this.tsslblInFo, "tsslblInFo");
             this.tsslblInFo.Name = "tsslblInFo";
-            this.tsslblInFo.Size = new System.Drawing.Size(38, 20);
-            this.tsslblInFo.Text = "...";
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.logOutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("logOutToolStripMenuItem.Image")));
+            resources.ApplyResources(this.logOutToolStripMenuItem, "logOutToolStripMenuItem");
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
-            this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.mnExit_Click);
             // 
             // f_Main
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(741, 423);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.HelpButton = true;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.IsMdiContainer = true;
-            this.KeyPreview = true;
-            this.Location = new System.Drawing.Point(50, 50);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "f_Main";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Manage Aplication";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.TopMost = true;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.f_Main_FormClosing);
             this.Load += new System.EventHandler(this.f_Main_Load);
