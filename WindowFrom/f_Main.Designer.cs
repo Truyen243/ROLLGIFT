@@ -32,13 +32,13 @@ namespace WindowFrom
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_Main));
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.thôngTinCáNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnExit = new System.Windows.Forms.ToolStripMenuItem();
             this.mnFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mnChangedPassWord = new System.Windows.Forms.ToolStripMenuItem();
             this.mnUserList = new System.Windows.Forms.ToolStripMenuItem();
             this.rollGiftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsslblInFo = new System.Windows.Forms.ToolStripStatusLabel();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +52,8 @@ namespace WindowFrom
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.thôngTinCáNhânToolStripMenuItem,
             this.mnFile,
-            this.rollGiftToolStripMenuItem});
+            this.rollGiftToolStripMenuItem,
+            this.logoutToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Margin = new System.Windows.Forms.Padding(20);
             this.menuStrip2.MdiWindowListItem = this.mnFile;
@@ -65,31 +66,24 @@ namespace WindowFrom
             // 
             // thôngTinCáNhânToolStripMenuItem
             // 
-            this.thôngTinCáNhânToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnExit});
             this.thôngTinCáNhânToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("thôngTinCáNhânToolStripMenuItem.Image")));
             this.thôngTinCáNhânToolStripMenuItem.Name = "thôngTinCáNhânToolStripMenuItem";
-            this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
-            this.thôngTinCáNhânToolStripMenuItem.Text = "Home";
-            // 
-            // mnExit
-            // 
-            this.mnExit.Image = ((System.Drawing.Image)(resources.GetObject("mnExit.Image")));
-            this.mnExit.Name = "mnExit";
-            this.mnExit.Size = new System.Drawing.Size(160, 26);
-            this.mnExit.Text = "Đăng xuất";
-            this.mnExit.Click += new System.EventHandler(this.mnExit_Click);
+            this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(119, 24);
+            this.thôngTinCáNhânToolStripMenuItem.Text = "Manage All";
+            this.thôngTinCáNhânToolStripMenuItem.Click += new System.EventHandler(this.thôngTinCáNhânToolStripMenuItem_Click);
             // 
             // mnFile
             // 
             this.mnFile.AutoToolTip = true;
+            this.mnFile.Checked = true;
+            this.mnFile.CheckState = System.Windows.Forms.CheckState.Checked;
             this.mnFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnChangedPassWord,
             this.mnUserList});
             this.mnFile.Image = ((System.Drawing.Image)(resources.GetObject("mnFile.Image")));
             this.mnFile.Name = "mnFile";
-            this.mnFile.Size = new System.Drawing.Size(97, 24);
-            this.mnFile.Text = "Manage";
+            this.mnFile.Size = new System.Drawing.Size(72, 24);
+            this.mnFile.Text = "User";
             this.mnFile.Click += new System.EventHandler(this.mnFile_Click);
             // 
             // mnChangedPassWord
@@ -110,6 +104,8 @@ namespace WindowFrom
             // 
             // rollGiftToolStripMenuItem
             // 
+            this.rollGiftToolStripMenuItem.Checked = true;
+            this.rollGiftToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.rollGiftToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("rollGiftToolStripMenuItem.Image")));
             this.rollGiftToolStripMenuItem.Name = "rollGiftToolStripMenuItem";
             this.rollGiftToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
@@ -134,6 +130,16 @@ namespace WindowFrom
             this.tsslblInFo.Name = "tsslblInFo";
             this.tsslblInFo.Size = new System.Drawing.Size(38, 20);
             this.tsslblInFo.Text = "...";
+            // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Checked = true;
+            this.logoutToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.logoutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("logoutToolStripMenuItem.Image")));
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
+            this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.mnExit_Click);
             // 
             // f_Main
             // 
@@ -171,12 +177,12 @@ namespace WindowFrom
         #endregion
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem thôngTinCáNhânToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mnExit;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel tsslblInFo;
         private System.Windows.Forms.ToolStripMenuItem mnFile;
         private System.Windows.Forms.ToolStripMenuItem mnChangedPassWord;
         private System.Windows.Forms.ToolStripMenuItem mnUserList;
         private System.Windows.Forms.ToolStripMenuItem rollGiftToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
     }
 }
