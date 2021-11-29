@@ -137,3 +137,4 @@ C:\Users\ASUS\Desktop\Project3\WindowFrom\obj\Debug\aa-DJ\WindowFrom.resources.d
 C:\Users\ASUS\Desktop\Project3\WindowFrom\obj\Debug\RollGift.csproj.CopyComplete
 C:\Users\ASUS\Desktop\Project3\WindowFrom\obj\Debug\WindowFrom.exe
 C:\Users\ASUS\Desktop\Project3\WindowFrom\obj\Debug\WindowFrom.pdb
+C:\Users\ASUS\Desktop\Project3\WindowFrom\bin\Debug\DevComponents.DotNetBar2.dll

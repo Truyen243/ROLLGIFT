@@ -147,6 +147,50 @@
   <data name="thôngTinCáNhânToolStripMenuItem.Text" xml:space="preserve">
     <value>Home</value>
   </data>
+  <data name="mnChangedPassWord.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAA8dJREFUeF7t
+        mMtqFFEQhqMiuFAh4MIgIogBiT6C4M6FBIzRMZNkEkLQwRgv+AZ5CRFc+ACuFfUtRLwuIhLiyo1GIyYm
+        6l/xdzipOaenu6e6Oz30Bz/JVJ2qU1U9fZnuq6ioqKioqKgIMTk5+afMYhvp8SUtk9hGenxJyyS2kR5f
+        0jKJbaTHPGHGmNdrnjBjzOsNJbSyW2O+Tyihld0a831CCa3s1pjvE0poZbfGfB/zhBljXq95wowxr1cn
+        LJvYRnp8ScsktpEeX9IyiW2kx5e0TGIb6TFPmDHm9ZonzBjzes0TZox5veYJM8a8XvOEGTMxMdEPHR8f
+        Hz+Lv3M0p6dsAzCnGkA1gJ07gEajMYCabkDPoTfQZ0r+fybXgJmZmcNcng4k2nEDQOMnoEeoZ1PX59Gm
+        rJUYhidDJ6S5MHBUR1HHd11XDH3DEEaYJj46Ec2FgObvoobfuqYEkm/DHaaLh05Cc+6g+QvSgK4Heinn
+        OjQI9eP+f2hqauo0h/VKrRVJjmGm7YwKLmQA09PTR7D3iqplFUfzKty7/q1qp1ar7cG6W9C6Eyf6gtgB
+        LotGBRYyABzNh6qOHzjSZ+juCNafg9aceNEDuqNRQbkPAM0fw74bqo5rdMcGeeZUjo16vX6U7jAqqIgB
+        3FY1vFhYWNhNdxvwD0MfoEXEnqf5/+nwGnJzzdMdRgXkPgDs+dTdH+fuTbq8YM2Ss/4jzVtgIHJhdHM9
+        oSuMGyCiOTdQ9Ht3f5z7J+nygjXLzvolmreQu4PjE72lK4wKKOIbsO3qj0fbfXR5wRo5BT5By+4pIMB2
+        UHI4+kpXGBVQxABW3f1xLu+nKzGzs7MH3FzQCl1hVEARA5ALmlvDEF2JwelzSuV6R1cYFZDrAHCRGsGe
+        2+7fciGjOzH6Igg9piuMCshtANjrIqSf4H6hiVEuSUTgNnid7jAqIJcBSJPYq615aIxLEoOc+kFoPdbj
+        sArKfADY4zJk2jxifY/C9+iORgVlOgAcpRr2MGs+6sdQ7DdFKjCzAeDreAX5pVl3v47Nwy/3/XkMb7DZ
+        bO6V5wR8HsLnbH4Odyum3QbsY1Di5nmX0Ec3St2/EOlWTNsCR6oOe1vzYucSLymat3kl1q2YtgVs+qdu
+        3Ob1RS0kGdJ9eanC8GSoZF2LaVtof6fm4ZdXY7p5GaL8ClyD/yf+LkI2r8WzBoW6jXQckEfSfIPLy4dq
+        JukA5GHmEpeWE90UzS2031H5mxd0YzS30H6qN5oXPM1FimG9g6/JKDGsd/A1GSWG9Q6+JqPEMCP6+v4C
+        1rEWuVqjxxUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="mnChangedPassWord.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="mnChangedPassWord.Text" xml:space="preserve">
+    <value>Changed PassWord</value>
+  </data>
+  <data name="mnUserList.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAQ1JREFUeF7t
+        lDGqBFAIA/eee/9z/G2mDBERHp+QgakkSho/pZRSSimlaL7f799GYjmokk5iOaiSTmI5qJJOYjlMBbfz
+        V3L+zrR4O38l5+9Mi7fzV3L+zrR4O38l5++o5U5iOaiSTmI5qJJOYjmokk5ipZSSgXp0TmI5qJJOYjmo
+        kk5iOaiSTmI5TAW381dy/s60eDt/JefvTIu381dy/s60eDt/JefvqOVOYjmokk5iOaiSTmI5qJJOYqWU
+        koF6dE5iOaiSTmI5qJJOYjmokk5iOUwFt/NXcv7OtHg7fyXn70yLt/NXcv7OtHg7fyXn76jlTmI5qJJO
+        Yjmokk5iOaiSTmKllFJKKaX8az6fHyCK/sy4lrTtAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="mnUserList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="mnUserList.Text" xml:space="preserve">
+    <value>Manage User</value>
+  </data>
   <data name="mnFile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABK1JREFUeF7t
@@ -241,7 +285,7 @@
     <value>5, 2, 0, 2</value>
   </data>
   <data name="menuStrip2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>482, 28</value>
+    <value>1500, 28</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="menuStrip2.TabIndex" type="System.Int32, mscorlib">
@@ -260,80 +304,30 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;menuStrip2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="mnChangedPassWord.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAA8dJREFUeF7t
-        mMtqFFEQhqMiuFAh4MIgIogBiT6C4M6FBIzRMZNkEkLQwRgv+AZ5CRFc+ACuFfUtRLwuIhLiyo1GIyYm
-        6l/xdzipOaenu6e6Oz30Bz/JVJ2qU1U9fZnuq6ioqKioqKgIMTk5+afMYhvp8SUtk9hGenxJyyS2kR5f
-        0jKJbaTHPGHGmNdrnjBjzOsNJbSyW2O+Tyihld0a831CCa3s1pjvE0poZbfGfB/zhBljXq95wowxr1cn
-        LJvYRnp8ScsktpEeX9IyiW2kx5e0TGIb6TFPmDHm9ZonzBjzes0TZox5veYJM8a8XvOEGTMxMdEPHR8f
-        Hz+Lv3M0p6dsAzCnGkA1gJ07gEajMYCabkDPoTfQZ0r+fybXgJmZmcNcng4k2nEDQOMnoEeoZ1PX59Gm
-        rJUYhidDJ6S5MHBUR1HHd11XDH3DEEaYJj46Ec2FgObvoobfuqYEkm/DHaaLh05Cc+6g+QvSgK4Heinn
-        OjQI9eP+f2hqauo0h/VKrRVJjmGm7YwKLmQA09PTR7D3iqplFUfzKty7/q1qp1ar7cG6W9C6Eyf6gtgB
-        LotGBRYyABzNh6qOHzjSZ+juCNafg9aceNEDuqNRQbkPAM0fw74bqo5rdMcGeeZUjo16vX6U7jAqqIgB
-        3FY1vFhYWNhNdxvwD0MfoEXEnqf5/+nwGnJzzdMdRgXkPgDs+dTdH+fuTbq8YM2Ss/4jzVtgIHJhdHM9
-        oSuMGyCiOTdQ9Ht3f5z7J+nygjXLzvolmreQu4PjE72lK4wKKOIbsO3qj0fbfXR5wRo5BT5By+4pIMB2
-        UHI4+kpXGBVQxABW3f1xLu+nKzGzs7MH3FzQCl1hVEARA5ALmlvDEF2JwelzSuV6R1cYFZDrAHCRGsGe
-        2+7fciGjOzH6Igg9piuMCshtANjrIqSf4H6hiVEuSUTgNnid7jAqIJcBSJPYq615aIxLEoOc+kFoPdbj
-        sArKfADY4zJk2jxifY/C9+iORgVlOgAcpRr2MGs+6sdQ7DdFKjCzAeDreAX5pVl3v47Nwy/3/XkMb7DZ
-        bO6V5wR8HsLnbH4Odyum3QbsY1Di5nmX0Ec3St2/EOlWTNsCR6oOe1vzYucSLymat3kl1q2YtgVs+qdu
-        3Ob1RS0kGdJ9eanC8GSoZF2LaVtof6fm4ZdXY7p5GaL8ClyD/yf+LkI2r8WzBoW6jXQckEfSfIPLy4dq
-        JukA5GHmEpeWE90UzS2031H5mxd0YzS30H6qN5oXPM1FimG9g6/JKDGsd/A1GSWG9Q6+JqPEMCP6+v4C
-        1rEWuVqjxxUAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="mnChangedPassWord.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
-  <data name="mnChangedPassWord.Text" xml:space="preserve">
-    <value>Changed PassWord</value>
-  </data>
-  <data name="mnUserList.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAQ1JREFUeF7t
-        lDGqBFAIA/eee/9z/G2mDBERHp+QgakkSho/pZRSSimlaL7f799GYjmokk5iOaiSTmI5qJJOYjlMBbfz
-        V3L+zrR4O38l5+9Mi7fzV3L+zrR4O38l5++o5U5iOaiSTmI5qJJOYjmokk5ipZSSgXp0TmI5qJJOYjmo
-        kk5iOaiSTmI5TAW381dy/s60eDt/JefvTIu381dy/s60eDt/JefvqOVOYjmokk5iOaiSTmI5qJJOYqWU
-        koF6dE5iOaiSTmI5qJJOYjmokk5iOUwFt/NXcv7OtHg7fyXn70yLt/NXcv7OtHg7fyXn76jlTmI5qJJO
-        Yjmokk5iOaiSTmKllFJKKaX8az6fHyCK/sy4lrTtAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="mnUserList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
-  </data>
-  <data name="mnUserList.Text" xml:space="preserve">
-    <value>Manage User</value>
-  </data>
-  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>170, 26</value>
-  </metadata>
-  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 427</value>
-  </data>
-  <data name="statusStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 13, 0</value>
-  </data>
-  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>482, 26</value>
-  </data>
-  <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="statusStrip1.Text" xml:space="preserve">
-    <value>statusStrip1</value>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
-    <value>statusStrip1</value>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 28</value>
   </data>
-  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1500, 671</value>
   </data>
-  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="tsslblInFo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -373,6 +367,36 @@
   <data name="tsslblInFo.Text" xml:space="preserve">
     <value>...</value>
   </data>
+  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>170, 26</value>
+  </metadata>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 699</value>
+  </data>
+  <data name="statusStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 13, 0</value>
+  </data>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1500, 26</value>
+  </data>
+  <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -383,7 +407,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>482, 453</value>
+    <value>1500, 725</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -525,17 +549,17 @@
   <data name="&gt;&gt;rollGiftToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tsslblInFo.Name" xml:space="preserve">
-    <value>tsslblInFo</value>
-  </data>
-  <data name="&gt;&gt;tsslblInFo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;logOutToolStripMenuItem.Name" xml:space="preserve">
     <value>logOutToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;logOutToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsslblInFo.Name" xml:space="preserve">
+    <value>tsslblInFo</value>
+  </data>
+  <data name="&gt;&gt;tsslblInFo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>f_Main</value>
