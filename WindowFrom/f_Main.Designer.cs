@@ -32,13 +32,13 @@ namespace WindowFrom
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_Main));
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.thôngTinCáNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnExit = new System.Windows.Forms.ToolStripMenuItem();
             this.mnFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mnChangedPassWord = new System.Windows.Forms.ToolStripMenuItem();
             this.mnUserList = new System.Windows.Forms.ToolStripMenuItem();
             this.rollGiftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsslblInFo = new System.Windows.Forms.ToolStripStatusLabel();
+            this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +52,8 @@ namespace WindowFrom
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.thôngTinCáNhânToolStripMenuItem,
             this.mnFile,
-            this.rollGiftToolStripMenuItem});
+            this.rollGiftToolStripMenuItem,
+            this.logOutToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Margin = new System.Windows.Forms.Padding(20);
             this.menuStrip2.MdiWindowListItem = this.mnFile;
@@ -65,20 +66,10 @@ namespace WindowFrom
             // 
             // thôngTinCáNhânToolStripMenuItem
             // 
-            this.thôngTinCáNhânToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnExit});
             this.thôngTinCáNhânToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("thôngTinCáNhânToolStripMenuItem.Image")));
             this.thôngTinCáNhânToolStripMenuItem.Name = "thôngTinCáNhânToolStripMenuItem";
             this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
             this.thôngTinCáNhânToolStripMenuItem.Text = "Home";
-            // 
-            // mnExit
-            // 
-            this.mnExit.Image = ((System.Drawing.Image)(resources.GetObject("mnExit.Image")));
-            this.mnExit.Name = "mnExit";
-            this.mnExit.Size = new System.Drawing.Size(160, 26);
-            this.mnExit.Text = "Đăng xuất";
-            this.mnExit.Click += new System.EventHandler(this.mnExit_Click);
             // 
             // mnFile
             // 
@@ -135,6 +126,16 @@ namespace WindowFrom
             this.tsslblInFo.Size = new System.Drawing.Size(38, 20);
             this.tsslblInFo.Text = "...";
             // 
+            // logOutToolStripMenuItem
+            // 
+            this.logOutToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.logOutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("logOutToolStripMenuItem.Image")));
+            this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
+            this.logOutToolStripMenuItem.Text = "Log Out";
+            this.logOutToolStripMenuItem.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.mnExit_Click);
+            // 
             // f_Main
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
@@ -171,12 +172,12 @@ namespace WindowFrom
         #endregion
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem thôngTinCáNhânToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mnExit;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel tsslblInFo;
         private System.Windows.Forms.ToolStripMenuItem mnFile;
         private System.Windows.Forms.ToolStripMenuItem mnChangedPassWord;
         private System.Windows.Forms.ToolStripMenuItem mnUserList;
         private System.Windows.Forms.ToolStripMenuItem rollGiftToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
     }
 }

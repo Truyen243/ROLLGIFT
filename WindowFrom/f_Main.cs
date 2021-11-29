@@ -120,5 +120,10 @@ namespace WindowFrom
         {
 
         }
+
+        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
