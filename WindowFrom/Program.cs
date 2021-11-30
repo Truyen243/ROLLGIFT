@@ -16,7 +16,7 @@ namespace WindowFrom
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new f_Login());
+            Application.Run(new f_Main());
         }
     }
 }

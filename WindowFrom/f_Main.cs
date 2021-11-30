@@ -17,6 +17,21 @@ namespace WindowFrom
         {
             InitializeComponent();
         }
+
+
+        // Tạo tabcontrol
+        /*public bool CheckOpen(string name)
+        {
+            for (int i = 0;i< tabControl2.TabCount;i++)
+            {
+                if(tabControl2.Tabs[i])
+            }    
+            return false;
+        }    */
+
+
+
+
         UserDAO _userDAO;
         private void mnSignupAccount_Click(object sender, EventArgs e)
         {
@@ -26,6 +41,8 @@ namespace WindowFrom
         }
         private void f_Main_Load(object sender, EventArgs e)
         {
+            f_Login flog = new f_Login();
+            flog.ShowDialog();
             _userDAO = new UserDAO();
 
             tsslblInFo.Text = string.Format("Login by {0} - {1}", Cls_Main._staticUser.ID, Cls_Main._staticUser.FullName);
@@ -33,7 +50,8 @@ namespace WindowFrom
             {
                 mnUserList.Enabled = false;
                 rollGiftToolStripMenuItem.Enabled = false;
-            }    
+            }   
+            
         }
 
         
@@ -74,7 +92,7 @@ namespace WindowFrom
             if (MessageBox.Show("Bạn có thật sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != DialogResult.OK)
             {
                 e.Cancel = true;
-                
+     
             }
         }
 
@@ -93,27 +111,15 @@ namespace WindowFrom
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void rollGiftToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        {                 
             f_quaysomayman frm = new f_quaysomayman();
             this.Hide();
             frm.ShowDialog();
             this.Show();
+
+
+
         }
 
         private void mnFile_Click(object sender, EventArgs e)

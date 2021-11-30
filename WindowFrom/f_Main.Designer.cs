@@ -40,6 +40,7 @@ namespace WindowFrom
             this.panel1 = new System.Windows.Forms.Panel();
             this.tsslblInFo = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +55,8 @@ namespace WindowFrom
             this.thôngTinCáNhânToolStripMenuItem,
             this.mnFile,
             this.rollGiftToolStripMenuItem,
-            this.logOutToolStripMenuItem});
+            this.logOutToolStripMenuItem,
+            this.informationToolStripMenuItem});
             this.menuStrip2.MdiWindowListItem = this.mnFile;
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
@@ -118,6 +120,11 @@ namespace WindowFrom
             resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Name = "statusStrip1";
             // 
+            // informationToolStripMenuItem
+            // 
+            resources.ApplyResources(this.informationToolStripMenuItem, "informationToolStripMenuItem");
+            this.informationToolStripMenuItem.Name = "informationToolStripMenuItem";
+            // 
             // f_Main
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
@@ -157,5 +164,6 @@ namespace WindowFrom
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripStatusLabel tsslblInFo;
         private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripMenuItem informationToolStripMenuItem;
     }
 }
