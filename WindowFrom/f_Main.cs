@@ -92,7 +92,6 @@ namespace WindowFrom
             if (MessageBox.Show("Bạn có thật sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != DialogResult.OK)
             {
                 e.Cancel = true;
-     
             }
         }
 
@@ -130,6 +129,66 @@ namespace WindowFrom
         private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void informationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            f_information f_infor = new f_information();
+            this.Hide();
+            f_infor.ShowDialog();
+            this.Show();
+        }
+
+        private void contactToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            f_contact f_infor = new f_contact();
+            this.Hide();
+            f_infor.ShowDialog();
+            this.Show();
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gradeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            f_grade f_infor = new f_grade();
+            this.Hide();
+            f_infor.ShowDialog();
+            this.Show();
+        }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            f_print f_infor = new f_print();
+            this.Hide();
+            f_infor.ShowDialog();
+            this.Show();
+        }
+
+        private void imageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            f_image f_infor = new f_image();
+            this.Hide();
+            f_infor.ShowDialog();
+            this.Show();
         }
     }
 }

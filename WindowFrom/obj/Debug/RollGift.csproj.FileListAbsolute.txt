@@ -138,3 +138,8 @@ C:\Users\ASUS\Desktop\Project3\WindowFrom\obj\Debug\RollGift.csproj.CopyComplete
 C:\Users\ASUS\Desktop\Project3\WindowFrom\obj\Debug\WindowFrom.exe
 C:\Users\ASUS\Desktop\Project3\WindowFrom\obj\Debug\WindowFrom.pdb
 C:\Users\ASUS\Desktop\Project3\WindowFrom\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\ASUS\Desktop\Project3\WindowFrom\obj\Debug\WindowFrom.f_information.resources
+C:\Users\ASUS\Desktop\Project3\WindowFrom\obj\Debug\WindowFrom.f_grade.resources
+C:\Users\ASUS\Desktop\Project3\WindowFrom\obj\Debug\WindowFrom.f_image.resources
+C:\Users\ASUS\Desktop\Project3\WindowFrom\obj\Debug\WindowFrom.f_print.resources
+C:\Users\ASUS\Desktop\Project3\WindowFrom\obj\Debug\WindowFrom.f_setting.resources
