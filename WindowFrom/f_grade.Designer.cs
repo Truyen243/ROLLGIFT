@@ -44,7 +44,7 @@ namespace WindowFrom
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -53,9 +53,9 @@ namespace WindowFrom
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dataGridView1.Location = new System.Drawing.Point(356, 124);
+            this.dataGridView1.Location = new System.Drawing.Point(384, 142);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(645, 390);
+            this.dataGridView1.Size = new System.Drawing.Size(617, 372);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -106,7 +106,7 @@ namespace WindowFrom
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(308, 66);
             this.button1.TabIndex = 38;
-            this.button1.Text = "Tra cứu";
+            this.button1.Text = "Tra cứu thông tin ";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // f_grade

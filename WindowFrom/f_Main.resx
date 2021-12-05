@@ -148,7 +148,7 @@
 </value>
   </data>
   <data name="settingToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 46</value>
+    <value>204, 46</value>
   </data>
   <data name="settingToolStripMenuItem.Text" xml:space="preserve">
     <value>Setting</value>
@@ -163,7 +163,7 @@
 </value>
   </data>
   <data name="printToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 46</value>
+    <value>204, 46</value>
   </data>
   <data name="printToolStripMenuItem.Text" xml:space="preserve">
     <value>Print</value>
@@ -180,7 +180,7 @@
 </value>
   </data>
   <data name="imageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 46</value>
+    <value>204, 46</value>
   </data>
   <data name="imageToolStripMenuItem.Text" xml:space="preserve">
     <value>Image</value>
