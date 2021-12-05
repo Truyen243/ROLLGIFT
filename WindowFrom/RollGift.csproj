@@ -61,6 +61,12 @@
     <Compile Include="Data\User.cs" />
     <Compile Include="Data\UserDAO.cs" />
     <Compile Include="Data\UserType.cs" />
+    <Compile Include="FormMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainMenu.Designer.cs">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="f_grade.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormMainMenu.resx">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="f_grade.resx">
       <DependentUpon>f_grade.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +197,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -240,6 +250,43 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\APs.PNG" />
+    <None Include="Resources\icons8_error_32.png" />
+    <None Include="Resources\icons8_shutdown_32.png" />
+    <None Include="Resources\icons8_settings_32.png" />
+    <None Include="Resources\icons8_import_32.png" />
+    <None Include="Resources\icons8_import_48.png" />
+    <None Include="Resources\icons8_key_2_32.png" />
+    <None Include="Resources\icons8_user_groups_32.png" />
+    <None Include="Resources\icons8_data_backup_32.png" />
+    <None Include="Resources\icons8_data_backup_64.png" />
+    <None Include="Resources\backup.png" />
+    <Content Include="Resources\Close.png" />
+    <Content Include="Resources\Dashboard.PNG" />
+    <Content Include="Resources\icono-cliente.png" />
+    <Content Include="Resources\logoUI.png" />
+    <Content Include="Resources\logoUI2.png" />
+    <Content Include="Resources\maximize.png" />
+    <Content Include="Resources\maximize2.png" />
+    <Content Include="Resources\maximize3.png" />
+    <Content Include="Resources\Membresia.PNG" />
+    <Content Include="Resources\menu.png" />
+    <Content Include="Resources\menu2.png" />
+    <Content Include="Resources\Minimize.png" />
+    <Content Include="Resources\Minimize1.png" />
+    <Content Include="Resources\new logo.png" />
+    <Content Include="Resources\new logo1.png" />
+    <Content Include="Resources\new logo2.png" />
+    <Content Include="Resources\new logo3.png" />
+    <Content Include="Resources\new logo4.png" />
+    <Content Include="Resources\new logo5.png" />
+    <Content Include="Resources\Normal.png" />
+    <Content Include="Resources\perfil.png" />
+    <Content Include="Resources\Planes.PNG" />
+    <Content Include="Resources\satellite-dish %281%29.png" />
+    <Content Include="Resources\satellite-dish.png" />
+    <Content Include="Resources\shut-down.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

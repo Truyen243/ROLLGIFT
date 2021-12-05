@@ -190,5 +190,13 @@ namespace WindowFrom
             f_infor.ShowDialog();
             this.Show();
         }
+
+        private void settingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormMainMenu formMenuPrincipal = new FormMainMenu();
+            this.Hide();
+            formMenuPrincipal.ShowDialog();
+            this.Show();
+        }
     }
 }
