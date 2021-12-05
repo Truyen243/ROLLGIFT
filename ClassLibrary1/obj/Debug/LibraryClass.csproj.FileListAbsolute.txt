@@ -34,3 +34,9 @@ C:\Users\chinh\Source\Repos\ManageApp\ClassLibrary1\obj\Debug\LibraryClass.cspro
 C:\Users\chinh\Source\Repos\ManageApp\ClassLibrary1\obj\Debug\LibraryClass.csproj.CoreCompileInputs.cache
 C:\Users\chinh\Source\Repos\ManageApp\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 C:\Users\chinh\Source\Repos\ManageApp\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\An\source\repos\Truyen243\ManageApp\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\An\source\repos\Truyen243\ManageApp\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\An\source\repos\Truyen243\ManageApp\ClassLibrary1\obj\Debug\LibraryClass.csproj.AssemblyReference.cache
+C:\Users\An\source\repos\Truyen243\ManageApp\ClassLibrary1\obj\Debug\LibraryClass.csproj.CoreCompileInputs.cache
+C:\Users\An\source\repos\Truyen243\ManageApp\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\An\source\repos\Truyen243\ManageApp\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
