@@ -142,6 +142,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="f_contact.resx">
+      <DependentUpon>f_contact.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="f_grade.resx">
       <DependentUpon>f_grade.cs</DependentUpon>
     </EmbeddedResource>
@@ -244,6 +247,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\zoom-background-006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neverland___collab_with_matej_by_t1na_de5uzjx.jpg" />
+    <None Include="Resources\positive.jpg" />
+    <None Include="Resources\1capture_by_gamerstupid27_dclp9ln.png" />
+    <Content Include="Resources\anh.jpg.jfif" />
+    <None Include="Resources\wavy_particles_backgrounds_by_graphicassets_detxh45.jpg" />
+    <None Include="Resources\capture_by_gamerstupid27_dclp9ln.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

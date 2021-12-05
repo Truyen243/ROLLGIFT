@@ -19,7 +19,7 @@ namespace WindowFrom.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -57,6 +57,56 @@ namespace WindowFrom.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1capture_by_gamerstupid27_dclp9ln {
+            get {
+                object obj = ResourceManager.GetObject("1capture_by_gamerstupid27_dclp9ln", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap capture_by_gamerstupid27_dclp9ln {
+            get {
+                object obj = ResourceManager.GetObject("capture_by_gamerstupid27_dclp9ln", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap neverland___collab_with_matej_by_t1na_de5uzjx {
+            get {
+                object obj = ResourceManager.GetObject("neverland___collab_with_matej_by_t1na_de5uzjx", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap positive {
+            get {
+                object obj = ResourceManager.GetObject("positive", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wavy_particles_backgrounds_by_graphicassets_detxh45 {
+            get {
+                object obj = ResourceManager.GetObject("wavy_particles_backgrounds_by_graphicassets_detxh45", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
