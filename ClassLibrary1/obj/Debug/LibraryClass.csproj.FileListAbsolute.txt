@@ -22,3 +22,9 @@ C:\Users\ASUS\Desktop\Project3\ClassLibrary1\obj\Debug\LibraryClass.csproj.Assem
 C:\Users\ASUS\Desktop\Project3\ClassLibrary1\obj\Debug\LibraryClass.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Desktop\Project3\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 C:\Users\ASUS\Desktop\Project3\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+D:\Project3\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+D:\Project3\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+D:\Project3\ClassLibrary1\obj\Debug\LibraryClass.csproj.AssemblyReference.cache
+D:\Project3\ClassLibrary1\obj\Debug\LibraryClass.csproj.CoreCompileInputs.cache
+D:\Project3\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+D:\Project3\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
