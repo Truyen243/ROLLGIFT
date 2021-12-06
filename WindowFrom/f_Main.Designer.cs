@@ -66,8 +66,8 @@ namespace WindowFrom
             this.menuStrip2.ImageScalingSize = new System.Drawing.Size(40, 40);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.thôngTinCáNhânToolStripMenuItem,
-            this.gradeToolStripMenuItem,
             this.mnFile,
+            this.gradeToolStripMenuItem,
             this.rollGiftToolStripMenuItem,
             this.logOutToolStripMenuItem,
             this.informationToolStripMenuItem,

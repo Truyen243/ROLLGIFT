@@ -148,7 +148,7 @@
 </value>
   </data>
   <data name="settingToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 46</value>
+    <value>244, 46</value>
   </data>
   <data name="settingToolStripMenuItem.Text" xml:space="preserve">
     <value>Setting</value>
@@ -163,7 +163,7 @@
 </value>
   </data>
   <data name="printToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 46</value>
+    <value>244, 46</value>
   </data>
   <data name="printToolStripMenuItem.Text" xml:space="preserve">
     <value>Print</value>
@@ -180,7 +180,7 @@
 </value>
   </data>
   <data name="imageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 46</value>
+    <value>244, 46</value>
   </data>
   <data name="imageToolStripMenuItem.Text" xml:space="preserve">
     <value>Image</value>
@@ -202,33 +202,10 @@
 </value>
   </data>
   <data name="thôngTinCáNhânToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 43</value>
+    <value>116, 54</value>
   </data>
   <data name="thôngTinCáNhânToolStripMenuItem.Text" xml:space="preserve">
     <value>Home</value>
-  </data>
-  <data name="gradeToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAp1JREFUWEft
-        lkuPTEEcxbt3BItJLIwQMvGKz2JBpKPfOr0gmHhMIhFh7ytgYUEyzDAWHhlLPgRC+AI2MiMYpo3fuc6t
-        6J6+cx8zNtInOelb5///n6pbVV23SiOMkAfNZnO80WichS/ga/jJ1PN8vV4/0+l0djh940DH++AMnfTg
-        Sgp7ylWNy9cHjI5j+kXmvOF3fu/CYzxPwDFzQnnwHrEl5cJF2kdtUwwYTGH0S4Y8z1Sr1b0OJUKDIf+R
-        B6HZuOBQPmj0MoDLRUwYyCXV2uOI5WygYBdcgHrzKcu5Qe1lecDPPI9bTgcFd1w4Z6koyng8kRczctva
-        2tA6U6BpW9J6Wo7gadXALlpKBTX7yf8Bl/HebTkZWm91wu+0pQD0V4rBl5YyAS/9heU5aSkZJM67kxOW
-        ImgN0eJzQLt71Zo6tuJmAFrdseeWkkHSeyXTQd9BQvu0TSIytaccCohjbgZQe9Cxt5aSQdKikiuVylZL
-        ETB5ZpN4GZ46FDoepMOlbre7zdqCpWSQFJ16rVZriyVtpDE0baSfmhn9qi1dceUPY1QM8g7gnZLb7fYB
-        SxpA1QaD7Nsnse5mQK1WO+TYG0vJIGnVJmQAD60NctYpEWLdzQC07JuQKZ5UMr/hb0g7OhUZyB61fVbI
-        MH1KAXkPnH/OUjJI0jGsNQ4HkYv73myYNgx46CDSFzLbQSTw9jdlTvFjmuU/aiGEoxjespYORrqTgvhj
-        dNVyblB73Z3n+xgJFMSfY90HrljOijKzd821+T/HMRhEuJDAWW0+hxKhfUPunGt6tM87VAwMou9KRnsa
-        tmkf5gK6iRNzs57hSXhfOcqF67+SxeAg2Y7ZDUy/2XwtflWualy+ccD472v5R72t3/gD/HfX8hH+Y5RK
-        vwE3Eu9RZQ7YRwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="gradeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 43</value>
-  </data>
-  <data name="gradeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Grade</value>
   </data>
   <data name="mnChangedPassWord.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -253,7 +230,7 @@
 </value>
   </data>
   <data name="mnChangedPassWord.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 46</value>
+    <value>281, 46</value>
   </data>
   <data name="mnChangedPassWord.Text" xml:space="preserve">
     <value>Changed PassWord</value>
@@ -269,7 +246,7 @@
 </value>
   </data>
   <data name="mnUserList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 46</value>
+    <value>281, 46</value>
   </data>
   <data name="mnUserList.Text" xml:space="preserve">
     <value>Manage User</value>
@@ -301,10 +278,33 @@
 </value>
   </data>
   <data name="mnFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 43</value>
+    <value>135, 54</value>
   </data>
   <data name="mnFile.Text" xml:space="preserve">
     <value>Manage</value>
+  </data>
+  <data name="gradeToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAp1JREFUWEft
+        lkuPTEEcxbt3BItJLIwQMvGKz2JBpKPfOr0gmHhMIhFh7ytgYUEyzDAWHhlLPgRC+AI2MiMYpo3fuc6t
+        6J6+cx8zNtInOelb5///n6pbVV23SiOMkAfNZnO80WichS/ga/jJ1PN8vV4/0+l0djh940DH++AMnfTg
+        Sgp7ylWNy9cHjI5j+kXmvOF3fu/CYzxPwDFzQnnwHrEl5cJF2kdtUwwYTGH0S4Y8z1Sr1b0OJUKDIf+R
+        B6HZuOBQPmj0MoDLRUwYyCXV2uOI5WygYBdcgHrzKcu5Qe1lecDPPI9bTgcFd1w4Z6koyng8kRczctva
+        2tA6U6BpW9J6Wo7gadXALlpKBTX7yf8Bl/HebTkZWm91wu+0pQD0V4rBl5YyAS/9heU5aSkZJM67kxOW
+        ImgN0eJzQLt71Zo6tuJmAFrdseeWkkHSeyXTQd9BQvu0TSIytaccCohjbgZQe9Cxt5aSQdKikiuVylZL
+        ETB5ZpN4GZ46FDoepMOlbre7zdqCpWSQFJ16rVZriyVtpDE0baSfmhn9qi1dceUPY1QM8g7gnZLb7fYB
+        SxpA1QaD7Nsnse5mQK1WO+TYG0vJIGnVJmQAD60NctYpEWLdzQC07JuQKZ5UMr/hb0g7OhUZyB61fVbI
+        MH1KAXkPnH/OUjJI0jGsNQ4HkYv73myYNgx46CDSFzLbQSTw9jdlTvFjmuU/aiGEoxjespYORrqTgvhj
+        dNVyblB73Z3n+xgJFMSfY90HrljOijKzd821+T/HMRhEuJDAWW0+hxKhfUPunGt6tM87VAwMou9KRnsa
+        tmkf5gK6iRNzs57hSXhfOcqF67+SxeAg2Y7ZDUy/2XwtflWualy+ccD472v5R72t3/gD/HfX8hH+Y5RK
+        vwE3Eu9RZQ7YRwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="gradeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 54</value>
+  </data>
+  <data name="gradeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Grade</value>
   </data>
   <data name="rollGiftToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -322,7 +322,7 @@
 </value>
   </data>
   <data name="rollGiftToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 43</value>
+    <value>132, 54</value>
   </data>
   <data name="rollGiftToolStripMenuItem.Text" xml:space="preserve">
     <value>Roll Gift</value>
@@ -370,7 +370,7 @@
 </value>
   </data>
   <data name="logOutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 43</value>
+    <value>133, 54</value>
   </data>
   <data name="logOutToolStripMenuItem.Text" xml:space="preserve">
     <value>Log Out</value>
@@ -385,7 +385,7 @@
 </value>
   </data>
   <data name="informationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 43</value>
+    <value>165, 54</value>
   </data>
   <data name="informationToolStripMenuItem.Text" xml:space="preserve">
     <value>Information</value>
@@ -402,7 +402,7 @@
 </value>
   </data>
   <data name="contactToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 43</value>
+    <value>131, 54</value>
   </data>
   <data name="contactToolStripMenuItem.Text" xml:space="preserve">
     <value>Contact</value>
@@ -411,13 +411,13 @@
     <value>0, 0</value>
   </data>
   <data name="menuStrip2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>15, 16, 15, 16</value>
+    <value>20, 20, 20, 20</value>
   </data>
   <data name="menuStrip2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 2, 0, 2</value>
+    <value>5, 2, 0, 2</value>
   </data>
   <data name="menuStrip2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1024, 47</value>
+    <value>1365, 58</value>
   </data>
   <data name="menuStrip2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -438,10 +438,13 @@
     <value>2</value>
   </data>
   <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>642, 273</value>
+    <value>856, 336</value>
+  </data>
+  <data name="flowLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 100</value>
+    <value>267, 123</value>
   </data>
   <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -565,11 +568,8 @@
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 148</value>
+    <value>236, 182</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -590,13 +590,13 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>704, 57</value>
+    <value>939, 70</value>
   </data>
   <data name="textBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>216, 26</value>
+    <value>287, 30</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -617,13 +617,10 @@
     <value>Microsoft YaHei, 22.2pt, style=Bold</value>
   </data>
   <data name="Man.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 32</value>
-  </data>
-  <data name="Man.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
+    <value>280, 39</value>
   </data>
   <data name="Man.Size" type="System.Drawing.Size, System.Drawing">
-    <value>380, 86</value>
+    <value>507, 106</value>
   </data>
   <data name="Man.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -673,13 +670,13 @@
     <value>MiddleLeft</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>641, 41</value>
+    <value>855, 50</value>
   </data>
   <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 8, 8, 8</value>
+    <value>11, 10, 11, 10</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>334, 61</value>
+    <value>445, 75</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -703,10 +700,10 @@
     <value>0, 0</value>
   </data>
   <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1024, 148</value>
+    <value>1365, 182</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -727,13 +724,13 @@
     <value>Fill</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 47</value>
+    <value>0, 58</value>
   </data>
   <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1024, 381</value>
+    <value>1365, 474</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -782,7 +779,7 @@
 </value>
   </data>
   <data name="tsslblInFo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 20</value>
+    <value>38, 20</value>
   </data>
   <data name="tsslblInFo.Text" xml:space="preserve">
     <value>...</value>
@@ -791,13 +788,13 @@
     <value>170, 26</value>
   </metadata>
   <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 428</value>
+    <value>0, 532</value>
   </data>
   <data name="statusStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 0, 10, 0</value>
+    <value>1, 0, 13, 0</value>
   </data>
   <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1024, 25</value>
+    <value>1365, 26</value>
   </data>
   <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -824,13 +821,13 @@
     <value>50</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1024, 453</value>
+    <value>1365, 558</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -915,7 +912,7 @@
     <value>50, 50</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
