@@ -46,7 +46,7 @@ namespace WindowFrom
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::WindowFrom.Properties.Resources.neverland___collab_with_matej_by_t1na_de5uzjx;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.pictureBox1.Location = new System.Drawing.Point(1, -1);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
