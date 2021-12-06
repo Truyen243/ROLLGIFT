@@ -50,17 +50,18 @@ namespace WindowFrom
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(-3, 163);
+            this.label1.Location = new System.Drawing.Point(323, 12);
             this.label1.Margin = new System.Windows.Forms.Padding(8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(334, 61);
             this.label1.TabIndex = 2;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox1.Location = new System.Drawing.Point(91, 180);
+            this.textBox1.Location = new System.Drawing.Point(417, 29);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(216, 26);
@@ -71,7 +72,7 @@ namespace WindowFrom
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(5, 273);
+            this.label2.Location = new System.Drawing.Point(14, 107);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 25);
             this.label2.TabIndex = 10;
@@ -81,21 +82,22 @@ namespace WindowFrom
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox3.Image = global::WindowFrom.Properties.Resources.zoom_background_006;
-            this.pictureBox3.Location = new System.Drawing.Point(468, 191);
+            this.pictureBox3.Location = new System.Drawing.Point(326, 107);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(509, 333);
+            this.pictureBox3.Size = new System.Drawing.Size(503, 333);
             this.pictureBox3.TabIndex = 36;
             this.pictureBox3.TabStop = false;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 547);
+            this.button1.Location = new System.Drawing.Point(12, 462);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(133, 37);
             this.button1.TabIndex = 37;
             this.button1.Text = "Print";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // checkedListBox1
             // 
@@ -103,7 +105,7 @@ namespace WindowFrom
             this.checkedListBox1.Items.AddRange(new object[] {
             "PDF",
             "See more"});
-            this.checkedListBox1.Location = new System.Drawing.Point(144, 273);
+            this.checkedListBox1.Location = new System.Drawing.Point(153, 107);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(120, 34);
             this.checkedListBox1.TabIndex = 38;
@@ -112,7 +114,7 @@ namespace WindowFrom
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(5, 355);
+            this.label3.Location = new System.Drawing.Point(14, 159);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 25);
             this.label3.TabIndex = 39;
@@ -123,7 +125,7 @@ namespace WindowFrom
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(5, 460);
+            this.label5.Location = new System.Drawing.Point(14, 240);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(104, 25);
             this.label5.TabIndex = 40;
@@ -137,7 +139,7 @@ namespace WindowFrom
             "Odd pages only",
             "Even pages only",
             "Custom"});
-            this.checkedListBox2.Location = new System.Drawing.Point(144, 355);
+            this.checkedListBox2.Location = new System.Drawing.Point(153, 159);
             this.checkedListBox2.Name = "checkedListBox2";
             this.checkedListBox2.Size = new System.Drawing.Size(120, 64);
             this.checkedListBox2.TabIndex = 42;
@@ -152,7 +154,7 @@ namespace WindowFrom
             "A3",
             "A4",
             "A5"});
-            this.checkedListBox3.Location = new System.Drawing.Point(144, 460);
+            this.checkedListBox3.Location = new System.Drawing.Point(153, 240);
             this.checkedListBox3.Name = "checkedListBox3";
             this.checkedListBox3.Size = new System.Drawing.Size(120, 64);
             this.checkedListBox3.TabIndex = 43;
@@ -172,7 +174,7 @@ namespace WindowFrom
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1117, 593);
+            this.ClientSize = new System.Drawing.Size(983, 513);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.checkedListBox3);
             this.Controls.Add(this.checkedListBox2);
