@@ -35,6 +35,8 @@ namespace WindowFrom
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMaSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,8 +45,6 @@ namespace WindowFrom
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -109,10 +109,32 @@ namespace WindowFrom
             this.pictureBox2.TabIndex = 40;
             this.pictureBox2.TabStop = false;
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.textBox1.Location = new System.Drawing.Point(258, 33);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(216, 26);
+            this.textBox1.TabIndex = 42;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(195, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(309, 61);
+            this.label1.TabIndex = 41;
+            // 
             // Column1
             // 
             this.Column1.HeaderText = "STT";
             this.Column1.Name = "Column1";
+            this.Column1.Width = 50;
             // 
             // colMaSV
             // 
@@ -124,7 +146,7 @@ namespace WindowFrom
             // 
             this.Column2.HeaderText = "Họ và tên";
             this.Column2.Name = "Column2";
-            this.Column2.Width = 200;
+            this.Column2.Width = 210;
             // 
             // colGioiTinh
             // 
@@ -150,27 +172,6 @@ namespace WindowFrom
             // 
             this.Column6.HeaderText = "Học lực";
             this.Column6.Name = "Column6";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox1.Location = new System.Drawing.Point(258, 33);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 26);
-            this.textBox1.TabIndex = 42;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(195, 17);
-            this.label1.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(309, 61);
-            this.label1.TabIndex = 41;
             // 
             // f_grade
             // 
@@ -202,6 +203,10 @@ namespace WindowFrom
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMaSV;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -210,9 +215,5 @@ namespace WindowFrom
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
     }
 }
