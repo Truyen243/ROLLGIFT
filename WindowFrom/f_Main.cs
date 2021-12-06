@@ -199,5 +199,9 @@ namespace WindowFrom
             this.Show();
         }
 
+        private void guna2VTrackBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+
+        }
     }
 }

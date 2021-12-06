@@ -35,16 +35,15 @@ namespace WindowFrom
             this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gradeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mnChangedPassWord = new System.Windows.Forms.ToolStripMenuItem();
             this.mnUserList = new System.Windows.Forms.ToolStripMenuItem();
+            this.gradeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rollGiftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contactToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -52,10 +51,16 @@ namespace WindowFrom
             this.label1 = new System.Windows.Forms.Label();
             this.tsslblInFo = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.gunaTrackBar1 = new Guna.UI.WinForms.GunaTrackBar();
+            this.gunaTileButton1 = new Guna.UI.WinForms.GunaTileButton();
             this.menuStrip2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip2
@@ -102,12 +107,6 @@ namespace WindowFrom
             this.imageToolStripMenuItem.Name = "imageToolStripMenuItem";
             this.imageToolStripMenuItem.Click += new System.EventHandler(this.imageToolStripMenuItem_Click);
             // 
-            // gradeToolStripMenuItem
-            // 
-            resources.ApplyResources(this.gradeToolStripMenuItem, "gradeToolStripMenuItem");
-            this.gradeToolStripMenuItem.Name = "gradeToolStripMenuItem";
-            this.gradeToolStripMenuItem.Click += new System.EventHandler(this.gradeToolStripMenuItem_Click);
-            // 
             // mnFile
             // 
             this.mnFile.AutoToolTip = true;
@@ -129,6 +128,12 @@ namespace WindowFrom
             resources.ApplyResources(this.mnUserList, "mnUserList");
             this.mnUserList.Name = "mnUserList";
             this.mnUserList.Click += new System.EventHandler(this.mnUserList_Click);
+            // 
+            // gradeToolStripMenuItem
+            // 
+            resources.ApplyResources(this.gradeToolStripMenuItem, "gradeToolStripMenuItem");
+            this.gradeToolStripMenuItem.Name = "gradeToolStripMenuItem";
+            this.gradeToolStripMenuItem.Click += new System.EventHandler(this.gradeToolStripMenuItem_Click);
             // 
             // rollGiftToolStripMenuItem
             // 
@@ -159,16 +164,13 @@ namespace WindowFrom
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.panel1.Controls.Add(this.flowLayoutPanel1);
+            this.panel1.Controls.Add(this.gunaTileButton1);
+            this.panel1.Controls.Add(this.gunaTrackBar1);
+            this.panel1.Controls.Add(this.tabControl1);
             this.panel1.Controls.Add(this.panel2);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel1.Name = "panel1";
-            // 
-            // flowLayoutPanel1
-            // 
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // panel2
             // 
@@ -219,6 +221,54 @@ namespace WindowFrom
             resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Name = "statusStrip1";
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            // 
+            // tabPage1
+            // 
+            resources.ApplyResources(this.tabPage1, "tabPage1");
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            resources.ApplyResources(this.tabPage2, "tabPage2");
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // gunaTrackBar1
+            // 
+            resources.ApplyResources(this.gunaTrackBar1, "gunaTrackBar1");
+            this.gunaTrackBar1.Name = "gunaTrackBar1";
+            this.gunaTrackBar1.TrackColor = System.Drawing.Color.DimGray;
+            this.gunaTrackBar1.TrackHoverColor = System.Drawing.Color.Gray;
+            this.gunaTrackBar1.TrackIdleColor = System.Drawing.Color.Silver;
+            this.gunaTrackBar1.TrackPressedColor = System.Drawing.Color.Black;
+            // 
+            // gunaTileButton1
+            // 
+            this.gunaTileButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaTileButton1.AnimationSpeed = 0.03F;
+            this.gunaTileButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaTileButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaTileButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaTileButton1.FocusedColor = System.Drawing.Color.Empty;
+            resources.ApplyResources(this.gunaTileButton1, "gunaTileButton1");
+            this.gunaTileButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaTileButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaTileButton1.Image")));
+            this.gunaTileButton1.ImageSize = new System.Drawing.Size(52, 52);
+            this.gunaTileButton1.Name = "gunaTileButton1";
+            this.gunaTileButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaTileButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaTileButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaTileButton1.OnHoverImage = null;
+            this.gunaTileButton1.OnPressedColor = System.Drawing.Color.Black;
+            // 
             // f_Main
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
@@ -245,6 +295,7 @@ namespace WindowFrom
             this.panel2.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,6 +323,10 @@ namespace WindowFrom
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private Guna.UI.WinForms.GunaTileButton gunaTileButton1;
+        private Guna.UI.WinForms.GunaTrackBar gunaTrackBar1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
     }
 }
