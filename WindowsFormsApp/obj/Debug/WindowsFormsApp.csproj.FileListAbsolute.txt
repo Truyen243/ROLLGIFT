@@ -1,0 +1,17 @@
+D:\Demo\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe.config
+D:\Demo\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe
+D:\Demo\WindowsFormsApp\bin\Debug\WindowsFormsApp.pdb
+D:\Demo\WindowsFormsApp\bin\Debug\Guna.UI2.dll
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.AssemblyReference.cache
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.Properties.Resources.resources
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.GenerateResource.cache
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CoreCompileInputs.cache
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CopyComplete
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
+D:\Demo\WindowsFormsApp\bin\Debug\Guna.UI.dll
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormMain.resources
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormDiem.resources
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormKhoa.resources
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormMonHoc.resources
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormSinhVien.resources
