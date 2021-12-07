@@ -12,8 +12,7 @@ namespace WindowsFormsApp
 {
     public partial class FormMain : Form
     {
-        FormKhoa formKhoa;
-        FormSinhVien formSinhVien;
+
         public FormMain()
         {
             InitializeComponent();
@@ -25,6 +24,8 @@ namespace WindowsFormsApp
             formSinhVien1.Visible = false;
             formMonHoc1.Visible = false;
             formDiem1.Visible = false;
+
+            
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
@@ -53,6 +54,7 @@ namespace WindowsFormsApp
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+
             formKhoa1.Visible = true;
             formSinhVien1.Visible = false;
             formMonHoc1.Visible = false;
