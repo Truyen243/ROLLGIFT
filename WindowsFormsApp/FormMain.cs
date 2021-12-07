@@ -20,10 +20,10 @@ namespace WindowsFormsApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            formKhoa1.Visible = true;
+            formKhoa1.Visible = false;
             formSinhVien1.Visible = false;
             formMonHoc1.Visible = false;
-            formDiem1.Visible = false;
+            formDiem1.Visible = true;
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
@@ -57,6 +57,16 @@ namespace WindowsFormsApp
             formSinhVien1.Visible = false;
             formMonHoc1.Visible = false;
             formSinhVien1.Visible = false;
+        }
+
+        private void formMonHoc1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaContextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
         }
     }
 }

@@ -45,8 +45,20 @@ namespace WindowsFormsApp
             this.formMonHoc1 = new WindowsFormsApp.FormMonHoc();
             this.formKhoa1 = new WindowsFormsApp.FormKhoa();
             this.formSinhVien1 = new WindowsFormsApp.FormSinhVien();
+            this.gunaContextMenuStrip1 = new Guna.UI.WinForms.GunaContextMenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.chứcNăngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lookUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ìnormationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.systemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lookUpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
+            this.gunaContextMenuStrip1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -116,6 +128,7 @@ namespace WindowsFormsApp
             // btnSinhVien
             // 
             this.btnSinhVien.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnSinhVien.Checked = true;
             this.btnSinhVien.CheckedState.Parent = this.btnSinhVien;
             this.btnSinhVien.CustomBorderThickness = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.btnSinhVien.CustomImages.Parent = this.btnSinhVien;
@@ -138,7 +151,6 @@ namespace WindowsFormsApp
             // 
             this.btnKhoa.BackColor = System.Drawing.Color.White;
             this.btnKhoa.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnKhoa.Checked = true;
             this.btnKhoa.CheckedState.Parent = this.btnKhoa;
             this.btnKhoa.CustomBorderThickness = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.btnKhoa.CustomImages.Parent = this.btnKhoa;
@@ -148,7 +160,7 @@ namespace WindowsFormsApp
             this.btnKhoa.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnKhoa.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.btnKhoa.HoverState.Parent = this.btnKhoa;
-            this.btnKhoa.Location = new System.Drawing.Point(2, 107);
+            this.btnKhoa.Location = new System.Drawing.Point(3, 311);
             this.btnKhoa.Name = "btnKhoa";
             this.btnKhoa.PressedDepth = 0;
             this.btnKhoa.ShadowDecoration.Parent = this.btnKhoa;
@@ -215,9 +227,9 @@ namespace WindowsFormsApp
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.formDiem1.BackColor = System.Drawing.Color.Crimson;
-            this.formDiem1.Location = new System.Drawing.Point(202, 34);
+            this.formDiem1.Location = new System.Drawing.Point(200, 176);
             this.formDiem1.Name = "formDiem1";
-            this.formDiem1.Size = new System.Drawing.Size(898, 566);
+            this.formDiem1.Size = new System.Drawing.Size(900, 424);
             this.formDiem1.TabIndex = 5;
             // 
             // formMonHoc1
@@ -226,10 +238,11 @@ namespace WindowsFormsApp
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.formMonHoc1.BackColor = System.Drawing.Color.Coral;
-            this.formMonHoc1.Location = new System.Drawing.Point(202, 34);
+            this.formMonHoc1.Location = new System.Drawing.Point(200, 176);
             this.formMonHoc1.Name = "formMonHoc1";
-            this.formMonHoc1.Size = new System.Drawing.Size(898, 566);
+            this.formMonHoc1.Size = new System.Drawing.Size(900, 424);
             this.formMonHoc1.TabIndex = 4;
+            this.formMonHoc1.Load += new System.EventHandler(this.formMonHoc1_Load);
             // 
             // formKhoa1
             // 
@@ -238,9 +251,9 @@ namespace WindowsFormsApp
             | System.Windows.Forms.AnchorStyles.Right)));
             this.formKhoa1.AutoSize = true;
             this.formKhoa1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.formKhoa1.Location = new System.Drawing.Point(202, 34);
+            this.formKhoa1.Location = new System.Drawing.Point(200, 176);
             this.formKhoa1.Name = "formKhoa1";
-            this.formKhoa1.Size = new System.Drawing.Size(898, 566);
+            this.formKhoa1.Size = new System.Drawing.Size(976, 424);
             this.formKhoa1.TabIndex = 2;
             // 
             // formSinhVien1
@@ -249,10 +262,96 @@ namespace WindowsFormsApp
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.formSinhVien1.BackColor = System.Drawing.Color.Chartreuse;
-            this.formSinhVien1.Location = new System.Drawing.Point(202, 34);
+            this.formSinhVien1.Location = new System.Drawing.Point(200, 176);
             this.formSinhVien1.Name = "formSinhVien1";
-            this.formSinhVien1.Size = new System.Drawing.Size(898, 566);
+            this.formSinhVien1.Size = new System.Drawing.Size(897, 424);
             this.formSinhVien1.TabIndex = 3;
+            // 
+            // gunaContextMenuStrip1
+            // 
+            this.gunaContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.gunaContextMenuStrip1.Name = "gunaContextMenuStrip1";
+            this.gunaContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.gunaContextMenuStrip1.RenderStyle.ColorTable = null;
+            this.gunaContextMenuStrip1.RenderStyle.RoundedEdges = true;
+            this.gunaContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.gunaContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.gunaContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.gunaContextMenuStrip1.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
+            this.gunaContextMenuStrip1.Size = new System.Drawing.Size(108, 26);
+            this.gunaContextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.gunaContextMenuStrip1_Opening);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.chứcNăngToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
+            this.toolStripMenuItem1.Text = "Sytem";
+            // 
+            // chứcNăngToolStripMenuItem
+            // 
+            this.chứcNăngToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lookUpToolStripMenuItem});
+            this.chứcNăngToolStripMenuItem.Name = "chứcNăngToolStripMenuItem";
+            this.chứcNăngToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.chứcNăngToolStripMenuItem.Text = "Tool";
+            // 
+            // lookUpToolStripMenuItem
+            // 
+            this.lookUpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ìnormationToolStripMenuItem});
+            this.lookUpToolStripMenuItem.Name = "lookUpToolStripMenuItem";
+            this.lookUpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lookUpToolStripMenuItem.Text = "Look Up";
+            // 
+            // ìnormationToolStripMenuItem
+            // 
+            this.ìnormationToolStripMenuItem.Name = "ìnormationToolStripMenuItem";
+            this.ìnormationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ìnormationToolStripMenuItem.Text = "Ìnormation";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.systemToolStripMenuItem,
+            this.lookUpToolStripMenuItem1,
+            this.informationToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(202, 34);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(898, 24);
+            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // systemToolStripMenuItem
+            // 
+            this.systemToolStripMenuItem.Name = "systemToolStripMenuItem";
+            this.systemToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.systemToolStripMenuItem.Text = "System";
+            // 
+            // lookUpToolStripMenuItem1
+            // 
+            this.lookUpToolStripMenuItem1.Name = "lookUpToolStripMenuItem1";
+            this.lookUpToolStripMenuItem1.Size = new System.Drawing.Size(63, 20);
+            this.lookUpToolStripMenuItem1.Text = "Look Up";
+            // 
+            // informationToolStripMenuItem
+            // 
+            this.informationToolStripMenuItem.Name = "informationToolStripMenuItem";
+            this.informationToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.informationToolStripMenuItem.Text = "Information";
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.Location = new System.Drawing.Point(405, 82);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(549, 68);
+            this.gunaLabel1.TabIndex = 7;
+            this.gunaLabel1.Text = "Manage Student";
             // 
             // FormMain
             // 
@@ -260,19 +359,25 @@ namespace WindowsFormsApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1100, 600);
+            this.Controls.Add(this.gunaLabel1);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.formDiem1);
             this.Controls.Add(this.formMonHoc1);
             this.Controls.Add(this.formKhoa1);
             this.Controls.Add(this.formSinhVien1);
+            this.Controls.Add(this.formDiem1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
+            this.gunaContextMenuStrip1.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,6 +400,16 @@ namespace WindowsFormsApp
         private FormKhoa formKhoa1;
         private FormDiem formDiem1;
         private FormMonHoc formMonHoc1;
+        private Guna.UI.WinForms.GunaContextMenuStrip gunaContextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem systemToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lookUpToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem informationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem chứcNăngToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lookUpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ìnormationToolStripMenuItem;
     }
 }
 
