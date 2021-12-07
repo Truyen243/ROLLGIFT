@@ -21,9 +21,9 @@ namespace WindowsFormsApp
         private void Form1_Load(object sender, EventArgs e)
         {
             formKhoa1.Visible = false;
-            formSinhVien1.Visible = false;
+            formSinhVien1.Visible = true;
             formMonHoc1.Visible = false;
-            formDiem1.Visible = true;
+            formDiem1.Visible = false;
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)

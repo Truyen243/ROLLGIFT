@@ -17,3 +17,4 @@ D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormKhoa.resources
 D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormSinhVien.resources
 D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormDiem.resources
 D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormMonHoc.resources
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormUser.resources
