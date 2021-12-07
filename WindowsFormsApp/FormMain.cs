@@ -24,8 +24,6 @@ namespace WindowsFormsApp
             formSinhVien1.Visible = false;
             formMonHoc1.Visible = false;
             formDiem1.Visible = false;
-
-            
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)

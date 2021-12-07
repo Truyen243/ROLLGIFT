@@ -138,6 +138,7 @@ namespace WindowsFormsApp
             // 
             this.btnKhoa.BackColor = System.Drawing.Color.White;
             this.btnKhoa.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnKhoa.Checked = true;
             this.btnKhoa.CheckedState.Parent = this.btnKhoa;
             this.btnKhoa.CustomBorderThickness = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.btnKhoa.CustomImages.Parent = this.btnKhoa;
@@ -212,18 +213,18 @@ namespace WindowsFormsApp
             // 
             this.formDiem1.BackColor = System.Drawing.Color.Crimson;
             this.formDiem1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.formDiem1.Location = new System.Drawing.Point(202, 34);
+            this.formDiem1.Location = new System.Drawing.Point(0, 0);
             this.formDiem1.Name = "formDiem1";
-            this.formDiem1.Size = new System.Drawing.Size(898, 566);
+            this.formDiem1.Size = new System.Drawing.Size(1100, 600);
             this.formDiem1.TabIndex = 5;
             // 
             // formMonHoc1
             // 
             this.formMonHoc1.BackColor = System.Drawing.Color.Coral;
             this.formMonHoc1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.formMonHoc1.Location = new System.Drawing.Point(202, 34);
+            this.formMonHoc1.Location = new System.Drawing.Point(0, 0);
             this.formMonHoc1.Name = "formMonHoc1";
-            this.formMonHoc1.Size = new System.Drawing.Size(898, 566);
+            this.formMonHoc1.Size = new System.Drawing.Size(1100, 600);
             this.formMonHoc1.TabIndex = 4;
             // 
             // formKhoa1
@@ -250,12 +251,12 @@ namespace WindowsFormsApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1100, 600);
-            this.Controls.Add(this.formDiem1);
-            this.Controls.Add(this.formMonHoc1);
             this.Controls.Add(this.formKhoa1);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.formSinhVien1);
+            this.Controls.Add(this.formDiem1);
+            this.Controls.Add(this.formMonHoc1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
