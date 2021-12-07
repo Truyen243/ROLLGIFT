@@ -211,26 +211,33 @@ namespace WindowsFormsApp
             // 
             // formDiem1
             // 
+            this.formDiem1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.formDiem1.BackColor = System.Drawing.Color.Crimson;
-            this.formDiem1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.formDiem1.Location = new System.Drawing.Point(0, 0);
+            this.formDiem1.Location = new System.Drawing.Point(202, 34);
             this.formDiem1.Name = "formDiem1";
-            this.formDiem1.Size = new System.Drawing.Size(1100, 600);
+            this.formDiem1.Size = new System.Drawing.Size(898, 566);
             this.formDiem1.TabIndex = 5;
             // 
             // formMonHoc1
             // 
+            this.formMonHoc1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.formMonHoc1.BackColor = System.Drawing.Color.Coral;
-            this.formMonHoc1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.formMonHoc1.Location = new System.Drawing.Point(0, 0);
+            this.formMonHoc1.Location = new System.Drawing.Point(202, 34);
             this.formMonHoc1.Name = "formMonHoc1";
-            this.formMonHoc1.Size = new System.Drawing.Size(1100, 600);
+            this.formMonHoc1.Size = new System.Drawing.Size(898, 566);
             this.formMonHoc1.TabIndex = 4;
             // 
             // formKhoa1
             // 
+            this.formKhoa1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.formKhoa1.AutoSize = true;
             this.formKhoa1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.formKhoa1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.formKhoa1.Location = new System.Drawing.Point(202, 34);
             this.formKhoa1.Name = "formKhoa1";
             this.formKhoa1.Size = new System.Drawing.Size(898, 566);
@@ -238,11 +245,13 @@ namespace WindowsFormsApp
             // 
             // formSinhVien1
             // 
+            this.formSinhVien1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.formSinhVien1.BackColor = System.Drawing.Color.Chartreuse;
-            this.formSinhVien1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.formSinhVien1.Location = new System.Drawing.Point(0, 0);
+            this.formSinhVien1.Location = new System.Drawing.Point(202, 34);
             this.formSinhVien1.Name = "formSinhVien1";
-            this.formSinhVien1.Size = new System.Drawing.Size(1100, 600);
+            this.formSinhVien1.Size = new System.Drawing.Size(898, 566);
             this.formSinhVien1.TabIndex = 3;
             // 
             // FormMain
@@ -251,12 +260,12 @@ namespace WindowsFormsApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1100, 600);
-            this.Controls.Add(this.formKhoa1);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.formSinhVien1);
             this.Controls.Add(this.formDiem1);
             this.Controls.Add(this.formMonHoc1);
+            this.Controls.Add(this.formKhoa1);
+            this.Controls.Add(this.formSinhVien1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -265,6 +274,7 @@ namespace WindowsFormsApp
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

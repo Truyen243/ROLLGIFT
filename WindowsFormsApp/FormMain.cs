@@ -31,7 +31,7 @@ namespace WindowsFormsApp
             formKhoa1.Visible = false;
             formSinhVien1.Visible = false;
             formMonHoc1.Visible = false;
-            formSinhVien1.Visible = true;
+            formDiem1.Visible = true;
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
@@ -39,7 +39,7 @@ namespace WindowsFormsApp
             formKhoa1.Visible = false;
             formSinhVien1.Visible = false;
             formMonHoc1.Visible = true;
-            formSinhVien1.Visible = false;
+            formDiem1.Visible = false;
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)

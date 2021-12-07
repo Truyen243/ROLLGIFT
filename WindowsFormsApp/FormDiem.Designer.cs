@@ -37,7 +37,7 @@ namespace WindowsFormsApp
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.BackColor = System.Drawing.SystemColors.Control;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.gunaLabel1.Location = new System.Drawing.Point(196, 238);
+            this.gunaLabel1.Location = new System.Drawing.Point(205, 237);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(121, 30);
             this.gunaLabel1.TabIndex = 1;
