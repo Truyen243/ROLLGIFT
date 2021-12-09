@@ -226,7 +226,7 @@ namespace WindowsFormsApp
             this.Controls.Add(this.guna2ControlBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_Login";
-            this.Text = "Form_Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form_Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

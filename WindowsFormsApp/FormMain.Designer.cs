@@ -34,6 +34,7 @@ namespace WindowsFormsApp
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.formUser1 = new WindowsFormsApp.FormUser();
             this.btnDiem = new Guna.UI2.WinForms.Guna2Button();
             this.btnMonHoc = new Guna.UI2.WinForms.Guna2Button();
             this.btnSinhVien = new Guna.UI2.WinForms.Guna2Button();
@@ -48,21 +49,22 @@ namespace WindowsFormsApp
             this.lookUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ìnormationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.systemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.formMonHoc1 = new WindowsFormsApp.FormMonHoc();
             this.formKhoa1 = new WindowsFormsApp.FormKhoa();
             this.formSinhVien1 = new WindowsFormsApp.FormSinhVien();
             this.formDiem1 = new WindowsFormsApp.FormDiem();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.formUser1 = new WindowsFormsApp.FormUser();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.gunaContextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.guna2Panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -87,6 +89,14 @@ namespace WindowsFormsApp
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(202, 566);
             this.guna2Panel2.TabIndex = 1;
+            // 
+            // formUser1
+            // 
+            this.formUser1.AutoSize = true;
+            this.formUser1.Location = new System.Drawing.Point(31, 1);
+            this.formUser1.Name = "formUser1";
+            this.formUser1.Size = new System.Drawing.Size(133, 136);
+            this.formUser1.TabIndex = 4;
             // 
             // btnDiem
             // 
@@ -135,7 +145,8 @@ namespace WindowsFormsApp
             this.btnSinhVien.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnSinhVien.Checked = true;
             this.btnSinhVien.CheckedState.Parent = this.btnSinhVien;
-            this.btnSinhVien.CustomBorderThickness = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            FormMain formMain = this;
+            formMain.btnSinhVien.CustomBorderThickness = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.btnSinhVien.CustomImages.Parent = this.btnSinhVien;
             this.btnSinhVien.FillColor = System.Drawing.Color.White;
             this.btnSinhVien.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
@@ -285,6 +296,14 @@ namespace WindowsFormsApp
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // informationToolStripMenuItem
+            // 
+            this.informationToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.informationToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("informationToolStripMenuItem.Image")));
+            this.informationToolStripMenuItem.Name = "informationToolStripMenuItem";
+            this.informationToolStripMenuItem.Size = new System.Drawing.Size(139, 29);
+            this.informationToolStripMenuItem.Text = "Information";
+            // 
             // systemToolStripMenuItem
             // 
             this.systemToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -295,12 +314,59 @@ namespace WindowsFormsApp
             // 
             // gunaLabel1
             // 
+            this.gunaLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaLabel1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(239, 34);
+            this.gunaLabel1.Location = new System.Drawing.Point(253, 2);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(549, 68);
+            this.gunaLabel1.Size = new System.Drawing.Size(397, 68);
             this.gunaLabel1.TabIndex = 7;
             this.gunaLabel1.Text = "Manage Student";
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 16;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(225, 73);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(82, 34);
+            this.guna2Button1.TabIndex = 9;
+            this.guna2Button1.Text = "Find";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
+            // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.AutoSize = true;
+            this.guna2TextBox1.BorderRadius = 16;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Location = new System.Drawing.Point(3, 75);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "Nhập Thông Tin Cần Tìm";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Size = new System.Drawing.Size(216, 31);
+            this.guna2TextBox1.TabIndex = 10;
+            this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // formMonHoc1
             // 
@@ -348,69 +414,37 @@ namespace WindowsFormsApp
             this.formDiem1.Size = new System.Drawing.Size(900, 424);
             this.formDiem1.TabIndex = 5;
             // 
-            // dateTimePicker1
+            // guna2DateTimePicker1
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(786, 123);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(289, 29);
-            this.dateTimePicker1.TabIndex = 8;
+            this.guna2DateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2DateTimePicker1.BorderRadius = 16;
+            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(686, 67);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 36);
+            this.guna2DateTimePicker1.TabIndex = 11;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2021, 12, 9, 8, 13, 39, 467);
             // 
-            // formUser1
+            // guna2Panel3
             // 
-            this.formUser1.Location = new System.Drawing.Point(31, 0);
-            this.formUser1.Name = "formUser1";
-            this.formUser1.Size = new System.Drawing.Size(133, 153);
-            this.formUser1.TabIndex = 4;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BorderRadius = 20;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(558, 123);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(95, 47);
-            this.guna2Button1.TabIndex = 9;
-            this.guna2Button1.Text = "Find";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
-            // 
-            // informationToolStripMenuItem
-            // 
-            this.informationToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.informationToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("informationToolStripMenuItem.Image")));
-            this.informationToolStripMenuItem.Name = "informationToolStripMenuItem";
-            this.informationToolStripMenuItem.Size = new System.Drawing.Size(139, 29);
-            this.informationToolStripMenuItem.Text = "Information";
-            // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.BorderRadius = 20;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(301, 123);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "Nhập Thông Tin Cần Tìm";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(233, 47);
-            this.guna2TextBox1.TabIndex = 10;
+            this.guna2Panel3.BackColor = System.Drawing.Color.White;
+            this.guna2Panel3.Controls.Add(this.guna2Button1);
+            this.guna2Panel3.Controls.Add(this.guna2TextBox1);
+            this.guna2Panel3.Controls.Add(this.gunaLabel1);
+            this.guna2Panel3.Controls.Add(this.guna2DateTimePicker1);
+            this.guna2Panel3.Location = new System.Drawing.Point(202, 67);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
+            this.guna2Panel3.Size = new System.Drawing.Size(898, 110);
+            this.guna2Panel3.TabIndex = 12;
             // 
             // FormMain
             // 
@@ -418,10 +452,7 @@ namespace WindowsFormsApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1100, 600);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.gunaLabel1);
+            this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
@@ -436,10 +467,13 @@ namespace WindowsFormsApp
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
             this.gunaContextMenuStrip1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.guna2Panel3.ResumeLayout(false);
+            this.guna2Panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -470,11 +504,12 @@ namespace WindowsFormsApp
         private System.Windows.Forms.ToolStripMenuItem chứcNăngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lookUpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ìnormationToolStripMenuItem;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private FormUser formUser1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private System.Windows.Forms.ToolStripMenuItem informationToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
     }
 }
 

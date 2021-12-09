@@ -21,9 +21,11 @@ namespace WindowsFormsApp
         private void Form1_Load(object sender, EventArgs e)
         {
             formKhoa1.Visible = false;
-            formSinhVien1.Visible = true;
+            
             formMonHoc1.Visible = false;
             formDiem1.Visible = false;
+            formUser1.Visible = false;
+            formSinhVien1.Visible = true;
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
@@ -45,9 +47,10 @@ namespace WindowsFormsApp
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             formKhoa1.Visible = false;
-            formSinhVien1.Visible = true;
+            
             formMonHoc1.Visible = false;
             formDiem1.Visible = false;
+            formSinhVien1.Visible = true;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -70,6 +73,11 @@ namespace WindowsFormsApp
         }
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

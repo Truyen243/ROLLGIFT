@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_quaysomayman));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.cbGiai = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,12 +44,15 @@
             this.colTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPhongban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btQuay = new System.Windows.Forms.Button();
             this.lbl4 = new System.Windows.Forms.Label();
             this.lbl5 = new System.Windows.Forms.Label();
+            this.btInDanhSach = new System.Windows.Forms.Button();
             this.lbl3 = new System.Windows.Forms.Label();
+            this.btLayDanhSach = new System.Windows.Forms.Button();
             this.lbl2 = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
-            this.btQuay = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.lblErr = new System.Windows.Forms.ToolStripButton();
             this.dgtDanhsachtrunggiai = new System.Windows.Forms.GroupBox();
@@ -61,10 +64,7 @@
             this.colTenGiai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btLayDanhSach = new System.Windows.Forms.Button();
-            this.btInDanhSach = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsQuay)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -94,7 +94,7 @@
             this.cbGiai.FormattingEnabled = true;
             this.cbGiai.Location = new System.Drawing.Point(121, 8);
             this.cbGiai.Name = "cbGiai";
-            this.cbGiai.Size = new System.Drawing.Size(322, 41);
+            this.cbGiai.Size = new System.Drawing.Size(322, 35);
             this.cbGiai.TabIndex = 1;
             this.cbGiai.Text = "Chọn Giải Thưởng";
             this.cbGiai.SelectedIndexChanged += new System.EventHandler(this.CbGiai_SelectedIndexChanged);
@@ -106,7 +106,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(2, 44);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 45);
+            this.label2.Size = new System.Drawing.Size(0, 36);
             this.label2.TabIndex = 2;
             // 
             // groupBox1
@@ -125,17 +125,17 @@
             // 
             this.dsQuay.AllowUserToAddRows = false;
             this.dsQuay.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dsQuay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dsQuay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dsQuay.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dsQuay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dsQuay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dsQuay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dsQuay.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colSTT,
@@ -143,13 +143,13 @@
             this.colTen,
             this.colPhongban});
             this.dsQuay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dsQuay.Location = new System.Drawing.Point(3, 34);
+            this.dsQuay.Location = new System.Drawing.Point(3, 28);
             this.dsQuay.Name = "dsQuay";
             this.dsQuay.ReadOnly = true;
             this.dsQuay.RowHeadersVisible = false;
             this.dsQuay.RowHeadersWidth = 51;
             this.dsQuay.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dsQuay.Size = new System.Drawing.Size(446, 491);
+            this.dsQuay.Size = new System.Drawing.Size(446, 497);
             this.dsQuay.TabIndex = 1;
             this.dsQuay.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dsQuay_CellContentClick);
             // 
@@ -212,65 +212,16 @@
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             // 
-            // lbl4
+            // button1
             // 
-            this.lbl4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl4.AutoSize = true;
-            this.lbl4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lbl4.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4.Location = new System.Drawing.Point(508, 60);
-            this.lbl4.Name = "lbl4";
-            this.lbl4.Size = new System.Drawing.Size(179, 212);
-            this.lbl4.TabIndex = 7;
-            this.lbl4.Text = "0";
-            // 
-            // lbl5
-            // 
-            this.lbl5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl5.AutoSize = true;
-            this.lbl5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lbl5.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5.Location = new System.Drawing.Point(649, 60);
-            this.lbl5.Name = "lbl5";
-            this.lbl5.Size = new System.Drawing.Size(179, 212);
-            this.lbl5.TabIndex = 6;
-            this.lbl5.Text = "0";
-            // 
-            // lbl3
-            // 
-            this.lbl3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl3.AutoSize = true;
-            this.lbl3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lbl3.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3.Location = new System.Drawing.Point(367, 60);
-            this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(179, 212);
-            this.lbl3.TabIndex = 2;
-            this.lbl3.Text = "0";
-            // 
-            // lbl2
-            // 
-            this.lbl2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl2.AutoSize = true;
-            this.lbl2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lbl2.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2.Location = new System.Drawing.Point(226, 60);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(179, 212);
-            this.lbl2.TabIndex = 1;
-            this.lbl2.Text = "0";
-            // 
-            // lbl1
-            // 
-            this.lbl1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl1.AutoSize = true;
-            this.lbl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lbl1.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.Location = new System.Drawing.Point(85, 60);
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(179, 212);
-            this.lbl1.TabIndex = 0;
-            this.lbl1.Text = "0";
+            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 11F);
+            this.button1.Location = new System.Drawing.Point(6, 10);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(114, 31);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Chọn Giải";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btQuay
             // 
@@ -282,6 +233,88 @@
             this.btQuay.Text = "Quay";
             this.btQuay.UseVisualStyleBackColor = true;
             this.btQuay.Click += new System.EventHandler(this.btQuay_Click);
+            // 
+            // lbl4
+            // 
+            this.lbl4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl4.AutoSize = true;
+            this.lbl4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lbl4.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4.Location = new System.Drawing.Point(508, 60);
+            this.lbl4.Name = "lbl4";
+            this.lbl4.Size = new System.Drawing.Size(144, 171);
+            this.lbl4.TabIndex = 7;
+            this.lbl4.Text = "0";
+            // 
+            // lbl5
+            // 
+            this.lbl5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl5.AutoSize = true;
+            this.lbl5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lbl5.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5.Location = new System.Drawing.Point(649, 60);
+            this.lbl5.Name = "lbl5";
+            this.lbl5.Size = new System.Drawing.Size(144, 171);
+            this.lbl5.TabIndex = 6;
+            this.lbl5.Text = "0";
+            // 
+            // btInDanhSach
+            // 
+            this.btInDanhSach.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInDanhSach.Location = new System.Drawing.Point(739, 10);
+            this.btInDanhSach.Name = "btInDanhSach";
+            this.btInDanhSach.Size = new System.Drawing.Size(123, 32);
+            this.btInDanhSach.TabIndex = 10;
+            this.btInDanhSach.Text = "In";
+            this.btInDanhSach.UseVisualStyleBackColor = true;
+            this.btInDanhSach.Click += new System.EventHandler(this.btInDanhSach_Click);
+            // 
+            // lbl3
+            // 
+            this.lbl3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl3.AutoSize = true;
+            this.lbl3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lbl3.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3.Location = new System.Drawing.Point(367, 60);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(144, 171);
+            this.lbl3.TabIndex = 2;
+            this.lbl3.Text = "0";
+            // 
+            // btLayDanhSach
+            // 
+            this.btLayDanhSach.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLayDanhSach.Location = new System.Drawing.Point(610, 10);
+            this.btLayDanhSach.Name = "btLayDanhSach";
+            this.btLayDanhSach.Size = new System.Drawing.Size(123, 32);
+            this.btLayDanhSach.TabIndex = 9;
+            this.btLayDanhSach.Text = "Danh Sách";
+            this.btLayDanhSach.UseVisualStyleBackColor = true;
+            this.btLayDanhSach.Click += new System.EventHandler(this.btLayDanhSach_Click);
+            // 
+            // lbl2
+            // 
+            this.lbl2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl2.AutoSize = true;
+            this.lbl2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lbl2.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.Location = new System.Drawing.Point(226, 60);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(144, 171);
+            this.lbl2.TabIndex = 1;
+            this.lbl2.Text = "0";
+            // 
+            // lbl1
+            // 
+            this.lbl1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl1.AutoSize = true;
+            this.lbl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lbl1.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.Location = new System.Drawing.Point(85, 60);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(144, 171);
+            this.lbl1.TabIndex = 0;
+            this.lbl1.Text = "0";
             // 
             // toolStrip1
             // 
@@ -301,7 +334,7 @@
             this.lblErr.Image = ((System.Drawing.Image)(resources.GetObject("lblErr.Image")));
             this.lblErr.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.lblErr.Name = "lblErr";
-            this.lblErr.Size = new System.Drawing.Size(29, 24);
+            this.lblErr.Size = new System.Drawing.Size(24, 24);
             this.lblErr.Text = "...";
             // 
             // dgtDanhsachtrunggiai
@@ -323,16 +356,16 @@
             // 
             this.dsNhanGiai.AllowUserToAddRows = false;
             this.dsNhanGiai.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dsNhanGiai.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dsNhanGiai.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dsNhanGiai.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dsNhanGiai.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dsNhanGiai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dsNhanGiai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -341,13 +374,13 @@
             this.dataGridViewTextBoxColumn4,
             this.colTenGiai});
             this.dsNhanGiai.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dsNhanGiai.Location = new System.Drawing.Point(3, 27);
+            this.dsNhanGiai.Location = new System.Drawing.Point(3, 23);
             this.dsNhanGiai.Name = "dsNhanGiai";
             this.dsNhanGiai.ReadOnly = true;
             this.dsNhanGiai.RowHeadersVisible = false;
             this.dsNhanGiai.RowHeadersWidth = 51;
             this.dsNhanGiai.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dsNhanGiai.Size = new System.Drawing.Size(891, 157);
+            this.dsNhanGiai.Size = new System.Drawing.Size(891, 161);
             this.dsNhanGiai.TabIndex = 4;
             this.dsNhanGiai.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
@@ -403,7 +436,7 @@
             this.toolStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip2.Location = new System.Drawing.Point(9, 203);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(112, 25);
+            this.toolStrip2.Size = new System.Drawing.Size(111, 25);
             this.toolStrip2.TabIndex = 3;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -411,53 +444,20 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 27);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 23);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(891, 157);
+            this.dataGridView1.Size = new System.Drawing.Size(891, 161);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // btLayDanhSach
-            // 
-            this.btLayDanhSach.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLayDanhSach.Location = new System.Drawing.Point(610, 10);
-            this.btLayDanhSach.Name = "btLayDanhSach";
-            this.btLayDanhSach.Size = new System.Drawing.Size(123, 32);
-            this.btLayDanhSach.TabIndex = 9;
-            this.btLayDanhSach.Text = "Danh Sách";
-            this.btLayDanhSach.UseVisualStyleBackColor = true;
-            this.btLayDanhSach.Click += new System.EventHandler(this.btLayDanhSach_Click);
-            // 
-            // btInDanhSach
-            // 
-            this.btInDanhSach.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInDanhSach.Location = new System.Drawing.Point(739, 10);
-            this.btInDanhSach.Name = "btInDanhSach";
-            this.btInDanhSach.Size = new System.Drawing.Size(123, 32);
-            this.btInDanhSach.TabIndex = 10;
-            this.btInDanhSach.Text = "In";
-            this.btInDanhSach.UseVisualStyleBackColor = true;
-            this.btInDanhSach.Click += new System.EventHandler(this.btInDanhSach_Click);
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 11F);
-            this.button1.Location = new System.Drawing.Point(6, 10);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 31);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Chọn Giải";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // f_quaysomayman
             // 
             this.AcceptButton = this.btQuay;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(25F, 58F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 47F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1349, 623);
             this.Controls.Add(this.dgtDanhsachtrunggiai);
