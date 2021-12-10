@@ -34,5 +34,25 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void Login_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CustomCheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

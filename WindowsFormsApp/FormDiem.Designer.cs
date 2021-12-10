@@ -50,7 +50,7 @@ namespace WindowsFormsApp
             this.BackColor = System.Drawing.Color.Crimson;
             this.Controls.Add(this.gunaLabel1);
             this.Name = "FormDiem";
-            this.Size = new System.Drawing.Size(553, 507);
+            this.Size = new System.Drawing.Size(898, 421);
             this.ResumeLayout(false);
             this.PerformLayout();
 

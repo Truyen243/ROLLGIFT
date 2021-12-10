@@ -20,47 +20,10 @@ namespace WindowsFormsApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            formKhoa1.Visible = false;
-            
-            formMonHoc1.Visible = false;
-            formDiem1.Visible = false;
-            formUser1.Visible = false;
             formSinhVien1.Visible = true;
-        }
-
-        private void guna2Button4_Click(object sender, EventArgs e)
-        {
-            formKhoa1.Visible = false;
-            formSinhVien1.Visible = false;
             formMonHoc1.Visible = false;
-            formDiem1.Visible = true;
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
-        {
-            formKhoa1.Visible = false;
-            formSinhVien1.Visible = false;
-            formMonHoc1.Visible = true;
-            formDiem1.Visible = false;
-        }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            formKhoa1.Visible = false;
-            
-            formMonHoc1.Visible = false;
-            formDiem1.Visible = false;
-            formSinhVien1.Visible = true;
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-            formKhoa1.Visible = true;
-            formSinhVien1.Visible = false;
-            formMonHoc1.Visible = false;
-            formSinhVien1.Visible = false;
-        }
 
         private void formMonHoc1_Load(object sender, EventArgs e)
         {
@@ -80,6 +43,18 @@ namespace WindowsFormsApp
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnMonHoc_Click(object sender, EventArgs e)
+        {
+            formSinhVien1.Visible = false;
+            formMonHoc1.Visible = true;
+        }
+
+        private void btnSinhVien_Click(object sender, EventArgs e)
+        {
+            formSinhVien1.Visible = true;
+            formMonHoc1.Visible = false;
         }
     }
 }

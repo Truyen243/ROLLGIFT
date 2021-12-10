@@ -54,12 +54,10 @@ namespace WindowsFormsApp
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.formMonHoc1 = new WindowsFormsApp.FormMonHoc();
-            this.formKhoa1 = new WindowsFormsApp.FormKhoa();
-            this.formSinhVien1 = new WindowsFormsApp.FormSinhVien();
-            this.formDiem1 = new WindowsFormsApp.FormDiem();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.formSinhVien1 = new WindowsFormsApp.FormSinhVien();
+            this.formMonHoc1 = new WindowsFormsApp.FormMonHoc();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.gunaContextMenuStrip1.SuspendLayout();
@@ -102,13 +100,14 @@ namespace WindowsFormsApp
             // 
             this.btnDiem.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnDiem.CheckedState.Parent = this.btnDiem;
-            this.btnDiem.CustomBorderThickness = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.btnDiem.CustomBorderThickness = new System.Windows.Forms.Padding(6, 0, 0, 0);
             this.btnDiem.CustomImages.Parent = this.btnDiem;
             this.btnDiem.FillColor = System.Drawing.Color.White;
             this.btnDiem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnDiem.ForeColor = System.Drawing.Color.Black;
-            this.btnDiem.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnDiem.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.btnDiem.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
+            this.btnDiem.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnDiem.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
             this.btnDiem.HoverState.Parent = this.btnDiem;
             this.btnDiem.Location = new System.Drawing.Point(2, 260);
             this.btnDiem.Name = "btnDiem";
@@ -117,19 +116,19 @@ namespace WindowsFormsApp
             this.btnDiem.Size = new System.Drawing.Size(197, 45);
             this.btnDiem.TabIndex = 3;
             this.btnDiem.Text = "Điểm";
-            this.btnDiem.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // btnMonHoc
             // 
             this.btnMonHoc.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnMonHoc.CheckedState.Parent = this.btnMonHoc;
-            this.btnMonHoc.CustomBorderThickness = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.btnMonHoc.CustomBorderThickness = new System.Windows.Forms.Padding(6, 0, 0, 0);
             this.btnMonHoc.CustomImages.Parent = this.btnMonHoc;
             this.btnMonHoc.FillColor = System.Drawing.Color.White;
             this.btnMonHoc.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnMonHoc.ForeColor = System.Drawing.Color.Black;
-            this.btnMonHoc.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnMonHoc.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.btnMonHoc.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
+            this.btnMonHoc.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnMonHoc.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
             this.btnMonHoc.HoverState.Parent = this.btnMonHoc;
             this.btnMonHoc.Location = new System.Drawing.Point(2, 209);
             this.btnMonHoc.Name = "btnMonHoc";
@@ -138,21 +137,21 @@ namespace WindowsFormsApp
             this.btnMonHoc.Size = new System.Drawing.Size(197, 45);
             this.btnMonHoc.TabIndex = 2;
             this.btnMonHoc.Text = "Môn Học";
-            this.btnMonHoc.Click += new System.EventHandler(this.guna2Button3_Click);
+            this.btnMonHoc.Click += new System.EventHandler(this.btnMonHoc_Click);
             // 
             // btnSinhVien
             // 
             this.btnSinhVien.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnSinhVien.Checked = true;
             this.btnSinhVien.CheckedState.Parent = this.btnSinhVien;
-            FormMain formMain = this;
-            formMain.btnSinhVien.CustomBorderThickness = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.btnSinhVien.CustomBorderThickness = new System.Windows.Forms.Padding(6, 0, 0, 0);
             this.btnSinhVien.CustomImages.Parent = this.btnSinhVien;
             this.btnSinhVien.FillColor = System.Drawing.Color.White;
             this.btnSinhVien.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnSinhVien.ForeColor = System.Drawing.Color.Black;
-            this.btnSinhVien.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnSinhVien.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.btnSinhVien.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
+            this.btnSinhVien.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnSinhVien.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
             this.btnSinhVien.HoverState.Parent = this.btnSinhVien;
             this.btnSinhVien.Location = new System.Drawing.Point(2, 158);
             this.btnSinhVien.Name = "btnSinhVien";
@@ -161,20 +160,21 @@ namespace WindowsFormsApp
             this.btnSinhVien.Size = new System.Drawing.Size(197, 45);
             this.btnSinhVien.TabIndex = 1;
             this.btnSinhVien.Text = "Sinh Viên";
-            this.btnSinhVien.Click += new System.EventHandler(this.guna2Button2_Click);
+            this.btnSinhVien.Click += new System.EventHandler(this.btnSinhVien_Click);
             // 
             // btnKhoa
             // 
             this.btnKhoa.BackColor = System.Drawing.Color.White;
             this.btnKhoa.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnKhoa.CheckedState.Parent = this.btnKhoa;
-            this.btnKhoa.CustomBorderThickness = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.btnKhoa.CustomBorderThickness = new System.Windows.Forms.Padding(6, 0, 0, 0);
             this.btnKhoa.CustomImages.Parent = this.btnKhoa;
             this.btnKhoa.FillColor = System.Drawing.Color.White;
             this.btnKhoa.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnKhoa.ForeColor = System.Drawing.Color.Black;
-            this.btnKhoa.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.btnKhoa.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.btnKhoa.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
+            this.btnKhoa.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnKhoa.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
             this.btnKhoa.HoverState.Parent = this.btnKhoa;
             this.btnKhoa.Location = new System.Drawing.Point(3, 311);
             this.btnKhoa.Name = "btnKhoa";
@@ -183,12 +183,12 @@ namespace WindowsFormsApp
             this.btnKhoa.Size = new System.Drawing.Size(197, 45);
             this.btnKhoa.TabIndex = 0;
             this.btnKhoa.Text = "Khoa";
-            this.btnKhoa.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.guna2ControlBox1.Animated = true;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
@@ -201,8 +201,9 @@ namespace WindowsFormsApp
             // guna2ControlBox2
             // 
             this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.Animated = true;
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
             this.guna2ControlBox2.Location = new System.Drawing.Point(1001, 2);
@@ -214,8 +215,9 @@ namespace WindowsFormsApp
             // guna2ControlBox3
             // 
             this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox3.Animated = true;
             this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2ControlBox3.HoverState.Parent = this.guna2ControlBox3;
             this.guna2ControlBox3.IconColor = System.Drawing.Color.Black;
             this.guna2ControlBox3.Location = new System.Drawing.Point(950, 2);
@@ -226,7 +228,7 @@ namespace WindowsFormsApp
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Panel1.Controls.Add(this.guna2ControlBox3);
             this.guna2Panel1.Controls.Add(this.guna2ControlBox2);
             this.guna2Panel1.Controls.Add(this.guna2ControlBox1);
@@ -298,7 +300,6 @@ namespace WindowsFormsApp
             // 
             // informationToolStripMenuItem
             // 
-            this.informationToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.informationToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("informationToolStripMenuItem.Image")));
             this.informationToolStripMenuItem.Name = "informationToolStripMenuItem";
             this.informationToolStripMenuItem.Size = new System.Drawing.Size(139, 29);
@@ -306,7 +307,6 @@ namespace WindowsFormsApp
             // 
             // systemToolStripMenuItem
             // 
-            this.systemToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.systemToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("systemToolStripMenuItem.Image")));
             this.systemToolStripMenuItem.Name = "systemToolStripMenuItem";
             this.systemToolStripMenuItem.Size = new System.Drawing.Size(98, 29);
@@ -319,11 +319,12 @@ namespace WindowsFormsApp
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(253, 2);
+            this.gunaLabel1.Location = new System.Drawing.Point(0, 2);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(397, 68);
+            this.gunaLabel1.Size = new System.Drawing.Size(898, 68);
             this.gunaLabel1.TabIndex = 7;
             this.gunaLabel1.Text = "Manage Student";
+            this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // guna2Button1
             // 
@@ -333,7 +334,7 @@ namespace WindowsFormsApp
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(225, 73);
+            this.guna2Button1.Location = new System.Drawing.Point(312, 72);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(82, 34);
@@ -364,87 +365,66 @@ namespace WindowsFormsApp
             this.guna2TextBox1.PlaceholderText = "Nhập Thông Tin Cần Tìm";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(216, 31);
+            this.guna2TextBox1.Size = new System.Drawing.Size(276, 31);
             this.guna2TextBox1.TabIndex = 10;
             this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
-            // formMonHoc1
+            // guna2Panel3
             // 
-            this.formMonHoc1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.guna2Panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.formMonHoc1.BackColor = System.Drawing.Color.Coral;
-            this.formMonHoc1.Location = new System.Drawing.Point(200, 176);
-            this.formMonHoc1.Name = "formMonHoc1";
-            this.formMonHoc1.Size = new System.Drawing.Size(900, 424);
-            this.formMonHoc1.TabIndex = 4;
-            this.formMonHoc1.Load += new System.EventHandler(this.formMonHoc1_Load);
+            this.guna2Panel3.BackColor = System.Drawing.Color.White;
+            this.guna2Panel3.Controls.Add(this.guna2DateTimePicker1);
+            this.guna2Panel3.Controls.Add(this.guna2Button1);
+            this.guna2Panel3.Controls.Add(this.guna2TextBox1);
+            this.guna2Panel3.Controls.Add(this.gunaLabel1);
+            this.guna2Panel3.Location = new System.Drawing.Point(202, 67);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
+            this.guna2Panel3.Size = new System.Drawing.Size(898, 110);
+            this.guna2Panel3.TabIndex = 12;
             // 
-            // formKhoa1
+            // guna2DateTimePicker1
             // 
-            this.formKhoa1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.formKhoa1.AutoSize = true;
-            this.formKhoa1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.formKhoa1.Location = new System.Drawing.Point(200, 176);
-            this.formKhoa1.Name = "formKhoa1";
-            this.formKhoa1.Size = new System.Drawing.Size(976, 424);
-            this.formKhoa1.TabIndex = 2;
+            this.guna2DateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2DateTimePicker1.BorderRadius = 16;
+            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
+            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(634, 64);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(261, 40);
+            this.guna2DateTimePicker1.TabIndex = 13;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2021, 12, 10, 21, 18, 17, 145);
             // 
             // formSinhVien1
             // 
             this.formSinhVien1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.formSinhVien1.BackColor = System.Drawing.Color.Chartreuse;
-            this.formSinhVien1.Location = new System.Drawing.Point(200, 176);
+            this.formSinhVien1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.formSinhVien1.Location = new System.Drawing.Point(202, 176);
             this.formSinhVien1.Name = "formSinhVien1";
-            this.formSinhVien1.Size = new System.Drawing.Size(897, 424);
-            this.formSinhVien1.TabIndex = 3;
+            this.formSinhVien1.Size = new System.Drawing.Size(898, 421);
+            this.formSinhVien1.TabIndex = 13;
             // 
-            // formDiem1
+            // formMonHoc1
             // 
-            this.formDiem1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.formMonHoc1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.formDiem1.BackColor = System.Drawing.Color.Crimson;
-            this.formDiem1.Location = new System.Drawing.Point(200, 176);
-            this.formDiem1.Name = "formDiem1";
-            this.formDiem1.Size = new System.Drawing.Size(900, 424);
-            this.formDiem1.TabIndex = 5;
-            // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2DateTimePicker1.BorderRadius = 16;
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(686, 67);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 36);
-            this.guna2DateTimePicker1.TabIndex = 11;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2021, 12, 9, 8, 13, 39, 467);
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.BackColor = System.Drawing.Color.White;
-            this.guna2Panel3.Controls.Add(this.guna2Button1);
-            this.guna2Panel3.Controls.Add(this.guna2TextBox1);
-            this.guna2Panel3.Controls.Add(this.gunaLabel1);
-            this.guna2Panel3.Controls.Add(this.guna2DateTimePicker1);
-            this.guna2Panel3.Location = new System.Drawing.Point(202, 67);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(898, 110);
-            this.guna2Panel3.TabIndex = 12;
+            this.formMonHoc1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.formMonHoc1.Location = new System.Drawing.Point(202, 176);
+            this.formMonHoc1.Name = "formMonHoc1";
+            this.formMonHoc1.Size = new System.Drawing.Size(898, 424);
+            this.formMonHoc1.TabIndex = 14;
             // 
             // FormMain
             // 
@@ -452,14 +432,12 @@ namespace WindowsFormsApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1100, 600);
+            this.Controls.Add(this.formMonHoc1);
+            this.Controls.Add(this.formSinhVien1);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.formMonHoc1);
-            this.Controls.Add(this.formKhoa1);
-            this.Controls.Add(this.formSinhVien1);
-            this.Controls.Add(this.formDiem1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMain";
@@ -492,10 +470,6 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private FormSinhVien formSinhVien1;
-        private FormKhoa formKhoa1;
-        private FormDiem formDiem1;
-        private FormMonHoc formMonHoc1;
         private Guna.UI.WinForms.GunaContextMenuStrip gunaContextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
@@ -508,8 +482,10 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private System.Windows.Forms.ToolStripMenuItem informationToolStripMenuItem;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private FormSinhVien formSinhVien1;
+        private FormMonHoc formMonHoc1;
     }
 }
 

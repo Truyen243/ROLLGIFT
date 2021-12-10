@@ -66,5 +66,35 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtNgaySinh_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDienThoai_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtSoDT_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Separator5_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
