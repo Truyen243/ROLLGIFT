@@ -54,5 +54,13 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormMain formMain = new FormMain();
+            formMain.ShowDialog();
+            this.Close();
+        }
     }
 }
