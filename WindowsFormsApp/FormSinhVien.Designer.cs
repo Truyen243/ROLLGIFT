@@ -220,9 +220,7 @@ namespace WindowsFormsApp
             this.btnReset.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnReset.ForeColor = System.Drawing.Color.White;
             this.btnReset.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
-            this.btnReset.HoverState.Image = global::WindowsFormsApp.Properties.Resources.diskette;
             this.btnReset.HoverState.Parent = this.btnReset;
-            this.btnReset.Image = global::WindowsFormsApp.Properties.Resources.diskette__1_;
             this.btnReset.Location = new System.Drawing.Point(39, 149);
             this.btnReset.Name = "btnReset";
             this.btnReset.ShadowDecoration.Parent = this.btnReset;
@@ -241,9 +239,7 @@ namespace WindowsFormsApp
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
-            this.btnDelete.HoverState.Image = global::WindowsFormsApp.Properties.Resources.remove;
             this.btnDelete.HoverState.Parent = this.btnDelete;
-            this.btnDelete.Image = global::WindowsFormsApp.Properties.Resources.close;
             this.btnDelete.Location = new System.Drawing.Point(39, 103);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.ShadowDecoration.Parent = this.btnDelete;
@@ -262,9 +258,7 @@ namespace WindowsFormsApp
             this.btcUpdate.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btcUpdate.ForeColor = System.Drawing.Color.White;
             this.btcUpdate.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
-            this.btcUpdate.HoverState.Image = global::WindowsFormsApp.Properties.Resources.refresh__1_;
             this.btcUpdate.HoverState.Parent = this.btcUpdate;
-            this.btcUpdate.Image = global::WindowsFormsApp.Properties.Resources.refresh;
             this.btcUpdate.Location = new System.Drawing.Point(39, 57);
             this.btcUpdate.Name = "btcUpdate";
             this.btcUpdate.ShadowDecoration.Parent = this.btcUpdate;
@@ -283,9 +277,7 @@ namespace WindowsFormsApp
             this.btnNew.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnNew.ForeColor = System.Drawing.Color.White;
             this.btnNew.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
-            this.btnNew.HoverState.Image = global::WindowsFormsApp.Properties.Resources.plus1;
             this.btnNew.HoverState.Parent = this.btnNew;
-            this.btnNew.Image = global::WindowsFormsApp.Properties.Resources.add1;
             this.btnNew.Location = new System.Drawing.Point(39, 11);
             this.btnNew.Name = "btnNew";
             this.btnNew.ShadowDecoration.Parent = this.btnNew;
