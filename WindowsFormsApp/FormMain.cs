@@ -22,6 +22,7 @@ namespace WindowsFormsApp
         {
             formSinhVien1.Visible = true;
             formMonHoc1.Visible = false;
+            formDiem1.Visible = false;
         }
 
 
@@ -49,12 +50,23 @@ namespace WindowsFormsApp
         {
             formSinhVien1.Visible = false;
             formMonHoc1.Visible = true;
+            formDiem1.Visible = false;
+
         }
 
         private void btnSinhVien_Click(object sender, EventArgs e)
         {
             formSinhVien1.Visible = true;
             formMonHoc1.Visible = false;
+            formDiem1.Visible = false;
+
+        }
+
+        private void btnDiem_Click(object sender, EventArgs e)
+        {
+            formSinhVien1.Visible = false;
+            formMonHoc1.Visible = false;
+            formDiem1.Visible = true;
         }
     }
 }

@@ -34,7 +34,6 @@ namespace WindowsFormsApp
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.formUser1 = new WindowsFormsApp.FormUser();
             this.btnDiem = new Guna.UI2.WinForms.Guna2Button();
             this.btnMonHoc = new Guna.UI2.WinForms.Guna2Button();
             this.btnSinhVien = new Guna.UI2.WinForms.Guna2Button();
@@ -56,8 +55,10 @@ namespace WindowsFormsApp
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.formSinhVien1 = new WindowsFormsApp.FormSinhVien();
+            this.formDiem1 = new WindowsFormsApp.FormDiem();
             this.formMonHoc1 = new WindowsFormsApp.FormMonHoc();
+            this.formSinhVien1 = new WindowsFormsApp.FormSinhVien();
+            this.formUser1 = new WindowsFormsApp.FormUser();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.gunaContextMenuStrip1.SuspendLayout();
@@ -88,14 +89,6 @@ namespace WindowsFormsApp
             this.guna2Panel2.Size = new System.Drawing.Size(202, 566);
             this.guna2Panel2.TabIndex = 1;
             // 
-            // formUser1
-            // 
-            this.formUser1.AutoSize = true;
-            this.formUser1.Location = new System.Drawing.Point(31, 1);
-            this.formUser1.Name = "formUser1";
-            this.formUser1.Size = new System.Drawing.Size(133, 136);
-            this.formUser1.TabIndex = 4;
-            // 
             // btnDiem
             // 
             this.btnDiem.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
@@ -116,6 +109,7 @@ namespace WindowsFormsApp
             this.btnDiem.Size = new System.Drawing.Size(197, 45);
             this.btnDiem.TabIndex = 3;
             this.btnDiem.Text = "Điểm";
+            this.btnDiem.Click += new System.EventHandler(this.btnDiem_Click);
             // 
             // btnMonHoc
             // 
@@ -321,7 +315,7 @@ namespace WindowsFormsApp
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.Location = new System.Drawing.Point(0, 2);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(898, 68);
+            this.gunaLabel1.Size = new System.Drawing.Size(898, 67);
             this.gunaLabel1.TabIndex = 7;
             this.gunaLabel1.Text = "Manage Student";
             this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -404,6 +398,29 @@ namespace WindowsFormsApp
             this.guna2DateTimePicker1.TabIndex = 13;
             this.guna2DateTimePicker1.Value = new System.DateTime(2021, 12, 10, 21, 18, 17, 145);
             // 
+            // formDiem1
+            // 
+            this.formDiem1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.formDiem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.formDiem1.Location = new System.Drawing.Point(202, 176);
+            this.formDiem1.Name = "formDiem1";
+            this.formDiem1.Size = new System.Drawing.Size(898, 421);
+            this.formDiem1.TabIndex = 15;
+            // 
+            // formMonHoc1
+            // 
+            this.formMonHoc1.AllowDrop = true;
+            this.formMonHoc1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.formMonHoc1.AutoSize = true;
+            this.formMonHoc1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.formMonHoc1.Location = new System.Drawing.Point(202, 176);
+            this.formMonHoc1.Name = "formMonHoc1";
+            this.formMonHoc1.Size = new System.Drawing.Size(898, 424);
+            this.formMonHoc1.TabIndex = 14;
+            // 
             // formSinhVien1
             // 
             this.formSinhVien1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -415,16 +432,13 @@ namespace WindowsFormsApp
             this.formSinhVien1.Size = new System.Drawing.Size(898, 421);
             this.formSinhVien1.TabIndex = 13;
             // 
-            // formMonHoc1
+            // formUser1
             // 
-            this.formMonHoc1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.formMonHoc1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.formMonHoc1.Location = new System.Drawing.Point(202, 176);
-            this.formMonHoc1.Name = "formMonHoc1";
-            this.formMonHoc1.Size = new System.Drawing.Size(898, 424);
-            this.formMonHoc1.TabIndex = 14;
+            this.formUser1.AutoSize = true;
+            this.formUser1.Location = new System.Drawing.Point(31, 1);
+            this.formUser1.Name = "formUser1";
+            this.formUser1.Size = new System.Drawing.Size(133, 136);
+            this.formUser1.TabIndex = 4;
             // 
             // FormMain
             // 
@@ -432,12 +446,13 @@ namespace WindowsFormsApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1100, 600);
-            this.Controls.Add(this.formMonHoc1);
-            this.Controls.Add(this.formSinhVien1);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.formSinhVien1);
+            this.Controls.Add(this.formDiem1);
+            this.Controls.Add(this.formMonHoc1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMain";
@@ -486,6 +501,7 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private FormSinhVien formSinhVien1;
         private FormMonHoc formMonHoc1;
+        private FormDiem formDiem1;
     }
 }
 
