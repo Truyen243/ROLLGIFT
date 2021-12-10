@@ -72,11 +72,6 @@ namespace WindowsFormsApp
 
         }
 
-        private void guna2TextBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2TextBox5_TextChanged(object sender, EventArgs e)
         {
 
@@ -107,7 +102,17 @@ namespace WindowsFormsApp
 
         }
 
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+             
+        }
+
+        private void guna2CustomGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
 
         }

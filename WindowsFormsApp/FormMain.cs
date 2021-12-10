@@ -16,13 +16,15 @@ namespace WindowsFormsApp
         public FormMain()
         {
             InitializeComponent();
-        }
+        } 
 
         private void Form1_Load(object sender, EventArgs e)
         {
             formSinhVien1.Visible = true;
             formMonHoc1.Visible = false;
             formDiem1.Visible = false;
+            formKhoa1.Visible = false;
+
         }
 
 
@@ -51,6 +53,8 @@ namespace WindowsFormsApp
             formSinhVien1.Visible = false;
             formMonHoc1.Visible = true;
             formDiem1.Visible = false;
+            formKhoa1.Visible = false;
+            formKhoa1.Visible = false;
 
         }
 
@@ -59,6 +63,7 @@ namespace WindowsFormsApp
             formSinhVien1.Visible = true;
             formMonHoc1.Visible = false;
             formDiem1.Visible = false;
+            formKhoa1.Visible = false;
 
         }
 
@@ -67,6 +72,26 @@ namespace WindowsFormsApp
             formSinhVien1.Visible = false;
             formMonHoc1.Visible = false;
             formDiem1.Visible = true;
+            formKhoa1.Visible = false;
+
+        }
+
+        private void btnKhoa_Click(object sender, EventArgs e)
+        {
+            formSinhVien1.Visible = false;
+            formMonHoc1.Visible = false;
+            formDiem1.Visible = false;
+            formKhoa1.Visible = true;
+        }
+
+        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void gunaLabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
