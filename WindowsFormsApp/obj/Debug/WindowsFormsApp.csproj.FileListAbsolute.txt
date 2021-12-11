@@ -19,3 +19,4 @@ D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormDiem.resources
 D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormMonHoc.resources
 D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormUser.resources
 D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form_Login.resources
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormThongTin.resources

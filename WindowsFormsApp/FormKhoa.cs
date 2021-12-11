@@ -116,5 +116,10 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void gunaLabel1_Click_2(object sender, EventArgs e)
+        {
+
+        }
     }
 }

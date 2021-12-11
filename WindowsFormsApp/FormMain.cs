@@ -54,7 +54,6 @@ namespace WindowsFormsApp
             formMonHoc1.Visible = true;
             formDiem1.Visible = false;
             formKhoa1.Visible = false;
-            formKhoa1.Visible = false;
 
         }
 
@@ -92,6 +91,24 @@ namespace WindowsFormsApp
         private void gunaLabel1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void formSinhVien1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void informationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void informationToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormThongTin formThongTin = new FormThongTin();
+            formThongTin.ShowDialog();
         }
     }
 }

@@ -85,6 +85,12 @@
     <Compile Include="FormSinhVien.Designer.cs">
       <DependentUpon>FormSinhVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThongTin.Designer.cs">
+      <DependentUpon>FormThongTin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSinhVien.resx">
       <DependentUpon>FormSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongTin.resx">
+      <DependentUpon>FormThongTin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUser.resx">
       <DependentUpon>FormUser.cs</DependentUpon>
@@ -191,6 +200,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8_right_arrow_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_refresh_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

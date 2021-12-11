@@ -36,13 +36,13 @@ namespace WindowsFormsApp
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.guna2CustomCheckBox1 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.Login = new Guna.UI.WinForms.GunaLabel();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,6 +128,26 @@ namespace WindowsFormsApp
             this.guna2ShadowPanel1.ShadowShift = 6;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(460, 505);
             this.guna2ShadowPanel1.TabIndex = 9;
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.BorderRadius = 20;
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.White;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.Gray;
+            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Image = global::WindowsFormsApp.Properties.Resources.next7;
+            this.guna2Button2.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.guna2Button2.Location = new System.Drawing.Point(60, 442);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.PressedColor = System.Drawing.Color.White;
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(339, 45);
+            this.guna2Button2.TabIndex = 16;
+            this.guna2Button2.Text = "Create Account";
             // 
             // gunaLabel1
             // 
@@ -235,25 +255,6 @@ namespace WindowsFormsApp
             this.Login.Size = new System.Drawing.Size(195, 86);
             this.Login.TabIndex = 12;
             this.Login.Text = "Login";
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.BorderRadius = 20;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.Gray;
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Image = global::WindowsFormsApp.Properties.Resources.next7;
-            this.guna2Button2.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.guna2Button2.Location = new System.Drawing.Point(60, 442);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(339, 45);
-            this.guna2Button2.TabIndex = 16;
-            this.guna2Button2.Text = "Create Account";
             // 
             // Form_Login
             // 
