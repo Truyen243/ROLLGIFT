@@ -34,7 +34,6 @@ namespace WindowsFormsApp
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.formUser1 = new WindowsFormsApp.FormUser();
             this.btnDiem = new Guna.UI2.WinForms.Guna2Button();
             this.btnMonHoc = new Guna.UI2.WinForms.Guna2Button();
             this.btnSinhVien = new Guna.UI2.WinForms.Guna2Button();
@@ -52,15 +51,16 @@ namespace WindowsFormsApp
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.systemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refréhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.formSinhVien1 = new WindowsFormsApp.FormSinhVien();
-            this.formDiem1 = new WindowsFormsApp.FormDiem();
+            this.formUser1 = new WindowsFormsApp.FormUser();
             this.formKhoa1 = new WindowsFormsApp.FormKhoa();
             this.formMonHoc1 = new WindowsFormsApp.FormMonHoc();
+            this.formSinhVien1 = new WindowsFormsApp.FormSinhVien();
+            this.formDiem1 = new WindowsFormsApp.FormDiem();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.gunaContextMenuStrip1.SuspendLayout();
@@ -92,14 +92,6 @@ namespace WindowsFormsApp
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(202, 566);
             this.guna2Panel2.TabIndex = 1;
-            // 
-            // formUser1
-            // 
-            this.formUser1.AutoSize = true;
-            this.formUser1.Location = new System.Drawing.Point(31, 1);
-            this.formUser1.Name = "formUser1";
-            this.formUser1.Size = new System.Drawing.Size(133, 136);
-            this.formUser1.TabIndex = 4;
             // 
             // btnDiem
             // 
@@ -370,6 +362,24 @@ namespace WindowsFormsApp
             this.menuStrip1.TabIndex = 14;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Panel3.BackColor = System.Drawing.Color.White;
+            this.guna2Panel3.Controls.Add(this.menuStrip1);
+            this.guna2Panel3.Controls.Add(this.guna2DateTimePicker1);
+            this.guna2Panel3.Controls.Add(this.guna2Button1);
+            this.guna2Panel3.Controls.Add(this.guna2TextBox1);
+            this.guna2Panel3.Controls.Add(this.gunaLabel1);
+            this.guna2Panel3.Location = new System.Drawing.Point(202, 34);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
+            this.guna2Panel3.Size = new System.Drawing.Size(898, 143);
+            this.guna2Panel3.TabIndex = 12;
+            this.guna2Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
+            // 
             // informationToolStripMenuItem
             // 
             this.informationToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("informationToolStripMenuItem.Image")));
@@ -392,55 +402,23 @@ namespace WindowsFormsApp
             // 
             this.exitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem.Image")));
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 30);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // refréhToolStripMenuItem
             // 
             this.refréhToolStripMenuItem.Image = global::WindowsFormsApp.Properties.Resources.icons8_refresh_32;
             this.refréhToolStripMenuItem.Name = "refréhToolStripMenuItem";
-            this.refréhToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.refréhToolStripMenuItem.Size = new System.Drawing.Size(146, 30);
             this.refréhToolStripMenuItem.Text = "Refresh";
             // 
-            // guna2Panel3
+            // formUser1
             // 
-            this.guna2Panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel3.BackColor = System.Drawing.Color.White;
-            this.guna2Panel3.Controls.Add(this.menuStrip1);
-            this.guna2Panel3.Controls.Add(this.guna2DateTimePicker1);
-            this.guna2Panel3.Controls.Add(this.guna2Button1);
-            this.guna2Panel3.Controls.Add(this.guna2TextBox1);
-            this.guna2Panel3.Controls.Add(this.gunaLabel1);
-            this.guna2Panel3.Location = new System.Drawing.Point(202, 34);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(898, 143);
-            this.guna2Panel3.TabIndex = 12;
-            this.guna2Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
-            // 
-            // formSinhVien1
-            // 
-            this.formSinhVien1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.formSinhVien1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.formSinhVien1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.formSinhVien1.Location = new System.Drawing.Point(202, 177);
-            this.formSinhVien1.Name = "formSinhVien1";
-            this.formSinhVien1.Size = new System.Drawing.Size(898, 421);
-            this.formSinhVien1.TabIndex = 13;
-            this.formSinhVien1.Load += new System.EventHandler(this.formSinhVien1_Load);
-            // 
-            // formDiem1
-            // 
-            this.formDiem1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.formDiem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.formDiem1.Location = new System.Drawing.Point(202, 177);
-            this.formDiem1.Name = "formDiem1";
-            this.formDiem1.Size = new System.Drawing.Size(898, 421);
-            this.formDiem1.TabIndex = 15;
+            this.formUser1.AutoSize = true;
+            this.formUser1.Location = new System.Drawing.Point(31, 1);
+            this.formUser1.Name = "formUser1";
+            this.formUser1.Size = new System.Drawing.Size(133, 136);
+            this.formUser1.TabIndex = 4;
             // 
             // formKhoa1
             // 
@@ -463,6 +441,28 @@ namespace WindowsFormsApp
             this.formMonHoc1.Name = "formMonHoc1";
             this.formMonHoc1.Size = new System.Drawing.Size(898, 421);
             this.formMonHoc1.TabIndex = 14;
+            // 
+            // formSinhVien1
+            // 
+            this.formSinhVien1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.formSinhVien1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.formSinhVien1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.formSinhVien1.Location = new System.Drawing.Point(202, 177);
+            this.formSinhVien1.Name = "formSinhVien1";
+            this.formSinhVien1.Size = new System.Drawing.Size(898, 421);
+            this.formSinhVien1.TabIndex = 13;
+            this.formSinhVien1.Load += new System.EventHandler(this.formSinhVien1_Load);
+            // 
+            // formDiem1
+            // 
+            this.formDiem1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.formDiem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.formDiem1.Location = new System.Drawing.Point(202, 177);
+            this.formDiem1.Name = "formDiem1";
+            this.formDiem1.Size = new System.Drawing.Size(898, 421);
+            this.formDiem1.TabIndex = 15;
             // 
             // FormMain
             // 

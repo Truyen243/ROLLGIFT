@@ -106,9 +106,10 @@ namespace WindowsFormsApp
 
         private void informationToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
+            
             FormThongTin formThongTin = new FormThongTin();
             formThongTin.ShowDialog();
+            
         }
     }
 }
