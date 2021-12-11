@@ -40,6 +40,7 @@ namespace WindowsFormsApp
             this.btnKhoa = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.gunaContextMenuStrip1 = new Guna.UI.WinForms.GunaContextMenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,16 +52,16 @@ namespace WindowsFormsApp
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.systemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refréhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.formUser1 = new WindowsFormsApp.FormUser();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.formKhoa1 = new WindowsFormsApp.FormKhoa();
+            this.formDiem1 = new WindowsFormsApp.FormDiem();
             this.formMonHoc1 = new WindowsFormsApp.FormMonHoc();
             this.formSinhVien1 = new WindowsFormsApp.FormSinhVien();
-            this.formDiem1 = new WindowsFormsApp.FormDiem();
+            this.formUser1 = new WindowsFormsApp.FormUser();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.gunaContextMenuStrip1.SuspendLayout();
@@ -203,6 +204,7 @@ namespace WindowsFormsApp
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Panel1.Controls.Add(this.guna2ControlBox2);
             this.guna2Panel1.Controls.Add(this.guna2ControlBox3);
             this.guna2Panel1.Controls.Add(this.guna2ControlBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -212,6 +214,20 @@ namespace WindowsFormsApp
             this.guna2Panel1.Size = new System.Drawing.Size(1100, 34);
             this.guna2Panel1.TabIndex = 0;
             // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.Animated = true;
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(950, 2);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox2.TabIndex = 5;
+            // 
             // guna2ControlBox3
             // 
             this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -220,7 +236,7 @@ namespace WindowsFormsApp
             this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2ControlBox3.HoverState.Parent = this.guna2ControlBox3;
             this.guna2ControlBox3.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(1001, -1);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(1001, 1);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.ShadowDecoration.Parent = this.guna2ControlBox3;
             this.guna2ControlBox3.Size = new System.Drawing.Size(45, 29);
@@ -362,24 +378,6 @@ namespace WindowsFormsApp
             this.menuStrip1.TabIndex = 14;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel3.BackColor = System.Drawing.Color.White;
-            this.guna2Panel3.Controls.Add(this.menuStrip1);
-            this.guna2Panel3.Controls.Add(this.guna2DateTimePicker1);
-            this.guna2Panel3.Controls.Add(this.guna2Button1);
-            this.guna2Panel3.Controls.Add(this.guna2TextBox1);
-            this.guna2Panel3.Controls.Add(this.gunaLabel1);
-            this.guna2Panel3.Location = new System.Drawing.Point(202, 34);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(898, 143);
-            this.guna2Panel3.TabIndex = 12;
-            this.guna2Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
-            // 
             // informationToolStripMenuItem
             // 
             this.informationToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("informationToolStripMenuItem.Image")));
@@ -412,13 +410,23 @@ namespace WindowsFormsApp
             this.refréhToolStripMenuItem.Size = new System.Drawing.Size(146, 30);
             this.refréhToolStripMenuItem.Text = "Refresh";
             // 
-            // formUser1
+            // guna2Panel3
             // 
-            this.formUser1.AutoSize = true;
-            this.formUser1.Location = new System.Drawing.Point(31, 1);
-            this.formUser1.Name = "formUser1";
-            this.formUser1.Size = new System.Drawing.Size(133, 136);
-            this.formUser1.TabIndex = 4;
+            this.guna2Panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Panel3.BackColor = System.Drawing.Color.White;
+            this.guna2Panel3.Controls.Add(this.menuStrip1);
+            this.guna2Panel3.Controls.Add(this.guna2DateTimePicker1);
+            this.guna2Panel3.Controls.Add(this.guna2Button1);
+            this.guna2Panel3.Controls.Add(this.guna2TextBox1);
+            this.guna2Panel3.Controls.Add(this.gunaLabel1);
+            this.guna2Panel3.Location = new System.Drawing.Point(202, 34);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
+            this.guna2Panel3.Size = new System.Drawing.Size(898, 143);
+            this.guna2Panel3.TabIndex = 12;
+            this.guna2Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
             // 
             // formKhoa1
             // 
@@ -426,10 +434,21 @@ namespace WindowsFormsApp
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.formKhoa1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.formKhoa1.Location = new System.Drawing.Point(199, 176);
+            this.formKhoa1.Location = new System.Drawing.Point(202, 177);
             this.formKhoa1.Name = "formKhoa1";
             this.formKhoa1.Size = new System.Drawing.Size(898, 421);
             this.formKhoa1.TabIndex = 16;
+            // 
+            // formDiem1
+            // 
+            this.formDiem1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.formDiem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.formDiem1.Location = new System.Drawing.Point(202, 177);
+            this.formDiem1.Name = "formDiem1";
+            this.formDiem1.Size = new System.Drawing.Size(898, 421);
+            this.formDiem1.TabIndex = 15;
             // 
             // formMonHoc1
             // 
@@ -448,21 +467,18 @@ namespace WindowsFormsApp
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.formSinhVien1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.formSinhVien1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.formSinhVien1.Location = new System.Drawing.Point(202, 177);
             this.formSinhVien1.Name = "formSinhVien1";
             this.formSinhVien1.Size = new System.Drawing.Size(898, 421);
             this.formSinhVien1.TabIndex = 13;
-            this.formSinhVien1.Load += new System.EventHandler(this.formSinhVien1_Load);
             // 
-            // formDiem1
+            // formUser1
             // 
-            this.formDiem1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.formDiem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.formDiem1.Location = new System.Drawing.Point(202, 177);
-            this.formDiem1.Name = "formDiem1";
-            this.formDiem1.Size = new System.Drawing.Size(898, 421);
-            this.formDiem1.TabIndex = 15;
+            this.formUser1.AutoSize = true;
+            this.formUser1.Location = new System.Drawing.Point(31, 1);
+            this.formUser1.Name = "formUser1";
+            this.formUser1.Size = new System.Drawing.Size(133, 136);
+            this.formUser1.TabIndex = 4;
             // 
             // FormMain
             // 
@@ -470,13 +486,13 @@ namespace WindowsFormsApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1100, 600);
+            this.Controls.Add(this.formKhoa1);
+            this.Controls.Add(this.formDiem1);
+            this.Controls.Add(this.formMonHoc1);
+            this.Controls.Add(this.formSinhVien1);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.formKhoa1);
-            this.Controls.Add(this.formMonHoc1);
-            this.Controls.Add(this.formSinhVien1);
-            this.Controls.Add(this.formDiem1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -519,13 +535,14 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private FormDiem formDiem1;
-        private FormKhoa formKhoa1;
-        private FormMonHoc formMonHoc1;
-        private FormSinhVien formSinhVien1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
         private System.Windows.Forms.ToolStripMenuItem refréhToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
+        private FormSinhVien formSinhVien1;
+        private FormMonHoc formMonHoc1;
+        private FormDiem formDiem1;
+        private FormKhoa formKhoa1;
     }
 }
 
