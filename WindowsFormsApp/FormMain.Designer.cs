@@ -34,6 +34,7 @@ namespace WindowsFormsApp
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.formUser1 = new WindowsFormsApp.FormUser();
             this.btnDiem = new Guna.UI2.WinForms.Guna2Button();
             this.btnMonHoc = new Guna.UI2.WinForms.Guna2Button();
             this.btnSinhVien = new Guna.UI2.WinForms.Guna2Button();
@@ -61,7 +62,6 @@ namespace WindowsFormsApp
             this.formDiem1 = new WindowsFormsApp.FormDiem();
             this.formMonHoc1 = new WindowsFormsApp.FormMonHoc();
             this.formSinhVien1 = new WindowsFormsApp.FormSinhVien();
-            this.formUser1 = new WindowsFormsApp.FormUser();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.gunaContextMenuStrip1.SuspendLayout();
@@ -93,6 +93,14 @@ namespace WindowsFormsApp
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(202, 566);
             this.guna2Panel2.TabIndex = 1;
+            // 
+            // formUser1
+            // 
+            this.formUser1.AutoSize = true;
+            this.formUser1.Location = new System.Drawing.Point(31, 1);
+            this.formUser1.Name = "formUser1";
+            this.formUser1.Size = new System.Drawing.Size(133, 136);
+            this.formUser1.TabIndex = 4;
             // 
             // btnDiem
             // 
@@ -472,14 +480,6 @@ namespace WindowsFormsApp
             this.formSinhVien1.Name = "formSinhVien1";
             this.formSinhVien1.Size = new System.Drawing.Size(898, 421);
             this.formSinhVien1.TabIndex = 13;
-            // 
-            // formUser1
-            // 
-            this.formUser1.AutoSize = true;
-            this.formUser1.Location = new System.Drawing.Point(31, 1);
-            this.formUser1.Name = "formUser1";
-            this.formUser1.Size = new System.Drawing.Size(133, 136);
-            this.formUser1.TabIndex = 4;
             // 
             // FormMain
             // 
