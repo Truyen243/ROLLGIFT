@@ -119,5 +119,10 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void ToolStripRefresh_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

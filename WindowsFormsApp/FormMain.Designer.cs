@@ -56,7 +56,7 @@ namespace WindowsFormsApp
             this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.systemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.refréhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripRefresh = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.formKhoa1 = new WindowsFormsApp.FormKhoa();
             this.formDiem1 = new WindowsFormsApp.FormDiem();
@@ -399,7 +399,7 @@ namespace WindowsFormsApp
             // 
             this.systemToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem,
-            this.refréhToolStripMenuItem});
+            this.ToolStripRefresh});
             this.systemToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("systemToolStripMenuItem.Image")));
             this.systemToolStripMenuItem.Name = "systemToolStripMenuItem";
             this.systemToolStripMenuItem.Size = new System.Drawing.Size(98, 29);
@@ -409,15 +409,16 @@ namespace WindowsFormsApp
             // 
             this.exitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem.Image")));
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 30);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
-            // refréhToolStripMenuItem
+            // ToolStripRefresh
             // 
-            this.refréhToolStripMenuItem.Image = global::WindowsFormsApp.Properties.Resources.icons8_refresh_32;
-            this.refréhToolStripMenuItem.Name = "refréhToolStripMenuItem";
-            this.refréhToolStripMenuItem.Size = new System.Drawing.Size(146, 30);
-            this.refréhToolStripMenuItem.Text = "Refresh";
+            this.ToolStripRefresh.Image = global::WindowsFormsApp.Properties.Resources.icons8_refresh_32;
+            this.ToolStripRefresh.Name = "ToolStripRefresh";
+            this.ToolStripRefresh.Size = new System.Drawing.Size(180, 30);
+            this.ToolStripRefresh.Text = "Refresh";
+            this.ToolStripRefresh.Click += new System.EventHandler(this.ToolStripRefresh_Click);
             // 
             // guna2Panel3
             // 
@@ -538,7 +539,7 @@ namespace WindowsFormsApp
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
-        private System.Windows.Forms.ToolStripMenuItem refréhToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripRefresh;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private FormSinhVien formSinhVien1;
         private FormMonHoc formMonHoc1;
