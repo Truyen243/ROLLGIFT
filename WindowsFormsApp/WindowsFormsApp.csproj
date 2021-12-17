@@ -91,6 +91,12 @@
     <Compile Include="FormSinhVien.Designer.cs">
       <DependentUpon>FormSinhVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormThemSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThemSinhVien.Designer.cs">
+      <DependentUpon>FormThemSinhVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormThongTin.cs">
       <SubType>Form</SubType>
     </Compile>

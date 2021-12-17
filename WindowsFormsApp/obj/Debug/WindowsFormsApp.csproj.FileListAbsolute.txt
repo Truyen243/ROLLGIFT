@@ -41,3 +41,5 @@ C:\Users\ASUS\Documents\C#\KTCuoiKi\WindowsFormsApp\obj\Debug\WindowsFormsApp.ex
 C:\Users\ASUS\Documents\C#\KTCuoiKi\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
 C:\Users\ASUS\Documents\C#\KTCuoiKi\WindowsFormsApp\bin\Debug\Newtonsoft.Json.dll
 C:\Users\ASUS\Documents\C#\KTCuoiKi\WindowsFormsApp\bin\Debug\Newtonsoft.Json.xml
+D:\Demo\WindowsFormsApp\bin\Debug\Newtonsoft.Json.dll
+D:\Demo\WindowsFormsApp\bin\Debug\Newtonsoft.Json.xml
