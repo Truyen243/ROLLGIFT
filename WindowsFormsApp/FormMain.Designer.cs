@@ -314,7 +314,7 @@ namespace WindowsFormsApp
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker1.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
             this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(451, 392);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(631, 97);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
@@ -386,6 +386,7 @@ namespace WindowsFormsApp
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel3.BackColor = System.Drawing.Color.White;
             this.guna2Panel3.Controls.Add(this.menuStrip1);
+            this.guna2Panel3.Controls.Add(this.guna2DateTimePicker1);
             this.guna2Panel3.Controls.Add(this.gunaLabel1);
             this.guna2Panel3.Location = new System.Drawing.Point(202, 34);
             this.guna2Panel3.Name = "guna2Panel3";
@@ -457,7 +458,6 @@ namespace WindowsFormsApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1100, 600);
-            this.Controls.Add(this.guna2DateTimePicker1);
             this.Controls.Add(this.formKhoa1);
             this.Controls.Add(this.formDiem1);
             this.Controls.Add(this.formMonHoc1);

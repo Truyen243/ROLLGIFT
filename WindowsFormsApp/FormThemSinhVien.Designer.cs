@@ -30,11 +30,27 @@ namespace WindowsFormsApp
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.SuspendLayout();
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // FormThemSinhVien
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(773, 407);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FormThemSinhVien";
             this.Text = "FormThemSinhVien";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

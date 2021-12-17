@@ -67,3 +67,4 @@ D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CoreCompileInputs.cach
 D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CopyComplete
 D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
 D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
+D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormThemSinhVien.resources
