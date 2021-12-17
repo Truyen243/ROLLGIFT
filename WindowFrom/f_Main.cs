@@ -91,6 +91,7 @@ namespace WindowFrom
         {
             if (MessageBox.Show("Bạn có thật sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != DialogResult.OK)
             {
+                Console.WriteLine("True");
                 e.Cancel = true;
             }
         }

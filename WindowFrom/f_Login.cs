@@ -52,8 +52,7 @@ namespace WindowFrom
                         {
                             File.Delete(Cls_Main.pathRem);
                         }
-                        
-                        
+                       
                        /*f_Main main = new f_Main();
                         this.Hide();
                         main.Show();*/

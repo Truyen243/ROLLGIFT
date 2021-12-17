@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using WindowsFormsApp.Data;
 namespace WindowsFormsApp
 {
     public partial class Form_Login : Form
-    {
+    {   
+        
         public Form_Login()
         {
             InitializeComponent();
@@ -20,6 +21,10 @@ namespace WindowsFormsApp
         private void Form_Login_Load(object sender, EventArgs e)
         {
             guna2ShadowForm1.SetShadowForm(this);
+            WebRequestPostExample rq = new WebRequestPostExample();
+            //rq.Request();
+            //rq.post();
+            //rq.delete("4e596539-342e-44e6-b554-faaec514f4ad");
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
@@ -59,6 +64,8 @@ namespace WindowsFormsApp
         {
             this.Hide();
             FormMain formMain = new FormMain();
+          
+           
             formMain.ShowDialog();
             this.Close();
         }

@@ -35,10 +35,10 @@ namespace WindowFrom
             this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gradeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mnChangedPassWord = new System.Windows.Forms.ToolStripMenuItem();
             this.mnUserList = new System.Windows.Forms.ToolStripMenuItem();
+            this.gradeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rollGiftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -102,12 +102,6 @@ namespace WindowFrom
             this.imageToolStripMenuItem.Name = "imageToolStripMenuItem";
             this.imageToolStripMenuItem.Click += new System.EventHandler(this.imageToolStripMenuItem_Click);
             // 
-            // gradeToolStripMenuItem
-            // 
-            resources.ApplyResources(this.gradeToolStripMenuItem, "gradeToolStripMenuItem");
-            this.gradeToolStripMenuItem.Name = "gradeToolStripMenuItem";
-            this.gradeToolStripMenuItem.Click += new System.EventHandler(this.gradeToolStripMenuItem_Click);
-            // 
             // mnFile
             // 
             this.mnFile.AutoToolTip = true;
@@ -129,6 +123,12 @@ namespace WindowFrom
             resources.ApplyResources(this.mnUserList, "mnUserList");
             this.mnUserList.Name = "mnUserList";
             this.mnUserList.Click += new System.EventHandler(this.mnUserList_Click);
+            // 
+            // gradeToolStripMenuItem
+            // 
+            resources.ApplyResources(this.gradeToolStripMenuItem, "gradeToolStripMenuItem");
+            this.gradeToolStripMenuItem.Name = "gradeToolStripMenuItem";
+            this.gradeToolStripMenuItem.Click += new System.EventHandler(this.gradeToolStripMenuItem_Click);
             // 
             // rollGiftToolStripMenuItem
             // 

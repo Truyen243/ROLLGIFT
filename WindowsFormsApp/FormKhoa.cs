@@ -126,5 +126,10 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
