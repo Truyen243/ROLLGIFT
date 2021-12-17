@@ -55,12 +55,12 @@ namespace WindowsFormsApp
             this.systemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refréhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manageAdminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.formKhoa1 = new WindowsFormsApp.FormKhoa();
             this.formDiem1 = new WindowsFormsApp.FormDiem();
             this.formMonHoc1 = new WindowsFormsApp.FormMonHoc();
             this.formSinhVien1 = new WindowsFormsApp.FormSinhVien();
-            this.manageAdminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.gunaContextMenuStrip1.SuspendLayout();
@@ -381,6 +381,13 @@ namespace WindowsFormsApp
             this.refréhToolStripMenuItem.Size = new System.Drawing.Size(217, 30);
             this.refréhToolStripMenuItem.Text = "Refresh";
             // 
+            // manageAdminToolStripMenuItem
+            // 
+            this.manageAdminToolStripMenuItem.Image = global::WindowsFormsApp.Properties.Resources.add2;
+            this.manageAdminToolStripMenuItem.Name = "manageAdminToolStripMenuItem";
+            this.manageAdminToolStripMenuItem.Size = new System.Drawing.Size(217, 30);
+            this.manageAdminToolStripMenuItem.Text = "Manage Admin";
+            // 
             // guna2Panel3
             // 
             this.guna2Panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -444,13 +451,6 @@ namespace WindowsFormsApp
             this.formSinhVien1.Name = "formSinhVien1";
             this.formSinhVien1.Size = new System.Drawing.Size(898, 421);
             this.formSinhVien1.TabIndex = 13;
-            // 
-            // manageAdminToolStripMenuItem
-            // 
-            this.manageAdminToolStripMenuItem.Image = global::WindowsFormsApp.Properties.Resources.add2;
-            this.manageAdminToolStripMenuItem.Name = "manageAdminToolStripMenuItem";
-            this.manageAdminToolStripMenuItem.Size = new System.Drawing.Size(217, 30);
-            this.manageAdminToolStripMenuItem.Text = "Manage Admin";
             // 
             // FormMain
             // 
