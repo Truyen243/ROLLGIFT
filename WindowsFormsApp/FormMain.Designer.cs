@@ -34,7 +34,6 @@ namespace WindowsFormsApp
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.formUser1 = new WindowsFormsApp.FormUser();
             this.btnDiem = new Guna.UI2.WinForms.Guna2Button();
             this.btnMonHoc = new Guna.UI2.WinForms.Guna2Button();
             this.btnSinhVien = new Guna.UI2.WinForms.Guna2Button();
@@ -56,11 +55,12 @@ namespace WindowsFormsApp
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refréhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.manageAdminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formKhoa1 = new WindowsFormsApp.FormKhoa();
             this.formDiem1 = new WindowsFormsApp.FormDiem();
             this.formMonHoc1 = new WindowsFormsApp.FormMonHoc();
             this.formSinhVien1 = new WindowsFormsApp.FormSinhVien();
-            this.manageAdminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formUser1 = new WindowsFormsApp.FormUser();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.gunaContextMenuStrip1.SuspendLayout();
@@ -74,8 +74,6 @@ namespace WindowsFormsApp
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.guna2Panel2.BackColor = System.Drawing.Color.White;
             this.guna2Panel2.BorderColor = System.Drawing.Color.Silver;
             this.guna2Panel2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
@@ -86,21 +84,13 @@ namespace WindowsFormsApp
             this.guna2Panel2.Controls.Add(this.btnKhoa);
             this.guna2Panel2.CustomBorderColor = System.Drawing.Color.Silver;
             this.guna2Panel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 34);
             this.guna2Panel2.MaximumSize = new System.Drawing.Size(220, 566);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(202, 566);
             this.guna2Panel2.TabIndex = 1;
-            // 
-            // formUser1
-            // 
-            this.formUser1.AutoSize = true;
-            this.formUser1.Location = new System.Drawing.Point(31, 1);
-            this.formUser1.Margin = new System.Windows.Forms.Padding(4);
-            this.formUser1.Name = "formUser1";
-            this.formUser1.Size = new System.Drawing.Size(138, 136);
-            this.formUser1.TabIndex = 4;
             // 
             // btnDiem
             // 
@@ -397,6 +387,13 @@ namespace WindowsFormsApp
             this.guna2Panel3.TabIndex = 12;
             this.guna2Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
             // 
+            // manageAdminToolStripMenuItem
+            // 
+            this.manageAdminToolStripMenuItem.Image = global::WindowsFormsApp.Properties.Resources.add2;
+            this.manageAdminToolStripMenuItem.Name = "manageAdminToolStripMenuItem";
+            this.manageAdminToolStripMenuItem.Size = new System.Drawing.Size(217, 30);
+            this.manageAdminToolStripMenuItem.Text = "Manage Admin";
+            // 
             // formKhoa1
             // 
             this.formKhoa1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -445,12 +442,14 @@ namespace WindowsFormsApp
             this.formSinhVien1.Size = new System.Drawing.Size(898, 421);
             this.formSinhVien1.TabIndex = 13;
             // 
-            // manageAdminToolStripMenuItem
+            // formUser1
             // 
-            this.manageAdminToolStripMenuItem.Image = global::WindowsFormsApp.Properties.Resources.add2;
-            this.manageAdminToolStripMenuItem.Name = "manageAdminToolStripMenuItem";
-            this.manageAdminToolStripMenuItem.Size = new System.Drawing.Size(217, 30);
-            this.manageAdminToolStripMenuItem.Text = "Manage Admin";
+            this.formUser1.AutoSize = true;
+            this.formUser1.Location = new System.Drawing.Point(31, 1);
+            this.formUser1.Margin = new System.Windows.Forms.Padding(4);
+            this.formUser1.Name = "formUser1";
+            this.formUser1.Size = new System.Drawing.Size(138, 136);
+            this.formUser1.TabIndex = 4;
             // 
             // FormMain
             // 

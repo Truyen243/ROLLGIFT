@@ -85,6 +85,12 @@
     <Compile Include="FormMonHoc.Designer.cs">
       <DependentUpon>FormMonHoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormQuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLy.Designer.cs">
+      <DependentUpon>FormQuanLy.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSinhVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -129,8 +135,14 @@
     <EmbeddedResource Include="FormMonHoc.resx">
       <DependentUpon>FormMonHoc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLy.resx">
+      <DependentUpon>FormQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSinhVien.resx">
       <DependentUpon>FormSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThemSinhVien.resx">
+      <DependentUpon>FormThemSinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormThongTin.resx">
       <DependentUpon>FormThongTin.cs</DependentUpon>

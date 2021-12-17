@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp
 {
-    partial class FormThemSinhVien
+    partial class FormQuanLy
     {
         /// <summary>
         /// Required designer variable.
@@ -37,14 +37,14 @@ namespace WindowsFormsApp
             // 
             this.guna2Elipse1.TargetControl = this;
             // 
-            // FormThemSinhVien
+            // FormQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormThemSinhVien";
-            this.Text = "FormThemSinhVien";
+            this.Name = "FormQuanLy";
+            this.Text = "FormQuanLy";
             this.ResumeLayout(false);
 
         }
