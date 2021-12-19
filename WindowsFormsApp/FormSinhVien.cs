@@ -101,5 +101,13 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormThemSinhVien formThemSinhVien = new FormThemSinhVien();
+            formThemSinhVien.ShowDialog();
+            this.Show();
+        }
     }
 }

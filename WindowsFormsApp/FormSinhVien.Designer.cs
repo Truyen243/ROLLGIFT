@@ -99,6 +99,7 @@ namespace WindowsFormsApp
             this.btnNew.Size = new System.Drawing.Size(100, 40);
             this.btnNew.TabIndex = 19;
             this.btnNew.Text = "New";
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // guna2VSeparator1
             // 
@@ -383,7 +384,7 @@ namespace WindowsFormsApp
             this.label3.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
             this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label3.Margin = new System.Windows.Forms.Padding(2);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(0, 16, 0, 16);
             this.label3.Size = new System.Drawing.Size(898, 66);
@@ -416,7 +417,7 @@ namespace WindowsFormsApp
             this.guna2Panel1.Location = new System.Drawing.Point(3, 180);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(695, 241);
+            this.guna2Panel1.Size = new System.Drawing.Size(724, 241);
             this.guna2Panel1.TabIndex = 46;
             // 
             // guna2Panel2
