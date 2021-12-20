@@ -64,6 +64,12 @@
     <Compile Include="Data\AdminDow.cs" />
     <Compile Include="Data\SinhVien.cs" />
     <Compile Include="Data\WebRequestPostExample.cs" />
+    <Compile Include="FormChangePW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChangePW.Designer.cs">
+      <DependentUpon>FormChangePW.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDiem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -112,6 +118,12 @@
     <Compile Include="FormUser.Designer.cs">
       <DependentUpon>FormUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Admin.Designer.cs">
+      <DependentUpon>Form_Admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +132,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormChangePW.resx">
+      <DependentUpon>FormChangePW.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDiem.resx">
       <DependentUpon>FormDiem.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormUser.resx">
       <DependentUpon>FormUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Admin.resx">
+      <DependentUpon>Form_Admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
