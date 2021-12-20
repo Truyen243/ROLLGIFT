@@ -11,7 +11,7 @@ namespace WindowsFormsApp.Data
 {
     class AdminDow
     {
-        List<Admin> lstAdmin;
+
 
         public bool login(string Email, string Password)
         {
@@ -37,7 +37,7 @@ namespace WindowsFormsApp.Data
                 var result = streamReader.ReadToEnd();
                 Console.WriteLine(result);
                 dynamic stuff = JsonConvert.DeserializeObject(result);
-                if (stuff.status == "error")
+                if (stuff.status != "success")
                 {
                     return false;
                 }    
@@ -50,6 +50,44 @@ namespace WindowsFormsApp.Data
             return false;
 
         }
+
+        public Admin getAdmin(string Email, string Password)
+        {
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://qlsv.phamthanhnam.com/admin/login");
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "POST";
+            
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {
+                string json = new JavaScriptSerializer().Serialize(new
+                {
+                    email = Email,
+                    password = Password
+                });
+
+                streamWriter.Write(json);
+            }
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+                var result = streamReader.ReadToEnd();
+                Console.WriteLine(result);
+                dynamic stuff = JsonConvert.DeserializeObject(result);
+                if (stuff.status != "success")
+                {
+                    return null;
+                }
+
+                else
+                {
+
+                    Admin ad = new Admin(int.Parse(stuff.data.id), stuff.data.name, stuff.data.token, Password);
+                    return ad;
+                }
+            }
+            return null;
+        }    
         public void add(string name, string email, string password)
         {
 

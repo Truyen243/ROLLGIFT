@@ -167,6 +167,7 @@ namespace WindowsFormsApp
             // 
             // guna2CustomCheckBox1
             // 
+            this.guna2CustomCheckBox1.AllowDrop = true;
             this.guna2CustomCheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2CustomCheckBox1.CheckedState.BorderRadius = 10;
             this.guna2CustomCheckBox1.CheckedState.BorderThickness = 0;
@@ -177,7 +178,7 @@ namespace WindowsFormsApp
             this.guna2CustomCheckBox1.Name = "guna2CustomCheckBox1";
             this.guna2CustomCheckBox1.ShadowDecoration.Parent = this.guna2CustomCheckBox1;
             this.guna2CustomCheckBox1.Size = new System.Drawing.Size(27, 25);
-            this.guna2CustomCheckBox1.TabIndex = 14;
+            this.guna2CustomCheckBox1.TabIndex = 3;
             this.guna2CustomCheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2CustomCheckBox1.UncheckedState.BorderRadius = 10;
             this.guna2CustomCheckBox1.UncheckedState.BorderThickness = 1;
@@ -197,7 +198,7 @@ namespace WindowsFormsApp
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(341, 55);
-            this.guna2Button1.TabIndex = 13;
+            this.guna2Button1.TabIndex = 4;
             this.guna2Button1.Text = "Login";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
@@ -224,7 +225,7 @@ namespace WindowsFormsApp
             this.guna2TextBox4.SelectedText = "";
             this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
             this.guna2TextBox4.Size = new System.Drawing.Size(341, 55);
-            this.guna2TextBox4.TabIndex = 11;
+            this.guna2TextBox4.TabIndex = 2;
             // 
             // guna2TextBox2
             // 
@@ -249,7 +250,8 @@ namespace WindowsFormsApp
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Size = new System.Drawing.Size(341, 55);
-            this.guna2TextBox2.TabIndex = 10;
+            this.guna2TextBox2.TabIndex = 1;
+            this.guna2TextBox2.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged_1);
             // 
             // Login
             // 

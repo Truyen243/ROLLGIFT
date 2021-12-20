@@ -79,7 +79,7 @@ namespace WindowFrom
                 {
 
 
-                        sw.WriteLine(string.Format("{0},{1}", txbUserName.Text, txbPassWord.Text));
+                        sw.WriteLine(string.Format("{0} \n {1}", txbUserName.Text, txbPassWord.Text));
 
                 }
             }

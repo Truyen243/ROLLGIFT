@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cls_Main.cs" />
     <Compile Include="Data\Admin.cs" />
     <Compile Include="Data\AdminDow.cs" />
     <Compile Include="Data\SinhVien.cs" />

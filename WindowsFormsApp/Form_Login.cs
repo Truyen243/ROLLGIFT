@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp.Data;
+using System.IO;
 namespace WindowsFormsApp
 {
     public partial class Form_Login : Form
@@ -21,10 +22,21 @@ namespace WindowsFormsApp
         private void Form_Login_Load(object sender, EventArgs e)
         {
             guna2ShadowForm1.SetShadowForm(this);
-            WebRequestPostExample rq = new WebRequestPostExample();
+            getRem();
             //rq.Request();
             //rq.post();
             //rq.delete("4e596539-342e-44e6-b554-faaec514f4ad");
+            string path = Cls_Main.pathRem;
+            using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.Write))
+            {
+                using (StreamWriter sw = new StreamWriter(fs))
+                {
+
+
+                    sw.WriteLine("Xin chào");
+
+                }
+            }
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
@@ -72,10 +84,20 @@ namespace WindowsFormsApp
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
-            AdminDow ad = new AdminDow();
-
-            if(ad.login(guna2TextBox2.Text, guna2TextBox4.Text))
+            Console.WriteLine("Tạo file");
+            if (guna2CustomCheckBox1.Checked == true)
             {
+                Console.WriteLine("Tạo file");
+
+            }
+
+            if (Cls_Main.adStc.getAdmin(guna2TextBox2.Text, guna2TextBox4.Text)!=null)
+            {
+
+                Cls_Main.adminStc= Cls_Main.adStc.getAdmin(guna2TextBox2.Text, guna2TextBox4.Text);
+                Console.WriteLine(Cls_Main.adminStc.GetString());
+                
+
                 this.Hide();
                 FormMain formMain = new FormMain();
                 formMain.ShowDialog();
@@ -87,6 +109,54 @@ namespace WindowsFormsApp
             } 
             
             
+        }
+        public void SaveRem()
+        {
+            string path = Cls_Main.pathRem;
+            using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.Write))
+            {
+                using (StreamWriter sw = new StreamWriter(fs))
+                {
+
+
+                    sw.Write(string.Format("{0}\n{1}", guna2TextBox2.Text, guna2TextBox4.Text));
+
+                }
+            }
+        }
+        public void getRem()
+        {
+            string path = Cls_Main.pathRem;
+            if (File.Exists(path))
+            {
+                using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Read, FileShare.Read))
+                {
+                    using (StreamReader sr = new StreamReader(fs))
+                    {
+                        string line = string.Empty;
+                        List<string> list = new List<string>();
+                        
+                        //listUser.Clear();
+                        while ((line = sr.ReadLine()) != null)
+                        {
+                            list.Add(line);
+                            //Kiểm tra xem line có giá trị hay không
+                            if (!string.IsNullOrEmpty(line))
+                            {
+                                string[] userArray = list.ToArray();
+                                guna2TextBox2.Text = userArray[0];
+                                guna2TextBox4.Text = userArray[1];
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+        private void guna2TextBox2_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
