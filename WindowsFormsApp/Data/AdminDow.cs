@@ -51,7 +51,7 @@ namespace WindowsFormsApp.Data
 
         }
 
-        public Admin getAdmin(string Email, string Password)
+        public bool getAdmin(string Email, string Password)
         {
             var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://qlsv.phamthanhnam.com/admin/login");
             httpWebRequest.ContentType = "application/json";
@@ -76,19 +76,20 @@ namespace WindowsFormsApp.Data
                 dynamic stuff = JsonConvert.DeserializeObject(result);
                 if (stuff.status != "success")
                 {
-                    return null;
+                    return false;
                 }
 
                 else
                 {
-
-                    Admin ad = new Admin(int.Parse(stuff.data.id), stuff.data.name, stuff.data.token, Password);
-                    return ad;
+                    Console.WriteLine(result);
+                    
+                    Cls_Main.adminStc = new Admin();
+                    return true;
                 }
             }
-            return null;
+            return false;
         }    
-        public void add(string name, string email, string password)
+        public void add(string Name, string Email, string Password)
         {
 
             var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://qlsv.phamthanhnam.com/admin/create");
@@ -99,9 +100,9 @@ namespace WindowsFormsApp.Data
             {
                 string json = new JavaScriptSerializer().Serialize(new
                 {
-                    name = "Foo",
-                    email = "truyenlol714@gmail.com",
-                    password = "Aa@12345678"
+                    name = Name,
+                    email = Email,
+                    password = Password
                 });
 
                 streamWriter.Write(json);

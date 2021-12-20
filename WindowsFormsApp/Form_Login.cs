@@ -23,20 +23,11 @@ namespace WindowsFormsApp
         {
             guna2ShadowForm1.SetShadowForm(this);
             getRem();
+            guna2CustomCheckBox1.Checked = true;
             //rq.Request();
             //rq.post();
             //rq.delete("4e596539-342e-44e6-b554-faaec514f4ad");
-            string path = Cls_Main.pathRem;
-            using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.Write))
-            {
-                using (StreamWriter sw = new StreamWriter(fs))
-                {
 
-
-                    sw.WriteLine("Xin chào");
-
-                }
-            }
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
@@ -84,20 +75,22 @@ namespace WindowsFormsApp
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
-            Console.WriteLine("Tạo file");
-            if (guna2CustomCheckBox1.Checked == true)
-            {
-                Console.WriteLine("Tạo file");
 
-            }
 
-            if (Cls_Main.adStc.getAdmin(guna2TextBox2.Text, guna2TextBox4.Text)!=null)
+            if (Cls_Main.adStc.getAdmin(guna2TextBox2.Text, guna2TextBox4.Text))
             {
 
-                Cls_Main.adminStc= Cls_Main.adStc.getAdmin(guna2TextBox2.Text, guna2TextBox4.Text);
-                Console.WriteLine(Cls_Main.adminStc.GetString());
-                
-
+               if(guna2CustomCheckBox1.Checked==true)
+                {
+                    SaveRem();
+                }    
+               else
+                {
+                    if (File.Exists(Cls_Main.pathRem))
+                    {
+                        File.Delete(Cls_Main.pathRem);
+                    }
+                }   
                 this.Hide();
                 FormMain formMain = new FormMain();
                 formMain.ShowDialog();
@@ -113,6 +106,12 @@ namespace WindowsFormsApp
         public void SaveRem()
         {
             string path = Cls_Main.pathRem;
+
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+            }
+           
             using (FileStream fs = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.Write))
             {
                 using (StreamWriter sw = new StreamWriter(fs))
@@ -141,13 +140,10 @@ namespace WindowsFormsApp
                         {
                             list.Add(line);
                             //Kiểm tra xem line có giá trị hay không
-                            if (!string.IsNullOrEmpty(line))
-                            {
-                                string[] userArray = list.ToArray();
-                                guna2TextBox2.Text = userArray[0];
-                                guna2TextBox4.Text = userArray[1];
-                            }
                         }
+                        string[] userArray = list.ToArray();
+                        guna2TextBox2.Text = userArray[0];
+                        guna2TextBox4.Text = userArray[1];
 
                     }
                 }
