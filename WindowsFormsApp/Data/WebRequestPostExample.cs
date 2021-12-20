@@ -44,7 +44,7 @@ namespace WindowsFormsApp.Data
             }
 
             // Close the response.
-            response.Close();
+            
         }
         public void post()
         {

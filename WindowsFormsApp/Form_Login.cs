@@ -17,7 +17,7 @@ namespace WindowsFormsApp
         {
             InitializeComponent();
         }
-
+        
         private void Form_Login_Load(object sender, EventArgs e)
         {
             guna2ShadowForm1.SetShadowForm(this);
@@ -72,10 +72,21 @@ namespace WindowsFormsApp
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            FormMain formMain = new FormMain();
-            formMain.ShowDialog();
-            this.Close();
+            AdminDow ad = new AdminDow();
+
+            if(ad.login(guna2TextBox2.Text, guna2TextBox4.Text))
+            {
+                this.Hide();
+                FormMain formMain = new FormMain();
+                formMain.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Nhập sai tài khoản hoặc mật khẩu");
+            } 
+            
+            
         }
     }
 }

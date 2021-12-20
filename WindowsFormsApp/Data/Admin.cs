@@ -10,27 +10,27 @@ namespace WindowsFormsApp.Data
     {
         private int id;
         private string fullName;
-        private string adminName;
+        private string token;
         private string passWord;
-        private int remember;
+        private string email;
         public Admin() { }
-        public Admin(int id, string fullName, string adminName, string passWord, int remember)
+        public Admin(int id, string fullName, string token,string email, string passWord)
         {
             this.Id = id;
             this.FullName = fullName;
-            this.AdminName = adminName;
+            this.Token = token;
             this.PassWord = passWord;
-            this.Remember = remember;
+            this.Email = email;
         }
         public int Id { get => id; set => id = value; }
         public string FullName { get => fullName; set => fullName = value; }
-        public string AdminName { get => adminName; set => adminName = value; }
+        public string Token { get => token; set => token = value; }
         public string PassWord { get => passWord; set => passWord = value; }
-        public int Remember { get => remember; set => remember = value; }
+        public string Email { get => email; set => email = value; }
 
         public string GetString()
         {
-            return string.Format("{0},{1},{2},{3},{4}", Id, FullName, AdminName, PassWord, Remember);
+            return string.Format("{0},{1},{2},{3},{4}", Id, FullName, Token,email, PassWord);
         }
         public override int GetHashCode() { return 0; }
         public override bool Equals(object obj)
