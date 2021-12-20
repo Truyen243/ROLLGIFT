@@ -16,5 +16,15 @@ namespace WindowsFormsApp
         {
             InitializeComponent();
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void gunaButton2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -21,5 +21,10 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void gunaButton2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

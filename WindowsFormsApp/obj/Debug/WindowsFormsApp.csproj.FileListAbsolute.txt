@@ -90,3 +90,5 @@ C:\Users\ASUS\Source\Repos\ManageApp\KT40\WindowsFormsApp\obj\Debug\WindowsForms
 C:\Users\ASUS\Source\Repos\ManageApp\KT40\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CopyComplete
 C:\Users\ASUS\Source\Repos\ManageApp\KT40\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
 C:\Users\ASUS\Source\Repos\ManageApp\KT40\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
+D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormChangePW.resources
+D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form_Admin.resources
