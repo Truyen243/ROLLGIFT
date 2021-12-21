@@ -60,10 +60,9 @@ namespace WindowsFormsApp
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2GroupBox1.Location = new System.Drawing.Point(0, 2);
-            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(480, 486);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(360, 312);
             this.guna2GroupBox1.TabIndex = 16;
             this.guna2GroupBox1.Text = "Đổi Mật Khẩu";
             // 
@@ -79,15 +78,15 @@ namespace WindowsFormsApp
             this.gunaButton2.ForeColor = System.Drawing.Color.White;
             this.gunaButton2.Image = null;
             this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton2.Location = new System.Drawing.Point(272, 364);
-            this.gunaButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gunaButton2.Location = new System.Drawing.Point(204, 239);
+            this.gunaButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton2.OnHoverImage = null;
             this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton2.Size = new System.Drawing.Size(180, 42);
+            this.gunaButton2.Size = new System.Drawing.Size(135, 34);
             this.gunaButton2.TabIndex = 11;
             this.gunaButton2.Text = "Thoát";
             this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -96,10 +95,10 @@ namespace WindowsFormsApp
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(212, 124);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox4.Location = new System.Drawing.Point(159, 77);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(239, 34);
+            this.textBox4.Size = new System.Drawing.Size(180, 29);
             this.textBox4.TabIndex = 1;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
@@ -108,9 +107,10 @@ namespace WindowsFormsApp
             this.gunaLabel5.BackColor = System.Drawing.Color.White;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gunaLabel5.Location = new System.Drawing.Point(21, 133);
+            this.gunaLabel5.Location = new System.Drawing.Point(16, 84);
+            this.gunaLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(185, 27);
+            this.gunaLabel5.Size = new System.Drawing.Size(139, 22);
             this.gunaLabel5.TabIndex = 2;
             this.gunaLabel5.Text = "Mật khẩu hiện tại";
             // 
@@ -119,19 +119,20 @@ namespace WindowsFormsApp
             this.gunaLabel6.BackColor = System.Drawing.Color.White;
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gunaLabel6.Location = new System.Drawing.Point(21, 187);
+            this.gunaLabel6.Location = new System.Drawing.Point(16, 128);
+            this.gunaLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(185, 27);
+            this.gunaLabel6.Size = new System.Drawing.Size(139, 22);
             this.gunaLabel6.TabIndex = 3;
             this.gunaLabel6.Text = "Mật khẩu mới";
             // 
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(212, 233);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox7.Location = new System.Drawing.Point(159, 165);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(239, 34);
+            this.textBox7.Size = new System.Drawing.Size(180, 29);
             this.textBox7.TabIndex = 5;
             // 
             // gunaButton1
@@ -146,15 +147,15 @@ namespace WindowsFormsApp
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = null;
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(27, 364);
-            this.gunaButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gunaButton1.Location = new System.Drawing.Point(20, 239);
+            this.gunaButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton1.OnHoverImage = null;
             this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Size = new System.Drawing.Size(180, 42);
+            this.gunaButton1.Size = new System.Drawing.Size(135, 34);
             this.gunaButton1.TabIndex = 10;
             this.gunaButton1.Text = "Đổi Mật Khẩu";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -163,10 +164,10 @@ namespace WindowsFormsApp
             // textBox8
             // 
             this.textBox8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(212, 178);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox8.Location = new System.Drawing.Point(159, 121);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(239, 34);
+            this.textBox8.Size = new System.Drawing.Size(180, 29);
             this.textBox8.TabIndex = 4;
             // 
             // gunaLabel9
@@ -174,20 +175,21 @@ namespace WindowsFormsApp
             this.gunaLabel9.BackColor = System.Drawing.Color.White;
             this.gunaLabel9.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gunaLabel9.Location = new System.Drawing.Point(21, 241);
+            this.gunaLabel9.Location = new System.Drawing.Point(16, 172);
+            this.gunaLabel9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel9.Name = "gunaLabel9";
-            this.gunaLabel9.Size = new System.Drawing.Size(185, 27);
+            this.gunaLabel9.Size = new System.Drawing.Size(139, 22);
             this.gunaLabel9.TabIndex = 7;
             this.gunaLabel9.Text = "Nhập lại mật khẩu";
             // 
             // FormChangePW
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 486);
+            this.ClientSize = new System.Drawing.Size(360, 312);
             this.Controls.Add(this.guna2GroupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormChangePW";
             this.Text = "FormChangePW";
             this.guna2GroupBox1.ResumeLayout(false);
