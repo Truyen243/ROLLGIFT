@@ -49,6 +49,8 @@ namespace WindowsFormsApp
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +62,8 @@ namespace WindowsFormsApp
             // 
             this.guna2GroupBox1.BorderColor = System.Drawing.Color.Gray;
             this.guna2GroupBox1.BorderThickness = 0;
+            this.guna2GroupBox1.Controls.Add(this.gunaLabel2);
+            this.guna2GroupBox1.Controls.Add(this.guna2ComboBox2);
             this.guna2GroupBox1.Controls.Add(this.gunaLabel1);
             this.guna2GroupBox1.Controls.Add(this.guna2ComboBox1);
             this.guna2GroupBox1.Controls.Add(this.radioButton2);
@@ -94,7 +98,7 @@ namespace WindowsFormsApp
             this.radioButton2.BackColor = System.Drawing.Color.White;
             this.radioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.radioButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.radioButton2.Location = new System.Drawing.Point(326, 150);
+            this.radioButton2.Location = new System.Drawing.Point(325, 138);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(113, 42);
@@ -108,7 +112,7 @@ namespace WindowsFormsApp
             this.radioButton1.BackColor = System.Drawing.Color.White;
             this.radioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.radioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.radioButton1.Location = new System.Drawing.Point(199, 150);
+            this.radioButton1.Location = new System.Drawing.Point(199, 138);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(113, 42);
@@ -120,7 +124,7 @@ namespace WindowsFormsApp
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(199, 385);
+            this.textBox6.Location = new System.Drawing.Point(195, 344);
             this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(239, 34);
@@ -132,7 +136,7 @@ namespace WindowsFormsApp
             this.gunaLabel8.BackColor = System.Drawing.Color.White;
             this.gunaLabel8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gunaLabel8.Location = new System.Drawing.Point(35, 385);
+            this.gunaLabel8.Location = new System.Drawing.Point(26, 351);
             this.gunaLabel8.Name = "gunaLabel8";
             this.gunaLabel8.Size = new System.Drawing.Size(164, 27);
             this.gunaLabel8.TabIndex = 41;
@@ -143,7 +147,7 @@ namespace WindowsFormsApp
             this.gunaLabel5.BackColor = System.Drawing.Color.White;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gunaLabel5.Location = new System.Drawing.Point(35, 327);
+            this.gunaLabel5.Location = new System.Drawing.Point(26, 295);
             this.gunaLabel5.Name = "gunaLabel5";
             this.gunaLabel5.Size = new System.Drawing.Size(164, 27);
             this.gunaLabel5.TabIndex = 40;
@@ -206,7 +210,7 @@ namespace WindowsFormsApp
             this.gunaLabel7.BackColor = System.Drawing.Color.White;
             this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gunaLabel7.Location = new System.Drawing.Point(35, 270);
+            this.gunaLabel7.Location = new System.Drawing.Point(26, 241);
             this.gunaLabel7.Name = "gunaLabel7";
             this.gunaLabel7.Size = new System.Drawing.Size(164, 27);
             this.gunaLabel7.TabIndex = 36;
@@ -217,7 +221,7 @@ namespace WindowsFormsApp
             this.gunaLabel3.BackColor = System.Drawing.Color.White;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gunaLabel3.Location = new System.Drawing.Point(35, 110);
+            this.gunaLabel3.Location = new System.Drawing.Point(26, 83);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(133, 27);
             this.gunaLabel3.TabIndex = 33;
@@ -228,7 +232,7 @@ namespace WindowsFormsApp
             this.gunaLabel6.BackColor = System.Drawing.Color.White;
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gunaLabel6.Location = new System.Drawing.Point(35, 215);
+            this.gunaLabel6.Location = new System.Drawing.Point(26, 189);
             this.gunaLabel6.Name = "gunaLabel6";
             this.gunaLabel6.Size = new System.Drawing.Size(133, 27);
             this.gunaLabel6.TabIndex = 35;
@@ -239,7 +243,7 @@ namespace WindowsFormsApp
             this.gunaLabel4.BackColor = System.Drawing.Color.White;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gunaLabel4.Location = new System.Drawing.Point(35, 165);
+            this.gunaLabel4.Location = new System.Drawing.Point(26, 138);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(133, 27);
             this.gunaLabel4.TabIndex = 34;
@@ -248,7 +252,7 @@ namespace WindowsFormsApp
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(199, 267);
+            this.textBox5.Location = new System.Drawing.Point(195, 238);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(239, 34);
@@ -257,7 +261,7 @@ namespace WindowsFormsApp
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(200, 208);
+            this.textBox4.Location = new System.Drawing.Point(195, 186);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(239, 34);
@@ -266,7 +270,7 @@ namespace WindowsFormsApp
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(200, 327);
+            this.textBox3.Location = new System.Drawing.Point(196, 295);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(239, 34);
@@ -275,7 +279,7 @@ namespace WindowsFormsApp
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(200, 110);
+            this.textBox2.Location = new System.Drawing.Point(199, 83);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(239, 34);
@@ -294,7 +298,7 @@ namespace WindowsFormsApp
             this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.ItemHeight = 30;
             this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(200, 445);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(196, 448);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.Size = new System.Drawing.Size(238, 36);
@@ -305,11 +309,41 @@ namespace WindowsFormsApp
             this.gunaLabel1.BackColor = System.Drawing.Color.White;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(35, 445);
+            this.gunaLabel1.Location = new System.Drawing.Point(26, 448);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(164, 27);
             this.gunaLabel1.TabIndex = 46;
             this.gunaLabel1.Text = "Lớp Học";
+            // 
+            // guna2ComboBox2
+            // 
+            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.Empty;
+            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox2.FormattingEnabled = true;
+            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.ItemHeight = 30;
+            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.Location = new System.Drawing.Point(195, 396);
+            this.guna2ComboBox2.Name = "guna2ComboBox2";
+            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.Size = new System.Drawing.Size(238, 36);
+            this.guna2ComboBox2.TabIndex = 47;
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.BackColor = System.Drawing.Color.White;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.gunaLabel2.Location = new System.Drawing.Point(26, 394);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(164, 27);
+            this.gunaLabel2.TabIndex = 48;
+            this.gunaLabel2.Text = "Khoa";
             // 
             // FormThemSinhVien
             // 
@@ -350,5 +384,7 @@ namespace WindowsFormsApp
         private System.Windows.Forms.RadioButton radioButton1;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
     }
 }

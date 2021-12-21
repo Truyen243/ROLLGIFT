@@ -16,11 +16,12 @@ namespace WindowsFormsApp.Data
         public string ngaysinh;
         public string adress;
         public string mslop;
+        public string mskhoa;
         public string gioitinh;
-
+        
         public SinhVien() { }
 
-        public SinhVien(int id, string name, string phone, string mssv, string email, string ngaysinh, string adress, string mslop, string gioitinh)
+        public SinhVien(int id, string name, string phone, string mssv, string email, string ngaysinh, string adress, string mslop, string mskhoa, string gioitinh)
         {
             this.Id = id;
             this.Name = name;
@@ -31,6 +32,7 @@ namespace WindowsFormsApp.Data
             this.Adress = adress;
             this.Mslop = mslop;
             this.Gioitinh = gioitinh;
+            this.Mskhoa = mskhoa;
 
         }
         public int Id { get => id; set => id = value; }
@@ -41,11 +43,12 @@ namespace WindowsFormsApp.Data
         public string Ngaysinh { get => ngaysinh; set => ngaysinh = value; }
         public string Adress { get => adress; set => adress = value; }
         public string Mslop { get => mslop; set => mslop = value; }
+        public string Mskhoa { get => mskhoa; set => mskhoa = value; }
         public string Gioitinh { get => gioitinh; set => gioitinh = value; }
 
         public string GetString()
         {
-            return string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8}", Id, Name, Phone, Mssv, Email, Ngaysinh, Adress, Mslop, Gioitinh);
+            return string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9}", Id, Name, Phone, Mssv, Email, Ngaysinh, Adress, Mslop,Mskhoa, Gioitinh);
         }
 
     }

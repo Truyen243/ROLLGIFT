@@ -90,9 +90,11 @@ namespace WindowsFormsApp.Data
                     int id = b.id;
                     String name = b.name;
                     String email = b.email;
-                    String token = b.token;
+                    String token = stuff.token;
+                   
                     String password = Password;
                     Cls_Main.adminStc = new Admin(id, name, token, email, password);
+                    Console.WriteLine(Cls_Main.adminStc.GetString());
                     return true;
                 }
             }
@@ -133,6 +135,41 @@ namespace WindowsFormsApp.Data
                     return false;
                 }    
             }
-        } 
+        }
+        public bool changePassWord(string Newpassword, string Password)
+        {
+
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://qlsv.phamthanhnam.com/admin/forgot/1");
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "POST";
+
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {
+                string json = new JavaScriptSerializer().Serialize(new
+                {
+                    newpassword = Newpassword,
+                    password = Password
+                });
+
+                streamWriter.Write(json);
+            }
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+
+                var result = streamReader.ReadToEnd();
+                Console.WriteLine(result);
+                dynamic stuff = JsonConvert.DeserializeObject(result);
+                if (stuff.status == "success")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
     }
 }

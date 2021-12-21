@@ -6,17 +6,26 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.Web.Script.Serialization;
 using System.IO;
+using System.Net.Http;
 using System.Net;
+using System.Net.Http.Headers;
+
 namespace WindowsFormsApp.Data
 {
     class SinhvienDow
     {
-        public bool addSv(String Name, String Email, String Address, String Date,String Phone, String Sex, String Lop_id)
+        public bool addSv(String Name, String Email, String Address, String Date,String Phone, String Sex, String Lop_id,String Mskhoa)
         {
-            var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://qlsv.phamthanhnam.com/sv/create");
+            
+            String link = "http://qlsv.phamthanhnam.com/sv/create";
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(link);
+
+            httpWebRequest.Headers.Add("Authorization", "Bearer "+ Cls_Main.adminStc.token);
+
             httpWebRequest.ContentType = "application/json";
             httpWebRequest.Method = "POST";
 
+ 
             using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
             {
                 string json = new JavaScriptSerializer().Serialize(new
@@ -28,6 +37,7 @@ namespace WindowsFormsApp.Data
                     phone = Phone, 
                     sex = Sex,
                     lop_id = Lop_id
+                   
                 });
 
                 streamWriter.Write(json);

@@ -63,7 +63,8 @@ namespace WindowsFormsApp
         {
 
             string[] lops = { "19CT113", "19CT114", "19CT115", "19CT116" };
-            if (textBox2.Text ==""|| textBox4.Text == ""|| textBox5.Text == "" || textBox3.Text == "" || textBox6.Text == "" || guna2ComboBox1.SelectedIndex == -1)
+            string[] Khoa = { "CNTT", "Ngôn Ngữ Anh", "Quản trị kinh doanh", "Kinh tế quốc tế" };
+            if (textBox2.Text ==""|| textBox4.Text == ""|| textBox5.Text == "" || textBox3.Text == "" || textBox6.Text == "" || guna2ComboBox1.SelectedIndex == -1|| guna2ComboBox2.SelectedIndex == -1)
             {
                 MessageBox.Show("Vui lòng Nhập Đầy Đủ Thông Tin1");
             }
@@ -85,7 +86,7 @@ namespace WindowsFormsApp
                         sex = "Nu";
                     }
                     
-                    if(Cls_Main.svDow.addSv(textBox2.Text, textBox5.Text, textBox6.Text, textBox4.Text, textBox3.Text, sex, lops[guna2ComboBox1.SelectedIndex]))
+                    if(Cls_Main.svDow.addSv(textBox2.Text, textBox5.Text, textBox6.Text, textBox4.Text, textBox3.Text, sex, lops[guna2ComboBox1.SelectedIndex], Khoa[guna2ComboBox2.SelectedIndex]))
                     {
                         MessageBox.Show("Tạo Thành Công");
                     }
@@ -104,6 +105,11 @@ namespace WindowsFormsApp
             foreach (String lop in lops)
             {
                 guna2ComboBox1.Items.Add(lop);
+            }
+            string[] Khoa = { "CNTT", "Ngôn Ngữ Anh", "Quản trị kinh doanh", "Kinh tế quốc tế" };
+            foreach (String khoa in Khoa)
+            {
+                guna2ComboBox2.Items.Add(khoa);
             }    
         }
     }

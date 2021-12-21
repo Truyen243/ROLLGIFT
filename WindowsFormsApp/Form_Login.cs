@@ -75,7 +75,7 @@ namespace WindowsFormsApp
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
-
+            Console.WriteLine(Cls_Main.adminStc.token);
 
             if (Cls_Main.adStc.getAdmin(guna2TextBox2.Text, guna2TextBox4.Text))
             {

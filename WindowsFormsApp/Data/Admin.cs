@@ -8,11 +8,11 @@ namespace WindowsFormsApp.Data
 {
     class Admin
     {
-        private int id;
-        private string fullName;
-        private string token;
+        public int id;
+        public string fullName;
+        public string token;
         public string passWord;
-        private string email;
+        public string email;
         public Admin() { }
         public Admin(int id, string fullName, string token,string email, string passWord)
         {
