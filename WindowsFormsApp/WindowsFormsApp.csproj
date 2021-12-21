@@ -63,6 +63,7 @@
     <Compile Include="Data\Admin.cs" />
     <Compile Include="Data\AdminDow.cs" />
     <Compile Include="Data\SinhVien.cs" />
+    <Compile Include="Data\SinhvienDow.cs" />
     <Compile Include="Data\WebRequestPostExample.cs" />
     <Compile Include="FormChangePW.cs">
       <SubType>Form</SubType>

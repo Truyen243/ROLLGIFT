@@ -106,7 +106,7 @@ namespace WindowsFormsApp
         {
             this.Hide();
             FormThemSinhVien formThemSinhVien = new FormThemSinhVien();
-            formThemSinhVien.ShowDialog();
+            formThemSinhVien.Show();
             this.Show();
         }
     }

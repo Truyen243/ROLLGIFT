@@ -47,6 +47,8 @@ namespace WindowsFormsApp
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +60,8 @@ namespace WindowsFormsApp
             // 
             this.guna2GroupBox1.BorderColor = System.Drawing.Color.Gray;
             this.guna2GroupBox1.BorderThickness = 0;
+            this.guna2GroupBox1.Controls.Add(this.gunaLabel1);
+            this.guna2GroupBox1.Controls.Add(this.guna2ComboBox1);
             this.guna2GroupBox1.Controls.Add(this.radioButton2);
             this.guna2GroupBox1.Controls.Add(this.radioButton1);
             this.guna2GroupBox1.Controls.Add(this.textBox6);
@@ -94,7 +98,7 @@ namespace WindowsFormsApp
             this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(113, 42);
-            this.radioButton2.TabIndex = 44;
+            this.radioButton2.TabIndex = 3;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Nữ";
             this.radioButton2.UseVisualStyleBackColor = false;
@@ -108,7 +112,7 @@ namespace WindowsFormsApp
             this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(113, 42);
-            this.radioButton1.TabIndex = 43;
+            this.radioButton1.TabIndex = 2;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Nam";
             this.radioButton1.UseVisualStyleBackColor = false;
@@ -120,7 +124,7 @@ namespace WindowsFormsApp
             this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(239, 34);
-            this.textBox6.TabIndex = 42;
+            this.textBox6.TabIndex = 7;
             this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // gunaLabel8
@@ -166,7 +170,7 @@ namespace WindowsFormsApp
             this.gunaButton2.OnHoverImage = null;
             this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton2.Size = new System.Drawing.Size(180, 42);
-            this.gunaButton2.TabIndex = 38;
+            this.gunaButton2.TabIndex = 10;
             this.gunaButton2.Text = "Thoát";
             this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click);
@@ -192,9 +196,10 @@ namespace WindowsFormsApp
             this.gunaButton1.OnHoverImage = null;
             this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton1.Size = new System.Drawing.Size(180, 42);
-            this.gunaButton1.TabIndex = 37;
+            this.gunaButton1.TabIndex = 9;
             this.gunaButton1.Text = "Thêm";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
             // gunaLabel7
             // 
@@ -205,7 +210,7 @@ namespace WindowsFormsApp
             this.gunaLabel7.Name = "gunaLabel7";
             this.gunaLabel7.Size = new System.Drawing.Size(164, 27);
             this.gunaLabel7.TabIndex = 36;
-            this.gunaLabel7.Text = "Gmail";
+            this.gunaLabel7.Text = "Email";
             // 
             // gunaLabel3
             // 
@@ -243,20 +248,20 @@ namespace WindowsFormsApp
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(199, 270);
+            this.textBox5.Location = new System.Drawing.Point(199, 267);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(239, 34);
-            this.textBox5.TabIndex = 31;
+            this.textBox5.TabIndex = 5;
             // 
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(199, 215);
+            this.textBox4.Location = new System.Drawing.Point(200, 208);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(239, 34);
-            this.textBox4.TabIndex = 30;
+            this.textBox4.TabIndex = 4;
             // 
             // textBox3
             // 
@@ -265,7 +270,7 @@ namespace WindowsFormsApp
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(239, 34);
-            this.textBox3.TabIndex = 29;
+            this.textBox3.TabIndex = 6;
             // 
             // textBox2
             // 
@@ -274,7 +279,37 @@ namespace WindowsFormsApp
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(239, 34);
-            this.textBox2.TabIndex = 28;
+            this.textBox2.TabIndex = 1;
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
+            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.FormattingEnabled = true;
+            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Location = new System.Drawing.Point(200, 445);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Size = new System.Drawing.Size(238, 36);
+            this.guna2ComboBox1.TabIndex = 8;
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.BackColor = System.Drawing.Color.White;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.gunaLabel1.Location = new System.Drawing.Point(35, 445);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(164, 27);
+            this.gunaLabel1.TabIndex = 46;
+            this.gunaLabel1.Text = "Lớp Học";
             // 
             // FormThemSinhVien
             // 
@@ -287,6 +322,7 @@ namespace WindowsFormsApp
             this.Name = "FormThemSinhVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormThemSinhVien";
+            this.Load += new System.EventHandler(this.FormThemSinhVien_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -312,5 +348,7 @@ namespace WindowsFormsApp
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
     }
 }
