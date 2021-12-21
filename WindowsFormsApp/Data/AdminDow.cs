@@ -7,6 +7,7 @@ using System.Net;
 using System.Text;
 using Newtonsoft.Json;
 using System.Web.Script.Serialization;
+
 namespace WindowsFormsApp.Data
 {
     class AdminDow
@@ -74,6 +75,9 @@ namespace WindowsFormsApp.Data
                 var result = streamReader.ReadToEnd();
                 Console.WriteLine(result);
                 dynamic stuff = JsonConvert.DeserializeObject(result);
+               
+
+
                 if (stuff.status != "success")
                 {
                     return false;
@@ -81,15 +85,20 @@ namespace WindowsFormsApp.Data
 
                 else
                 {
-                    Console.WriteLine(result);
-                    
-                    Cls_Main.adminStc = new Admin();
+
+                    dynamic b = stuff.data;
+                    int id = b.id;
+                    String name = b.name;
+                    String email = b.email;
+                    String token = b.token;
+                    String password = Password;
+                    Cls_Main.adminStc = new Admin(id, name, token, email, password);
                     return true;
                 }
             }
             return false;
         }    
-        public void add(string Name, string Email, string Password)
+        public bool add(string Name, string Email, string Password)
         {
 
             var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://qlsv.phamthanhnam.com/admin/create");
@@ -114,6 +123,15 @@ namespace WindowsFormsApp.Data
 
                 var result = streamReader.ReadToEnd();
                 Console.WriteLine(result);
+                dynamic stuff = JsonConvert.DeserializeObject(result);
+                if(stuff.status == "success")
+                {
+                    return true;
+                }    
+                else
+                {
+                    return false;
+                }    
             }
         } 
     }

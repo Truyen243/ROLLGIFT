@@ -26,5 +26,47 @@ namespace WindowsFormsApp
         {
             this.Close();
         }
+
+        private void guna2GroupBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            if(textBox1.Text == ""|| textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" || textBox5.Text == "")
+            {
+                MessageBox.Show("Nhập Thiếu Thông Tin");
+            }    
+            else
+            {
+                if(textBox3.Text!= textBox4.Text)
+                {
+                    MessageBox.Show("Mật khẩu không trùng nhau");
+                }
+                else
+                {
+                   
+                    if(Cls_Main.adminStc.passWord!= textBox5.Text)
+                    {
+                        MessageBox.Show("Nhập sai mật khẩu xác nhận");
+                    }
+                    else
+                    {
+                        
+                       if( Cls_Main.adStc.add(textBox1.Text, textBox2.Text, textBox4.Text))
+                        {
+                            MessageBox.Show("Tạo Tài Khoản Thành Công");
+                        }    
+                       else
+                        {
+                            MessageBox.Show("Error");
+                        }    
+                    }
+                } 
+                    
+            }    
+            
+        }
     }
 }

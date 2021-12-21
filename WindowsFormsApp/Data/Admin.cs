@@ -11,7 +11,7 @@ namespace WindowsFormsApp.Data
         private int id;
         private string fullName;
         private string token;
-        private string passWord;
+        public string passWord;
         private string email;
         public Admin() { }
         public Admin(int id, string fullName, string token,string email, string passWord)

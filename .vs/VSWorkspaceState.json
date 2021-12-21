@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\WindowFrom",
+    "\\WindowsFormsApp"
   ],
-  "SelectedNode": "\\RollGift.sln (RollGift.sln)",
+  "SelectedNode": "\\WindowsFormsApp\\FormSinhVien.cs",
   "PreviewInSolutionExplorer": false
 }

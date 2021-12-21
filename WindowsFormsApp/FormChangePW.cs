@@ -26,5 +26,37 @@ namespace WindowsFormsApp
         {
             this.Close();
         }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            if(textBox4.Text == ""|| textBox8.Text == ""|| textBox7.Text == "")
+            {
+                MessageBox.Show("Vui Lòng Nhâp Đủ Thông Tin");
+
+            }
+            else
+            {
+                if(textBox4.Text!= textBox8.Text)
+                {
+                    MessageBox.Show("Vui lòng nhập mật khẩu trung nhau");
+                }    
+                else
+                {
+                    if(textBox7.Text!= Cls_Main.adminStc.passWord)
+                    {
+                        MessageBox.Show("Mật khẩu xác nhận sai");
+                    }    
+                    else
+                    {
+
+                    }    
+                }    
+            }
+        }
     }
 }

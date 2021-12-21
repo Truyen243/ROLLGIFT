@@ -125,5 +125,17 @@ namespace WindowsFormsApp
         {
             this.Close();
         }
+
+        private void registAdminToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_Admin ad = new Form_Admin();
+            ad.ShowDialog();
+        }
+
+        private void changePassWordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormChangePW ch = new FormChangePW();
+            ch.ShowDialog();
+        }
     }
 }
