@@ -56,6 +56,8 @@ namespace WindowsFormsApp
                         if(Cls_Main.adStc.changePassWord(textBox8.Text, textBox4.Text))
                         {
                             MessageBox.Show("Đổi Mật Khẩu Thành Công");
+                            
+
                         }    
                         else
                         {

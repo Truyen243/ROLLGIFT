@@ -24,9 +24,8 @@ namespace WindowsFormsApp
             formMonHoc1.Visible = false;
             formDiem1.Visible = false;
             formKhoa1.Visible = false;
-            SinhVien sv = new SinhVien();
-            AdminDow ad = new AdminDow();
-            ad.login("truyenlol714@gmail.com", "Aa@12345678");
+
+            Cls_Main.khoaDowStc.getKhoa();
         }
 
 

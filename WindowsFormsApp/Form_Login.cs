@@ -24,6 +24,7 @@ namespace WindowsFormsApp
             guna2ShadowForm1.SetShadowForm(this);
             getRem();
             guna2CustomCheckBox1.Checked = true;
+            
             //rq.Request();
             //rq.post();
             //rq.delete("4e596539-342e-44e6-b554-faaec514f4ad");

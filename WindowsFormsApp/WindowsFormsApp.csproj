@@ -64,6 +64,7 @@
     <Compile Include="Data\AdminDow.cs" />
     <Compile Include="Data\Diem.cs" />
     <Compile Include="Data\Khoa.cs" />
+    <Compile Include="Data\khoadow.cs" />
     <Compile Include="Data\Lop.cs" />
     <Compile Include="Data\MonHoc.cs" />
     <Compile Include="Data\SinhVien.cs" />
