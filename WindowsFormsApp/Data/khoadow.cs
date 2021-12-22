@@ -37,7 +37,7 @@ namespace WindowsFormsApp.Data
                 Console.WriteLine(result);
                 
                 dynamic stuff = JsonConvert.DeserializeObject(result);
-                Console.WriteLine(stuff.data[0].GetType());
+                
                 JObject[] Khoa = stuff.data.ToObject<JObject[]>();
                 foreach (JObject kh in Khoa)
                 {

@@ -127,33 +127,35 @@ namespace WindowsFormsApp
         {
 
         }
+        
+
         private void FormKhoa_Load(object sender, EventArgs e)
         {
+            
+            Cls_Main.khoaDowStc.getKhoa();
             foreach (Khoa khoa in Cls_Main.khoaDowStc.lstKhoa)
             {
-                guna2ComboBox2.Items.Add(khoa.ten);
-                
+                guna2ComboBox1.Items.Add(khoa.ten);
             }
-            
         }
-        List<String> lstlop = new List<string>();
+        List<string> lstma = new List<string>();
+
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int mskhoa = Cls_Main.khoaDowStc.lstKhoa[guna2ComboBox2.SelectedIndex].id;
+            Cls_Main.lopDowStc.getLop();
+            int mskhoa = Cls_Main.khoaDowStc.lstKhoa[guna2ComboBox1.SelectedIndex].id;
 
             guna2ComboBox2.Items.Clear();
-            lstlop.Clear();
+            lstma.Clear();
             foreach (Lop lop in Cls_Main.lopDowStc.lstlop)
             {
 
                 if (Int32.Parse(lop.Khoa_id) == mskhoa)
                 {
                     guna2ComboBox2.Items.Add(lop.ten);
-                    lstlop.Add(lop.malop);
+                    lstma.Add(lop.khoa_id);
                 }
             }
         }
-
-        
     }
 }

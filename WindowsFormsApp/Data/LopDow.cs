@@ -3,15 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 using System.IO;
 using System.Net;
-using System.Text;
+
 using Newtonsoft.Json;
-using System.Web.Script.Serialization;
+
 using Newtonsoft.Json.Linq;
 
 namespace WindowsFormsApp.Data
@@ -21,7 +18,7 @@ namespace WindowsFormsApp.Data
         public List<Lop> lstlop = new List<Lop>();
         public bool getLop()
         {
-
+            this.lstlop.Clear();
             String link = "https://qlsv.phamthanhnam.com/lop/get/all";
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(link);
 

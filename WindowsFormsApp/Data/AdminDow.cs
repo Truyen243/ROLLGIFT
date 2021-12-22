@@ -98,7 +98,6 @@ namespace WindowsFormsApp.Data
                     return true;
                 }
             }
-            return false;
         }    
         public bool add(string Name, string Email, string Password)
         {

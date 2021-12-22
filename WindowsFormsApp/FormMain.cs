@@ -139,10 +139,12 @@ namespace WindowsFormsApp
 
         private void formKhoa1_Load(object sender, EventArgs e)
         {
-            foreach (Khoa khoa in Cls_Main.khoaDowStc.lstKhoa)
-            {
-                formKhoa1.guna2ComboBox2.Items.Add(khoa.ten);
-            }
+           
+        }
+
+        private void formKhoa1_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
