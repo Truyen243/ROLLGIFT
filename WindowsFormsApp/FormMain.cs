@@ -19,7 +19,7 @@ namespace WindowsFormsApp
         } 
 
         private void Form1_Load(object sender, EventArgs e)
-        {
+        { 
             formSinhVien1.Visible = true;
             formMonHoc1.Visible = false;
             formDiem1.Visible = false;
@@ -56,7 +56,6 @@ namespace WindowsFormsApp
             formMonHoc1.Visible = true;
             formDiem1.Visible = false;
             formKhoa1.Visible = false;
-
         }
 
         private void btnSinhVien_Click(object sender, EventArgs e)
@@ -65,7 +64,6 @@ namespace WindowsFormsApp
             formMonHoc1.Visible = false;
             formDiem1.Visible = false;
             formKhoa1.Visible = false;
-
         }
 
         private void btnDiem_Click(object sender, EventArgs e)

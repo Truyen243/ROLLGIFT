@@ -29,9 +29,9 @@ namespace WindowsFormsApp
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colHoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,8 +64,8 @@ namespace WindowsFormsApp
             // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.guna2DataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -74,14 +74,14 @@ namespace WindowsFormsApp
             this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.guna2DataGridView1.ColumnHeadersHeight = 40;
             this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column2,
@@ -90,23 +90,22 @@ namespace WindowsFormsApp
             this.col,
             this.colGioiTinh,
             this.colDiaChi});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(0, 322);
-            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(0, 262);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(1197, 196);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(898, 159);
             this.guna2DataGridView1.TabIndex = 17;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -175,14 +174,16 @@ namespace WindowsFormsApp
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.label3.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
             this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(0, 20, 0, 20);
-            this.label3.Size = new System.Drawing.Size(1197, 81);
+            this.label3.Padding = new System.Windows.Forms.Padding(0, 16, 0, 16);
+            this.label3.Size = new System.Drawing.Size(898, 66);
             this.label3.TabIndex = 18;
             this.label3.Text = "Môn Học";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -190,10 +191,9 @@ namespace WindowsFormsApp
             // guna2VSeparator1
             // 
             this.guna2VSeparator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2VSeparator1.Location = new System.Drawing.Point(-1, 32);
-            this.guna2VSeparator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2VSeparator1.Location = new System.Drawing.Point(-1, 26);
             this.guna2VSeparator1.Name = "guna2VSeparator1";
-            this.guna2VSeparator1.Size = new System.Drawing.Size(3, 175);
+            this.guna2VSeparator1.Size = new System.Drawing.Size(2, 142);
             this.guna2VSeparator1.TabIndex = 18;
             // 
             // btnNew
@@ -210,11 +210,10 @@ namespace WindowsFormsApp
             this.btnNew.HoverState.Parent = this.btnNew;
             this.btnNew.Image = global::WindowsFormsApp.Properties.Resources.add2;
             this.btnNew.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.btnNew.Location = new System.Drawing.Point(52, 14);
-            this.btnNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNew.Location = new System.Drawing.Point(39, 11);
             this.btnNew.Name = "btnNew";
             this.btnNew.ShadowDecoration.Parent = this.btnNew;
-            this.btnNew.Size = new System.Drawing.Size(133, 49);
+            this.btnNew.Size = new System.Drawing.Size(100, 40);
             this.btnNew.TabIndex = 0;
             this.btnNew.Text = "New";
             // 
@@ -232,11 +231,10 @@ namespace WindowsFormsApp
             this.btcUpdate.HoverState.Parent = this.btcUpdate;
             this.btcUpdate.Image = global::WindowsFormsApp.Properties.Resources.refresh1;
             this.btcUpdate.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.btcUpdate.Location = new System.Drawing.Point(52, 70);
-            this.btcUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btcUpdate.Location = new System.Drawing.Point(39, 57);
             this.btcUpdate.Name = "btcUpdate";
             this.btcUpdate.ShadowDecoration.Parent = this.btcUpdate;
-            this.btcUpdate.Size = new System.Drawing.Size(133, 49);
+            this.btcUpdate.Size = new System.Drawing.Size(100, 40);
             this.btcUpdate.TabIndex = 1;
             this.btcUpdate.Text = "Update";
             // 
@@ -254,11 +252,10 @@ namespace WindowsFormsApp
             this.btnDelete.HoverState.Parent = this.btnDelete;
             this.btnDelete.Image = global::WindowsFormsApp.Properties.Resources.close1;
             this.btnDelete.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.btnDelete.Location = new System.Drawing.Point(52, 127);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Location = new System.Drawing.Point(39, 103);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.ShadowDecoration.Parent = this.btnDelete;
-            this.btnDelete.Size = new System.Drawing.Size(133, 49);
+            this.btnDelete.Size = new System.Drawing.Size(100, 40);
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Delete";
             // 
@@ -276,11 +273,10 @@ namespace WindowsFormsApp
             this.btnReset.HoverState.Parent = this.btnReset;
             this.btnReset.Image = global::WindowsFormsApp.Properties.Resources.diskette__1_1;
             this.btnReset.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.btnReset.Location = new System.Drawing.Point(52, 183);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReset.Location = new System.Drawing.Point(39, 149);
             this.btnReset.Name = "btnReset";
             this.btnReset.ShadowDecoration.Parent = this.btnReset;
-            this.btnReset.Size = new System.Drawing.Size(133, 49);
+            this.btnReset.Size = new System.Drawing.Size(100, 40);
             this.btnReset.TabIndex = 3;
             this.btnReset.Text = "Save";
             // 
@@ -293,11 +289,10 @@ namespace WindowsFormsApp
             this.guna2Panel2.Controls.Add(this.btcUpdate);
             this.guna2Panel2.Controls.Add(this.btnNew);
             this.guna2Panel2.Controls.Add(this.guna2VSeparator1);
-            this.guna2Panel2.Location = new System.Drawing.Point(960, 78);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel2.Location = new System.Drawing.Point(720, 63);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(237, 246);
+            this.guna2Panel2.Size = new System.Drawing.Size(178, 200);
             this.guna2Panel2.TabIndex = 12;
             // 
             // guna2TextBox1
@@ -315,14 +310,14 @@ namespace WindowsFormsApp
             this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(237, 123);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.guna2TextBox1.Location = new System.Drawing.Point(178, 100);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(229, 44);
+            this.guna2TextBox1.Size = new System.Drawing.Size(172, 36);
             this.guna2TextBox1.TabIndex = 0;
             // 
             // guna2TextBox2
@@ -340,14 +335,14 @@ namespace WindowsFormsApp
             this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(237, 103);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.guna2TextBox2.Location = new System.Drawing.Point(178, 84);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(229, 44);
+            this.guna2TextBox2.Size = new System.Drawing.Size(172, 36);
             this.guna2TextBox2.TabIndex = 1;
             // 
             // gunaLabel1
@@ -356,10 +351,9 @@ namespace WindowsFormsApp
             this.gunaLabel1.BackColor = System.Drawing.Color.White;
             this.gunaLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(37, 127);
-            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.gunaLabel1.Location = new System.Drawing.Point(28, 103);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(124, 25);
+            this.gunaLabel1.Size = new System.Drawing.Size(99, 20);
             this.gunaLabel1.TabIndex = 5;
             this.gunaLabel1.Text = "Mã Môn Học";
             // 
@@ -369,10 +363,9 @@ namespace WindowsFormsApp
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(37, 183);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(28, 149);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 25);
+            this.label1.Size = new System.Drawing.Size(104, 20);
             this.label1.TabIndex = 6;
             this.label1.Text = "Tên Môn Học";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -381,20 +374,18 @@ namespace WindowsFormsApp
             // 
             this.guna2Separator1.BackColor = System.Drawing.Color.White;
             this.guna2Separator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2Separator1.Location = new System.Drawing.Point(237, 145);
-            this.guna2Separator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Separator1.Location = new System.Drawing.Point(178, 118);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(229, 2);
+            this.guna2Separator1.Size = new System.Drawing.Size(172, 2);
             this.guna2Separator1.TabIndex = 34;
             // 
             // guna2Separator2
             // 
             this.guna2Separator2.BackColor = System.Drawing.Color.White;
             this.guna2Separator2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2Separator2.Location = new System.Drawing.Point(237, 206);
-            this.guna2Separator2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Separator2.Location = new System.Drawing.Point(178, 167);
             this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(229, 2);
+            this.guna2Separator2.Size = new System.Drawing.Size(172, 2);
             this.guna2Separator2.TabIndex = 35;
             // 
             // guna2Panel1
@@ -412,21 +403,19 @@ namespace WindowsFormsApp
             this.guna2Panel1.Controls.Add(this.gunaLabel1);
             this.guna2Panel1.Controls.Add(this.guna2TextBox2);
             this.guna2Panel1.Controls.Add(this.guna2TextBox1);
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 78);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 63);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(960, 246);
+            this.guna2Panel1.Size = new System.Drawing.Size(720, 200);
             this.guna2Panel1.TabIndex = 16;
             // 
             // guna2Separator3
             // 
             this.guna2Separator3.BackColor = System.Drawing.Color.White;
             this.guna2Separator3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2Separator3.Location = new System.Drawing.Point(237, 192);
-            this.guna2Separator3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Separator3.Location = new System.Drawing.Point(178, 156);
             this.guna2Separator3.Name = "guna2Separator3";
-            this.guna2Separator3.Size = new System.Drawing.Size(229, 16);
+            this.guna2Separator3.Size = new System.Drawing.Size(172, 13);
             this.guna2Separator3.TabIndex = 52;
             // 
             // guna2TextBox3
@@ -444,14 +433,14 @@ namespace WindowsFormsApp
             this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
             this.guna2TextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(237, 164);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.guna2TextBox3.Location = new System.Drawing.Point(178, 133);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
             this.guna2TextBox3.PlaceholderText = "";
             this.guna2TextBox3.SelectedText = "";
             this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(229, 44);
+            this.guna2TextBox3.Size = new System.Drawing.Size(172, 36);
             this.guna2TextBox3.TabIndex = 51;
             // 
             // guna2Button1
@@ -462,11 +451,10 @@ namespace WindowsFormsApp
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(471, 34);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button1.Location = new System.Drawing.Point(353, 28);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(109, 42);
+            this.guna2Button1.Size = new System.Drawing.Size(82, 34);
             this.guna2Button1.TabIndex = 50;
             this.guna2Button1.Text = "Find";
             // 
@@ -486,28 +474,27 @@ namespace WindowsFormsApp
             this.guna2TextBox6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox6.HoverState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Location = new System.Drawing.Point(43, 34);
-            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2TextBox6.Location = new System.Drawing.Point(32, 28);
+            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox6.Name = "guna2TextBox6";
             this.guna2TextBox6.PasswordChar = '\0';
             this.guna2TextBox6.PlaceholderText = "Nhập ID Môn Học";
             this.guna2TextBox6.SelectedText = "";
             this.guna2TextBox6.ShadowDecoration.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Size = new System.Drawing.Size(368, 38);
+            this.guna2TextBox6.Size = new System.Drawing.Size(276, 31);
             this.guna2TextBox6.TabIndex = 49;
             // 
             // FormMonHoc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormMonHoc";
-            this.Size = new System.Drawing.Size(1197, 518);
+            this.Size = new System.Drawing.Size(898, 421);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
