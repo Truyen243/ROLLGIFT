@@ -27,6 +27,7 @@ namespace WindowsFormsApp
 
             gunaLabel3.Text = Cls_Main.adminStc.fullName;
             Cls_Main.khoaDowStc.getKhoa();
+            Cls_Main.lopDowStc.getLop();
         }
 
 
@@ -134,6 +135,14 @@ namespace WindowsFormsApp
         {
             FormChangePW ch = new FormChangePW();
             ch.ShowDialog();
+        }
+
+        private void formKhoa1_Load(object sender, EventArgs e)
+        {
+            foreach (Khoa khoa in Cls_Main.khoaDowStc.lstKhoa)
+            {
+                formKhoa1.guna2ComboBox2.Items.Add(khoa.ten);
+            }
         }
     }
 }

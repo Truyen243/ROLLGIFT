@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using WindowsFormsApp.Data;
 namespace WindowsFormsApp
 {
     public partial class FormThemSinhVien : Form
@@ -16,7 +16,7 @@ namespace WindowsFormsApp
         {
             InitializeComponent();
         }
-
+        List<String> lstma = new List<string>();
         private void guna2HtmlLabel4_Click(object sender, EventArgs e)
         {
 
@@ -62,8 +62,7 @@ namespace WindowsFormsApp
         private void gunaButton1_Click(object sender, EventArgs e)
         {
 
-            string[] lops = { "19CT113", "19CT114", "19CT115", "19CT116" };
-            string[] Khoa = { "CNTT", "Ngôn Ngữ Anh", "Quản trị kinh doanh", "Kinh tế quốc tế" };
+
             if (textBox2.Text ==""|| textBox4.Text == ""|| textBox5.Text == "" || textBox3.Text == "" || textBox6.Text == "" || guna2ComboBox1.SelectedIndex == -1|| guna2ComboBox2.SelectedIndex == -1)
             {
                 MessageBox.Show("Vui lòng Nhập Đầy Đủ Thông Tin1");
@@ -86,7 +85,7 @@ namespace WindowsFormsApp
                         sex = "Nu";
                     }
                     
-                    if(Cls_Main.svDow.addSv(textBox2.Text, textBox5.Text, textBox6.Text, textBox4.Text, textBox3.Text, sex, lops[guna2ComboBox1.SelectedIndex], Khoa[guna2ComboBox2.SelectedIndex]))
+                    if(Cls_Main.svDow.addSv(textBox2.Text, textBox5.Text, textBox6.Text, textBox4.Text, textBox3.Text, sex, lstma[guna2ComboBox1.SelectedIndex], Cls_Main.khoaDowStc.lstKhoa[guna2ComboBox2.SelectedIndex].makhoa))
                     {
                         MessageBox.Show("Tạo Thành Công");
                     }
@@ -101,15 +100,26 @@ namespace WindowsFormsApp
 
         private void FormThemSinhVien_Load(object sender, EventArgs e)
         {
-            string[] lops = { "19CT113", "19CT114", "19CT115", "19CT116" };
-            foreach (String lop in lops)
+            foreach (Khoa khoa in Cls_Main.khoaDowStc.lstKhoa)
             {
-                guna2ComboBox1.Items.Add(lop);
-            }
-            string[] Khoa = { "CNTT", "Ngôn Ngữ Anh", "Quản trị kinh doanh", "Kinh tế quốc tế" };
-            foreach (String khoa in Khoa)
+                guna2ComboBox2.Items.Add(khoa.ten);
+            }    
+        }
+
+        private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int mskhoa = Cls_Main.khoaDowStc.lstKhoa[guna2ComboBox2.SelectedIndex].id;
+
+            guna2ComboBox1.Items.Clear();
+            lstma.Clear();
+            foreach (Lop lop in Cls_Main.lopDowStc.lstlop)
             {
-                guna2ComboBox2.Items.Add(khoa);
+
+                if(Int32.Parse(lop.Khoa_id) == mskhoa)
+                {
+                    guna2ComboBox1.Items.Add(lop.ten);
+                    lstma.Add(lop.khoa_id);
+                }    
             }    
         }
     }

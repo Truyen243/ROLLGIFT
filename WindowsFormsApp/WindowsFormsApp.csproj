@@ -66,6 +66,7 @@
     <Compile Include="Data\Khoa.cs" />
     <Compile Include="Data\khoadow.cs" />
     <Compile Include="Data\Lop.cs" />
+    <Compile Include="Data\LopDow.cs" />
     <Compile Include="Data\MonHoc.cs" />
     <Compile Include="Data\SinhVien.cs" />
     <Compile Include="Data\SinhvienDow.cs" />

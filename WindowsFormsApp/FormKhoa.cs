@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp.Data;
 
 namespace WindowsFormsApp
 {
@@ -126,10 +127,33 @@ namespace WindowsFormsApp
         {
 
         }
-
+        private void FormKhoa_Load(object sender, EventArgs e)
+        {
+            foreach (Khoa khoa in Cls_Main.khoaDowStc.lstKhoa)
+            {
+                guna2ComboBox2.Items.Add(khoa.ten);
+                
+            }
+            
+        }
+        List<String> lstlop = new List<string>();
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            int mskhoa = Cls_Main.khoaDowStc.lstKhoa[guna2ComboBox2.SelectedIndex].id;
 
+            guna2ComboBox2.Items.Clear();
+            lstlop.Clear();
+            foreach (Lop lop in Cls_Main.lopDowStc.lstlop)
+            {
+
+                if (Int32.Parse(lop.Khoa_id) == mskhoa)
+                {
+                    guna2ComboBox2.Items.Add(lop.ten);
+                    lstlop.Add(lop.malop);
+                }
+            }
         }
+
+        
     }
 }

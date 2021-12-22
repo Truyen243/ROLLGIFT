@@ -11,7 +11,8 @@ namespace WindowsFormsApp
         public static AdminDow adStc = new AdminDow();
         // Xử lí Khoa
         public static khoadow khoaDowStc = new khoadow();
-        
+        // Xử lí Lớp
+        public static LopDow lopDowStc = new LopDow();
         // file chứa mật khẩu đã lưu
         public static string pathRem = string.Format(@"{0}\rem.ini", Application.StartupPath);
         public static SinhvienDow svDow = new SinhvienDow();
