@@ -25,6 +25,7 @@ namespace WindowsFormsApp
             formDiem1.Visible = false;
             formKhoa1.Visible = false;
 
+            gunaLabel3.Text = Cls_Main.adminStc.fullName;
             Cls_Main.khoaDowStc.getKhoa();
         }
 
