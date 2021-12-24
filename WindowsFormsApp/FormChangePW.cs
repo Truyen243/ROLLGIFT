@@ -32,8 +32,11 @@ namespace WindowsFormsApp
 
         }
 
+        public delegate void getStcadmin();
+        public getStcadmin get2;
         private void gunaButton1_Click(object sender, EventArgs e)
         {
+            get2();
             if(textBox4.Text == ""|| textBox8.Text == ""|| textBox7.Text == "")
             {
                 MessageBox.Show("Vui Lòng Nhâp Đủ Thông Tin");

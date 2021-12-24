@@ -10,11 +10,18 @@ using System.Windows.Forms;
 using WindowsFormsApp.Data;
 namespace WindowsFormsApp
 {
+    public delegate void Send();
     public partial class FormThemSinhVien : Form
     {
+        public Send s;
         public FormThemSinhVien()
         {
             InitializeComponent();
+        }
+        public FormThemSinhVien(Send sender)
+        {
+            InitializeComponent();
+            this.s = sender;
         }
         List<String> lstma = new List<string>();
         private void guna2HtmlLabel4_Click(object sender, EventArgs e)
@@ -58,11 +65,11 @@ namespace WindowsFormsApp
         {
 
         }
-
+       
         private void gunaButton1_Click(object sender, EventArgs e)
         {
 
-
+            this.s();
             if (textBox2.Text ==""|| textBox4.Text == ""|| textBox5.Text == "" || textBox3.Text == "" || textBox6.Text == "" || guna2ComboBox1.SelectedIndex == -1|| guna2ComboBox2.SelectedIndex == -1)
             {
                 MessageBox.Show("Vui lòng Nhập Đầy Đủ Thông Tin1");

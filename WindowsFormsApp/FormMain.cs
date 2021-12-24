@@ -10,14 +10,26 @@ using System.Windows.Forms;
 using WindowsFormsApp.Data;
 namespace WindowsFormsApp
 {
+    
     public partial class FormMain : Form
     {
-
         public FormMain()
         {
             InitializeComponent();
-        } 
+            
+        }
+        static Admin stcadmin = Cls_Main.adminStc;
+        #region Lấy thông tin admin stactic từ user control
+        static Admin ad = Cls_Main.adminStc;
+        public FormMain frm;
+        public delegate void getStcadmin();
 
+        public void get2()
+        {
+            Console.WriteLine("Xin chào");
+        }
+        #endregion 
+        #region form load
         private void Form1_Load(object sender, EventArgs e)
         { 
             formSinhVien1.Visible = true;
@@ -29,7 +41,7 @@ namespace WindowsFormsApp
             Cls_Main.khoaDowStc.getKhoa();
             Cls_Main.lopDowStc.getLop();
         }
-
+        #endregion
 
         private void formMonHoc1_Load(object sender, EventArgs e)
         {
@@ -144,7 +156,8 @@ namespace WindowsFormsApp
 
         private void formKhoa1_Load_1(object sender, EventArgs e)
         {
-
+            
+            
         }
     }
 }

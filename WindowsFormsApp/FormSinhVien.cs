@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using WindowsFormsApp.Data;
 namespace WindowsFormsApp
 {
     public partial class FormSinhVien : UserControl
@@ -101,13 +101,42 @@ namespace WindowsFormsApp
         {
 
         }
-
+        public delegate void Send();
         private void btnNew_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormThemSinhVien formThemSinhVien = new FormThemSinhVien();
+            FormThemSinhVien formThemSinhVien = new FormThemSinhVien(wrote);
             formThemSinhVien.Show();
             this.Show();
+        }
+        public void wrote()
+        {
+            Console.WriteLine("Xin chào");
+        }
+
+        List<SinhVien> lstsv = new List<SinhVien>();
+        
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            if(guna2TextBox6.Text != "")
+            {
+                SinhVien sv = Cls_Main.svDow.timsinhVien(guna2TextBox6.Text);
+                
+                sv.GetString();
+                if (sv ==null)
+                {
+                    MessageBox.Show("Không tìm thấy sinh viên, vui lòng nhập lại");
+                }
+                else
+                {
+                    lstsv.Add(sv);
+                }
+
+                BindingSource bindingSource = new BindingSource();
+                bindingSource.DataSource = lstsv;
+                guna2DataGridView1.DataSource = bindingSource;
+            }    
+            
         }
     }
 }

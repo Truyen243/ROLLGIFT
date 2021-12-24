@@ -157,5 +157,22 @@ namespace WindowsFormsApp
                 }
             }
         }
+
+        private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (Lop lop in Cls_Main.lopDowStc.lstlop)
+            {
+
+                if (lop.ten == guna2ComboBox2.SelectedItem)
+                {
+                    List<SinhVien> lst = new List<SinhVien>();
+
+                    lst = Cls_Main.lopDowStc.getSv((Convert.ToString(lop.id)));
+                    BindingSource bindingSource = new BindingSource();
+                    bindingSource.DataSource = lst;
+                    guna2DataGridView2.DataSource = bindingSource;
+                }
+            }
+        }
     }
 }

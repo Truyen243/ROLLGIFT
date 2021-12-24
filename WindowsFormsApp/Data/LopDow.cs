@@ -16,6 +16,18 @@ namespace WindowsFormsApp.Data
     class LopDow
     {
         public List<Lop> lstlop = new List<Lop>();
+        public string getTenLop(int idlop)
+        {
+            foreach (Lop lop in Cls_Main.lopDowStc.lstlop)
+            {
+
+                if (lop.id == idlop)
+                {
+                    return lop.ten;
+                }
+            }
+            return "";
+        }    
         public bool getLop()
         {
             this.lstlop.Clear();
@@ -56,6 +68,65 @@ namespace WindowsFormsApp.Data
                 else
                 {
                     return false;
+                }
+            }
+
+        }
+        public List<SinhVien> getSv(string id)
+        {
+            List<SinhVien> lstsv = new List<SinhVien>();
+
+            String link = "https://qlsv.phamthanhnam.com/lop/sv/"+id;
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(link);
+
+            httpWebRequest.Headers.Add("Authorization", "Bearer " + Cls_Main.adminStc.token);
+
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "GET";
+
+
+
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+
+                var result = streamReader.ReadToEnd();
+                Console.WriteLine(result);
+
+                dynamic stuff = JsonConvert.DeserializeObject(result);
+
+                JObject[] Svs = stuff.data.sinhviens.ToObject<JObject[]>();
+                foreach (JObject sv in Svs)
+                {
+                    string j = "";
+                    foreach (Lop lp in Cls_Main.lopDowStc.lstlop)
+                    {
+                        if(lp.id == Int32.Parse(id))
+                        {
+                            j = lp.khoa_id;
+                        }    
+                    }    
+                    int a = (int)sv["id"];
+                    String b = (string)sv["name"];
+                    String c = (string)sv["uid"];
+                    String d = (string)sv["email"];
+                    String e = (string)sv["address"];
+                    String f = (string)sv["lop_id"];
+                    String g = (string)sv["date"];
+                    String h = (string)sv["phone"];
+                    String i = (string)sv["sex"];
+                    SinhVien k = new SinhVien(a,b,h,c,d,g,e,f, j,i);
+                    lstsv.Add(k);
+                    
+                }
+                if (stuff.status == "success")
+                {
+                    return lstsv;
+                }
+                else
+                {
+                    return null;
                 }
             }
 

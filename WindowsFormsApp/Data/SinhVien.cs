@@ -48,7 +48,7 @@ namespace WindowsFormsApp.Data
 
         public string GetString()
         {
-            return string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9}", Id, Name, Phone, Mssv, Email, Ngaysinh, Adress, Mslop,Mskhoa, Gioitinh);
+            return string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9}", id, name, phone, mssv, email, ngaysinh, adress, mslop,mskhoa, gioitinh);
         }
 
     }
