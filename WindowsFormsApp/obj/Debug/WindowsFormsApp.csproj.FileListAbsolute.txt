@@ -94,3 +94,4 @@ D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormChangePW.resources
 D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form_Admin.resources
 C:\Users\ASUS\Source\Repos\ManageApp\KT40\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormChangePW.resources
 C:\Users\ASUS\Source\Repos\ManageApp\KT40\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form_Admin.resources
+D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form_update.resources
