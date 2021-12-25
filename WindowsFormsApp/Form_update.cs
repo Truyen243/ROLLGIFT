@@ -149,7 +149,7 @@ namespace WindowsFormsApp
                             gioi = "Nu";
                         }
                         Cls_Main.svDow.updateSv(sv.id, textBox13.Text, textBox14.Text, textBox12.Text, textBox15.Text, textBox16.Text, gioi, lopid);
-                        button1_Click();
+                        
                         MessageBox.Show("Update Thành Công");
                     }
                 }
