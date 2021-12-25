@@ -27,7 +27,19 @@ namespace WindowsFormsApp.Data
                 }
             }
             return "";
-        }    
+        }
+        public int getidlop(string tenlop)
+        {
+            foreach (Lop lop in Cls_Main.lopDowStc.lstlop)
+            {
+
+                if (lop.ten == tenlop)
+                {
+                    return lop.id;
+                }
+            }
+            return 0;
+        }
         public bool getLop()
         {
             this.lstlop.Clear();

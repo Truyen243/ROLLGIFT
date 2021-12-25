@@ -38,7 +38,7 @@ namespace WindowsFormsApp
             formKhoa1.Visible = false;
 
             gunaLabel3.Text = Cls_Main.adminStc.fullName;
-            Cls_Main.khoaDowStc.getKhoa();
+
             Cls_Main.lopDowStc.getLop();
         }
         #endregion
@@ -151,7 +151,7 @@ namespace WindowsFormsApp
 
         private void formKhoa1_Load(object sender, EventArgs e)
         {
-           
+            
         }
 
         private void formKhoa1_Load_1(object sender, EventArgs e)

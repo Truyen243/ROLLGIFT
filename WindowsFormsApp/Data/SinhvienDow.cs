@@ -15,6 +15,54 @@ namespace WindowsFormsApp.Data
 {
     class SinhvienDow
     {
+        public bool updateSv(int Id,String Name, String Email, String Address, String Date, String Phone, String Sex, int Lop_id)
+        {
+
+            String link = "https://qlsv.phamthanhnam.com/sv/edit";
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(link);
+
+            httpWebRequest.Headers.Add("Authorization", "Bearer " + Cls_Main.adminStc.token);
+
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "POST";
+
+
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {
+                string json = new JavaScriptSerializer().Serialize(new
+                {
+                    id = Id,
+                    name = Name,
+                    email = Email,
+                    address = Address,
+                    date = Date,
+                    phone = Phone,
+                    sex = Sex,
+                    lop_id = Lop_id
+
+                });
+
+                streamWriter.Write(json);
+            }
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+
+                var result = streamReader.ReadToEnd();
+                Console.WriteLine(result);
+                dynamic stuff = JsonConvert.DeserializeObject(result);
+                if (stuff.status == "success")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+        }
         public bool addSv(String Name, String Email, String Address, String Date,String Phone, String Sex, String Lop_id,String Mskhoa)
         {
             
@@ -84,6 +132,10 @@ namespace WindowsFormsApp.Data
                 Console.WriteLine(result);
                 dynamic stuff = JsonConvert.DeserializeObject(result);
                 JObject[] sv1 = stuff.data.ToObject<JObject[]>();
+                if(sv1 == null)
+                {
+                    return null;
+                }
                 SinhVien svs = new SinhVien();
                 foreach (JObject sv in sv1)
                 {
@@ -97,8 +149,7 @@ namespace WindowsFormsApp.Data
                     string sex = (string)sv["sex"];
                     string phone = (string)sv["phone"];
                     dynamic stuff2 = sv["sinhviens"];
-                    string mslop = (string)stuff2.malop;
-                   
+                    string mslop = (string)stuff2.malop;               
                     dynamic stuff3 = stuff2.lops;
                     string mskhoa = (string)stuff3.makhoa;
                     svs = new SinhVien(id, name, phone, mssv, email, date, address, mslop, mskhoa,sex);
@@ -107,13 +158,38 @@ namespace WindowsFormsApp.Data
                 }    
                 if (stuff.status != "success")
                 {
-                    
-                    return svs;
+
+                    return null;
                 }
                 else
                 {
-                    return null;
+                    
+                    return svs;
                 }
+            }
+
+        }
+        public void xoasinhVien(int id)
+        {
+
+            String link = "https://qlsv.phamthanhnam.com/sv/delete/" + Convert.ToString(id);
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(link);
+
+            httpWebRequest.Headers.Add("Authorization", "Bearer " + Cls_Main.adminStc.token);
+
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "DELETE";
+            Console.WriteLine("Xóa");
+
+
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+
+                var result = streamReader.ReadToEnd();
+                Console.WriteLine(result);
+                
             }
 
         }

@@ -142,6 +142,7 @@ namespace WindowsFormsApp
 
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             Cls_Main.lopDowStc.getLop();
             int mskhoa = Cls_Main.khoaDowStc.lstKhoa[guna2ComboBox1.SelectedIndex].id;
 
@@ -163,7 +164,7 @@ namespace WindowsFormsApp
             foreach (Lop lop in Cls_Main.lopDowStc.lstlop)
             {
 
-                if (lop.ten == guna2ComboBox2.SelectedItem)
+                if (lop.ten == guna2ComboBox2.SelectedItem.ToString())
                 {
                     List<SinhVien> lst = new List<SinhVien>();
 

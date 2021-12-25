@@ -15,8 +15,9 @@ namespace WindowsFormsApp
         public static LopDow lopDowStc = new LopDow();
         // file chứa mật khẩu đã lưu
         public static string pathRem = string.Format(@"{0}\rem.ini", Application.StartupPath);
-        public static SinhvienDow svDow = new SinhvienDow();
+        
         // Chứa sinh viên
         public static SinhVien svStc = new SinhVien();
+        public static SinhvienDow svDow = new SinhvienDow();
     }
 }

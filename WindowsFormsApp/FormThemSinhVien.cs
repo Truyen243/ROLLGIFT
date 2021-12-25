@@ -23,7 +23,7 @@ namespace WindowsFormsApp
             InitializeComponent();
             this.s = sender;
         }
-        List<String> lstma = new List<string>();
+        
         private void guna2HtmlLabel4_Click(object sender, EventArgs e)
         {
 
@@ -104,7 +104,7 @@ namespace WindowsFormsApp
                  }
             }
         }
-
+        List<String> lstma = new List<string>();
         private void FormThemSinhVien_Load(object sender, EventArgs e)
         {
             foreach (Khoa khoa in Cls_Main.khoaDowStc.lstKhoa)

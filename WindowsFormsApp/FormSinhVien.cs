@@ -121,8 +121,7 @@ namespace WindowsFormsApp
             if(guna2TextBox6.Text != "")
             {
                 SinhVien sv = Cls_Main.svDow.timsinhVien(guna2TextBox6.Text);
-                
-                sv.GetString();
+
                 if (sv ==null)
                 {
                     MessageBox.Show("Không tìm thấy sinh viên, vui lòng nhập lại");
@@ -137,6 +136,12 @@ namespace WindowsFormsApp
                 guna2DataGridView1.DataSource = bindingSource;
             }    
             
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Form_update up = new Form_update();
+            up.Show();
         }
     }
 }

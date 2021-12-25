@@ -17,6 +17,7 @@ namespace WindowsFormsApp.Data
         public List<Khoa> lstKhoa = new List<Khoa>();
         public bool getKhoa()
         {
+            
 
             String link = "https://qlsv.phamthanhnam.com/khoa/get/all";
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(link);
@@ -39,11 +40,11 @@ namespace WindowsFormsApp.Data
                 dynamic stuff = JsonConvert.DeserializeObject(result);
                 
                 JObject[] Khoa = stuff.data.ToObject<JObject[]>();
-                foreach (JObject kh in Khoa)
+                foreach (JObject khx in Khoa)
                 {
-                    int a = (int)kh["id"];
-                    String b = (string)kh["ten"];
-                    String c = (string)kh["makhoa"];
+                    int a = (int)khx["id"];
+                    String b = (string)khx["ten"];
+                    String c = (string)khx["makhoa"];
                     Khoa k = new Khoa(a,b,c);
                     this.lstKhoa.Add(k);
                 }    
