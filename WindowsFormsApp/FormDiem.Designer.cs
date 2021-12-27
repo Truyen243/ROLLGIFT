@@ -232,9 +232,9 @@ namespace WindowsFormsApp
             // 
             // guna2DataGridView1
             // 
+            this.guna2DataGridView1.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -265,16 +265,15 @@ namespace WindowsFormsApp
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(0, 141);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(22, 162);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(1197, 299);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(1031, 261);
             this.guna2DataGridView1.TabIndex = 41;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -305,6 +304,7 @@ namespace WindowsFormsApp
             this.Id.HeaderText = "Id Môn";
             this.Id.MinimumWidth = 6;
             this.Id.Name = "Id";
+            this.Id.Width = 150;
             // 
             // tenmon
             // 
@@ -312,6 +312,8 @@ namespace WindowsFormsApp
             this.tenmon.HeaderText = "Tên Môn";
             this.tenmon.MinimumWidth = 6;
             this.tenmon.Name = "tenmon";
+            this.tenmon.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.tenmon.Width = 149;
             // 
             // d10
             // 
@@ -319,6 +321,7 @@ namespace WindowsFormsApp
             this.d10.HeaderText = "Điểm 10";
             this.d10.MinimumWidth = 6;
             this.d10.Name = "d10";
+            this.d10.Width = 150;
             // 
             // d30
             // 
@@ -326,6 +329,7 @@ namespace WindowsFormsApp
             this.d30.HeaderText = "Điểm 30";
             this.d30.MinimumWidth = 6;
             this.d30.Name = "d30";
+            this.d30.Width = 150;
             // 
             // d40
             // 
@@ -333,6 +337,7 @@ namespace WindowsFormsApp
             this.d40.HeaderText = "Điểm 60";
             this.d40.MinimumWidth = 6;
             this.d40.Name = "d40";
+            this.d40.Width = 149;
             // 
             // dtong
             // 
@@ -340,6 +345,7 @@ namespace WindowsFormsApp
             this.dtong.HeaderText = "Điểm tổng";
             this.dtong.MinimumWidth = 6;
             this.dtong.Name = "dtong";
+            this.dtong.Width = 150;
             // 
             // Masv
             // 
@@ -348,6 +354,7 @@ namespace WindowsFormsApp
             this.Masv.MinimumWidth = 6;
             this.Masv.Name = "Masv";
             this.Masv.Visible = false;
+            this.Masv.Width = 149;
             // 
             // I_diem
             // 
@@ -356,6 +363,7 @@ namespace WindowsFormsApp
             this.I_diem.MinimumWidth = 6;
             this.I_diem.Name = "I_diem";
             this.I_diem.Visible = false;
+            this.I_diem.Width = 150;
             // 
             // FormDiem
             // 

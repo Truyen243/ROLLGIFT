@@ -64,8 +64,8 @@ namespace WindowsFormsApp.Data
                     float diem60 = (float)d["diem60"];
                     float diemtong = (float)d["diemtong"];
                     string tenmon = Cls_Main.diemDow.getTen(mamh);
-                    dm = new Diem(id,"ssss", masv, mamh, diem10, diem30, diem60, diemtong);
-                    Console.WriteLine(tenmon);
+                    dm = new Diem(id, tenmon, masv, mamh, diem10, diem30, diem60, diemtong);
+                  
                     lstDiem.Add(dm);
                     
                 }
