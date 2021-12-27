@@ -91,9 +91,10 @@ namespace WindowsFormsApp
                     {
                         sex = "Nu";
                     }
-                    
-                    if(Cls_Main.svDow.addSv(textBox2.Text, textBox5.Text, textBox6.Text, textBox4.Text, textBox3.Text, sex, lstma[guna2ComboBox1.SelectedIndex], Cls_Main.khoaDowStc.lstKhoa[guna2ComboBox2.SelectedIndex].makhoa))
+                    int lopid = Cls_Main.lopDowStc.getidlop(guna2ComboBox1.SelectedItem.ToString());
+                    if (Cls_Main.svDow.addSv(textBox2.Text, textBox5.Text, textBox6.Text, textBox4.Text, textBox3.Text, sex, lopid))
                     {
+                        Console.WriteLine(lopid);
                         MessageBox.Show("Tạo Thành Công");
                     }
                     else

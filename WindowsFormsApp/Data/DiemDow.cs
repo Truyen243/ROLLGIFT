@@ -50,6 +50,11 @@ namespace WindowsFormsApp.Data
                 var result = streamReader.ReadToEnd();
                 Console.WriteLine(result);
                 dynamic stuff = JsonConvert.DeserializeObject(result);
+                if (stuff.status != "success")
+                {
+
+                    return null;
+                }
                 JObject[] diem = stuff.data.diemsv.ToObject<JObject[]>();
 
                 Diem dm = new Diem();

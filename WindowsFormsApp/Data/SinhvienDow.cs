@@ -63,7 +63,7 @@ namespace WindowsFormsApp.Data
             }
 
         }
-        public bool addSv(String Name, String Email, String Address, String Date,String Phone, String Sex, String Lop_id,String Mskhoa)
+        public bool addSv(String Name, String Email, String Address, String Date,String Phone, String Sex, int Lop_id)
         {
             
             String link = "http://qlsv.phamthanhnam.com/sv/create";
@@ -86,7 +86,6 @@ namespace WindowsFormsApp.Data
                     phone = Phone, 
                     sex = Sex,
                     lop_id = Lop_id
-                   
                 });
 
                 streamWriter.Write(json);

@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\WindowsFormsApp"
+    "\\WindowsFormsApp",
+    "\\WindowsFormsApp\\Data",
+    "\\WindowsFormsApp\\Resources"
   ],
-  "SelectedNode": "\\WindowsFormsApp\\FormMain.cs",
+  "SelectedNode": "\\WindowsFormsApp\\Data\\SinhvienDow.cs",
   "PreviewInSolutionExplorer": false
 }
