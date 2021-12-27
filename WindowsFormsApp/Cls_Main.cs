@@ -19,5 +19,10 @@ namespace WindowsFormsApp
         // Chứa sinh viên
         public static SinhVien svStc = new SinhVien();
         public static SinhvienDow svDow = new SinhvienDow();
+        //Chứa môn
+        public static MonhocDow monDow = new MonhocDow();
+        //Chứa điểm
+        public static DiemDow diemDow = new DiemDow();
+
     }
 }

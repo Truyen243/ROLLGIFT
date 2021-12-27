@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp.Data;
+using WindowsFormsApp.Common;
 
 namespace WindowsFormsApp
 {
@@ -132,7 +133,7 @@ namespace WindowsFormsApp
         private void FormKhoa_Load(object sender, EventArgs e)
         {
             
-            Cls_Main.khoaDowStc.getKhoa();
+            
             foreach (Khoa khoa in Cls_Main.khoaDowStc.lstKhoa)
             {
                 guna2ComboBox1.Items.Add(khoa.ten);
@@ -173,6 +174,38 @@ namespace WindowsFormsApp
                     bindingSource.DataSource = lst;
                     guna2DataGridView2.DataSource = bindingSource;
                 }
+            }
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            if (guna2ComboBox2.SelectedIndex!= -1)
+            {
+            try
+            {
+                //Đối tường SaveFileDialog cho phép hiển thị một hộp thoại saveFile. Hộp thoại này cho phép nhập tên file và nơi lưu file Excel 
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                //Hien thi thu muc khoi tao
+                saveFileDialog.InitialDirectory = @"d:\";
+                //xác định vị trí có được nhớ lại khi mở tiếp hộp thoại này hay không 
+                saveFileDialog.RestoreDirectory = true;
+
+                saveFileDialog.Filter = "Excel files (*.xls)|*.xls|All files (*.*)|*.*";//Lọc loại file
+                saveFileDialog.DefaultExt = "xls";//Phần mở rộng mặc định
+                saveFileDialog.AddExtension = true;
+
+                saveFileDialog.Title = "Lưu file Excel";//Tiêu đề của hộp thoại
+                saveFileDialog.FileName = "Danh sách sinh viên lớp " + guna2ComboBox2.SelectedItem.ToString(); //{0}-{1:00}-{2:00}-{3:00}", DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Minute)//trungthuong2021101801
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)//kiểm tra nếu nhấn vào button save trên hộp thoại
+                {
+                    XuatFileExcel.XuatExcel(saveFileDialog.FileName, guna2DataGridView2, "Danh sách học sinh lớp" + guna2ComboBox2.SelectedItem.ToString(), "Khoa " + guna2ComboBox1.SelectedItem.ToString());
+                    MessageBox.Show("Xuất file thành công");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Có lỗi: ", ex.Message);
+            }
             }
         }
     }

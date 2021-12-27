@@ -120,3 +120,4 @@ C:\Users\ASUS\Source\Repos\ManageApp2412\WindowsFormsApp\obj\Debug\WindowsFormsA
 C:\Users\ASUS\Source\Repos\ManageApp2412\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CopyComplete
 C:\Users\ASUS\Source\Repos\ManageApp2412\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
 C:\Users\ASUS\Source\Repos\ManageApp2412\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
+C:\Users\ASUS\Source\Repos\ManageApp2412\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.ResolveComReference.cache

@@ -40,6 +40,7 @@ namespace WindowsFormsApp
             gunaLabel3.Text = Cls_Main.adminStc.fullName;
 
             Cls_Main.lopDowStc.getLop();
+            Cls_Main.monDow.getMon();
         }
         #endregion
 

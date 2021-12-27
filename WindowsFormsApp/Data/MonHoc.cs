@@ -8,11 +8,11 @@ namespace WindowsFormsApp.Data
 {
     class MonHoc
     {
-        int id;
-        string mamonhoc;
-        string ten;
-        int sotiet;
-        int heso;
+        public int id;
+        public string mamonhoc;
+        public string ten;
+        public int sotiet;
+        public int heso;
         public MonHoc() { }
         public MonHoc(int id, string mamonhoc, string ten, int sotiet, int heso)
         {
