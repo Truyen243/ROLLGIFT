@@ -48,6 +48,7 @@ namespace WindowsFormsApp
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -136,6 +137,7 @@ namespace WindowsFormsApp
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel1.BackColor = System.Drawing.Color.White;
             this.guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.guna2Panel1.Controls.Add(this.guna2Button1);
             this.guna2Panel1.Controls.Add(this.gunaLabel6);
             this.guna2Panel1.Controls.Add(this.guna2ComboBox3);
             this.guna2Panel1.Controls.Add(this.guna2Button3);
@@ -366,6 +368,7 @@ namespace WindowsFormsApp
             this.guna2ComboBox3.ShadowDecoration.Parent = this.guna2ComboBox3;
             this.guna2ComboBox3.Size = new System.Drawing.Size(267, 36);
             this.guna2ComboBox3.TabIndex = 63;
+            this.guna2ComboBox3.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox3_SelectedIndexChanged);
             this.guna2ComboBox3.Click += new System.EventHandler(this.guna2ComboBox3_Click);
             // 
             // gunaLabel6
@@ -380,6 +383,23 @@ namespace WindowsFormsApp
             this.gunaLabel6.Size = new System.Drawing.Size(144, 25);
             this.gunaLabel6.TabIndex = 65;
             this.gunaLabel6.Text = "Chọn Môn Học";
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 6;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(841, 27);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(303, 42);
+            this.guna2Button1.TabIndex = 66;
+            this.guna2Button1.Text = "Quản Lí Môn Học";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
             // FormMonHoc
             // 
@@ -418,5 +438,6 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

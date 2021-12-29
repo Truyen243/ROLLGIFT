@@ -119,6 +119,7 @@ namespace WindowsFormsApp
                             Cls_Main.diemDow.add(dm);
 
                         }
+                        MessageBox.Show("Đã thêm điểm");
                     }
                 }
             }
@@ -142,6 +143,25 @@ namespace WindowsFormsApp
             {
                 guna2ComboBox1.Items.Add(khoa.ten);
             }
+        }
+
+        private void guna2ComboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (MonHoc m in Cls_Main.monDow.lstMon)
+            {
+                if (guna2ComboBox3.SelectedItem.ToString() == m.mamonhoc)
+                {
+                    mh = m;
+                }
+            }
+            guna2TextBox2.Text = mh.mamonhoc;
+            guna2TextBox3.Text = mh.ten;
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            FormThemMonHoc n = new FormThemMonHoc();
+            n.Show();
         }
     }
 }

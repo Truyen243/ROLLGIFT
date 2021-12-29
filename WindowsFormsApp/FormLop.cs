@@ -218,5 +218,11 @@ namespace WindowsFormsApp
                 guna2ComboBox1.Items.Add(khoa.ten);
             }
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            FormThemLop f = new FormThemLop();
+            f.Show();
+        }
     }
 }
