@@ -54,11 +54,11 @@ namespace WindowsFormsApp
             this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.formKhoa1 = new WindowsFormsApp.FormKhoa();
             this.formDiem1 = new WindowsFormsApp.FormDiem();
             this.formSinhVien1 = new WindowsFormsApp.FormSinhVien();
             this.formMonHoc1 = new WindowsFormsApp.FormMonHoc();
             this.formLop1 = new WindowsFormsApp.FormLop();
-            this.formKhoa1 = new WindowsFormsApp.FormKhoa();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -383,16 +383,26 @@ namespace WindowsFormsApp
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.formMonHoc1);
+            this.panel1.Controls.Add(this.formLop1);
             this.panel1.Controls.Add(this.formKhoa1);
             this.panel1.Controls.Add(this.formDiem1);
             this.panel1.Controls.Add(this.formSinhVien1);
-            this.panel1.Controls.Add(this.formMonHoc1);
-            this.panel1.Controls.Add(this.formLop1);
             this.panel1.Location = new System.Drawing.Point(202, 176);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(898, 425);
             this.panel1.TabIndex = 13;
+            // 
+            // formKhoa1
+            // 
+            this.formKhoa1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.formKhoa1.Location = new System.Drawing.Point(0, 0);
+            this.formKhoa1.Name = "formKhoa1";
+            this.formKhoa1.Size = new System.Drawing.Size(898, 425);
+            this.formKhoa1.TabIndex = 4;
             // 
             // formDiem1
             // 
@@ -416,7 +426,7 @@ namespace WindowsFormsApp
             this.formSinhVien1.Location = new System.Drawing.Point(0, 0);
             this.formSinhVien1.Margin = new System.Windows.Forms.Padding(4);
             this.formSinhVien1.Name = "formSinhVien1";
-            this.formSinhVien1.Size = new System.Drawing.Size(1140, 425);
+            this.formSinhVien1.Size = new System.Drawing.Size(898, 425);
             this.formSinhVien1.TabIndex = 3;
             // 
             // formMonHoc1
@@ -443,16 +453,6 @@ namespace WindowsFormsApp
             this.formLop1.Size = new System.Drawing.Size(898, 425);
             this.formLop1.TabIndex = 1;
             this.formLop1.Load += new System.EventHandler(this.formKhoa1_Load_1);
-            // 
-            // formKhoa1
-            // 
-            this.formKhoa1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.formKhoa1.Location = new System.Drawing.Point(0, 0);
-            this.formKhoa1.Name = "formKhoa1";
-            this.formKhoa1.Size = new System.Drawing.Size(898, 425);
-            this.formKhoa1.TabIndex = 4;
             // 
             // FormMain
             // 

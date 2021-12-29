@@ -41,7 +41,6 @@ namespace WindowsFormsApp
             this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.gunaLabel17 = new Guna.UI.WinForms.GunaLabel();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -84,7 +83,6 @@ namespace WindowsFormsApp
             this.guna2GroupBox1.Controls.Add(this.guna2ComboBox2);
             this.guna2GroupBox1.Controls.Add(this.guna2ComboBox1);
             this.guna2GroupBox1.Controls.Add(this.gunaButton6);
-            this.guna2GroupBox1.Controls.Add(this.guna2Separator1);
             this.guna2GroupBox1.Controls.Add(this.radioButton2);
             this.guna2GroupBox1.Controls.Add(this.gunaLabel17);
             this.guna2GroupBox1.Controls.Add(this.radioButton1);
@@ -325,7 +323,7 @@ namespace WindowsFormsApp
             this.gunaButton6.Location = new System.Drawing.Point(161, 527);
             this.gunaButton6.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton6.Name = "gunaButton6";
-            this.gunaButton6.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton6.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.gunaButton6.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton6.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton6.OnHoverImage = null;
@@ -336,14 +334,6 @@ namespace WindowsFormsApp
             this.gunaButton6.Text = "Xóa";
             this.gunaButton6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton6.Click += new System.EventHandler(this.gunaButton6_Click);
-            // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2Separator1.Location = new System.Drawing.Point(113, 77);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(130, 10);
-            this.guna2Separator1.TabIndex = 38;
             // 
             // radioButton2
             // 
@@ -459,7 +449,7 @@ namespace WindowsFormsApp
             this.gunaButton4.Location = new System.Drawing.Point(308, 527);
             this.gunaButton4.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton4.Name = "gunaButton4";
-            this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton4.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton4.OnHoverImage = null;
@@ -538,7 +528,7 @@ namespace WindowsFormsApp
             // guna2TextBox2
             // 
             this.guna2TextBox2.BackColor = System.Drawing.Color.White;
-            this.guna2TextBox2.BorderRadius = 6;
+            this.guna2TextBox2.BorderRadius = 16;
             this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox2.DefaultText = "";
             this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -600,7 +590,6 @@ namespace WindowsFormsApp
         private System.Windows.Forms.RadioButton radioButton1;
         private Guna.UI.WinForms.GunaLabel gunaLabel19;
         private Guna.UI.WinForms.GunaButton gunaButton6;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;

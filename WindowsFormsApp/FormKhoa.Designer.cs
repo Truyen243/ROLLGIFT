@@ -30,6 +30,7 @@ namespace WindowsFormsApp
         private void InitializeComponent()
         {
             this.label3 = new System.Windows.Forms.Label();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.SuspendLayout();
             // 
             // label3
@@ -47,10 +48,19 @@ namespace WindowsFormsApp
             this.label3.Text = "Khoa";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Location = new System.Drawing.Point(240, 98);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(658, 284);
+            this.guna2Panel1.TabIndex = 49;
+            // 
             // FormKhoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label3);
             this.Name = "FormKhoa";
             this.Size = new System.Drawing.Size(898, 421);
@@ -61,5 +71,6 @@ namespace WindowsFormsApp
         #endregion
 
         private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }
 }

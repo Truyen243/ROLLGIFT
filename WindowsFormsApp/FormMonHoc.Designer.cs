@@ -355,7 +355,7 @@ namespace WindowsFormsApp
             // guna2TextBox6
             // 
             this.guna2TextBox6.AutoSize = true;
-            this.guna2TextBox6.BorderRadius = 6;
+            this.guna2TextBox6.BorderRadius = 16;
             this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox6.DefaultText = "";
             this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
