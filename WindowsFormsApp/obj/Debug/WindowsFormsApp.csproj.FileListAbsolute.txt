@@ -13,7 +13,6 @@ D:\Demo\WindowsFormsApp\bin\Debug\DevComponents.DotNetBar2.dll
 D:\Demo\WindowsFormsApp\bin\Debug\DevComponents.DotNetBar2.xml
 D:\Demo\WindowsFormsApp\bin\Debug\Guna.UI.dll
 D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormMain.resources
-D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormKhoa.resources
 D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormSinhVien.resources
 D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormDiem.resources
 D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormMonHoc.resources
@@ -121,3 +120,12 @@ C:\Users\ASUS\Source\Repos\ManageApp2412\WindowsFormsApp\obj\Debug\WindowsFormsA
 C:\Users\ASUS\Source\Repos\ManageApp2412\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
 C:\Users\ASUS\Source\Repos\ManageApp2412\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
 C:\Users\ASUS\Source\Repos\ManageApp2412\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.ResolveComReference.cache
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.ResolveComReference.cache
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormChangePW.resources
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormThemSinhVien.resources
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form_Admin.resources
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form_update.resources
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormLop.resources
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormKhoa.resources
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormThemMonHoc.resources
+D:\Demo\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormThemLop.resources

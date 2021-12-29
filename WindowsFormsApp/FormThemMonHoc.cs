@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class FormKhoa : UserControl
+    public partial class FormThemMonHoc : Form
     {
-        public FormKhoa()
+        public FormThemMonHoc()
         {
             InitializeComponent();
         }

@@ -22,7 +22,7 @@ namespace WindowsFormsApp
 
         }
 
-        private void gunaButton2_Click(object sender, EventArgs e)
+        private void guna2Button3_Click(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -32,7 +32,7 @@ namespace WindowsFormsApp
 
         }
 
-        private void gunaButton1_Click(object sender, EventArgs e)
+        private void guna2Button2_Click(object sender, EventArgs e)
         {
             if(textBox1.Text == ""|| textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "" || textBox5.Text == "")
             {
@@ -68,5 +68,6 @@ namespace WindowsFormsApp
             }    
             
         }
+
     }
 }

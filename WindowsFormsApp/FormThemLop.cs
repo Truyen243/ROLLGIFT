@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
-    public partial class FormKhoa : UserControl
+    public partial class FormThemLop : Form
     {
-        public FormKhoa()
+        public FormThemLop()
         {
             InitializeComponent();
+        }
+
+        private void gunaLabel5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

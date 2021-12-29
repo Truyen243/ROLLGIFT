@@ -35,6 +35,7 @@ namespace WindowsFormsApp
             formSinhVien1.Visible = true;
             formMonHoc1.Visible = false;
             formDiem1.Visible = false;
+            formLop1.Visible = false;
             formKhoa1.Visible = false;
 
             gunaLabel3.Text = Cls_Main.adminStc.fullName;
@@ -69,7 +70,9 @@ namespace WindowsFormsApp
             formSinhVien1.Visible = false;
             formMonHoc1.Visible = true;
             formDiem1.Visible = false;
+            formLop1.Visible = false;
             formKhoa1.Visible = false;
+
         }
 
         private void btnSinhVien_Click(object sender, EventArgs e)
@@ -77,7 +80,9 @@ namespace WindowsFormsApp
             formSinhVien1.Visible = true;
             formMonHoc1.Visible = false;
             formDiem1.Visible = false;
+            formLop1.Visible = false;
             formKhoa1.Visible = false;
+
         }
 
         private void btnDiem_Click(object sender, EventArgs e)
@@ -85,6 +90,7 @@ namespace WindowsFormsApp
             formSinhVien1.Visible = false;
             formMonHoc1.Visible = false;
             formDiem1.Visible = true;
+            formLop1.Visible = false;
             formKhoa1.Visible = false;
 
         }
@@ -94,7 +100,8 @@ namespace WindowsFormsApp
             formSinhVien1.Visible = false;
             formMonHoc1.Visible = false;
             formDiem1.Visible = false;
-            formKhoa1.Visible = true;
+            formLop1.Visible = true;
+            formKhoa1.Visible = false;
         }
 
         private void guna2Panel3_Paint(object sender, PaintEventArgs e)
@@ -159,6 +166,15 @@ namespace WindowsFormsApp
         {
             
             
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            formSinhVien1.Visible = false;
+            formMonHoc1.Visible = false;
+            formDiem1.Visible = false;
+            formLop1.Visible = false;
+            formKhoa1.Visible = true;
         }
     }
 }

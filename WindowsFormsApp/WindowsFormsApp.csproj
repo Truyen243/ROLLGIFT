@@ -86,17 +86,23 @@
     <Compile Include="FormDiem.Designer.cs">
       <DependentUpon>FormDiem.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormKhoa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormKhoa.Designer.cs">
+      <DependentUpon>FormKhoa.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormKhoa.cs">
+    <Compile Include="FormLop.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FormKhoa.Designer.cs">
-      <DependentUpon>FormKhoa.cs</DependentUpon>
+    <Compile Include="FormLop.Designer.cs">
+      <DependentUpon>FormLop.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMonHoc.cs">
       <SubType>UserControl</SubType>
@@ -109,6 +115,18 @@
     </Compile>
     <Compile Include="FormSinhVien.Designer.cs">
       <DependentUpon>FormSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThemMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThemMonHoc.Designer.cs">
+      <DependentUpon>FormThemMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThemLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThemLop.Designer.cs">
+      <DependentUpon>FormThemLop.cs</DependentUpon>
     </Compile>
     <Compile Include="FormThemSinhVien.cs">
       <SubType>Form</SubType>
@@ -154,17 +172,26 @@
     <EmbeddedResource Include="FormDiem.resx">
       <DependentUpon>FormDiem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormKhoa.resx">
+      <DependentUpon>FormKhoa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormKhoa.resx">
-      <DependentUpon>FormKhoa.cs</DependentUpon>
+    <EmbeddedResource Include="FormLop.resx">
+      <DependentUpon>FormLop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMonHoc.resx">
       <DependentUpon>FormMonHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSinhVien.resx">
       <DependentUpon>FormSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThemMonHoc.resx">
+      <DependentUpon>FormThemMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThemLop.resx">
+      <DependentUpon>FormThemLop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormThemSinhVien.resx">
       <DependentUpon>FormThemSinhVien.cs</DependentUpon>
