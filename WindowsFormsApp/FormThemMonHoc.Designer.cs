@@ -119,6 +119,7 @@ namespace WindowsFormsApp
             this.guna2Button4.BorderRadius = 6;
             this.guna2Button4.CheckedState.Parent = this.guna2Button4;
             this.guna2Button4.CustomImages.Parent = this.guna2Button4;
+            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -376,6 +377,7 @@ namespace WindowsFormsApp
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "";
+            this.guna2TextBox2.ReadOnly = true;
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Size = new System.Drawing.Size(293, 44);
@@ -401,6 +403,7 @@ namespace WindowsFormsApp
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.ReadOnly = true;
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Size = new System.Drawing.Size(293, 44);
@@ -434,7 +437,7 @@ namespace WindowsFormsApp
             this.gunaLabel9.BackColor = System.Drawing.Color.White;
             this.gunaLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel9.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel9.Location = new System.Drawing.Point(597, 214);
+            this.gunaLabel9.Location = new System.Drawing.Point(598, 275);
             this.gunaLabel9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel9.Name = "gunaLabel9";
             this.gunaLabel9.Size = new System.Drawing.Size(139, 44);
@@ -473,7 +476,7 @@ namespace WindowsFormsApp
             this.gunaLabel5.BackColor = System.Drawing.Color.White;
             this.gunaLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel5.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel5.Location = new System.Drawing.Point(597, 74);
+            this.gunaLabel5.Location = new System.Drawing.Point(597, 214);
             this.gunaLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel5.Name = "gunaLabel5";
             this.gunaLabel5.Size = new System.Drawing.Size(139, 44);
@@ -538,7 +541,7 @@ namespace WindowsFormsApp
             this.gunaLabel10.BackColor = System.Drawing.Color.White;
             this.gunaLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel10.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel10.Location = new System.Drawing.Point(597, 288);
+            this.gunaLabel10.Location = new System.Drawing.Point(598, 74);
             this.gunaLabel10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel10.Name = "gunaLabel10";
             this.gunaLabel10.Size = new System.Drawing.Size(139, 44);
@@ -556,7 +559,7 @@ namespace WindowsFormsApp
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(132, 44);
             this.gunaLabel1.TabIndex = 49;
-            this.gunaLabel1.Text = "Mã Môn Học";
+            this.gunaLabel1.Text = "Môn Học";
             this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FormThemMonHoc
