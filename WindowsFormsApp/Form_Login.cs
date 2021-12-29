@@ -21,7 +21,7 @@ namespace WindowsFormsApp
         
         private void Form_Login_Load(object sender, EventArgs e)
         {
-            guna2ShadowForm1.SetShadowForm(this);
+            
             getRem();
             guna2CustomCheckBox1.Checked = true;
             
@@ -74,7 +74,7 @@ namespace WindowsFormsApp
             this.Close();
         }
 
-        private void guna2Button1_Click_1(object sender, EventArgs e)
+        private void guna2Button1_Click_2(object sender, EventArgs e)
         {
             Console.WriteLine(Cls_Main.adminStc.token);
 
@@ -149,11 +149,6 @@ namespace WindowsFormsApp
                     }
                 }
             }
-        }
-
-        private void guna2TextBox2_TextChanged_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

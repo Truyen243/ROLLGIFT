@@ -42,9 +42,11 @@ namespace WindowsFormsApp
             this.guna2CustomCheckBox1 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.Login = new Guna.UI.WinForms.GunaLabel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -101,6 +103,7 @@ namespace WindowsFormsApp
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.White;
             this.guna2Panel1.Controls.Add(this.guna2ControlBox1);
             this.guna2Panel1.Controls.Add(this.guna2Separator1);
             this.guna2Panel1.Controls.Add(this.guna2Separator2);
@@ -111,7 +114,7 @@ namespace WindowsFormsApp
             this.guna2Panel1.Controls.Add(this.guna2TextBox2);
             this.guna2Panel1.Controls.Add(this.Login);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel1.Location = new System.Drawing.Point(337, 0);
+            this.guna2Panel1.Location = new System.Drawing.Point(383, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(363, 500);
@@ -135,7 +138,7 @@ namespace WindowsFormsApp
             // 
             this.guna2Separator1.BackColor = System.Drawing.Color.White;
             this.guna2Separator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2Separator1.Location = new System.Drawing.Point(44, 277);
+            this.guna2Separator1.Location = new System.Drawing.Point(51, 268);
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(256, 2);
             this.guna2Separator1.TabIndex = 60;
@@ -144,7 +147,7 @@ namespace WindowsFormsApp
             // 
             this.guna2Separator2.BackColor = System.Drawing.Color.White;
             this.guna2Separator2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2Separator2.Location = new System.Drawing.Point(44, 209);
+            this.guna2Separator2.Location = new System.Drawing.Point(51, 209);
             this.guna2Separator2.Name = "guna2Separator2";
             this.guna2Separator2.Size = new System.Drawing.Size(256, 2);
             this.guna2Separator2.TabIndex = 59;
@@ -154,7 +157,7 @@ namespace WindowsFormsApp
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel1.Location = new System.Drawing.Point(79, 326);
+            this.gunaLabel1.Location = new System.Drawing.Point(86, 326);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(114, 21);
             this.gunaLabel1.TabIndex = 58;
@@ -168,7 +171,7 @@ namespace WindowsFormsApp
             this.guna2CustomCheckBox1.CheckedState.BorderThickness = 0;
             this.guna2CustomCheckBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2CustomCheckBox1.CheckedState.Parent = this.guna2CustomCheckBox1;
-            this.guna2CustomCheckBox1.Location = new System.Drawing.Point(53, 327);
+            this.guna2CustomCheckBox1.Location = new System.Drawing.Point(60, 327);
             this.guna2CustomCheckBox1.Name = "guna2CustomCheckBox1";
             this.guna2CustomCheckBox1.ShadowDecoration.Parent = this.guna2CustomCheckBox1;
             this.guna2CustomCheckBox1.Size = new System.Drawing.Size(20, 20);
@@ -187,16 +190,18 @@ namespace WindowsFormsApp
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(44, 416);
+            this.guna2Button1.Location = new System.Drawing.Point(51, 416);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(256, 45);
             this.guna2Button1.TabIndex = 56;
             this.guna2Button1.Text = "Login";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_2);
             // 
             // guna2TextBox4
             // 
             this.guna2TextBox4.BorderColor = System.Drawing.Color.White;
+            this.guna2TextBox4.BorderThickness = 0;
             this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox4.DefaultText = "";
             this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -207,9 +212,9 @@ namespace WindowsFormsApp
             this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
             this.guna2TextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(44, 225);
+            this.guna2TextBox4.IconLeft = global::WindowsFormsApp.Properties.Resources.icons8_key_32;
+            this.guna2TextBox4.Location = new System.Drawing.Point(51, 225);
             this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '*';
@@ -219,9 +224,32 @@ namespace WindowsFormsApp
             this.guna2TextBox4.Size = new System.Drawing.Size(256, 45);
             this.guna2TextBox4.TabIndex = 54;
             // 
+            // Login
+            // 
+            this.Login.AutoSize = true;
+            this.Login.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Login.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Login.Location = new System.Drawing.Point(75, 40);
+            this.Login.Name = "Login";
+            this.Login.Size = new System.Drawing.Size(195, 86);
+            this.Login.TabIndex = 57;
+            this.Login.Text = "Login";
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2PictureBox1.Image = global::WindowsFormsApp.Properties.Resources.giphy___Copy;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(385, 500);
+            this.guna2PictureBox1.TabIndex = 61;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // guna2TextBox2
             // 
             this.guna2TextBox2.BorderColor = System.Drawing.Color.White;
+            this.guna2TextBox2.BorderThickness = 0;
             this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox2.DefaultText = "";
             this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -232,9 +260,9 @@ namespace WindowsFormsApp
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(44, 156);
+            this.guna2TextBox2.IconLeft = global::WindowsFormsApp.Properties.Resources.icon8_user_48;
+            this.guna2TextBox2.Location = new System.Drawing.Point(51, 166);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
@@ -244,26 +272,16 @@ namespace WindowsFormsApp
             this.guna2TextBox2.Size = new System.Drawing.Size(256, 45);
             this.guna2TextBox2.TabIndex = 53;
             // 
-            // Login
-            // 
-            this.Login.AutoSize = true;
-            this.Login.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Login.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Login.Location = new System.Drawing.Point(68, 40);
-            this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(195, 86);
-            this.Login.TabIndex = 57;
-            this.Login.Text = "Login";
-            // 
             // Form_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(700, 500);
-            this.Controls.Add(this.guna2Panel1);
+            this.ClientSize = new System.Drawing.Size(746, 500);
+            this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2TextBox3);
             this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Login";
@@ -271,6 +289,7 @@ namespace WindowsFormsApp
             this.Load += new System.EventHandler(this.Form_Login_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -290,5 +309,6 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI.WinForms.GunaLabel Login;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }

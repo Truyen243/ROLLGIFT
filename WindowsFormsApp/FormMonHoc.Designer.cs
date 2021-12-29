@@ -158,7 +158,7 @@ namespace WindowsFormsApp
             // 
             // guna2Button3
             // 
-            this.guna2Button3.BorderRadius = 16;
+            this.guna2Button3.BorderRadius = 6;
             this.guna2Button3.CheckedState.Parent = this.guna2Button3;
             this.guna2Button3.CustomImages.Parent = this.guna2Button3;
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -174,7 +174,7 @@ namespace WindowsFormsApp
             // 
             // guna2Button2
             // 
-            this.guna2Button2.BorderRadius = 16;
+            this.guna2Button2.BorderRadius = 6;
             this.guna2Button2.CheckedState.Parent = this.guna2Button2;
             this.guna2Button2.CustomImages.Parent = this.guna2Button2;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -261,6 +261,7 @@ namespace WindowsFormsApp
             // guna2ComboBox2
             // 
             this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox2.BorderRadius = 6;
             this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guna2ComboBox2.FocusedColor = System.Drawing.Color.Empty;
@@ -282,6 +283,7 @@ namespace WindowsFormsApp
             // guna2ComboBox1
             // 
             this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.BorderRadius = 6;
             this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
@@ -336,7 +338,7 @@ namespace WindowsFormsApp
             // 
             // guna2Button1
             // 
-            this.guna2Button1.BorderRadius = 16;
+            this.guna2Button1.BorderRadius = 6;
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -353,7 +355,7 @@ namespace WindowsFormsApp
             // guna2TextBox6
             // 
             this.guna2TextBox6.AutoSize = true;
-            this.guna2TextBox6.BorderRadius = 16;
+            this.guna2TextBox6.BorderRadius = 6;
             this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox6.DefaultText = "";
             this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -373,7 +375,7 @@ namespace WindowsFormsApp
             this.guna2TextBox6.PlaceholderText = "Nhập Mã Môn Học";
             this.guna2TextBox6.SelectedText = "";
             this.guna2TextBox6.ShadowDecoration.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Size = new System.Drawing.Size(276, 31);
+            this.guna2TextBox6.Size = new System.Drawing.Size(275, 30);
             this.guna2TextBox6.TabIndex = 49;
             this.guna2TextBox6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBox6_KeyDown);
             // 

@@ -331,5 +331,23 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy - Copy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_account_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon8_user_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_key_32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
