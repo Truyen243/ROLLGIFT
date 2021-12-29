@@ -14,6 +14,72 @@ namespace WindowsFormsApp.Data
 {
     class DiemDow
     {
+        public void xoaDiem(int id)
+        {
+
+            String link = "https://qlsv.phamthanhnam.com/diem/delete/" + Convert.ToString(id);
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(link);
+
+            httpWebRequest.Headers.Add("Authorization", "Bearer " + Cls_Main.adminStc.token);
+
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "DELETE";
+            Console.WriteLine("Đã Xóa");
+
+
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+
+                var result = streamReader.ReadToEnd();
+                Console.WriteLine(result);
+
+            }
+
+        }
+        public bool suadiem(int id, float d10, float d30, float d60, float dtong)
+        {
+            String link = "https://qlsv.phamthanhnam.com/diem/edit/" + id.ToString();
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(link);
+
+            httpWebRequest.Headers.Add("Authorization", "Bearer " + Cls_Main.adminStc.token);
+
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "POST";
+
+
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {
+                string json = new JavaScriptSerializer().Serialize(new
+                {
+                    diem10 = d10,
+                    diem30 = d30,
+                    diem60 = d60,
+                    diemtong = dtong
+
+                });
+
+                streamWriter.Write(json);
+            }
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+
+                var result = streamReader.ReadToEnd();
+                Console.WriteLine(result);
+                dynamic stuff = JsonConvert.DeserializeObject(result);
+                if (stuff.status == "success")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
         public string getTen(int id)
         {
             foreach (MonHoc m in Cls_Main.monDow.lstMon)

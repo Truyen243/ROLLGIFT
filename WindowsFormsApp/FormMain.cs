@@ -42,6 +42,7 @@ namespace WindowsFormsApp
 
             Cls_Main.lopDowStc.getLop();
             Cls_Main.monDow.getMon();
+            Cls_Main.khoaDowStc.getKhoa();
         }
         #endregion
 

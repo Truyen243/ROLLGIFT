@@ -88,5 +88,40 @@ namespace WindowsFormsApp
                 MessageBox.Show("Có lỗi: ", ex.Message);
             }
         }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            for (int row = 0; row < guna2DataGridView1.RowCount - 1; row++)
+            {
+                int id = (int)guna2DataGridView1.Rows[row].Cells[0].Value;
+                float d10 = (float)guna2DataGridView1.Rows[row].Cells[4].Value;
+                float d30 = (float)guna2DataGridView1.Rows[row].Cells[5].Value;
+                float d60 = (float)guna2DataGridView1.Rows[row].Cells[6].Value;
+                float dtong = (float)guna2DataGridView1.Rows[row].Cells[7].Value;
+                Cls_Main.diemDow.suadiem(id, d10, d30, d60, dtong);
+            }
+            MessageBox.Show("Đã Sửa Điểm");
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            List<int> lst = new List<int>();
+
+            foreach (DataGridViewRow row in guna2DataGridView1.SelectedRows)
+            {
+                if (row.Cells[0].Value != null)
+                {
+                    lst.Add((int)(row.Cells[0].Value));
+                }
+
+
+            }
+            foreach (int n in lst)
+            {
+                Cls_Main.diemDow.xoaDiem(n);
+            }
+            guna2Button1_Click(sender, e);
+            MessageBox.Show("Đã Xóa");
+        }
     }
 }

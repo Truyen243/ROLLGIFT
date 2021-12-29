@@ -20,7 +20,7 @@ namespace WindowsFormsApp.Data
         
         public bool getMon()
         {
-            
+            lstMon.Clear();
             String link = "https://qlsv.phamthanhnam.com/mh/get/all";
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(link);
 

@@ -208,5 +208,15 @@ namespace WindowsFormsApp
             }
             }
         }
+
+        private void guna2ComboBox1_Click(object sender, EventArgs e)
+        {
+            guna2ComboBox1.Items.Clear();
+            Cls_Main.khoaDowStc.getKhoa();
+            foreach (Khoa khoa in Cls_Main.khoaDowStc.lstKhoa)
+            {
+                guna2ComboBox1.Items.Add(khoa.ten);
+            }
+        }
     }
 }

@@ -47,7 +47,7 @@ namespace WindowsFormsApp
             
             foreach(MonHoc m in Cls_Main.monDow.lstMon)
             {
-                if(guna2TextBox6.Text == m.mamonhoc)
+                if(guna2ComboBox3.SelectedItem.ToString() == m.mamonhoc)
                 {
                     mh = m;
                 }
@@ -58,7 +58,7 @@ namespace WindowsFormsApp
 
         private void FormMonHoc_Load(object sender, EventArgs e)
         {
-            Cls_Main.khoaDowStc.getKhoa();
+            
             foreach (Khoa khoa in Cls_Main.khoaDowStc.lstKhoa)
             {
                 guna2ComboBox1.Items.Add(khoa.ten);
@@ -121,6 +121,26 @@ namespace WindowsFormsApp
                         }
                     }
                 }
+            }
+        }
+
+        private void guna2ComboBox3_Click(object sender, EventArgs e)
+        {
+            guna2ComboBox3.Items.Clear();
+            Cls_Main.monDow.getMon();
+
+            foreach (MonHoc m in Cls_Main.monDow.lstMon)
+            {
+                guna2ComboBox3.Items.Add(m.ten);
+            }
+        }
+
+        private void guna2ComboBox1_Click(object sender, EventArgs e)
+        {
+            Cls_Main.khoaDowStc.getKhoa();
+            foreach (Khoa khoa in Cls_Main.khoaDowStc.lstKhoa)
+            {
+                guna2ComboBox1.Items.Add(khoa.ten);
             }
         }
     }

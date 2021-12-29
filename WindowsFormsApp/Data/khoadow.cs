@@ -17,8 +17,8 @@ namespace WindowsFormsApp.Data
         public List<Khoa> lstKhoa = new List<Khoa>();
         public bool getKhoa()
         {
-            
 
+            lstKhoa.Clear();
             String link = "https://qlsv.phamthanhnam.com/khoa/get/all";
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(link);
 
