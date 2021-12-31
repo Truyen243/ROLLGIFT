@@ -64,5 +64,116 @@ namespace WindowsFormsApp.Data
             }
 
         }
+        public bool addMonHoc(String ten, String ma, String sotiet, String hs)
+        {
+
+            String link = "https://qlsv.phamthanhnam.com/mh/create";
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(link);
+
+            httpWebRequest.Headers.Add("Authorization", "Bearer " + Cls_Main.adminStc.token);
+
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "POST";
+
+
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {
+                string json = new JavaScriptSerializer().Serialize(new
+                {
+                    ten = ten,
+                    mamonhoc = ma,
+                    sotiet = sotiet,
+                    hesodiem = hs            
+                });
+
+                streamWriter.Write(json);
+            }
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+
+                var result = streamReader.ReadToEnd();
+                Console.WriteLine(result);
+                dynamic stuff = JsonConvert.DeserializeObject(result);
+                if (stuff.status == "success")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+        }
+        public bool editMonHoc(int id, String ten, String ma, int sotiet, int hs)
+        {
+
+            String link = "https://qlsv.phamthanhnam.com/mh/edit";
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(link);
+
+            httpWebRequest.Headers.Add("Authorization", "Bearer " + Cls_Main.adminStc.token);
+
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "POST";
+
+
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {
+                string json = new JavaScriptSerializer().Serialize(new
+                {
+                    id= id,
+                    ten = ten,
+                    mamonhoc = ma,
+                    sotiet = sotiet,
+                    hesodiem = hs
+                });
+
+                streamWriter.Write(json);
+            }
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+
+                var result = streamReader.ReadToEnd();
+                Console.WriteLine(result);
+                dynamic stuff = JsonConvert.DeserializeObject(result);
+                if (stuff.status == "success")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+        }
+        public void xoaMonHoc(int id)
+        {
+
+            String link = "https://qlsv.phamthanhnam.com/mh/delete/" + Convert.ToString(id);
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(link);
+
+            httpWebRequest.Headers.Add("Authorization", "Bearer " + Cls_Main.adminStc.token);
+
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "DELETE";
+            Console.WriteLine("Xóa");
+
+
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+
+                var result = streamReader.ReadToEnd();
+                Console.WriteLine(result);
+
+            }
+
+        }
     }
 }

@@ -32,6 +32,11 @@ namespace WindowsFormsApp
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.textBox6 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBox5 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
@@ -46,11 +51,6 @@ namespace WindowsFormsApp
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.textBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.textBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.textBox5 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.textBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.textBox6 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,6 +92,133 @@ namespace WindowsFormsApp
             this.guna2GroupBox1.Text = "Thêm Sinh Viên";
             this.guna2GroupBox1.Click += new System.EventHandler(this.guna2GroupBox1_Click);
             // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.Color.White;
+            this.textBox6.BorderRadius = 6;
+            this.textBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox6.DefaultText = "";
+            this.textBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBox6.DisabledState.Parent = this.textBox6;
+            this.textBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBox6.FocusedState.Parent = this.textBox6;
+            this.textBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBox6.HoverState.Parent = this.textBox6;
+            this.textBox6.Location = new System.Drawing.Point(146, 271);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(96, 196, 96, 196);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.PasswordChar = '\0';
+            this.textBox6.PlaceholderText = "";
+            this.textBox6.SelectedText = "";
+            this.textBox6.ShadowDecoration.Parent = this.textBox6;
+            this.textBox6.Size = new System.Drawing.Size(181, 36);
+            this.textBox6.TabIndex = 7;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.White;
+            this.textBox3.BorderRadius = 6;
+            this.textBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox3.DefaultText = "";
+            this.textBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBox3.DisabledState.Parent = this.textBox3;
+            this.textBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBox3.FocusedState.Parent = this.textBox3;
+            this.textBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBox3.HoverState.Parent = this.textBox3;
+            this.textBox3.Location = new System.Drawing.Point(146, 226);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(48, 85, 48, 85);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.PasswordChar = '\0';
+            this.textBox3.PlaceholderText = "";
+            this.textBox3.SelectedText = "";
+            this.textBox3.ShadowDecoration.Parent = this.textBox3;
+            this.textBox3.Size = new System.Drawing.Size(180, 36);
+            this.textBox3.TabIndex = 6;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.Color.White;
+            this.textBox5.BorderRadius = 6;
+            this.textBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox5.DefaultText = "";
+            this.textBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBox5.DisabledState.Parent = this.textBox5;
+            this.textBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBox5.FocusedState.Parent = this.textBox5;
+            this.textBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBox5.HoverState.Parent = this.textBox5;
+            this.textBox5.Location = new System.Drawing.Point(146, 182);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(24, 37, 24, 37);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.PasswordChar = '\0';
+            this.textBox5.PlaceholderText = "";
+            this.textBox5.SelectedText = "";
+            this.textBox5.ShadowDecoration.Parent = this.textBox5;
+            this.textBox5.Size = new System.Drawing.Size(181, 36);
+            this.textBox5.TabIndex = 5;
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.White;
+            this.textBox4.BorderRadius = 6;
+            this.textBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox4.DefaultText = "";
+            this.textBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBox4.DisabledState.Parent = this.textBox4;
+            this.textBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBox4.FocusedState.Parent = this.textBox4;
+            this.textBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBox4.HoverState.Parent = this.textBox4;
+            this.textBox4.Location = new System.Drawing.Point(146, 136);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(12, 16, 12, 16);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.PasswordChar = '\0';
+            this.textBox4.PlaceholderText = "";
+            this.textBox4.SelectedText = "";
+            this.textBox4.ShadowDecoration.Parent = this.textBox4;
+            this.textBox4.Size = new System.Drawing.Size(181, 40);
+            this.textBox4.TabIndex = 4;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.White;
+            this.textBox2.BorderRadius = 6;
+            this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox2.DefaultText = "";
+            this.textBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBox2.DisabledState.Parent = this.textBox2;
+            this.textBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBox2.FocusedState.Parent = this.textBox2;
+            this.textBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBox2.HoverState.Parent = this.textBox2;
+            this.textBox2.Location = new System.Drawing.Point(147, 53);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '\0';
+            this.textBox2.PlaceholderText = "";
+            this.textBox2.SelectedText = "";
+            this.textBox2.ShadowDecoration.Parent = this.textBox2;
+            this.textBox2.Size = new System.Drawing.Size(180, 36);
+            this.textBox2.TabIndex = 1;
+            // 
             // gunaLabel2
             // 
             this.gunaLabel2.BackColor = System.Drawing.Color.White;
@@ -119,7 +246,7 @@ namespace WindowsFormsApp
             this.guna2ComboBox2.ItemHeight = 30;
             this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
             this.guna2ComboBox2.Location = new System.Drawing.Point(146, 322);
-            this.guna2ComboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2ComboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ComboBox2.Name = "guna2ComboBox2";
             this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
             this.guna2ComboBox2.Size = new System.Drawing.Size(180, 36);
@@ -153,7 +280,7 @@ namespace WindowsFormsApp
             this.guna2ComboBox1.ItemHeight = 30;
             this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.Location = new System.Drawing.Point(147, 364);
-            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.Size = new System.Drawing.Size(180, 36);
@@ -223,7 +350,7 @@ namespace WindowsFormsApp
             this.gunaButton2.Image = null;
             this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton2.Location = new System.Drawing.Point(192, 412);
-            this.gunaButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaButton2.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -251,7 +378,7 @@ namespace WindowsFormsApp
             this.gunaButton1.Image = null;
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton1.Location = new System.Drawing.Point(30, 412);
-            this.gunaButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaButton1.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -313,133 +440,6 @@ namespace WindowsFormsApp
             this.gunaLabel4.TabIndex = 34;
             this.gunaLabel4.Text = "Giới tính";
             // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderRadius = 6;
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox2.DefaultText = "";
-            this.textBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.textBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.textBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBox2.DisabledState.Parent = this.textBox2;
-            this.textBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBox2.FocusedState.Parent = this.textBox2;
-            this.textBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBox2.HoverState.Parent = this.textBox2;
-            this.textBox2.Location = new System.Drawing.Point(147, 53);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '\0';
-            this.textBox2.PlaceholderText = "";
-            this.textBox2.SelectedText = "";
-            this.textBox2.ShadowDecoration.Parent = this.textBox2;
-            this.textBox2.Size = new System.Drawing.Size(180, 36);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.BorderRadius = 6;
-            this.textBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox4.DefaultText = "";
-            this.textBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.textBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.textBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBox4.DisabledState.Parent = this.textBox4;
-            this.textBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBox4.FocusedState.Parent = this.textBox4;
-            this.textBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBox4.HoverState.Parent = this.textBox4;
-            this.textBox4.Location = new System.Drawing.Point(146, 136);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(12, 16, 12, 16);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.PasswordChar = '\0';
-            this.textBox4.PlaceholderText = "";
-            this.textBox4.SelectedText = "";
-            this.textBox4.ShadowDecoration.Parent = this.textBox4;
-            this.textBox4.Size = new System.Drawing.Size(181, 40);
-            this.textBox4.TabIndex = 4;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.White;
-            this.textBox5.BorderRadius = 6;
-            this.textBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox5.DefaultText = "";
-            this.textBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.textBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.textBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBox5.DisabledState.Parent = this.textBox5;
-            this.textBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBox5.FocusedState.Parent = this.textBox5;
-            this.textBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBox5.HoverState.Parent = this.textBox5;
-            this.textBox5.Location = new System.Drawing.Point(146, 182);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(24, 37, 24, 37);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.PasswordChar = '\0';
-            this.textBox5.PlaceholderText = "";
-            this.textBox5.SelectedText = "";
-            this.textBox5.ShadowDecoration.Parent = this.textBox5;
-            this.textBox5.Size = new System.Drawing.Size(181, 36);
-            this.textBox5.TabIndex = 5;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.BorderRadius = 6;
-            this.textBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox3.DefaultText = "";
-            this.textBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.textBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.textBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBox3.DisabledState.Parent = this.textBox3;
-            this.textBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBox3.FocusedState.Parent = this.textBox3;
-            this.textBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBox3.HoverState.Parent = this.textBox3;
-            this.textBox3.Location = new System.Drawing.Point(146, 226);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(48, 85, 48, 85);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '\0';
-            this.textBox3.PlaceholderText = "";
-            this.textBox3.SelectedText = "";
-            this.textBox3.ShadowDecoration.Parent = this.textBox3;
-            this.textBox3.Size = new System.Drawing.Size(180, 36);
-            this.textBox3.TabIndex = 6;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.White;
-            this.textBox6.BorderRadius = 6;
-            this.textBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox6.DefaultText = "";
-            this.textBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.textBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.textBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBox6.DisabledState.Parent = this.textBox6;
-            this.textBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBox6.FocusedState.Parent = this.textBox6;
-            this.textBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBox6.HoverState.Parent = this.textBox6;
-            this.textBox6.Location = new System.Drawing.Point(146, 271);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(96, 196, 96, 196);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.PasswordChar = '\0';
-            this.textBox6.PlaceholderText = "";
-            this.textBox6.SelectedText = "";
-            this.textBox6.ShadowDecoration.Parent = this.textBox6;
-            this.textBox6.Size = new System.Drawing.Size(181, 36);
-            this.textBox6.TabIndex = 7;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
             // FormThemSinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -450,7 +450,7 @@ namespace WindowsFormsApp
             this.Name = "FormThemSinhVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormThemSinhVien";
-            this.Load += new System.EventHandler(this.FormThemSinhVien_Load);
+            this.Load += new System.EventHandler(this.gunaButton1_Click);
             this.guna2GroupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 

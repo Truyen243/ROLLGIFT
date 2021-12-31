@@ -23,27 +23,10 @@ namespace WindowsFormsApp
             InitializeComponent();
             this.s = sender;
         }
-        
-        private void guna2HtmlLabel4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox5_TextChanged(object sender, EventArgs e)
-        {
-            
-
-
-        }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void guna2GroupBox1_Click(object sender, EventArgs e)
@@ -51,19 +34,9 @@ namespace WindowsFormsApp
 
         }
 
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void gunaButton2_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
        
         private void gunaButton1_Click(object sender, EventArgs e)
@@ -106,13 +79,6 @@ namespace WindowsFormsApp
             }
         }
         List<String> lstma = new List<string>();
-        private void FormThemSinhVien_Load(object sender, EventArgs e)
-        {
-            foreach (Khoa khoa in Cls_Main.khoaDowStc.lstKhoa)
-            {
-                guna2ComboBox2.Items.Add(khoa.ten);
-            }    
-        }
 
         private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
