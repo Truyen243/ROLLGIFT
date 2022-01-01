@@ -68,7 +68,7 @@ namespace WindowsFormsApp
 
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
             Cls_Main.lopDowStc.getLop();
             int mskhoa = Cls_Main.khoaDowStc.lstKhoa[guna2ComboBox1.SelectedIndex].id;
 

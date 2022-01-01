@@ -128,7 +128,21 @@ namespace WindowsFormsApp
                 }
                 else
                 {
-                    lstsv.Add(sv);
+                    int n = 0;
+
+                    foreach(SinhVien s in lstsv)
+                    {
+                        if (s.id == sv.id)
+                        {
+                            n = 1;
+                        }
+                        
+                    }
+                    if (n == 0)
+                    {
+                        lstsv.Insert(0, sv);
+                    }
+                   
                 }
 
                 BindingSource bindingSource = new BindingSource();
