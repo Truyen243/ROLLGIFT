@@ -44,10 +44,11 @@ namespace WindowsFormsApp
         MonHoc mh = new MonHoc();
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            
-            foreach(MonHoc m in Cls_Main.monDow.lstMon)
+            guna2TextBox2.Text = "";
+            guna2TextBox3.Text = "";
+            foreach (MonHoc m in Cls_Main.monDow.lstMon)
             {
-                if(guna2ComboBox3.SelectedItem.ToString() == m.mamonhoc)
+                if(guna2ComboBox3.SelectedItem.ToString() == m.ten)
                 {
                     mh = m;
                 }
@@ -149,7 +150,7 @@ namespace WindowsFormsApp
         {
             foreach (MonHoc m in Cls_Main.monDow.lstMon)
             {
-                if (guna2ComboBox3.SelectedItem.ToString() == m.mamonhoc)
+                if (guna2ComboBox3.SelectedItem.ToString() == m.ten)
                 {
                     mh = m;
                 }
