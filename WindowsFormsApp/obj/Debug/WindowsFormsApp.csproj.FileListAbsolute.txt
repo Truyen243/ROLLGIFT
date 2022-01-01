@@ -54,7 +54,6 @@ D:\KT40%\WindowsFormsApp\bin\Debug\Newtonsoft.Json.xml
 D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.AssemblyReference.cache
 D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormDiem.resources
 D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormMain.resources
-D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormKhoa.resources
 D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormMonHoc.resources
 D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormSinhVien.resources
 D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormThongTin.resources

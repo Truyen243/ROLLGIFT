@@ -175,7 +175,7 @@ namespace WindowsFormsApp
             formMonHoc1.Visible = false;
             formDiem1.Visible = false;
             formLop1.Visible = false;
-            formKhoa1.Visible = true;
+            
         }
     }
 }
