@@ -86,12 +86,6 @@
     <Compile Include="FormDiem.Designer.cs">
       <DependentUpon>FormDiem.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormKhoa.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="FormKhoa.Designer.cs">
-      <DependentUpon>FormKhoa.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,9 +165,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDiem.resx">
       <DependentUpon>FormDiem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormKhoa.resx">
-      <DependentUpon>FormKhoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>

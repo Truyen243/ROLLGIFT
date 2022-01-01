@@ -217,3 +217,7 @@ D:\code\AppCs\nnn\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CoreCompileIn
 D:\code\AppCs\nnn\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CopyComplete
 D:\code\AppCs\nnn\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
 D:\code\AppCs\nnn\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
+D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.ResolveComReference.cache
+D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormLop.resources
+D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormThemMonHoc.resources
+D:\KT40%\WindowsFormsApp\obj\Debug\WindowsFormsApp.FormThemLop.resources
