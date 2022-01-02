@@ -53,10 +53,11 @@ namespace WindowsFormsApp
             this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.formMonHoc1 = new WindowsFormsApp.FormMonHoc();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.formLop1 = new WindowsFormsApp.FormLop();
-            this.formDiem1 = new WindowsFormsApp.FormDiem();
+            this.formMonHoc1 = new WindowsFormsApp.FormMonHoc();
             this.formSinhVien1 = new WindowsFormsApp.FormSinhVien();
+            this.formDiem1 = new WindowsFormsApp.FormDiem();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -367,17 +368,9 @@ namespace WindowsFormsApp
             this.panel1.Size = new System.Drawing.Size(898, 425);
             this.panel1.TabIndex = 13;
             // 
-            // formMonHoc1
+            // guna2DragControl1
             // 
-            this.formMonHoc1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.formMonHoc1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.formMonHoc1.Location = new System.Drawing.Point(0, 0);
-            this.formMonHoc1.Margin = new System.Windows.Forms.Padding(4);
-            this.formMonHoc1.Name = "formMonHoc1";
-            this.formMonHoc1.Size = new System.Drawing.Size(898, 425);
-            this.formMonHoc1.TabIndex = 2;
+            this.guna2DragControl1.TargetControl = this;
             // 
             // formLop1
             // 
@@ -392,17 +385,17 @@ namespace WindowsFormsApp
             this.formLop1.TabIndex = 1;
             this.formLop1.Load += new System.EventHandler(this.formKhoa1_Load_1);
             // 
-            // formDiem1
+            // formMonHoc1
             // 
-            this.formDiem1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.formMonHoc1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.formDiem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.formDiem1.Location = new System.Drawing.Point(0, 0);
-            this.formDiem1.Margin = new System.Windows.Forms.Padding(4);
-            this.formDiem1.Name = "formDiem1";
-            this.formDiem1.Size = new System.Drawing.Size(898, 425);
-            this.formDiem1.TabIndex = 0;
+            this.formMonHoc1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.formMonHoc1.Location = new System.Drawing.Point(0, 0);
+            this.formMonHoc1.Margin = new System.Windows.Forms.Padding(4);
+            this.formMonHoc1.Name = "formMonHoc1";
+            this.formMonHoc1.Size = new System.Drawing.Size(898, 425);
+            this.formMonHoc1.TabIndex = 2;
             // 
             // formSinhVien1
             // 
@@ -416,6 +409,18 @@ namespace WindowsFormsApp
             this.formSinhVien1.Name = "formSinhVien1";
             this.formSinhVien1.Size = new System.Drawing.Size(898, 425);
             this.formSinhVien1.TabIndex = 3;
+            // 
+            // formDiem1
+            // 
+            this.formDiem1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.formDiem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.formDiem1.Location = new System.Drawing.Point(0, 0);
+            this.formDiem1.Margin = new System.Windows.Forms.Padding(4);
+            this.formDiem1.Name = "formDiem1";
+            this.formDiem1.Size = new System.Drawing.Size(898, 425);
+            this.formDiem1.TabIndex = 0;
             // 
             // FormMain
             // 
@@ -469,10 +474,11 @@ namespace WindowsFormsApp
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private System.Windows.Forms.Panel panel1;
-        private FormMonHoc formMonHoc1;
-        private FormLop formLop1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private FormDiem formDiem1;
         public FormSinhVien formSinhVien1;
+        private FormMonHoc formMonHoc1;
+        private FormLop formLop1;
     }
 }
 
