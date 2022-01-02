@@ -312,7 +312,7 @@ namespace WindowsFormsApp
             this.gunaButton6.AnimationHoverSpeed = 0.07F;
             this.gunaButton6.AnimationSpeed = 0.03F;
             this.gunaButton6.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton6.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaButton6.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.gunaButton6.BorderColor = System.Drawing.Color.Black;
             this.gunaButton6.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton6.FocusedColor = System.Drawing.Color.Empty;
@@ -323,7 +323,7 @@ namespace WindowsFormsApp
             this.gunaButton6.Location = new System.Drawing.Point(161, 527);
             this.gunaButton6.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton6.Name = "gunaButton6";
-            this.gunaButton6.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.gunaButton6.OnHoverBaseColor = System.Drawing.Color.Red;
             this.gunaButton6.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton6.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton6.OnHoverImage = null;
@@ -438,7 +438,7 @@ namespace WindowsFormsApp
             this.gunaButton4.AnimationHoverSpeed = 0.07F;
             this.gunaButton4.AnimationSpeed = 0.03F;
             this.gunaButton4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaButton4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.gunaButton4.BorderColor = System.Drawing.Color.Black;
             this.gunaButton4.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton4.FocusedColor = System.Drawing.Color.Empty;
@@ -449,7 +449,7 @@ namespace WindowsFormsApp
             this.gunaButton4.Location = new System.Drawing.Point(308, 527);
             this.gunaButton4.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton4.Name = "gunaButton4";
-            this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.Red;
             this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton4.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton4.OnHoverImage = null;
@@ -501,7 +501,7 @@ namespace WindowsFormsApp
             this.gunaButton5.Location = new System.Drawing.Point(20, 527);
             this.gunaButton5.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton5.Name = "gunaButton5";
-            this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(126)))), ((int)(((byte)(217)))));
             this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton5.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton5.OnHoverImage = null;

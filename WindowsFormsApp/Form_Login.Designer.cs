@@ -42,9 +42,9 @@ namespace WindowsFormsApp
             this.guna2CustomCheckBox1 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.Login = new Guna.UI.WinForms.GunaLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -149,7 +149,7 @@ namespace WindowsFormsApp
             this.guna2Separator2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Separator2.Location = new System.Drawing.Point(51, 209);
             this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(256, 2);
+            this.guna2Separator2.Size = new System.Drawing.Size(256, 1);
             this.guna2Separator2.TabIndex = 59;
             // 
             // gunaLabel1
@@ -224,28 +224,6 @@ namespace WindowsFormsApp
             this.guna2TextBox4.Size = new System.Drawing.Size(256, 45);
             this.guna2TextBox4.TabIndex = 54;
             // 
-            // Login
-            // 
-            this.Login.AutoSize = true;
-            this.Login.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Login.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Login.Location = new System.Drawing.Point(75, 40);
-            this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(195, 86);
-            this.Login.TabIndex = 57;
-            this.Login.Text = "Login";
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2PictureBox1.Image = global::WindowsFormsApp.Properties.Resources.giphy___Copy;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(385, 500);
-            this.guna2PictureBox1.TabIndex = 61;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // guna2TextBox2
             // 
             this.guna2TextBox2.BorderColor = System.Drawing.Color.White;
@@ -271,6 +249,28 @@ namespace WindowsFormsApp
             this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Size = new System.Drawing.Size(256, 45);
             this.guna2TextBox2.TabIndex = 53;
+            // 
+            // Login
+            // 
+            this.Login.AutoSize = true;
+            this.Login.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Login.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Login.Location = new System.Drawing.Point(75, 40);
+            this.Login.Name = "Login";
+            this.Login.Size = new System.Drawing.Size(195, 86);
+            this.Login.TabIndex = 57;
+            this.Login.Text = "Login";
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2PictureBox1.Image = global::WindowsFormsApp.Properties.Resources.giphy___Copy;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(385, 500);
+            this.guna2PictureBox1.TabIndex = 61;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // Form_Login
             // 
