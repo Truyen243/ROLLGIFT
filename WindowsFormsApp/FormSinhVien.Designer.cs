@@ -49,6 +49,7 @@ namespace WindowsFormsApp
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -57,9 +58,10 @@ namespace WindowsFormsApp
             // 
             this.guna2VSeparator1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.guna2VSeparator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2VSeparator1.Location = new System.Drawing.Point(-1, 12);
+            this.guna2VSeparator1.Location = new System.Drawing.Point(-1, 15);
+            this.guna2VSeparator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2VSeparator1.Name = "guna2VSeparator1";
-            this.guna2VSeparator1.Size = new System.Drawing.Size(2, 86);
+            this.guna2VSeparator1.Size = new System.Drawing.Size(3, 106);
             this.guna2VSeparator1.TabIndex = 18;
             // 
             // label3
@@ -69,10 +71,10 @@ namespace WindowsFormsApp
             this.label3.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
             this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Margin = new System.Windows.Forms.Padding(2);
+            this.label3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(0, 16, 0, 16);
-            this.label3.Size = new System.Drawing.Size(898, 66);
+            this.label3.Padding = new System.Windows.Forms.Padding(0, 20, 0, 20);
+            this.label3.Size = new System.Drawing.Size(1197, 81);
             this.label3.TabIndex = 47;
             this.label3.Text = "Sinh Viên";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -83,10 +85,11 @@ namespace WindowsFormsApp
             this.guna2Panel2.Controls.Add(this.guna2Button2);
             this.guna2Panel2.Controls.Add(this.btnNew);
             this.guna2Panel2.Controls.Add(this.guna2VSeparator1);
-            this.guna2Panel2.Location = new System.Drawing.Point(506, 79);
+            this.guna2Panel2.Location = new System.Drawing.Point(675, 97);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(346, 112);
+            this.guna2Panel2.Size = new System.Drawing.Size(461, 138);
             this.guna2Panel2.TabIndex = 45;
             // 
             // guna2Button2
@@ -103,10 +106,11 @@ namespace WindowsFormsApp
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.Image = global::WindowsFormsApp.Properties.Resources.uninstalling_updates_32px;
             this.guna2Button2.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.guna2Button2.Location = new System.Drawing.Point(180, 36);
+            this.guna2Button2.Location = new System.Drawing.Point(240, 44);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(147, 40);
+            this.guna2Button2.Size = new System.Drawing.Size(196, 49);
             this.guna2Button2.TabIndex = 22;
             this.guna2Button2.Text = "Update/Delete";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
@@ -125,10 +129,11 @@ namespace WindowsFormsApp
             this.btnNew.HoverState.Parent = this.btnNew;
             this.btnNew.Image = global::WindowsFormsApp.Properties.Resources.add2;
             this.btnNew.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.btnNew.Location = new System.Drawing.Point(40, 36);
+            this.btnNew.Location = new System.Drawing.Point(53, 44);
+            this.btnNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNew.Name = "btnNew";
             this.btnNew.ShadowDecoration.Parent = this.btnNew;
-            this.btnNew.Size = new System.Drawing.Size(100, 40);
+            this.btnNew.Size = new System.Drawing.Size(133, 49);
             this.btnNew.TabIndex = 19;
             this.btnNew.Text = "New";
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
@@ -149,14 +154,14 @@ namespace WindowsFormsApp
             this.guna2TextBox6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox6.HoverState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Location = new System.Drawing.Point(76, 115);
-            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox6.Location = new System.Drawing.Point(101, 142);
+            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox6.Name = "guna2TextBox6";
             this.guna2TextBox6.PasswordChar = '\0';
             this.guna2TextBox6.PlaceholderText = "Nhập ID Sinh Viên Hoặc Tên Sinh Viên";
             this.guna2TextBox6.SelectedText = "";
             this.guna2TextBox6.ShadowDecoration.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Size = new System.Drawing.Size(275, 34);
+            this.guna2TextBox6.Size = new System.Drawing.Size(367, 42);
             this.guna2TextBox6.TabIndex = 48;
             this.guna2TextBox6.TextChanged += new System.EventHandler(this.guna2TextBox6_TextChanged);
             // 
@@ -168,10 +173,11 @@ namespace WindowsFormsApp
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(359, 115);
+            this.guna2Button1.Location = new System.Drawing.Point(479, 142);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(82, 34);
+            this.guna2Button1.Size = new System.Drawing.Size(109, 42);
             this.guna2Button1.TabIndex = 49;
             this.guna2Button1.Text = "Find";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -215,12 +221,13 @@ namespace WindowsFormsApp
             this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(0, 210);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(0, 258);
+            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(898, 211);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(1197, 260);
             this.guna2DataGridView1.TabIndex = 50;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -311,7 +318,7 @@ namespace WindowsFormsApp
             // 
             // FormSinhVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -320,8 +327,9 @@ namespace WindowsFormsApp
             this.Controls.Add(this.guna2TextBox6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2Panel2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormSinhVien";
-            this.Size = new System.Drawing.Size(898, 421);
+            this.Size = new System.Drawing.Size(1197, 518);
             this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -347,5 +355,6 @@ namespace WindowsFormsApp
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.DirectoryServices.DirectoryEntry directoryEntry1;
     }
 }

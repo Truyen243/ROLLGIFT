@@ -224,5 +224,10 @@ namespace WindowsFormsApp
             FormThemLop f = new FormThemLop();
             f.Show();
         }
+
+        private void guna2ComboBox2_Click(object sender, EventArgs e)
+        {
+            Cls_Main.lopDowStc.getLop();
+        }
     }
 }

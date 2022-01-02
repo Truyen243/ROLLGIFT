@@ -21,7 +21,7 @@ namespace WindowsFormsApp
         public FormThemSinhVien(Send sender)
         {
             InitializeComponent();
-            this.s = sender;
+            
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -42,16 +42,16 @@ namespace WindowsFormsApp
         private void gunaButton1_Click(object sender, EventArgs e)
         {
 
-            this.s();
+            
             if (textBox2.Text ==""|| textBox4.Text == ""|| textBox5.Text == "" || textBox3.Text == "" || textBox6.Text == "" || guna2ComboBox1.SelectedIndex == -1|| guna2ComboBox2.SelectedIndex == -1)
             {
-                MessageBox.Show("Vui lòng Nhập Đầy Đủ Thông Tin1");
+                MessageBox.Show("Vui lòng Nhập Đầy Đủ Thông Tin");
             }
             else
             {
                 if (radioButton1.Checked == false && radioButton2.Checked == false)
                 {
-                    MessageBox.Show("Vui lòng Nhập Đầy Đủ Thông Tin2");
+                    MessageBox.Show("Vui lòng Nhập Đầy Đủ Thông Tin");
                 }
                 else
                 {
@@ -88,7 +88,6 @@ namespace WindowsFormsApp
             lstma.Clear();
             foreach (Lop lop in Cls_Main.lopDowStc.lstlop)
             {
-
                 if(Int32.Parse(lop.Khoa_id) == mskhoa)
                 {
                     guna2ComboBox1.Items.Add(lop.ten);
@@ -100,6 +99,21 @@ namespace WindowsFormsApp
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2ComboBox2_Click(object sender, EventArgs e)
+        {
+            guna2ComboBox2.Items.Clear();
+            Cls_Main.khoaDowStc.getKhoa();
+            foreach (Khoa khoa in Cls_Main.khoaDowStc.lstKhoa)
+            {
+                guna2ComboBox2.Items.Add(khoa.ten);
+            }
+        }
+
+        private void guna2ComboBox1_Click(object sender, EventArgs e)
+        {
+            Cls_Main.lopDowStc.getLop();
         }
     }
 }

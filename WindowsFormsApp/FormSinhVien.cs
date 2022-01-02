@@ -104,10 +104,10 @@ namespace WindowsFormsApp
         public delegate void Send();
         private void btnNew_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             FormThemSinhVien formThemSinhVien = new FormThemSinhVien(wrote);
             formThemSinhVien.Show();
-            this.Show();
+            
         }
         public void wrote()
         {
