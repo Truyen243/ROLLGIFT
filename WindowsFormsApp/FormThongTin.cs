@@ -31,5 +31,15 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void gunaLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

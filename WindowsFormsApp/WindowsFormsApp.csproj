@@ -353,5 +353,47 @@
   <ItemGroup>
     <None Include="Resources\269765563_251934983577717_8946126251439021529_n.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uninstalling_updates_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uninstalling_updates_32px -Gole1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\college.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\college2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books-stack-of-three.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books-stack-of-three - 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scores - 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presentation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presentation - 2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

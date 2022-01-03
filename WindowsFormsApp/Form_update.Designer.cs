@@ -31,7 +31,6 @@ namespace WindowsFormsApp
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_update));
-            this.button1 = new System.Windows.Forms.Button();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.textBox15 = new Guna.UI2.WinForms.Guna2TextBox();
             this.textBox16 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -41,7 +40,6 @@ namespace WindowsFormsApp
             this.textBox9 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.gunaLabel17 = new Guna.UI.WinForms.GunaLabel();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -53,28 +51,21 @@ namespace WindowsFormsApp
             this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
             this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel11 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
             this.gunaLabel12 = new Guna.UI.WinForms.GunaLabel();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(272, 53);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(48, 36);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Tìm";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // guna2GroupBox1
             // 
             this.guna2GroupBox1.BackColor = System.Drawing.Color.White;
+            this.guna2GroupBox1.Controls.Add(this.guna2Button2);
+            this.guna2GroupBox1.Controls.Add(this.guna2Button1);
+            this.guna2GroupBox1.Controls.Add(this.button1);
             this.guna2GroupBox1.Controls.Add(this.textBox15);
             this.guna2GroupBox1.Controls.Add(this.textBox16);
             this.guna2GroupBox1.Controls.Add(this.textBox14);
@@ -83,7 +74,6 @@ namespace WindowsFormsApp
             this.guna2GroupBox1.Controls.Add(this.textBox9);
             this.guna2GroupBox1.Controls.Add(this.guna2ComboBox2);
             this.guna2GroupBox1.Controls.Add(this.guna2ComboBox1);
-            this.guna2GroupBox1.Controls.Add(this.gunaButton6);
             this.guna2GroupBox1.Controls.Add(this.radioButton2);
             this.guna2GroupBox1.Controls.Add(this.gunaLabel17);
             this.guna2GroupBox1.Controls.Add(this.radioButton1);
@@ -95,9 +85,7 @@ namespace WindowsFormsApp
             this.guna2GroupBox1.Controls.Add(this.gunaButton4);
             this.guna2GroupBox1.Controls.Add(this.gunaLabel8);
             this.guna2GroupBox1.Controls.Add(this.gunaLabel11);
-            this.guna2GroupBox1.Controls.Add(this.gunaButton5);
             this.guna2GroupBox1.Controls.Add(this.gunaLabel12);
-            this.guna2GroupBox1.Controls.Add(this.button1);
             this.guna2GroupBox1.Controls.Add(this.guna2TextBox2);
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -308,34 +296,6 @@ namespace WindowsFormsApp
             this.guna2ComboBox1.TabIndex = 9;
             this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
-            // gunaButton6
-            // 
-            this.gunaButton6.AnimationHoverSpeed = 0.07F;
-            this.gunaButton6.AnimationSpeed = 0.03F;
-            this.gunaButton6.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton6.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.gunaButton6.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton6.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton6.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton6.ForeColor = System.Drawing.Color.White;
-            this.gunaButton6.Image = null;
-            this.gunaButton6.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton6.Location = new System.Drawing.Point(161, 527);
-            this.gunaButton6.Margin = new System.Windows.Forms.Padding(2);
-            this.gunaButton6.Name = "gunaButton6";
-            this.gunaButton6.OnHoverBaseColor = System.Drawing.Color.Red;
-            this.gunaButton6.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton6.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton6.OnHoverImage = null;
-            this.gunaButton6.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton6.Radius = 6;
-            this.gunaButton6.Size = new System.Drawing.Size(103, 34);
-            this.gunaButton6.TabIndex = 12;
-            this.gunaButton6.Text = "Xóa";
-            this.gunaButton6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton6.Click += new System.EventHandler(this.gunaButton6_Click);
-            // 
             // radioButton2
             // 
             this.radioButton2.BackColor = System.Drawing.Color.White;
@@ -486,34 +446,6 @@ namespace WindowsFormsApp
             this.gunaLabel11.TabIndex = 3;
             this.gunaLabel11.Text = "Tên";
             // 
-            // gunaButton5
-            // 
-            this.gunaButton5.AnimationHoverSpeed = 0.07F;
-            this.gunaButton5.AnimationSpeed = 0.03F;
-            this.gunaButton5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaButton5.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton5.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton5.ForeColor = System.Drawing.Color.White;
-            this.gunaButton5.Image = null;
-            this.gunaButton5.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton5.Location = new System.Drawing.Point(20, 527);
-            this.gunaButton5.Margin = new System.Windows.Forms.Padding(2);
-            this.gunaButton5.Name = "gunaButton5";
-            this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(126)))), ((int)(((byte)(217)))));
-            this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton5.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton5.OnHoverImage = null;
-            this.gunaButton5.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton5.Radius = 6;
-            this.gunaButton5.Size = new System.Drawing.Size(103, 34);
-            this.gunaButton5.TabIndex = 11;
-            this.gunaButton5.Text = "Update";
-            this.gunaButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton5.Click += new System.EventHandler(this.gunaButton5_Click);
-            // 
             // gunaLabel12
             // 
             this.gunaLabel12.BackColor = System.Drawing.Color.White;
@@ -557,6 +489,59 @@ namespace WindowsFormsApp
             // 
             this.guna2Elipse1.TargetControl = this;
             // 
+            // button1
+            // 
+            this.button1.BorderColor = System.Drawing.Color.Silver;
+            this.button1.BorderRadius = 6;
+            this.button1.BorderThickness = 1;
+            this.button1.CheckedState.Parent = this.button1;
+            this.button1.CustomImages.Parent = this.button1;
+            this.button1.FillColor = System.Drawing.Color.White;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.button1.HoverState.Parent = this.button1;
+            this.button1.Location = new System.Drawing.Point(279, 53);
+            this.button1.Name = "button1";
+            this.button1.ShadowDecoration.Parent = this.button1;
+            this.button1.Size = new System.Drawing.Size(48, 36);
+            this.button1.TabIndex = 38;
+            this.button1.Text = "Tìm";
+            this.button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 6;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(22, 527);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(103, 34);
+            this.guna2Button1.TabIndex = 11;
+            this.guna2Button1.Text = "Update";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.BorderRadius = 6;
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.Red;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Location = new System.Drawing.Point(161, 527);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(103, 34);
+            this.guna2Button2.TabIndex = 12;
+            this.guna2Button2.Text = "Xóa";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
             // Form_update
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -575,8 +560,6 @@ namespace WindowsFormsApp
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private Guna.UI.WinForms.GunaLabel gunaLabel17;
         private Guna.UI.WinForms.GunaLabel gunaLabel18;
@@ -586,12 +569,10 @@ namespace WindowsFormsApp
         private Guna.UI.WinForms.GunaButton gunaButton4;
         private Guna.UI.WinForms.GunaLabel gunaLabel8;
         private Guna.UI.WinForms.GunaLabel gunaLabel11;
-        private Guna.UI.WinForms.GunaButton gunaButton5;
         private Guna.UI.WinForms.GunaLabel gunaLabel12;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private Guna.UI.WinForms.GunaLabel gunaLabel19;
-        private Guna.UI.WinForms.GunaButton gunaButton6;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
@@ -602,6 +583,8 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2TextBox textBox14;
         private Guna.UI2.WinForms.Guna2TextBox textBox12;
         private Guna.UI2.WinForms.Guna2TextBox textBox13;
-
+        private Guna.UI2.WinForms.Guna2Button button1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }

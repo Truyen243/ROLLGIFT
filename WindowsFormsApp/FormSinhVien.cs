@@ -17,98 +17,8 @@ namespace WindowsFormsApp
             InitializeComponent();
         }
 
-        private void gunaLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void gunaLabel1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gunaLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtMaSV_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Separator1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Separator3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Separator4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Separator5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Separator1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void txtNgaySinh_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtDienThoai_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtSoDT_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Separator5_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         public delegate void Send();
-        private void btnNew_Click(object sender, EventArgs e)
-        {
-            
-            FormThemSinhVien formThemSinhVien = new FormThemSinhVien(wrote);
-            formThemSinhVien.Show();
-            
-        }
+
         public void wrote()
         {
             Console.WriteLine("Xin chào");
@@ -116,13 +26,13 @@ namespace WindowsFormsApp
 
         List<SinhVien> lstsv = new List<SinhVien>();
         
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void btnFind_Click(object sender, EventArgs e)
         {
-            if(guna2TextBox6.Text != "")
+            if (guna2TextBox6.Text != "")
             {
                 SinhVien sv = Cls_Main.svDow.timsinhVien(guna2TextBox6.Text);
 
-                if (sv ==null)
+                if (sv == null)
                 {
                     MessageBox.Show("Không tìm thấy sinh viên, vui lòng nhập lại");
                 }
@@ -130,29 +40,34 @@ namespace WindowsFormsApp
                 {
                     int n = 0;
 
-                    foreach(SinhVien s in lstsv)
+                    foreach (SinhVien s in lstsv)
                     {
                         if (s.id == sv.id)
                         {
                             n = 1;
                         }
-                        
+
                     }
                     if (n == 0)
                     {
                         lstsv.Insert(0, sv);
                     }
-                   
+
                 }
 
                 BindingSource bindingSource = new BindingSource();
                 bindingSource.DataSource = lstsv;
                 guna2DataGridView1.DataSource = bindingSource;
-            }    
-            
+            }
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void btnNew_Click_1(object sender, EventArgs e)
+        {
+            FormThemSinhVien formThemSinhVien = new FormThemSinhVien(wrote);
+            formThemSinhVien.Show();
+        }
+
+        private void btnUpDel_Click(object sender, EventArgs e)
         {
             Form_update up = new Form_update();
             up.Show();

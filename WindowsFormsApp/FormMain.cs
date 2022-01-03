@@ -128,12 +128,13 @@ namespace WindowsFormsApp
 
         private void informationToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            
-            FormThongTin formThongTin = new FormThongTin();
-            formThongTin.ShowDialog();
+            FormThongTin formThongTin = new FormThongTin();           
+            guna2Transition1.HideSync(formThongTin);
+            //formThongTin.ShowDialog();
+            guna2Transition1.ShowSync(formThongTin);
 
-            
-            
+
+
 
         }
         private void guna2ControlBox3_Click(object sender, EventArgs e)
@@ -177,5 +178,6 @@ namespace WindowsFormsApp
             formLop1.Visible = false;
             
         }
+
     }
 }

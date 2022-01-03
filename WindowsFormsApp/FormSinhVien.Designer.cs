@@ -35,10 +35,9 @@ namespace WindowsFormsApp
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnUpDel = new Guna.UI2.WinForms.Guna2Button();
             this.btnNew = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,6 +49,7 @@ namespace WindowsFormsApp
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
+            this.btnFind = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -70,7 +70,7 @@ namespace WindowsFormsApp
             this.label3.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
             this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label3.Margin = new System.Windows.Forms.Padding(2);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(0, 16, 0, 16);
             this.label3.Size = new System.Drawing.Size(898, 66);
@@ -81,7 +81,7 @@ namespace WindowsFormsApp
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.White;
-            this.guna2Panel2.Controls.Add(this.guna2Button2);
+            this.guna2Panel2.Controls.Add(this.btnUpDel);
             this.guna2Panel2.Controls.Add(this.btnNew);
             this.guna2Panel2.Controls.Add(this.guna2VSeparator1);
             this.guna2Panel2.Location = new System.Drawing.Point(506, 79);
@@ -90,49 +90,43 @@ namespace WindowsFormsApp
             this.guna2Panel2.Size = new System.Drawing.Size(346, 112);
             this.guna2Panel2.TabIndex = 45;
             // 
-            // guna2Button2
+            // btnUpDel
             // 
-            this.guna2Button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button2.BorderRadius = 6;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomBorderThickness = new System.Windows.Forms.Padding(2);
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
-            this.guna2Button2.HoverState.Image = global::WindowsFormsApp.Properties.Resources.uninstalling_updates_32px__Gole;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Image = global::WindowsFormsApp.Properties.Resources.uninstalling_updates_32px;
-            this.guna2Button2.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.guna2Button2.Location = new System.Drawing.Point(180, 36);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(147, 40);
-            this.guna2Button2.TabIndex = 22;
-            this.guna2Button2.Text = "Update/Delete";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            this.btnUpDel.BorderRadius = 6;
+            this.btnUpDel.CheckedState.Parent = this.btnUpDel;
+            this.btnUpDel.CustomImages.Parent = this.btnUpDel;
+            this.btnUpDel.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpDel.ForeColor = System.Drawing.Color.White;
+            this.btnUpDel.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
+            this.btnUpDel.HoverState.Image = global::WindowsFormsApp.Properties.Resources.uninstalling_updates_32px__Gole1;
+            this.btnUpDel.HoverState.Parent = this.btnUpDel;
+            this.btnUpDel.Image = global::WindowsFormsApp.Properties.Resources.uninstalling_updates_32px1;
+            this.btnUpDel.Location = new System.Drawing.Point(178, 36);
+            this.btnUpDel.Name = "btnUpDel";
+            this.btnUpDel.ShadowDecoration.Parent = this.btnUpDel;
+            this.btnUpDel.Size = new System.Drawing.Size(147, 40);
+            this.btnUpDel.TabIndex = 53;
+            this.btnUpDel.Text = "Update/Delete";
+            this.btnUpDel.Click += new System.EventHandler(this.btnUpDel_Click);
             // 
             // btnNew
             // 
-            this.btnNew.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNew.BorderRadius = 6;
             this.btnNew.CheckedState.Parent = this.btnNew;
-            this.btnNew.CustomBorderThickness = new System.Windows.Forms.Padding(2);
             this.btnNew.CustomImages.Parent = this.btnNew;
-            this.btnNew.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnNew.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNew.ForeColor = System.Drawing.Color.White;
             this.btnNew.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
-            this.btnNew.HoverState.Image = global::WindowsFormsApp.Properties.Resources.plus;
+            this.btnNew.HoverState.Image = global::WindowsFormsApp.Properties.Resources.plus5;
             this.btnNew.HoverState.Parent = this.btnNew;
-            this.btnNew.Image = global::WindowsFormsApp.Properties.Resources.add2;
-            this.btnNew.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.btnNew.Location = new System.Drawing.Point(40, 36);
+            this.btnNew.Image = global::WindowsFormsApp.Properties.Resources.add5;
+            this.btnNew.Location = new System.Drawing.Point(54, 36);
             this.btnNew.Name = "btnNew";
             this.btnNew.ShadowDecoration.Parent = this.btnNew;
             this.btnNew.Size = new System.Drawing.Size(100, 40);
-            this.btnNew.TabIndex = 19;
+            this.btnNew.TabIndex = 52;
             this.btnNew.Text = "New";
-            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click_1);
             // 
             // guna2TextBox6
             // 
@@ -159,23 +153,6 @@ namespace WindowsFormsApp
             this.guna2TextBox6.ShadowDecoration.Parent = this.guna2TextBox6;
             this.guna2TextBox6.Size = new System.Drawing.Size(275, 34);
             this.guna2TextBox6.TabIndex = 48;
-            this.guna2TextBox6.TextChanged += new System.EventHandler(this.guna2TextBox6_TextChanged);
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BorderRadius = 6;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(359, 115);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(82, 34);
-            this.guna2Button1.TabIndex = 49;
-            this.guna2Button1.Text = "Find";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2DataGridView1
             // 
@@ -310,14 +287,30 @@ namespace WindowsFormsApp
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
             // 
+            // btnFind
+            // 
+            this.btnFind.BorderRadius = 6;
+            this.btnFind.CheckedState.Parent = this.btnFind;
+            this.btnFind.CustomImages.Parent = this.btnFind;
+            this.btnFind.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFind.ForeColor = System.Drawing.Color.White;
+            this.btnFind.HoverState.Parent = this.btnFind;
+            this.btnFind.Location = new System.Drawing.Point(357, 115);
+            this.btnFind.Name = "btnFind";
+            this.btnFind.ShadowDecoration.Parent = this.btnFind;
+            this.btnFind.Size = new System.Drawing.Size(82, 34);
+            this.btnFind.TabIndex = 51;
+            this.btnFind.Text = "Find";
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
+            // 
             // FormSinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Controls.Add(this.btnFind);
             this.Controls.Add(this.guna2DataGridView1);
-            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2TextBox6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2Panel2);
@@ -331,14 +324,11 @@ namespace WindowsFormsApp
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Button btnNew;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator1;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -349,5 +339,8 @@ namespace WindowsFormsApp
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.DirectoryServices.DirectoryEntry directoryEntry1;
+        private Guna.UI2.WinForms.Guna2Button btnFind;
+        private Guna.UI2.WinForms.Guna2Button btnNew;
+        private Guna.UI2.WinForms.Guna2Button btnUpDel;
     }
 }

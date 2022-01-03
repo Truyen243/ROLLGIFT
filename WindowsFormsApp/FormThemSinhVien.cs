@@ -39,45 +39,7 @@ namespace WindowsFormsApp
             this.Close();
         }
        
-        private void gunaButton1_Click(object sender, EventArgs e)
-        {
-
-            
-            if (textBox2.Text ==""|| textBox4.Text == ""|| textBox5.Text == "" || textBox3.Text == "" || textBox6.Text == "" || guna2ComboBox1.SelectedIndex == -1|| guna2ComboBox2.SelectedIndex == -1)
-            {
-                MessageBox.Show("Vui lòng Nhập Đầy Đủ Thông Tin");
-            }
-            else
-            {
-                if (radioButton1.Checked == false && radioButton2.Checked == false)
-                {
-                    MessageBox.Show("Vui lòng Nhập Đầy Đủ Thông Tin");
-                }
-                else
-                {
-                    String sex;
-                    if (radioButton1.Checked)
-                    {
-                        sex = "Nam";
-                    }
-                    else
-                    {
-                        sex = "Nu";
-                    }
-                    int lopid = Cls_Main.lopDowStc.getidlop(guna2ComboBox1.SelectedItem.ToString());
-                    if (Cls_Main.svDow.addSv(textBox2.Text, textBox5.Text, textBox6.Text, textBox4.Text, textBox3.Text, sex, lopid))
-                    {
-                        Console.WriteLine(lopid);
-                        MessageBox.Show("Tạo Thành Công");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Error");
-                    } 
-                        
-                 }
-            }
-        }
+        
         List<String> lstma = new List<string>();
 
         private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -114,6 +76,49 @@ namespace WindowsFormsApp
         private void guna2ComboBox1_Click(object sender, EventArgs e)
         {
             Cls_Main.lopDowStc.getLop();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            if (textBox2.Text == "" || textBox4.Text == "" || textBox5.Text == "" || textBox3.Text == "" || textBox6.Text == "" || guna2ComboBox1.SelectedIndex == -1 || guna2ComboBox2.SelectedIndex == -1)
+            {
+                MessageBox.Show("Vui lòng Nhập Đầy Đủ Thông Tin");
+            }
+            else
+            {
+                if (radioButton1.Checked == false && radioButton2.Checked == false)
+                {
+                    MessageBox.Show("Vui lòng Nhập Đầy Đủ Thông Tin");
+                }
+                else
+                {
+                    String sex;
+                    if (radioButton1.Checked)
+                    {
+                        sex = "Nam";
+                    }
+                    else
+                    {
+                        sex = "Nu";
+                    }
+                    int lopid = Cls_Main.lopDowStc.getidlop(guna2ComboBox1.SelectedItem.ToString());
+                    if (Cls_Main.svDow.addSv(textBox2.Text, textBox5.Text, textBox6.Text, textBox4.Text, textBox3.Text, sex, lopid))
+                    {
+                        Console.WriteLine(lopid);
+                        MessageBox.Show("Tạo Thành Công");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error");
+                    }
+
+                }
+            }
+        }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
