@@ -33,11 +33,12 @@ namespace WindowsFormsApp
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDiem = new Guna.UI2.WinForms.Guna2Button();
             this.btnMonHoc = new Guna.UI2.WinForms.Guna2Button();
             this.btnSinhVien = new Guna.UI2.WinForms.Guna2Button();
             this.btnKhoa = new Guna.UI2.WinForms.Guna2Button();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -51,20 +52,19 @@ namespace WindowsFormsApp
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.formDiem1 = new WindowsFormsApp.FormDiem();
             this.formSinhVien1 = new WindowsFormsApp.FormSinhVien();
             this.formMonHoc1 = new WindowsFormsApp.FormMonHoc();
             this.formLop1 = new WindowsFormsApp.FormLop();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -85,23 +85,23 @@ namespace WindowsFormsApp
             this.guna2Panel2.Controls.Add(this.btnKhoa);
             this.guna2Panel2.CustomBorderColor = System.Drawing.Color.Silver;
             this.guna2Panel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 42);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Panel2.MaximumSize = new System.Drawing.Size(293, 697);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 34);
+            this.guna2Panel2.MaximumSize = new System.Drawing.Size(220, 566);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(269, 697);
+            this.guna2Panel2.Size = new System.Drawing.Size(202, 566);
             this.guna2Panel2.TabIndex = 1;
             // 
-            // gunaLabel3
+            // pictureBox1
             // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(981, 135);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(73, 38);
-            this.gunaLabel3.TabIndex = 5;
-            this.gunaLabel3.Text = "User";
+            this.pictureBox1.Image = global::WindowsFormsApp.Properties.Resources._270030533_4536618289798055_2455438645760922107_n;
+            this.pictureBox1.ImageLocation = "";
+            this.pictureBox1.Location = new System.Drawing.Point(39, 20);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(111, 104);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // btnDiem
             // 
@@ -116,12 +116,11 @@ namespace WindowsFormsApp
             this.btnDiem.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnDiem.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
             this.btnDiem.HoverState.Parent = this.btnDiem;
-            this.btnDiem.Location = new System.Drawing.Point(3, 320);
-            this.btnDiem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDiem.Location = new System.Drawing.Point(2, 260);
             this.btnDiem.Name = "btnDiem";
             this.btnDiem.PressedDepth = 0;
             this.btnDiem.ShadowDecoration.Parent = this.btnDiem;
-            this.btnDiem.Size = new System.Drawing.Size(263, 55);
+            this.btnDiem.Size = new System.Drawing.Size(197, 45);
             this.btnDiem.TabIndex = 3;
             this.btnDiem.Text = "Điểm";
             this.btnDiem.Click += new System.EventHandler(this.btnDiem_Click);
@@ -142,12 +141,11 @@ namespace WindowsFormsApp
             this.btnMonHoc.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnMonHoc.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
             this.btnMonHoc.HoverState.Parent = this.btnMonHoc;
-            this.btnMonHoc.Location = new System.Drawing.Point(3, 257);
-            this.btnMonHoc.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMonHoc.Location = new System.Drawing.Point(2, 209);
             this.btnMonHoc.Name = "btnMonHoc";
             this.btnMonHoc.PressedDepth = 0;
             this.btnMonHoc.ShadowDecoration.Parent = this.btnMonHoc;
-            this.btnMonHoc.Size = new System.Drawing.Size(263, 55);
+            this.btnMonHoc.Size = new System.Drawing.Size(197, 45);
             this.btnMonHoc.TabIndex = 2;
             this.btnMonHoc.Text = "Môn Học";
             this.btnMonHoc.Click += new System.EventHandler(this.btnMonHoc_Click);
@@ -166,12 +164,11 @@ namespace WindowsFormsApp
             this.btnSinhVien.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnSinhVien.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
             this.btnSinhVien.HoverState.Parent = this.btnSinhVien;
-            this.btnSinhVien.Location = new System.Drawing.Point(3, 194);
-            this.btnSinhVien.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSinhVien.Location = new System.Drawing.Point(2, 158);
             this.btnSinhVien.Name = "btnSinhVien";
             this.btnSinhVien.PressedDepth = 0;
             this.btnSinhVien.ShadowDecoration.Parent = this.btnSinhVien;
-            this.btnSinhVien.Size = new System.Drawing.Size(263, 55);
+            this.btnSinhVien.Size = new System.Drawing.Size(197, 45);
             this.btnSinhVien.TabIndex = 1;
             this.btnSinhVien.Text = "Sinh Viên";
             this.btnSinhVien.Click += new System.EventHandler(this.btnSinhVien_Click);
@@ -190,15 +187,25 @@ namespace WindowsFormsApp
             this.btnKhoa.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnKhoa.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
             this.btnKhoa.HoverState.Parent = this.btnKhoa;
-            this.btnKhoa.Location = new System.Drawing.Point(4, 383);
-            this.btnKhoa.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKhoa.Location = new System.Drawing.Point(3, 311);
             this.btnKhoa.Name = "btnKhoa";
             this.btnKhoa.PressedDepth = 0;
             this.btnKhoa.ShadowDecoration.Parent = this.btnKhoa;
-            this.btnKhoa.Size = new System.Drawing.Size(263, 55);
+            this.btnKhoa.Size = new System.Drawing.Size(197, 45);
             this.btnKhoa.TabIndex = 0;
             this.btnKhoa.Text = "Lớp";
             this.btnKhoa.Click += new System.EventHandler(this.btnKhoa_Click);
+            // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.Location = new System.Drawing.Point(736, 110);
+            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(57, 30);
+            this.gunaLabel3.TabIndex = 5;
+            this.gunaLabel3.Text = "User";
             // 
             // guna2ControlBox1
             // 
@@ -208,11 +215,10 @@ namespace WindowsFormsApp
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1399, 2);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1049, 2);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(60, 36);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 2;
             // 
             // guna2Panel1
@@ -223,10 +229,9 @@ namespace WindowsFormsApp
             this.guna2Panel1.Controls.Add(this.guna2ControlBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1467, 42);
+            this.guna2Panel1.Size = new System.Drawing.Size(1100, 34);
             this.guna2Panel1.TabIndex = 0;
             // 
             // guna2ControlBox2
@@ -237,11 +242,10 @@ namespace WindowsFormsApp
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1331, 2);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(998, 2);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.Size = new System.Drawing.Size(60, 36);
+            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox2.TabIndex = 5;
             // 
             // guna2ControlBox3
@@ -252,11 +256,10 @@ namespace WindowsFormsApp
             this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2ControlBox3.HoverState.Parent = this.guna2ControlBox3;
             this.guna2ControlBox3.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(1263, 2);
-            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(947, 2);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.ShadowDecoration.Parent = this.guna2ControlBox3;
-            this.guna2ControlBox3.Size = new System.Drawing.Size(60, 36);
+            this.guna2ControlBox3.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox3.TabIndex = 4;
             this.guna2ControlBox3.Click += new System.EventHandler(this.guna2ControlBox3_Click);
             // 
@@ -266,10 +269,9 @@ namespace WindowsFormsApp
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.gunaLabel1.Font = new System.Drawing.Font("Rockwell", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(-13, 64);
-            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.gunaLabel1.Location = new System.Drawing.Point(0, 43);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(1113, 82);
+            this.gunaLabel1.Size = new System.Drawing.Size(898, 67);
             this.gunaLabel1.TabIndex = 7;
             this.gunaLabel1.Text = "Manage Student";
             this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -285,8 +287,8 @@ namespace WindowsFormsApp
             this.informationToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1197, 41);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(898, 33);
             this.menuStrip1.TabIndex = 14;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -297,7 +299,7 @@ namespace WindowsFormsApp
             this.exitToolStripMenuItem});
             this.systemToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("systemToolStripMenuItem.Image")));
             this.systemToolStripMenuItem.Name = "systemToolStripMenuItem";
-            this.systemToolStripMenuItem.Size = new System.Drawing.Size(125, 37);
+            this.systemToolStripMenuItem.Size = new System.Drawing.Size(102, 29);
             this.systemToolStripMenuItem.Text = "System";
             // 
             // manageAdminToolStripMenuItem
@@ -307,20 +309,20 @@ namespace WindowsFormsApp
             this.changePassWordToolStripMenuItem});
             this.manageAdminToolStripMenuItem.Image = global::WindowsFormsApp.Properties.Resources.add2;
             this.manageAdminToolStripMenuItem.Name = "manageAdminToolStripMenuItem";
-            this.manageAdminToolStripMenuItem.Size = new System.Drawing.Size(268, 36);
+            this.manageAdminToolStripMenuItem.Size = new System.Drawing.Size(217, 30);
             this.manageAdminToolStripMenuItem.Text = "Manage Admin";
             // 
             // registAdminToolStripMenuItem
             // 
             this.registAdminToolStripMenuItem.Name = "registAdminToolStripMenuItem";
-            this.registAdminToolStripMenuItem.Size = new System.Drawing.Size(294, 36);
+            this.registAdminToolStripMenuItem.Size = new System.Drawing.Size(236, 30);
             this.registAdminToolStripMenuItem.Text = "Regist Admin";
             this.registAdminToolStripMenuItem.Click += new System.EventHandler(this.registAdminToolStripMenuItem_Click);
             // 
             // changePassWordToolStripMenuItem
             // 
             this.changePassWordToolStripMenuItem.Name = "changePassWordToolStripMenuItem";
-            this.changePassWordToolStripMenuItem.Size = new System.Drawing.Size(294, 36);
+            this.changePassWordToolStripMenuItem.Size = new System.Drawing.Size(236, 30);
             this.changePassWordToolStripMenuItem.Text = "Change PassWord";
             this.changePassWordToolStripMenuItem.Click += new System.EventHandler(this.changePassWordToolStripMenuItem_Click);
             // 
@@ -328,7 +330,7 @@ namespace WindowsFormsApp
             // 
             this.exitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem.Image")));
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(268, 36);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(217, 30);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -336,7 +338,7 @@ namespace WindowsFormsApp
             // 
             this.informationToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("informationToolStripMenuItem.Image")));
             this.informationToolStripMenuItem.Name = "informationToolStripMenuItem";
-            this.informationToolStripMenuItem.Size = new System.Drawing.Size(174, 37);
+            this.informationToolStripMenuItem.Size = new System.Drawing.Size(143, 29);
             this.informationToolStripMenuItem.Text = "Information";
             this.informationToolStripMenuItem.Click += new System.EventHandler(this.informationToolStripMenuItem_Click_1);
             // 
@@ -350,25 +352,39 @@ namespace WindowsFormsApp
             this.guna2Panel3.Controls.Add(this.menuStrip1);
             this.guna2Panel3.Controls.Add(this.gunaLabel1);
             this.guna2Panel3.Controls.Add(this.gunaLabel3);
-            this.guna2Panel3.Location = new System.Drawing.Point(269, 42);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Panel3.Location = new System.Drawing.Point(202, 34);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(1197, 176);
+            this.guna2Panel3.Size = new System.Drawing.Size(898, 143);
             this.guna2Panel3.TabIndex = 12;
             this.guna2Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
             // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel2.Location = new System.Drawing.Point(684, 119);
+            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(43, 15);
+            this.gunaLabel2.TabIndex = 7;
+            this.gunaLabel2.Text = "Admin";
+            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.formDiem1);
             this.panel1.Controls.Add(this.formSinhVien1);
             this.panel1.Controls.Add(this.formMonHoc1);
             this.panel1.Controls.Add(this.formLop1);
-            this.panel1.Location = new System.Drawing.Point(269, 217);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Controls.Add(this.formDiem1);
+            this.panel1.Location = new System.Drawing.Point(202, 176);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1197, 523);
+            this.panel1.Size = new System.Drawing.Size(898, 425);
             this.panel1.TabIndex = 13;
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.TargetControl = this;
             // 
             // formDiem1
             // 
@@ -377,9 +393,9 @@ namespace WindowsFormsApp
             | System.Windows.Forms.AnchorStyles.Right)));
             this.formDiem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.formDiem1.Location = new System.Drawing.Point(0, 0);
-            this.formDiem1.Margin = new System.Windows.Forms.Padding(5);
+            this.formDiem1.Margin = new System.Windows.Forms.Padding(4);
             this.formDiem1.Name = "formDiem1";
-            this.formDiem1.Size = new System.Drawing.Size(1197, 523);
+            this.formDiem1.Size = new System.Drawing.Size(898, 425);
             this.formDiem1.TabIndex = 0;
             // 
             // formSinhVien1
@@ -390,9 +406,9 @@ namespace WindowsFormsApp
             this.formSinhVien1.AutoSize = true;
             this.formSinhVien1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.formSinhVien1.Location = new System.Drawing.Point(0, 0);
-            this.formSinhVien1.Margin = new System.Windows.Forms.Padding(5);
+            this.formSinhVien1.Margin = new System.Windows.Forms.Padding(4);
             this.formSinhVien1.Name = "formSinhVien1";
-            this.formSinhVien1.Size = new System.Drawing.Size(1520, 523);
+            this.formSinhVien1.Size = new System.Drawing.Size(898, 425);
             this.formSinhVien1.TabIndex = 3;
             // 
             // formMonHoc1
@@ -402,9 +418,9 @@ namespace WindowsFormsApp
             | System.Windows.Forms.AnchorStyles.Right)));
             this.formMonHoc1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.formMonHoc1.Location = new System.Drawing.Point(0, 0);
-            this.formMonHoc1.Margin = new System.Windows.Forms.Padding(5);
+            this.formMonHoc1.Margin = new System.Windows.Forms.Padding(4);
             this.formMonHoc1.Name = "formMonHoc1";
-            this.formMonHoc1.Size = new System.Drawing.Size(1197, 523);
+            this.formMonHoc1.Size = new System.Drawing.Size(898, 425);
             this.formMonHoc1.TabIndex = 2;
             // 
             // formLop1
@@ -414,54 +430,30 @@ namespace WindowsFormsApp
             | System.Windows.Forms.AnchorStyles.Right)));
             this.formLop1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.formLop1.Location = new System.Drawing.Point(0, 0);
-            this.formLop1.Margin = new System.Windows.Forms.Padding(5);
+            this.formLop1.Margin = new System.Windows.Forms.Padding(4);
             this.formLop1.Name = "formLop1";
-            this.formLop1.Size = new System.Drawing.Size(1197, 523);
+            this.formLop1.Size = new System.Drawing.Size(898, 425);
             this.formLop1.TabIndex = 1;
             this.formLop1.Load += new System.EventHandler(this.formKhoa1_Load_1);
             // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.TargetControl = this;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WindowsFormsApp.Properties.Resources._270030533_4536618289798055_2455438645760922107_n;
-            this.pictureBox1.ImageLocation = "";
-            this.pictureBox1.Location = new System.Drawing.Point(72, 18);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(148, 128);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel2.Location = new System.Drawing.Point(912, 146);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(53, 20);
-            this.gunaLabel2.TabIndex = 7;
-            this.gunaLabel2.Text = "Admin";
-            // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1467, 738);
+            this.ClientSize = new System.Drawing.Size(1100, 600);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.guna2Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -469,7 +461,6 @@ namespace WindowsFormsApp
             this.guna2Panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
