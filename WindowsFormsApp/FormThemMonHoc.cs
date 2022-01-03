@@ -65,7 +65,7 @@ namespace WindowsFormsApp
             else
             {
 
-                if (Cls_Main.monDow.addMonHoc(guna2TextBox9.Text, guna2TextBox8.Text, guna2TextBox7.Text, guna2TextBox6.Text))
+                if (Cls_Main.monDow.addMonHoc(guna2TextBox8.Text, guna2TextBox9.Text, guna2TextBox7.Text, guna2TextBox6.Text))
                 {
                    
                     MessageBox.Show("Tạo Thành Công");

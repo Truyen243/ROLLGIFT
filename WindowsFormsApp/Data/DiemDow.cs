@@ -80,19 +80,7 @@ namespace WindowsFormsApp.Data
                 }
             }
         }
-        public string getTen(int id)
-        {
-            foreach (MonHoc m in Cls_Main.monDow.lstMon)
-            {
-                if (m.id == id)
-                {
-                    
-                    return m.ten;
-                }    
-                   
-            }
-            return "";
-        }
+       
         public List<Diem> laydiem(int msvien)
         {
        
@@ -134,9 +122,9 @@ namespace WindowsFormsApp.Data
                     float diem30 = (float)d["diem30"];
                     float diem60 = (float)d["diem60"];
                     float diemtong = (float)d["diemtong"];
-                    string tenmon = Cls_Main.diemDow.getTen(mamh);
+                    string tenmon = Cls_Main.monDow.getTen(mamh);
                     dm = new Diem(id, tenmon, masv, mamh, diem10, diem30, diem60, diemtong);
-                  
+                    Console.WriteLine(tenmon);
                     lstDiem.Add(dm);
                     
                 }

@@ -17,7 +17,17 @@ namespace WindowsFormsApp.Data
     class MonhocDow
     {
         public List<MonHoc> lstMon = new List<MonHoc>();
-        
+        public string getTen(int id)
+        {
+            foreach (MonHoc m in lstMon)
+            {
+                if (m.id == id)
+                {
+                    return m.ten;
+                }
+            }
+            return "";
+        }
         public bool getMon()
         {
             lstMon.Clear();

@@ -88,8 +88,17 @@ namespace WindowsFormsApp
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             SinhVien sv = Cls_Main.svDow.timsinhVien(guna2TextBox4.Text);
-            Diem dm = new Diem(1,"",sv.id, mh.id, 0, 0, 0, 0);
-            Cls_Main.diemDow.add(dm);
+            if(sv==null)
+            {
+                MessageBox.Show("Không Tìm Thấy Sinh Viên");
+            }
+            else
+            {
+                Diem dm = new Diem(1, "", sv.id, mh.id, 0, 0, 0, 0);
+                Cls_Main.diemDow.add(dm);
+                MessageBox.Show("Thêm Điểm Thành Công");
+            }
+            
         }
 
         private void guna2ComboBox2_RightToLeftChanged(object sender, EventArgs e)
@@ -155,8 +164,8 @@ namespace WindowsFormsApp
                     mh = m;
                 }
             }
-            guna2TextBox2.Text = mh.mamonhoc;
-            guna2TextBox3.Text = mh.ten;
+            guna2TextBox2.Text = mh.ten;
+            guna2TextBox3.Text =  mh.mamonhoc;
         }
 
         private void guna2Button1_Click_1(object sender, EventArgs e)

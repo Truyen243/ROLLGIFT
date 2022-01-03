@@ -46,10 +46,7 @@ namespace WindowsFormsApp
                 {
                     guna2TextBox3.Text = sv.name;
                     List<Diem> lst = Cls_Main.diemDow.laydiem(sv.id);
-                    foreach (Diem s in lst)
-                    {
-                        Console.WriteLine(s.tenmon);
-                    }    
+                    
                     BindingSource bindingSource = new BindingSource();
                     bindingSource.DataSource = lst;
                     guna2DataGridView1.DataSource = bindingSource;

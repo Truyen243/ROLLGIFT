@@ -41,6 +41,7 @@ namespace WindowsFormsApp
             this.label3 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -57,7 +58,6 @@ namespace WindowsFormsApp
             this.mskhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2DataGridView3 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView3)).BeginInit();
@@ -71,10 +71,10 @@ namespace WindowsFormsApp
             this.label3.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
             this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Margin = new System.Windows.Forms.Padding(2);
+            this.label3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(0, 16, 0, 16);
-            this.label3.Size = new System.Drawing.Size(898, 66);
+            this.label3.Padding = new System.Windows.Forms.Padding(0, 20, 0, 20);
+            this.label3.Size = new System.Drawing.Size(1197, 81);
             this.label3.TabIndex = 43;
             this.label3.Text = "Lớp";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -94,10 +94,11 @@ namespace WindowsFormsApp
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2DataGridView2);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2DataGridView3);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2DataGridView1);
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 63);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 78);
+            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.ShadowDecoration.Parent = this.guna2CustomGradientPanel1;
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(898, 358);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1197, 441);
             this.guna2CustomGradientPanel1.TabIndex = 45;
             this.guna2CustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
             // 
@@ -113,14 +114,37 @@ namespace WindowsFormsApp
             this.guna2Button3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
             this.guna2Button3.Image = global::WindowsFormsApp.Properties.Resources.group;
-            this.guna2Button3.Location = new System.Drawing.Point(687, 31);
+            this.guna2Button3.Location = new System.Drawing.Point(916, 38);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(183, 36);
+            this.guna2Button3.Size = new System.Drawing.Size(244, 44);
             this.guna2Button3.TabIndex = 52;
             this.guna2Button3.Text = "Quản Lí  Lớp";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.BackColor = System.Drawing.Color.White;
+            this.guna2Button4.BorderRadius = 6;
+            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
+            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
+            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.Lime;
+            this.guna2Button4.HoverState.Parent = this.guna2Button4;
+            this.guna2Button4.Image = global::WindowsFormsApp.Properties.Resources._12424851;
+            this.guna2Button4.Location = new System.Drawing.Point(916, 122);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
+            this.guna2Button4.Size = new System.Drawing.Size(244, 44);
+            this.guna2Button4.TabIndex = 51;
+            this.guna2Button4.Text = "Xuất File Excel";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // guna2ComboBox2
             // 
@@ -136,11 +160,11 @@ namespace WindowsFormsApp
             this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
             this.guna2ComboBox2.ItemHeight = 30;
             this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(175, 99);
-            this.guna2ComboBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ComboBox2.Location = new System.Drawing.Point(233, 122);
+            this.guna2ComboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ComboBox2.Name = "guna2ComboBox2";
             this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(260, 36);
+            this.guna2ComboBox2.Size = new System.Drawing.Size(345, 36);
             this.guna2ComboBox2.TabIndex = 50;
             this.guna2ComboBox2.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
             this.guna2ComboBox2.Click += new System.EventHandler(this.guna2ComboBox2_Click);
@@ -159,11 +183,11 @@ namespace WindowsFormsApp
             this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.ItemHeight = 30;
             this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(175, 31);
-            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(233, 38);
+            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(260, 36);
+            this.guna2ComboBox1.Size = new System.Drawing.Size(345, 36);
             this.guna2ComboBox1.TabIndex = 49;
             this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             this.guna2ComboBox1.Click += new System.EventHandler(this.guna2ComboBox1_Click);
@@ -178,11 +202,12 @@ namespace WindowsFormsApp
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(25, 99);
+            this.guna2Button2.Location = new System.Drawing.Point(33, 122);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(97, 36);
+            this.guna2Button2.Size = new System.Drawing.Size(129, 44);
             this.guna2Button2.TabIndex = 47;
             this.guna2Button2.Text = "Lớp";
             // 
@@ -196,11 +221,12 @@ namespace WindowsFormsApp
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(25, 31);
+            this.guna2Button1.Location = new System.Drawing.Point(33, 38);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(97, 36);
+            this.guna2Button1.Size = new System.Drawing.Size(129, 44);
             this.guna2Button1.TabIndex = 46;
             this.guna2Button1.Text = "Khoa";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -244,12 +270,13 @@ namespace WindowsFormsApp
             this.guna2DataGridView2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2DataGridView2.EnableHeadersVisualStyles = false;
             this.guna2DataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
-            this.guna2DataGridView2.Location = new System.Drawing.Point(0, 164);
+            this.guna2DataGridView2.Location = new System.Drawing.Point(0, 198);
+            this.guna2DataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2DataGridView2.Name = "guna2DataGridView2";
             this.guna2DataGridView2.RowHeadersVisible = false;
             this.guna2DataGridView2.RowHeadersWidth = 51;
             this.guna2DataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView2.Size = new System.Drawing.Size(898, 194);
+            this.guna2DataGridView2.Size = new System.Drawing.Size(1197, 243);
             this.guna2DataGridView2.TabIndex = 45;
             this.guna2DataGridView2.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -371,12 +398,13 @@ namespace WindowsFormsApp
             this.guna2DataGridView3.DefaultCellStyle = dataGridViewCellStyle6;
             this.guna2DataGridView3.EnableHeadersVisualStyles = false;
             this.guna2DataGridView3.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView3.Location = new System.Drawing.Point(586, 164);
+            this.guna2DataGridView3.Location = new System.Drawing.Point(781, 202);
+            this.guna2DataGridView3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2DataGridView3.Name = "guna2DataGridView3";
             this.guna2DataGridView3.RowHeadersVisible = false;
             this.guna2DataGridView3.RowHeadersWidth = 51;
             this.guna2DataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView3.Size = new System.Drawing.Size(252, 182);
+            this.guna2DataGridView3.Size = new System.Drawing.Size(336, 224);
             this.guna2DataGridView3.TabIndex = 4;
             this.guna2DataGridView3.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView3.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -429,12 +457,13 @@ namespace WindowsFormsApp
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(219, 164);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(292, 202);
+            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(320, 185);
             this.guna2DataGridView1.TabIndex = 2;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -459,36 +488,16 @@ namespace WindowsFormsApp
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // guna2Button4
-            // 
-            this.guna2Button4.BackColor = System.Drawing.Color.White;
-            this.guna2Button4.BorderRadius = 6;
-            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
-            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.Lime;
-            this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Image = global::WindowsFormsApp.Properties.Resources._12424851;
-            this.guna2Button4.Location = new System.Drawing.Point(687, 99);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(183, 36);
-            this.guna2Button4.TabIndex = 51;
-            this.guna2Button4.Text = "Xuất File Excel";
-            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
-            // 
             // FormLop
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.label3);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormLop";
-            this.Size = new System.Drawing.Size(898, 421);
+            this.Size = new System.Drawing.Size(1197, 518);
             this.Load += new System.EventHandler(this.FormKhoa_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView2)).EndInit();
