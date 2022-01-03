@@ -29,7 +29,6 @@ namespace WindowsFormsApp.Data
             this.Diem60 = diem60;
             this.Diemtong = diemtong;
 
-
         }
         public int Id { get => id; set => id = value; }
         public string Tenmon { get => tenmon; set => tenmon = value; }

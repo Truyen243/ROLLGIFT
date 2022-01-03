@@ -47,6 +47,8 @@ namespace WindowsFormsApp
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DataGridView2 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2DataGridView3 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colHoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMaSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,10 +56,9 @@ namespace WindowsFormsApp
             this.colGioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colDiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSoDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mslop = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mskhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.guna2DataGridView3 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView3)).BeginInit();
@@ -95,7 +96,7 @@ namespace WindowsFormsApp
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2DataGridView3);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2DataGridView1);
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 78);
-            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.ShadowDecoration.Parent = this.guna2CustomGradientPanel1;
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1197, 441);
@@ -115,7 +116,7 @@ namespace WindowsFormsApp
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
             this.guna2Button3.Image = global::WindowsFormsApp.Properties.Resources.group;
             this.guna2Button3.Location = new System.Drawing.Point(916, 38);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
@@ -137,7 +138,7 @@ namespace WindowsFormsApp
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
             this.guna2Button4.Image = global::WindowsFormsApp.Properties.Resources._12424851;
             this.guna2Button4.Location = new System.Drawing.Point(916, 122);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
@@ -203,7 +204,7 @@ namespace WindowsFormsApp
             this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.Location = new System.Drawing.Point(33, 122);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
@@ -222,7 +223,7 @@ namespace WindowsFormsApp
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(33, 38);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
@@ -257,6 +258,7 @@ namespace WindowsFormsApp
             this.colGioiTinh,
             this.colDiaChi,
             this.colSoDT,
+            this.Email,
             this.mslop,
             this.mskhoa});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -267,16 +269,15 @@ namespace WindowsFormsApp
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridView2.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2DataGridView2.EnableHeadersVisualStyles = false;
             this.guna2DataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(181)))), ((int)(((byte)(66)))));
-            this.guna2DataGridView2.Location = new System.Drawing.Point(0, 198);
-            this.guna2DataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2DataGridView2.Location = new System.Drawing.Point(4, 187);
+            this.guna2DataGridView2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2DataGridView2.Name = "guna2DataGridView2";
             this.guna2DataGridView2.RowHeadersVisible = false;
             this.guna2DataGridView2.RowHeadersWidth = 51;
             this.guna2DataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView2.Size = new System.Drawing.Size(1197, 243);
+            this.guna2DataGridView2.Size = new System.Drawing.Size(1193, 254);
             this.guna2DataGridView2.TabIndex = 45;
             this.guna2DataGridView2.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -300,75 +301,6 @@ namespace WindowsFormsApp
             this.guna2DataGridView2.ThemeStyle.RowsStyle.Height = 22;
             this.guna2DataGridView2.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView2.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // colID
-            // 
-            this.colID.DataPropertyName = "Id";
-            this.colID.FillWeight = 50F;
-            this.colID.HeaderText = "ID";
-            this.colID.MinimumWidth = 6;
-            this.colID.Name = "colID";
-            // 
-            // colHoTen
-            // 
-            this.colHoTen.DataPropertyName = "Name";
-            this.colHoTen.FillWeight = 150F;
-            this.colHoTen.HeaderText = "Họ Tên";
-            this.colHoTen.MinimumWidth = 6;
-            this.colHoTen.Name = "colHoTen";
-            // 
-            // colMaSV
-            // 
-            this.colMaSV.DataPropertyName = "Mssv";
-            this.colMaSV.HeaderText = "Mã Sinh Viên";
-            this.colMaSV.MinimumWidth = 6;
-            this.colMaSV.Name = "colMaSV";
-            // 
-            // col
-            // 
-            this.col.DataPropertyName = "Ngaysinh";
-            this.col.FillWeight = 80F;
-            this.col.HeaderText = "Ngày Sinh";
-            this.col.MinimumWidth = 6;
-            this.col.Name = "col";
-            // 
-            // colGioiTinh
-            // 
-            this.colGioiTinh.DataPropertyName = "Gioitinh";
-            this.colGioiTinh.FillWeight = 80F;
-            this.colGioiTinh.HeaderText = "Giới Tính";
-            this.colGioiTinh.MinimumWidth = 6;
-            this.colGioiTinh.Name = "colGioiTinh";
-            // 
-            // colDiaChi
-            // 
-            this.colDiaChi.DataPropertyName = "Adress";
-            this.colDiaChi.HeaderText = "Địa Chỉ ";
-            this.colDiaChi.MinimumWidth = 6;
-            this.colDiaChi.Name = "colDiaChi";
-            // 
-            // colSoDT
-            // 
-            this.colSoDT.DataPropertyName = "Phone";
-            this.colSoDT.HeaderText = "Số Điện Thoại";
-            this.colSoDT.MinimumWidth = 6;
-            this.colSoDT.Name = "colSoDT";
-            // 
-            // mslop
-            // 
-            this.mslop.DataPropertyName = "Mslop";
-            this.mslop.HeaderText = "mslop";
-            this.mslop.MinimumWidth = 6;
-            this.mslop.Name = "mslop";
-            this.mslop.Visible = false;
-            // 
-            // mskhoa
-            // 
-            this.mskhoa.DataPropertyName = "Mskhoa";
-            this.mskhoa.HeaderText = "mskhoa";
-            this.mskhoa.MinimumWidth = 6;
-            this.mskhoa.Name = "mskhoa";
-            this.mskhoa.Visible = false;
             // 
             // guna2DataGridView3
             // 
@@ -399,7 +331,7 @@ namespace WindowsFormsApp
             this.guna2DataGridView3.EnableHeadersVisualStyles = false;
             this.guna2DataGridView3.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView3.Location = new System.Drawing.Point(781, 202);
-            this.guna2DataGridView3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2DataGridView3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2DataGridView3.Name = "guna2DataGridView3";
             this.guna2DataGridView3.RowHeadersVisible = false;
             this.guna2DataGridView3.RowHeadersWidth = 51;
@@ -458,7 +390,7 @@ namespace WindowsFormsApp
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(292, 202);
-            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
@@ -488,6 +420,82 @@ namespace WindowsFormsApp
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // colID
+            // 
+            this.colID.DataPropertyName = "Id";
+            this.colID.FillWeight = 50F;
+            this.colID.HeaderText = "ID";
+            this.colID.MinimumWidth = 6;
+            this.colID.Name = "colID";
+            // 
+            // colHoTen
+            // 
+            this.colHoTen.DataPropertyName = "Name";
+            this.colHoTen.FillWeight = 150F;
+            this.colHoTen.HeaderText = "Họ Tên";
+            this.colHoTen.MinimumWidth = 6;
+            this.colHoTen.Name = "colHoTen";
+            // 
+            // colMaSV
+            // 
+            this.colMaSV.DataPropertyName = "Mssv";
+            this.colMaSV.HeaderText = "Mã Sinh Viên";
+            this.colMaSV.MinimumWidth = 6;
+            this.colMaSV.Name = "colMaSV";
+            // 
+            // col
+            // 
+            this.col.DataPropertyName = "Ngaysinh";
+            this.col.FillWeight = 80F;
+            this.col.HeaderText = "Ngày Sinh";
+            this.col.MinimumWidth = 6;
+            this.col.Name = "col";
+            // 
+            // colGioiTinh
+            // 
+            this.colGioiTinh.DataPropertyName = "Gioitinh";
+            this.colGioiTinh.FillWeight = 80F;
+            this.colGioiTinh.HeaderText = "Giới Tính";
+            this.colGioiTinh.MinimumWidth = 6;
+            this.colGioiTinh.Name = "colGioiTinh";
+            // 
+            // colDiaChi
+            // 
+            this.colDiaChi.DataPropertyName = "Adress";
+            this.colDiaChi.HeaderText = "Địa Chỉ ";
+            this.colDiaChi.MinimumWidth = 6;
+            this.colDiaChi.Name = "colDiaChi";
+            // 
+            // colSoDT
+            // 
+            this.colSoDT.DataPropertyName = "Phone";
+            this.colSoDT.HeaderText = "Số Điện Thoại";
+            this.colSoDT.MinimumWidth = 6;
+            this.colSoDT.Name = "colSoDT";
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "Email";
+            this.Email.MinimumWidth = 6;
+            this.Email.Name = "Email";
+            // 
+            // mslop
+            // 
+            this.mslop.DataPropertyName = "Mslop";
+            this.mslop.HeaderText = "mslop";
+            this.mslop.MinimumWidth = 6;
+            this.mslop.Name = "mslop";
+            this.mslop.Visible = false;
+            // 
+            // mskhoa
+            // 
+            this.mskhoa.DataPropertyName = "Mskhoa";
+            this.mskhoa.HeaderText = "mskhoa";
+            this.mskhoa.MinimumWidth = 6;
+            this.mskhoa.Name = "mskhoa";
+            this.mskhoa.Visible = false;
+            // 
             // FormLop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -495,7 +503,7 @@ namespace WindowsFormsApp
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.label3);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormLop";
             this.Size = new System.Drawing.Size(1197, 518);
             this.Load += new System.EventHandler(this.FormKhoa_Load);
@@ -518,6 +526,7 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView2;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private System.Windows.Forms.DataGridViewTextBoxColumn colID;
         private System.Windows.Forms.DataGridViewTextBoxColumn colHoTen;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMaSV;
@@ -525,8 +534,8 @@ namespace WindowsFormsApp
         private System.Windows.Forms.DataGridViewTextBoxColumn colGioiTinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDiaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn colSoDT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn mslop;
         private System.Windows.Forms.DataGridViewTextBoxColumn mskhoa;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
     }
 }

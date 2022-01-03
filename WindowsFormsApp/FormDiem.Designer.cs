@@ -44,14 +44,14 @@ namespace WindowsFormsApp
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenmon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Mamon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.d10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.d30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.d40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.d60 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Masv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.I_diem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tenmon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_diem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_sv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -88,7 +88,7 @@ namespace WindowsFormsApp
             this.guna2Panel1.Controls.Add(this.guna2TextBox1);
             this.guna2Panel1.Controls.Add(this.guna2TextBox3);
             this.guna2Panel1.Location = new System.Drawing.Point(0, 78);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1197, 441);
@@ -109,7 +109,7 @@ namespace WindowsFormsApp
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
             this.guna2Button4.Size = new System.Drawing.Size(167, 46);
-            this.guna2Button4.TabIndex = 44;
+            this.guna2Button4.TabIndex = 2;
             this.guna2Button4.Text = "Update";
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
@@ -129,7 +129,7 @@ namespace WindowsFormsApp
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
             this.guna2Button3.Size = new System.Drawing.Size(167, 46);
-            this.guna2Button3.TabIndex = 43;
+            this.guna2Button3.TabIndex = 3;
             this.guna2Button3.Text = "Delete";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
@@ -150,14 +150,14 @@ namespace WindowsFormsApp
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(167, 46);
-            this.guna2Button2.TabIndex = 42;
+            this.guna2Button2.TabIndex = 4;
             this.guna2Button2.Text = "File Excel";
             this.guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2DataGridView1
             // 
-            this.guna2DataGridView1.AllowUserToOrderColumns = true;
+            this.guna2DataGridView1.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -175,14 +175,14 @@ namespace WindowsFormsApp
             this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.guna2DataGridView1.ColumnHeadersHeight = 27;
             this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Id,
-            this.tenmon,
+            this.Mamon,
             this.d10,
             this.d30,
-            this.d40,
+            this.d60,
             this.dtong,
-            this.Masv,
-            this.I_diem});
+            this.Tenmon,
+            this.ID_diem,
+            this.ID_sv});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -334,7 +334,7 @@ namespace WindowsFormsApp
             this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
             this.guna2TextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(129, 98);
+            this.guna2TextBox3.Location = new System.Drawing.Point(196, 98);
             this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
@@ -342,67 +342,65 @@ namespace WindowsFormsApp
             this.guna2TextBox3.SelectedText = "";
             this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
             this.guna2TextBox3.Size = new System.Drawing.Size(229, 41);
-            this.guna2TextBox3.TabIndex = 38;
+            this.guna2TextBox3.TabIndex = 1;
             // 
-            // Id
+            // Mamon
             // 
-            this.Id.DataPropertyName = "Mamonhoc";
-            this.Id.HeaderText = "Mã Môn";
-            this.Id.MinimumWidth = 6;
-            this.Id.Name = "Id";
-            this.Id.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // tenmon
-            // 
-            this.tenmon.DataPropertyName = "Tenmon";
-            this.tenmon.HeaderText = "Tên Môn";
-            this.tenmon.MinimumWidth = 6;
-            this.tenmon.Name = "tenmon";
-            this.tenmon.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Mamon.DataPropertyName = "Mamonhoc";
+            this.Mamon.HeaderText = "Id Môn Học";
+            this.Mamon.MinimumWidth = 6;
+            this.Mamon.Name = "Mamon";
             // 
             // d10
             // 
             this.d10.DataPropertyName = "Diem10";
-            this.d10.HeaderText = "Điểm 10";
+            this.d10.HeaderText = "Điểm 10%";
             this.d10.MinimumWidth = 6;
             this.d10.Name = "d10";
             // 
             // d30
             // 
             this.d30.DataPropertyName = "Diem30";
-            this.d30.HeaderText = "Điểm 30";
+            this.d30.HeaderText = "Điểm 30%";
             this.d30.MinimumWidth = 6;
             this.d30.Name = "d30";
             // 
-            // d40
+            // d60
             // 
-            this.d40.DataPropertyName = "Diem60";
-            this.d40.HeaderText = "Điểm 60";
-            this.d40.MinimumWidth = 6;
-            this.d40.Name = "d40";
+            this.d60.DataPropertyName = "Diem60";
+            this.d60.HeaderText = "Điểm 60%";
+            this.d60.MinimumWidth = 6;
+            this.d60.Name = "d60";
             // 
             // dtong
             // 
             this.dtong.DataPropertyName = "Diemtong";
-            this.dtong.HeaderText = "Điểm tổng";
+            this.dtong.HeaderText = "Điểm Tổng";
             this.dtong.MinimumWidth = 6;
             this.dtong.Name = "dtong";
             // 
-            // Masv
+            // Tenmon
             // 
-            this.Masv.DataPropertyName = "Masv";
-            this.Masv.HeaderText = "ID sv";
-            this.Masv.MinimumWidth = 6;
-            this.Masv.Name = "Masv";
-            this.Masv.Visible = false;
+            this.Tenmon.DataPropertyName = "Tenmon";
+            this.Tenmon.HeaderText = "Môn Học";
+            this.Tenmon.MinimumWidth = 6;
+            this.Tenmon.Name = "Tenmon";
             // 
-            // I_diem
+            // ID_diem
             // 
-            this.I_diem.DataPropertyName = "Id";
-            this.I_diem.HeaderText = "ID_diem";
-            this.I_diem.MinimumWidth = 6;
-            this.I_diem.Name = "I_diem";
-            this.I_diem.Visible = false;
+            this.ID_diem.DataPropertyName = "Id";
+            this.ID_diem.HeaderText = "ID_Diêm";
+            this.ID_diem.MinimumWidth = 6;
+            this.ID_diem.Name = "ID_diem";
+            this.ID_diem.Visible = false;
+            // 
+            // ID_sv
+            // 
+            this.ID_sv.DataPropertyName = "Masv";
+            this.ID_sv.HeaderText = "id_sv";
+            this.ID_sv.MinimumWidth = 6;
+            this.ID_sv.Name = "ID_sv";
+            this.ID_sv.Visible = false;
             // 
             // FormDiem
             // 
@@ -411,7 +409,7 @@ namespace WindowsFormsApp
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2Panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormDiem";
             this.Size = new System.Drawing.Size(1197, 518);
             this.guna2Panel1.ResumeLayout(false);
@@ -434,13 +432,13 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenmon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Mamon;
         private System.Windows.Forms.DataGridViewTextBoxColumn d10;
         private System.Windows.Forms.DataGridViewTextBoxColumn d30;
-        private System.Windows.Forms.DataGridViewTextBoxColumn d40;
+        private System.Windows.Forms.DataGridViewTextBoxColumn d60;
         private System.Windows.Forms.DataGridViewTextBoxColumn dtong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Masv;
-        private System.Windows.Forms.DataGridViewTextBoxColumn I_diem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tenmon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_diem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_sv;
     }
 }
