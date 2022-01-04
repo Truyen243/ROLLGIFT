@@ -438,7 +438,7 @@ namespace WindowsFormsApp
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormThemLop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormThemLop";
+            this.Text = "Quản Lý Sinh Viên";
             this.Load += new System.EventHandler(this.FormThemLop_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

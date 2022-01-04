@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RollGift", "WindowFrom\Roll
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryClass", "ClassLibrary1\LibraryClass.csproj", "{8C37AE80-F84D-4A72-B7D7-C55451701DB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp", "WindowsFormsApp\WindowsFormsApp.csproj", "{5C1CECAD-2C29-4BA7-9CBE-03CCB7338948}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLySinhVien", "WindowsFormsApp\QuanLySinhVien.csproj", "{5C1CECAD-2C29-4BA7-9CBE-03CCB7338948}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

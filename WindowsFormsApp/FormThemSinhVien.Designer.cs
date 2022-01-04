@@ -441,7 +441,7 @@ namespace WindowsFormsApp
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormThemSinhVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormThemSinhVien";
+            this.Text = "Quản Lý Sinh Viên";
             this.guna2GroupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 

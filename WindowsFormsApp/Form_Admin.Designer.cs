@@ -307,7 +307,7 @@ namespace WindowsFormsApp
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form_Admin";
+            this.Text = "Quản Lý Sinh Viên";
             this.guna2GroupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 

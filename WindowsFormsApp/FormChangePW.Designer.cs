@@ -245,7 +245,7 @@ namespace WindowsFormsApp
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormChangePW";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormChangePW";
+            this.Text = "Quản Lý Sinh Viên";
             this.guna2GroupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 

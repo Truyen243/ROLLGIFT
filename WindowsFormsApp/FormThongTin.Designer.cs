@@ -30,7 +30,7 @@ namespace WindowsFormsApp
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation5 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormThongTin));
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
@@ -38,6 +38,10 @@ namespace WindowsFormsApp
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.gunaLabel11 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel10 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
@@ -47,10 +51,6 @@ namespace WindowsFormsApp
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel10 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel11 = new Guna.UI.WinForms.GunaLabel();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -133,6 +133,53 @@ namespace WindowsFormsApp
             this.guna2Panel2.Size = new System.Drawing.Size(810, 372);
             this.guna2Panel2.TabIndex = 9;
             // 
+            // gunaLabel11
+            // 
+            this.guna2Transition1.SetDecoration(this.gunaLabel11, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.gunaLabel11.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel11.ForeColor = System.Drawing.Color.Gray;
+            this.gunaLabel11.Location = new System.Drawing.Point(75, 304);
+            this.gunaLabel11.Name = "gunaLabel11";
+            this.gunaLabel11.Size = new System.Drawing.Size(653, 53);
+            this.gunaLabel11.TabIndex = 8;
+            this.gunaLabel11.Text = "- Cho phép người sử dụng thêm một lớp mới trong một khoa cố định bằng và có thể x" +
+    "em được danh các sinh viên trong lớp đã được tạo từ trước.\r\n\r\n";
+            // 
+            // gunaLabel10
+            // 
+            this.guna2Transition1.SetDecoration(this.gunaLabel10, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.gunaLabel10.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel10.ForeColor = System.Drawing.Color.Gray;
+            this.gunaLabel10.Location = new System.Drawing.Point(75, 207);
+            this.gunaLabel10.Name = "gunaLabel10";
+            this.gunaLabel10.Size = new System.Drawing.Size(653, 74);
+            this.gunaLabel10.TabIndex = 7;
+            this.gunaLabel10.Text = resources.GetString("gunaLabel10.Text");
+            // 
+            // gunaLabel9
+            // 
+            this.guna2Transition1.SetDecoration(this.gunaLabel9, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.gunaLabel9.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel9.ForeColor = System.Drawing.Color.Gray;
+            this.gunaLabel9.Location = new System.Drawing.Point(75, 113);
+            this.gunaLabel9.Name = "gunaLabel9";
+            this.gunaLabel9.Size = new System.Drawing.Size(653, 71);
+            this.gunaLabel9.TabIndex = 6;
+            this.gunaLabel9.Text = resources.GetString("gunaLabel9.Text");
+            // 
+            // gunaLabel4
+            // 
+            this.guna2Transition1.SetDecoration(this.gunaLabel4, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.ForeColor = System.Drawing.Color.Gray;
+            this.gunaLabel4.Location = new System.Drawing.Point(75, 37);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(653, 53);
+            this.gunaLabel4.TabIndex = 5;
+            this.gunaLabel4.Text = "- Cho phép người sử dụng thêm một sinh viên mới và có thể hoàn toàn thay đổi thôn" +
+    "g tin cho sinh viên ngoại chừ mã sinh viên sẻ được cấp cố định không thể thay đổ" +
+    "i.";
+            // 
             // gunaLabel8
             // 
             this.guna2Transition1.SetDecoration(this.gunaLabel8, Guna.UI2.AnimatorNS.DecorationType.None);
@@ -188,22 +235,22 @@ namespace WindowsFormsApp
             // guna2Transition1
             // 
             this.guna2Transition1.Cursor = null;
-            animation5.AnimateOnlyDifferences = true;
-            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
-            animation5.LeafCoeff = 0F;
-            animation5.MaxTime = 1F;
-            animation5.MinTime = 0F;
-            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
-            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
-            animation5.MosaicSize = 0;
-            animation5.Padding = new System.Windows.Forms.Padding(0);
-            animation5.RotateCoeff = 0F;
-            animation5.RotateLimit = 0F;
-            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
-            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
-            animation5.TimeCoeff = 0F;
-            animation5.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation5;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
             // 
             // guna2ControlBox2
             // 
@@ -242,53 +289,6 @@ namespace WindowsFormsApp
             this.guna2Panel4.Size = new System.Drawing.Size(810, 32);
             this.guna2Panel4.TabIndex = 2;
             // 
-            // gunaLabel4
-            // 
-            this.guna2Transition1.SetDecoration(this.gunaLabel4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel4.Location = new System.Drawing.Point(75, 37);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(653, 53);
-            this.gunaLabel4.TabIndex = 5;
-            this.gunaLabel4.Text = "- Cho phép người sử dụng thêm một sinh viên mới và có thể hoàn toàn thay đổi thôn" +
-    "g tin cho sinh viên ngoại chừ mã sinh viên sẻ được cấp cố định không thể thay đổ" +
-    "i.";
-            // 
-            // gunaLabel9
-            // 
-            this.guna2Transition1.SetDecoration(this.gunaLabel9, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.gunaLabel9.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel9.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel9.Location = new System.Drawing.Point(75, 113);
-            this.gunaLabel9.Name = "gunaLabel9";
-            this.gunaLabel9.Size = new System.Drawing.Size(653, 71);
-            this.gunaLabel9.TabIndex = 6;
-            this.gunaLabel9.Text = resources.GetString("gunaLabel9.Text");
-            // 
-            // gunaLabel10
-            // 
-            this.guna2Transition1.SetDecoration(this.gunaLabel10, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.gunaLabel10.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel10.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel10.Location = new System.Drawing.Point(75, 207);
-            this.gunaLabel10.Name = "gunaLabel10";
-            this.gunaLabel10.Size = new System.Drawing.Size(653, 74);
-            this.gunaLabel10.TabIndex = 7;
-            this.gunaLabel10.Text = resources.GetString("gunaLabel10.Text");
-            // 
-            // gunaLabel11
-            // 
-            this.guna2Transition1.SetDecoration(this.gunaLabel11, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.gunaLabel11.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel11.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel11.Location = new System.Drawing.Point(75, 304);
-            this.gunaLabel11.Name = "gunaLabel11";
-            this.gunaLabel11.Size = new System.Drawing.Size(653, 53);
-            this.gunaLabel11.TabIndex = 8;
-            this.gunaLabel11.Text = "- Cho phép người sử dụng thêm một lớp mới trong một khoa cố định bằng và có thể x" +
-    "em được danh các sinh viên trong lớp đã được tạo từ trước.\r\n\r\n";
-            // 
             // FormThongTin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -304,7 +304,7 @@ namespace WindowsFormsApp
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormThongTin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormThongTin";
+            this.Text = "Quản Lý Sinh Viên";
             this.Load += new System.EventHandler(this.FormThongTin_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);

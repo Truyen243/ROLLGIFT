@@ -563,7 +563,7 @@ namespace WindowsFormsApp
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormThemMonHoc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormThemKhoa";
+            this.Text = "Quản Lý Sinh Viên";
             this.Load += new System.EventHandler(this.FormThemMonHoc_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
