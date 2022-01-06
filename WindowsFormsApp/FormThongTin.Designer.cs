@@ -143,7 +143,8 @@ namespace WindowsFormsApp
             this.gunaLabel11.Size = new System.Drawing.Size(653, 53);
             this.gunaLabel11.TabIndex = 8;
             this.gunaLabel11.Text = "- Cho phép người sử dụng thêm một lớp mới trong một khoa cố định bằng và có thể x" +
-    "em được danh các sinh viên trong lớp đã được tạo từ trước.\r\n\r\n";
+    "em được danh các sinh viên trong lớp đã được tạo từ trước, đặc biệt danh sách lớ" +
+    "p có thể xuất file excel.\r\n\r\n";
             // 
             // gunaLabel10
             // 

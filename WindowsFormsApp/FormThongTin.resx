@@ -159,7 +159,7 @@
     <value>17, 17</value>
   </metadata>
   <data name="gunaLabel10.Text" xml:space="preserve">
-    <value>- Cho phép người sử dụng xem được điểm của sinh viên bằng cách nhập mã sinh viên và tìm kiếm kết quả sẻ được trả về nagy bên dưới, ngoài ra còn có chức năng sửa thêm điểm và sửa điểm cho sinh viên, đặc biệt bảng sinh điểm có thể xuất ra file excel.
+    <value>- Cho phép người sử dụng xem được điểm của sinh viên bằng cách nhập mã sinh viên và tìm kiếm kết quả sẻ được trả về ngay bên dưới, ngoài ra còn có chức năng sửa thêm điểm và sửa điểm cho sinh viên, đặc biệt bảng sinh điểm có thể xuất ra file excel.
  
  </value>
   </data>

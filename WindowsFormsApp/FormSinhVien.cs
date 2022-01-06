@@ -73,37 +73,34 @@ namespace WindowsFormsApp
             Form_update up = new Form_update();
             up.Show();
         }
-
-        private void guna2Button4_Click(object sender, EventArgs e)
+      
+        private void guna2Button4_Click_1(object sender, EventArgs e)
         {
+            try
+            {
+                //Đối tường SaveFileDialog cho phép hiển thị một hộp thoại saveFile. Hộp thoại này cho phép nhập tên file và nơi lưu file Excel 
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                //Hien thi thu muc khoi tao
+                saveFileDialog.InitialDirectory = @"d:\";
+                //xác định vị trí có được nhớ lại khi mở tiếp hộp thoại này hay không 
+                saveFileDialog.RestoreDirectory = true;
 
-           
+                saveFileDialog.Filter = "Excel files (*.xls)|*.xls|All files (*.*)|*.*";//Lọc loại file
+                saveFileDialog.DefaultExt = "xls";//Phần mở rộng mặc định
+                saveFileDialog.AddExtension = true;
 
-                try
+                saveFileDialog.Title = "Lưu file Excel";//Tiêu đề của hộp thoại
+                saveFileDialog.FileName = "Danh sách sinh viên được chọn "; //{0}-{1:00}-{2:00}-{3:00}", DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Minute)//trungthuong2021101801
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)//kiểm tra nếu nhấn vào button save trên hộp thoại
                 {
-                    //Đối tường SaveFileDialog cho phép hiển thị một hộp thoại saveFile. Hộp thoại này cho phép nhập tên file và nơi lưu file Excel 
-                    SaveFileDialog saveFileDialog = new SaveFileDialog();
-                    //Hien thi thu muc khoi tao
-                    saveFileDialog.InitialDirectory = @"d:\";
-                    //xác định vị trí có được nhớ lại khi mở tiếp hộp thoại này hay không 
-                    saveFileDialog.RestoreDirectory = true;
-
-                    saveFileDialog.Filter = "Excel files (*.xls)|*.xls|All files (*.*)|*.*";//Lọc loại file
-                    saveFileDialog.DefaultExt = "xls";//Phần mở rộng mặc định
-                    saveFileDialog.AddExtension = true;
-
-                    saveFileDialog.Title = "Lưu file Excel";//Tiêu đề của hộp thoại
-                    saveFileDialog.FileName = "Danh sách sinh viên được chọn "; //{0}-{1:00}-{2:00}-{3:00}", DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Minute)//trungthuong2021101801
-                    if (saveFileDialog.ShowDialog() == DialogResult.OK)//kiểm tra nếu nhấn vào button save trên hộp thoại
-                    {
-                        XuatFileExcel.XuatExcel(saveFileDialog.FileName, guna2DataGridView1, "Danh sách học sinh ", " " );
-                        MessageBox.Show("Xuất file thành công");
-                    }
+                    XuatFileExcel.XuatExcel(saveFileDialog.FileName, guna2DataGridView1, "Danh sách học sinh ", " ");
+                    MessageBox.Show("Xuất file thành công");
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Có lỗi: ", ex.Message);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Có lỗi: ", ex.Message);
+            }
 
         }
     }
