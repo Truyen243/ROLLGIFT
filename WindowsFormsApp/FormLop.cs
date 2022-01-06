@@ -173,6 +173,7 @@ namespace WindowsFormsApp
                     BindingSource bindingSource = new BindingSource();
                     bindingSource.DataSource = lst;
                     guna2DataGridView2.DataSource = bindingSource;
+                    guna2TextBox1.Text = lst.Count.ToString();
                 }
             }
         }
@@ -198,7 +199,7 @@ namespace WindowsFormsApp
                 saveFileDialog.FileName = "Danh sách sinh viên lớp " + guna2ComboBox2.SelectedItem.ToString(); //{0}-{1:00}-{2:00}-{3:00}", DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Minute)//trungthuong2021101801
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)//kiểm tra nếu nhấn vào button save trên hộp thoại
                 {
-                    XuatFileExcel.XuatExcel(saveFileDialog.FileName, guna2DataGridView2, "Danh sách học sinh lớp" + guna2ComboBox2.SelectedItem.ToString(), "Khoa " + guna2ComboBox1.SelectedItem.ToString());
+                    XuatFileExcel.XuatExcel(saveFileDialog.FileName, guna2DataGridView2, "Danh sách học sinh lớp" + guna2ComboBox2.SelectedItem.ToString() + "\t Sĩ số: \t"+ guna2TextBox1.Text, "Khoa " + guna2ComboBox1.SelectedItem.ToString());
                     MessageBox.Show("Xuất file thành công");
                 }
             }

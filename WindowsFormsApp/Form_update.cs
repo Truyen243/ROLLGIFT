@@ -36,7 +36,7 @@ namespace WindowsFormsApp
                 if (Int32.Parse(lop.Khoa_id) == mskhoa)
                 {
                     guna2ComboBox2.Items.Add(lop.ten);
-                   lstma.Add(lop.khoa_id);
+                    lstma.Add(lop.khoa_id);
                     
                 }
             }
@@ -138,7 +138,12 @@ namespace WindowsFormsApp
                             guna2ComboBox1.SelectedIndex = guna2ComboBox1.FindStringExact(khoa.ten);
                         }
                     }
-                    guna2ComboBox2.SelectedIndex = guna2ComboBox2.FindStringExact(sv.mslop);
+                    foreach (Lop lp in Cls_Main.lopDowStc.lstlop)
+                    {
+                        if (lp.malop == sv.mslop)
+                        guna2ComboBox2.SelectedIndex = guna2ComboBox2.FindStringExact(lp.ten);
+                    }    
+                    
 
                     /*public int id;
                     public string name;

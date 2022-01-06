@@ -87,9 +87,10 @@ namespace WindowsFormsApp
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2GroupBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(815, 405);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(1087, 498);
             this.guna2GroupBox1.TabIndex = 52;
             this.guna2GroupBox1.Text = "Thêm Lớp";
             // 
@@ -108,14 +109,14 @@ namespace WindowsFormsApp
             this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(552, 115);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(384, 1043, 384, 1043);
+            this.guna2TextBox3.Location = new System.Drawing.Point(736, 142);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(512, 1284, 512, 1284);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
             this.guna2TextBox3.PlaceholderText = "";
             this.guna2TextBox3.SelectedText = "";
             this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(220, 36);
+            this.guna2TextBox3.Size = new System.Drawing.Size(293, 44);
             this.guna2TextBox3.TabIndex = 8;
             // 
             // guna2TextBox5
@@ -133,14 +134,14 @@ namespace WindowsFormsApp
             this.guna2TextBox5.FocusedState.Parent = this.guna2TextBox5;
             this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Location = new System.Drawing.Point(552, 174);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(384, 1043, 384, 1043);
+            this.guna2TextBox5.Location = new System.Drawing.Point(736, 214);
+            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(512, 1284, 512, 1284);
             this.guna2TextBox5.Name = "guna2TextBox5";
             this.guna2TextBox5.PasswordChar = '\0';
             this.guna2TextBox5.PlaceholderText = "";
             this.guna2TextBox5.SelectedText = "";
             this.guna2TextBox5.ShadowDecoration.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Size = new System.Drawing.Size(220, 36);
+            this.guna2TextBox5.Size = new System.Drawing.Size(293, 44);
             this.guna2TextBox5.TabIndex = 9;
             // 
             // guna2TextBox1
@@ -158,14 +159,14 @@ namespace WindowsFormsApp
             this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(136, 234);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(384, 1043, 384, 1043);
+            this.guna2TextBox1.Location = new System.Drawing.Point(181, 288);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(512, 1284, 512, 1284);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(220, 36);
+            this.guna2TextBox1.Size = new System.Drawing.Size(293, 44);
             this.guna2TextBox1.TabIndex = 4;
             // 
             // gunaLabel4
@@ -173,9 +174,10 @@ namespace WindowsFormsApp
             this.gunaLabel4.BackColor = System.Drawing.Color.White;
             this.gunaLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel4.Location = new System.Drawing.Point(439, 174);
+            this.gunaLabel4.Location = new System.Drawing.Point(585, 214);
+            this.gunaLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(99, 36);
+            this.gunaLabel4.Size = new System.Drawing.Size(132, 44);
             this.gunaLabel4.TabIndex = 61;
             this.gunaLabel4.Text = "Mã Lớp";
             this.gunaLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -183,9 +185,10 @@ namespace WindowsFormsApp
             // guna2VSeparator1
             // 
             this.guna2VSeparator1.BackColor = System.Drawing.Color.White;
-            this.guna2VSeparator1.Location = new System.Drawing.Point(401, 60);
+            this.guna2VSeparator1.Location = new System.Drawing.Point(535, 74);
+            this.guna2VSeparator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2VSeparator1.Name = "guna2VSeparator1";
-            this.guna2VSeparator1.Size = new System.Drawing.Size(9, 210);
+            this.guna2VSeparator1.Size = new System.Drawing.Size(12, 258);
             this.guna2VSeparator1.TabIndex = 59;
             // 
             // guna2Button4
@@ -198,10 +201,11 @@ namespace WindowsFormsApp
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(641, 316);
+            this.guna2Button4.Location = new System.Drawing.Point(855, 389);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(131, 36);
+            this.guna2Button4.Size = new System.Drawing.Size(175, 44);
             this.guna2Button4.TabIndex = 11;
             this.guna2Button4.Text = "Thoát";
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
@@ -214,10 +218,11 @@ namespace WindowsFormsApp
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(443, 316);
+            this.guna2Button3.Location = new System.Drawing.Point(591, 389);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(131, 36);
+            this.guna2Button3.Size = new System.Drawing.Size(175, 44);
             this.guna2Button3.TabIndex = 10;
             this.guna2Button3.Text = "Thêm Lớp";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
@@ -230,10 +235,11 @@ namespace WindowsFormsApp
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(27, 316);
+            this.guna2Button2.Location = new System.Drawing.Point(36, 389);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(131, 36);
+            this.guna2Button2.Size = new System.Drawing.Size(175, 44);
             this.guna2Button2.TabIndex = 5;
             this.guna2Button2.Text = "Update";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
@@ -248,12 +254,14 @@ namespace WindowsFormsApp
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(225, 316);
+            this.guna2Button1.Location = new System.Drawing.Point(300, 389);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(131, 36);
+            this.guna2Button1.Size = new System.Drawing.Size(175, 44);
             this.guna2Button1.TabIndex = 6;
             this.guna2Button1.Text = "Xóa";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2TextBox4
             // 
@@ -270,14 +278,14 @@ namespace WindowsFormsApp
             this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(136, 174);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(192, 452, 192, 452);
+            this.guna2TextBox4.Location = new System.Drawing.Point(181, 214);
+            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(256, 556, 256, 556);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '\0';
             this.guna2TextBox4.PlaceholderText = "";
             this.guna2TextBox4.SelectedText = "";
             this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(220, 36);
+            this.guna2TextBox4.Size = new System.Drawing.Size(293, 44);
             this.guna2TextBox4.TabIndex = 3;
             this.guna2TextBox4.TextChanged += new System.EventHandler(this.guna2TextBox4_TextChanged);
             // 
@@ -297,11 +305,11 @@ namespace WindowsFormsApp
             this.guna2ComboBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.guna2ComboBox1.ItemHeight = 30;
             this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(136, 115);
-            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(181, 142);
+            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(220, 36);
+            this.guna2ComboBox1.Size = new System.Drawing.Size(292, 36);
             this.guna2ComboBox1.TabIndex = 2;
             this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
@@ -321,11 +329,11 @@ namespace WindowsFormsApp
             this.guna2ComboBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.guna2ComboBox3.ItemHeight = 30;
             this.guna2ComboBox3.ItemsAppearance.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Location = new System.Drawing.Point(552, 60);
-            this.guna2ComboBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ComboBox3.Location = new System.Drawing.Point(736, 74);
+            this.guna2ComboBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ComboBox3.Name = "guna2ComboBox3";
             this.guna2ComboBox3.ShadowDecoration.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Size = new System.Drawing.Size(220, 36);
+            this.guna2ComboBox3.Size = new System.Drawing.Size(292, 36);
             this.guna2ComboBox3.TabIndex = 7;
             this.guna2ComboBox3.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox3_SelectedIndexChanged);
             this.guna2ComboBox3.Click += new System.EventHandler(this.guna2ComboBox3_Click);
@@ -346,11 +354,11 @@ namespace WindowsFormsApp
             this.guna2ComboBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.guna2ComboBox2.ItemHeight = 30;
             this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(136, 60);
-            this.guna2ComboBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ComboBox2.Location = new System.Drawing.Point(181, 74);
+            this.guna2ComboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ComboBox2.Name = "guna2ComboBox2";
             this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(220, 36);
+            this.guna2ComboBox2.Size = new System.Drawing.Size(292, 36);
             this.guna2ComboBox2.TabIndex = 1;
             this.guna2ComboBox2.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
             this.guna2ComboBox2.Click += new System.EventHandler(this.guna2ComboBox2_Click);
@@ -360,9 +368,10 @@ namespace WindowsFormsApp
             this.gunaLabel9.BackColor = System.Drawing.Color.White;
             this.gunaLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel9.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel9.Location = new System.Drawing.Point(23, 234);
+            this.gunaLabel9.Location = new System.Drawing.Point(31, 288);
+            this.gunaLabel9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel9.Name = "gunaLabel9";
-            this.gunaLabel9.Size = new System.Drawing.Size(104, 36);
+            this.gunaLabel9.Size = new System.Drawing.Size(139, 44);
             this.gunaLabel9.TabIndex = 49;
             this.gunaLabel9.Text = "Tên Lớp";
             this.gunaLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -372,9 +381,10 @@ namespace WindowsFormsApp
             this.gunaLabel5.BackColor = System.Drawing.Color.White;
             this.gunaLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel5.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel5.Location = new System.Drawing.Point(23, 174);
+            this.gunaLabel5.Location = new System.Drawing.Point(31, 214);
+            this.gunaLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(99, 36);
+            this.gunaLabel5.Size = new System.Drawing.Size(132, 44);
             this.gunaLabel5.TabIndex = 49;
             this.gunaLabel5.Text = "Mã Lớp";
             this.gunaLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -385,9 +395,10 @@ namespace WindowsFormsApp
             this.gunaLabel7.BackColor = System.Drawing.Color.White;
             this.gunaLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel7.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel7.Location = new System.Drawing.Point(434, 115);
+            this.gunaLabel7.Location = new System.Drawing.Point(579, 142);
+            this.gunaLabel7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(104, 36);
+            this.gunaLabel7.Size = new System.Drawing.Size(139, 44);
             this.gunaLabel7.TabIndex = 49;
             this.gunaLabel7.Text = "Tên Lớp";
             this.gunaLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -397,9 +408,10 @@ namespace WindowsFormsApp
             this.gunaLabel3.BackColor = System.Drawing.Color.White;
             this.gunaLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel3.Location = new System.Drawing.Point(439, 60);
+            this.gunaLabel3.Location = new System.Drawing.Point(585, 74);
+            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(99, 36);
+            this.gunaLabel3.Size = new System.Drawing.Size(132, 44);
             this.gunaLabel3.TabIndex = 49;
             this.gunaLabel3.Text = "Khoa";
             this.gunaLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -409,9 +421,10 @@ namespace WindowsFormsApp
             this.gunaLabel2.BackColor = System.Drawing.Color.White;
             this.gunaLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel2.Location = new System.Drawing.Point(23, 115);
+            this.gunaLabel2.Location = new System.Drawing.Point(31, 142);
+            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(99, 36);
+            this.gunaLabel2.Size = new System.Drawing.Size(132, 44);
             this.gunaLabel2.TabIndex = 49;
             this.gunaLabel2.Text = "Lớp";
             this.gunaLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -421,21 +434,23 @@ namespace WindowsFormsApp
             this.gunaLabel1.BackColor = System.Drawing.Color.White;
             this.gunaLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel1.Location = new System.Drawing.Point(23, 60);
+            this.gunaLabel1.Location = new System.Drawing.Point(31, 74);
+            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(99, 36);
+            this.gunaLabel1.Size = new System.Drawing.Size(132, 44);
             this.gunaLabel1.TabIndex = 49;
             this.gunaLabel1.Text = "Khoa";
             this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FormThemLop
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(815, 405);
+            this.ClientSize = new System.Drawing.Size(1087, 498);
             this.Controls.Add(this.guna2GroupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormThemLop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Sinh Viên";

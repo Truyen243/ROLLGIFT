@@ -36,20 +36,24 @@ namespace WindowsFormsApp
         List<string> lstma = new List<string>();
         private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Cls_Main.lopDowStc.getLop();
-            int mskhoa = Cls_Main.khoaDowStc.lstKhoa[guna2ComboBox2.SelectedIndex].id;
-
-            guna2ComboBox1.Items.Clear();
-            lstma.Clear();
-            foreach (Lop lop in Cls_Main.lopDowStc.lstlop)
+            if(guna2ComboBox2.SelectedIndex!=-1)
             {
+                Cls_Main.lopDowStc.getLop();
+                int mskhoa = Cls_Main.khoaDowStc.lstKhoa[guna2ComboBox2.SelectedIndex].id;
 
-                if (Int32.Parse(lop.Khoa_id) == mskhoa)
+                guna2ComboBox1.Items.Clear();
+                lstma.Clear();
+                foreach (Lop lop in Cls_Main.lopDowStc.lstlop)
                 {
-                    guna2ComboBox1.Items.Add(lop.ten);
-                    lstma.Add(lop.khoa_id);
+
+                    if (Int32.Parse(lop.Khoa_id) == mskhoa)
+                    {
+                        guna2ComboBox1.Items.Add(lop.ten);
+                        lstma.Add(lop.khoa_id);
+                    }
                 }
-            }
+            }    
+            
         }
 
         private void guna2ComboBox3_SelectedIndexChanged(object sender, EventArgs e)
@@ -76,15 +80,19 @@ namespace WindowsFormsApp
 
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            foreach (Lop lop in Cls_Main.lopDowStc.lstlop)
+            if(guna2ComboBox1.SelectedIndex!=-1)
             {
-
-                if (lop.ten == guna2ComboBox1.SelectedItem.ToString())
+                foreach (Lop lop in Cls_Main.lopDowStc.lstlop)
                 {
-                    guna2TextBox4.Text = lop.malop;
-                    guna2TextBox1.Text = lop.ten;
+
+                    if (lop.ten == guna2ComboBox1.SelectedItem.ToString())
+                    {
+                        guna2TextBox4.Text = lop.malop;
+                        guna2TextBox1.Text = lop.ten;
+                    }
                 }
-            }
+            }    
+
         }
 
         private void guna2ComboBox3_Click(object sender, EventArgs e)
@@ -146,6 +154,14 @@ namespace WindowsFormsApp
                     MessageBox.Show("Error");
                 }
             }
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            guna2ComboBox2.SelectedIndex = -1;
+            guna2ComboBox1.SelectedIndex = -1;
+            guna2TextBox4.Text = "";
+            guna2TextBox1.Text = "";
         }
     }
 }
