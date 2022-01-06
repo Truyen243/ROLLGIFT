@@ -204,7 +204,7 @@ namespace WindowsFormsApp
             this.textBox4.Margin = new System.Windows.Forms.Padding(12, 16, 12, 16);
             this.textBox4.Name = "textBox4";
             this.textBox4.PasswordChar = '\0';
-            this.textBox4.PlaceholderText = "";
+            this.textBox4.PlaceholderText = "dd/mm/yyyy";
             this.textBox4.SelectedText = "";
             this.textBox4.ShadowDecoration.Parent = this.textBox4;
             this.textBox4.Size = new System.Drawing.Size(278, 39);
@@ -466,9 +466,9 @@ namespace WindowsFormsApp
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
         private Guna.UI2.WinForms.Guna2TextBox textBox3;
         private Guna.UI2.WinForms.Guna2TextBox textBox5;
-        private Guna.UI2.WinForms.Guna2TextBox textBox4;
         private Guna.UI2.WinForms.Guna2TextBox textBox2;
         private Guna.UI2.WinForms.Guna2TextBox textBox6;
         private Guna.UI2.WinForms.Guna2Button gunaButton1;
+        public Guna.UI2.WinForms.Guna2TextBox textBox4;
     }
 }

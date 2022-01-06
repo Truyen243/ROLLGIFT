@@ -168,7 +168,7 @@ namespace WindowsFormsApp
             this.textBox15.Margin = new System.Windows.Forms.Padding(3072, 12819, 3072, 12819);
             this.textBox15.Name = "textBox15";
             this.textBox15.PasswordChar = '\0';
-            this.textBox15.PlaceholderText = "";
+            this.textBox15.PlaceholderText = "dd/mm/yyyy";
             this.textBox15.ReadOnly = true;
             this.textBox15.SelectedText = "";
             this.textBox15.ShadowDecoration.Parent = this.textBox15;
