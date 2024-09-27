@@ -30,9 +30,9 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_quaysomayman));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_quaysomayman));
             this.label1 = new System.Windows.Forms.Label();
             this.cbGiai = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,13 +43,14 @@
             this.colTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPhongban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lbl1 = new System.Windows.Forms.Label();
-            this.lbl2 = new System.Windows.Forms.Label();
-            this.lbl3 = new System.Windows.Forms.Label();
-            this.lbl5 = new System.Windows.Forms.Label();
             this.lbl4 = new System.Windows.Forms.Label();
+            this.lbl5 = new System.Windows.Forms.Label();
+            this.lbl3 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
             this.btQuay = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.lblErr = new System.Windows.Forms.ToolStripButton();
             this.dgtDanhsachtrunggiai = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,7 +60,6 @@
             this.colTenGiai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lblErr = new System.Windows.Forms.ToolStripButton();
             this.btLayDanhSach = new System.Windows.Forms.Button();
             this.btInDanhSach = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -91,7 +91,7 @@
             this.cbGiai.FormattingEnabled = true;
             this.cbGiai.Location = new System.Drawing.Point(133, 47);
             this.cbGiai.Name = "cbGiai";
-            this.cbGiai.Size = new System.Drawing.Size(322, 34);
+            this.cbGiai.Size = new System.Drawing.Size(322, 42);
             this.cbGiai.TabIndex = 1;
             // 
             // label2
@@ -100,9 +100,8 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(2, 44);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 36);
+            this.label2.Size = new System.Drawing.Size(0, 45);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Chọn giải";
             // 
             // groupBox1
             // 
@@ -111,7 +110,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(897, 44);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(452, 554);
+            this.groupBox1.Size = new System.Drawing.Size(452, 548);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách quay";
@@ -124,7 +123,7 @@
             this.dsQuay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Tai Le", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -137,18 +136,20 @@
             this.colTen,
             this.colPhongban});
             this.dsQuay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dsQuay.Location = new System.Drawing.Point(3, 28);
+            this.dsQuay.Location = new System.Drawing.Point(3, 34);
             this.dsQuay.Name = "dsQuay";
             this.dsQuay.ReadOnly = true;
             this.dsQuay.RowHeadersVisible = false;
+            this.dsQuay.RowHeadersWidth = 51;
             this.dsQuay.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dsQuay.Size = new System.Drawing.Size(446, 523);
+            this.dsQuay.Size = new System.Drawing.Size(446, 511);
             this.dsQuay.TabIndex = 1;
             this.dsQuay.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dsQuay_CellContentClick);
             // 
             // colSTT
             // 
             this.colSTT.HeaderText = "STT";
+            this.colSTT.MinimumWidth = 6;
             this.colSTT.Name = "colSTT";
             this.colSTT.ReadOnly = true;
             this.colSTT.Width = 50;
@@ -156,22 +157,27 @@
             // colID
             // 
             this.colID.HeaderText = "ID";
+            this.colID.MinimumWidth = 6;
             this.colID.Name = "colID";
             this.colID.ReadOnly = true;
             this.colID.Visible = false;
+            this.colID.Width = 125;
             // 
             // colTen
             // 
             this.colTen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.colTen.HeaderText = "Ten";
+            this.colTen.MinimumWidth = 6;
             this.colTen.Name = "colTen";
             this.colTen.ReadOnly = true;
             // 
             // colPhongban
             // 
             this.colPhongban.HeaderText = "Phòng ban";
+            this.colPhongban.MinimumWidth = 6;
             this.colPhongban.Name = "colPhongban";
             this.colPhongban.ReadOnly = true;
+            this.colPhongban.Width = 125;
             // 
             // groupBox3
             // 
@@ -190,41 +196,17 @@
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             // 
-            // lbl1
+            // lbl4
             // 
-            this.lbl1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl1.AutoSize = true;
-            this.lbl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.lbl1.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.Location = new System.Drawing.Point(86, 60);
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(144, 171);
-            this.lbl1.TabIndex = 0;
-            this.lbl1.Text = "0";
-            // 
-            // lbl2
-            // 
-            this.lbl2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl2.AutoSize = true;
-            this.lbl2.BackColor = System.Drawing.Color.Red;
-            this.lbl2.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2.Location = new System.Drawing.Point(227, 60);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(144, 171);
-            this.lbl2.TabIndex = 1;
-            this.lbl2.Text = "0";
-            // 
-            // lbl3
-            // 
-            this.lbl3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl3.AutoSize = true;
-            this.lbl3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.lbl3.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3.Location = new System.Drawing.Point(368, 60);
-            this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(144, 171);
-            this.lbl3.TabIndex = 2;
-            this.lbl3.Text = "0";
+            this.lbl4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl4.AutoSize = true;
+            this.lbl4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lbl4.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4.Location = new System.Drawing.Point(509, 60);
+            this.lbl4.Name = "lbl4";
+            this.lbl4.Size = new System.Drawing.Size(179, 212);
+            this.lbl4.TabIndex = 7;
+            this.lbl4.Text = "0";
             // 
             // lbl5
             // 
@@ -234,21 +216,45 @@
             this.lbl5.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl5.Location = new System.Drawing.Point(650, 60);
             this.lbl5.Name = "lbl5";
-            this.lbl5.Size = new System.Drawing.Size(144, 171);
+            this.lbl5.Size = new System.Drawing.Size(179, 212);
             this.lbl5.TabIndex = 6;
             this.lbl5.Text = "0";
             // 
-            // lbl4
+            // lbl3
             // 
-            this.lbl4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl4.AutoSize = true;
-            this.lbl4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lbl4.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4.Location = new System.Drawing.Point(509, 60);
-            this.lbl4.Name = "lbl4";
-            this.lbl4.Size = new System.Drawing.Size(144, 171);
-            this.lbl4.TabIndex = 7;
-            this.lbl4.Text = "0";
+            this.lbl3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl3.AutoSize = true;
+            this.lbl3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lbl3.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3.Location = new System.Drawing.Point(368, 60);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(179, 212);
+            this.lbl3.TabIndex = 2;
+            this.lbl3.Text = "0";
+            // 
+            // lbl2
+            // 
+            this.lbl2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl2.AutoSize = true;
+            this.lbl2.BackColor = System.Drawing.Color.Red;
+            this.lbl2.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.Location = new System.Drawing.Point(227, 60);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(179, 212);
+            this.lbl2.TabIndex = 1;
+            this.lbl2.Text = "0";
+            // 
+            // lbl1
+            // 
+            this.lbl1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl1.AutoSize = true;
+            this.lbl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.lbl1.Font = new System.Drawing.Font("Microsoft Tai Le", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.Location = new System.Drawing.Point(86, 60);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(179, 212);
+            this.lbl1.TabIndex = 0;
+            this.lbl1.Text = "0";
             // 
             // btQuay
             // 
@@ -264,13 +270,23 @@
             // toolStrip1
             // 
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblErr});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 598);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 592);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1349, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1349, 31);
             this.toolStrip1.TabIndex = 7;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // lblErr
+            // 
+            this.lblErr.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.lblErr.Image = ((System.Drawing.Image)(resources.GetObject("lblErr.Image")));
+            this.lblErr.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.lblErr.Name = "lblErr";
+            this.lblErr.Size = new System.Drawing.Size(29, 28);
+            this.lblErr.Text = "...";
             // 
             // dgtDanhsachtrunggiai
             // 
@@ -279,7 +295,7 @@
             this.dgtDanhsachtrunggiai.Controls.Add(this.dataGridView1);
             this.dgtDanhsachtrunggiai.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgtDanhsachtrunggiai.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgtDanhsachtrunggiai.Location = new System.Drawing.Point(0, 395);
+            this.dgtDanhsachtrunggiai.Location = new System.Drawing.Point(0, 389);
             this.dgtDanhsachtrunggiai.Name = "dgtDanhsachtrunggiai";
             this.dgtDanhsachtrunggiai.Size = new System.Drawing.Size(897, 203);
             this.dgtDanhsachtrunggiai.TabIndex = 8;
@@ -308,17 +324,19 @@
             this.dataGridViewTextBoxColumn4,
             this.colTenGiai});
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 23);
+            this.dataGridView2.Location = new System.Drawing.Point(3, 27);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersVisible = false;
+            this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(891, 177);
+            this.dataGridView2.Size = new System.Drawing.Size(891, 173);
             this.dataGridView2.TabIndex = 4;
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.HeaderText = "STT";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Width = 50;
@@ -326,35 +344,43 @@
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             this.dataGridViewTextBoxColumn2.Visible = false;
+            this.dataGridViewTextBoxColumn2.Width = 125;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn3.HeaderText = "Ten";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.HeaderText = "Phòng ban";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 125;
             // 
             // colTenGiai
             // 
             this.colTenGiai.HeaderText = "Tên Giải";
+            this.colTenGiai.MinimumWidth = 6;
             this.colTenGiai.Name = "colTenGiai";
             this.colTenGiai.ReadOnly = true;
+            this.colTenGiai.Width = 125;
             // 
             // toolStrip2
             // 
             this.toolStrip2.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip2.Location = new System.Drawing.Point(9, 203);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(111, 25);
+            this.toolStrip2.Size = new System.Drawing.Size(112, 25);
             this.toolStrip2.TabIndex = 3;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -362,19 +388,11 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 23);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 27);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(891, 177);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(891, 173);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // lblErr
-            // 
-            this.lblErr.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.lblErr.Image = ((System.Drawing.Image)(resources.GetObject("lblErr.Image")));
-            this.lblErr.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.lblErr.Name = "lblErr";
-            this.lblErr.Size = new System.Drawing.Size(23, 22);
-            this.lblErr.Text = "...";
             // 
             // btLayDanhSach
             // 
@@ -399,7 +417,7 @@
             // f_quaysomayman
             // 
             this.AcceptButton = this.btQuay;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 47F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(25F, 58F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1349, 623);
             this.Controls.Add(this.btInDanhSach);
